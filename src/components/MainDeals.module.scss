@@ -1,0 +1,27 @@
+.deals {
+  margin-top: 30px;
+  max-width: 1400px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  .deals-list {
+    display: flex;
+    gap: 1em;
+
+    .deals-container {
+      background-color: #fff;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 200px;
+      }
+      span {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    }
+  }
+}

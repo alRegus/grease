@@ -1,0 +1,872 @@
+{
+  "productsArrayLength": 39,
+  "types": [
+    { "typeName": "electric-guitars", "typeImgCode": "vP7FrDr" },
+    {
+      "typeName": "acoustic-electric-guitars",
+      "typeImgCode": "SNyJQHL"
+    },
+    {
+      "typeName": "acoustic-guitars",
+      "typeImgCode": "HF8PDh6"
+    },
+    {
+      "typeName": "bass-guitars",
+      "typeImgCode": "bFrVxTX"
+    },
+    {
+      "typeName": "acoustic-drums",
+      "typeImgCode": "gM8yD81"
+    },
+    {
+      "typeName": "cymbals-drums",
+      "typeImgCode": "x7n2Sp8"
+    },
+    {
+      "typeName": "electronic-drums",
+      "typeImgCode": "QCVF7XR"
+    },
+    {
+      "typeName": "digital-pianos",
+      "typeImgCode": "prqvCCs"
+    },
+    {
+      "typeName": "keyboards-pianos",
+      "typeImgCode": "n61HHK9"
+    },
+    {
+      "typeName": "stage-pianos",
+      "typeImgCode": "wgB7dyP"
+    }
+  ],
+  "brands": [
+    {
+      "brandName": "Fender",
+      "brandImgUrl": "https://i.ibb.co/Xt87SqJ/FENDER-1.png"
+    },
+    {
+      "brandName": "Squier",
+      "brandImgUrl": "https://i.ibb.co/wdKGqmc/SQUIER-1.png"
+    },
+    {
+      "brandName": "Ibanez",
+      "brandImgUrl": "https://i.ibb.co/kmqh0pw/IBANEZ-1.png"
+    },
+    {
+      "brandName": "Jackson",
+      "brandImgUrl": "https://i.ibb.co/dcQC7sd/JACKSO-1.png"
+    },
+    {
+      "brandName": "D`Angelico",
+      "brandImgUrl": "https://i.ibb.co/rm0LV4r/D-ANGE-1.png"
+    },
+    {
+      "brandName": "Godin",
+      "brandImgUrl": "https://i.ibb.co/jVxZKfv/GODIN-1.png"
+    },
+    {
+      "brandName": "Gretsch",
+      "brandImgUrl": "https://i.ibb.co/tzp4QKV/GRETSC-1.png"
+    },
+    {
+      "brandName": "Washburn",
+      "brandImgUrl": "https://i.ibb.co/n14THxM/WASHBU-1.png"
+    },
+    {
+      "brandName": "Kremola",
+      "brandImgUrl": "https://i.ibb.co/zSqvRcY/KREMOL-1.png"
+    },
+    {
+      "brandName": "Sawtooth",
+      "brandImgUrl": "https://i.ibb.co/ZGG112X/SAWTOO-1.jpg"
+    },
+    {
+      "brandName": "Crush",
+      "brandImgUrl": "https://i.ibb.co/L9Tzzbr/CRUSH-1.png"
+    },
+    {
+      "brandName": "Tama",
+      "brandImgUrl": "https://i.ibb.co/PM7PRY6/TAMA-L-1.png"
+    },
+    {
+      "brandName": "Roland",
+      "brandImgUrl": "https://i.ibb.co/6mrk95B/ROLAND-1.png"
+    },
+    {
+      "brandName": "Zildjian",
+      "brandImgUrl": "https://i.ibb.co/GPZqsL7/ZILDJI-1.png"
+    },
+    {
+      "brandName": "Sabian",
+      "brandImgUrl": "https://i.ibb.co/cNkmhxR/SABIAN-1.png"
+    },
+    {
+      "brandName": "Alesis",
+      "brandImgUrl": "https://i.ibb.co/v1PCDRs/ALESIS-1.png"
+    },
+    {
+      "brandName": "Korg",
+      "brandImgUrl": "https://i.ibb.co/zXZkGB3/KORG-L-1.png"
+    },
+    {
+      "brandName": "Yamaha",
+      "brandImgUrl": "https://i.ibb.co/87DVLDb/YAMAHA-1.png"
+    },
+    {
+      "brandName": "Medeli",
+      "brandImgUrl": "https://i.ibb.co/4SDQk48/MEDELI-1.png"
+    },
+    {
+      "brandName": "Casio",
+      "brandImgUrl": "https://i.ibb.co/bHDG8cG/CASIO-1.png"
+    },
+    {
+      "brandName": "Nord",
+      "brandImgUrl": "https://i.ibb.co/nLwt8D9/NORD-L-1.png"
+    },
+    {
+      "brandName": "Vox",
+      "brandImgUrl": "https://i.ibb.co/rwhLdXg/Vox-Logo.png"
+    },
+    {
+      "brandName": "Studiologic",
+      "brandImgUrl": "https://i.ibb.co/DfL97Td/STUDIO-1.png"
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 1,
+      "productImgUrl": "https://i.ibb.co/k0WZwg5/FENDER-3.jpg",
+      "categories": "Guitars",
+      "type": "Electric Guitars",
+      "name": "Fender Player Stratocaster Electric Guitar, Lake Placid Blue",
+      "description": "The inspiring sound of a Stratocaster is one of the foundations of Fender. Featuring this classic sound-bell-like high end, punchy mids and robust low end, combined with crystal-clear articulation-the Player Stratocaster is packed with authentic Fender feel and style. It's ready to serve your musical vision, it's versatile enough to handle any style of music and it's the perfect platform for creating your own sound.",
+      "brand": "Fender",
+      "price": 699.99,
+      "used": false,
+      "deals": false,
+      "votes": 3,
+      "totalVotesValue": 14,
+      "reviews": [
+        {
+          "user": "Jeffrey J.",
+          "commentBody": "Great deal. Guitar arrived promptly and in perfect condition. I?ve only been playing it for a couple days so far, but I?m really impressed. Setup is quite nice, aside from some minimal string vibration in a couple of positions. Holding tune nicely after a bit of string stretching and re-tuning. Color looks pretty much like the picture. Quite lovely, really. Highly recommend if you?re looking for a high quality and very reasonably priced strat.",
+          "date": "Sep 8, 2021"
+        },
+        {
+          "user": "John G.",
+          "commentBody": "Really like this guitar. Looks great in person and feels good on the neck. Good setup out of the box with only a minor adjustment needed for intonation on the Low E. All in. Very happy with the product and price!",
+          "date": "Aug 29, 2021"
+        },
+        {
+          "user": "Eugene L.",
+          "commentBody": "Great guitar, great price! Good people to deal with! A++",
+          "date": "Aug 25, 2021"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "productImgUrl": "https://i.ibb.co/NS0PFBJ/SQUIER-1.jpg",
+      "categories": "Guitars",
+      "type": "Electric Guitars",
+      "name": "Squier Affinity Series Telecaster Electric Guitar, Maple Fingerboard, Arctic White",
+      "description": "Best guitar, buy now!!!!",
+      "brand": "Squier",
+      "price": 229.99,
+      "used": false,
+      "deals": false,
+      "votes": 5,
+      "totalVotesValue": 23,
+      "reviews": [
+        {
+          "user": "Ryan S.",
+          "commentBody": "Guitar is gorgeous, came in great condition and sounds amazing. Don't let the price fool you, this is a great value. Only wish it came with some type of guitar case.",
+          "date": "May 21, 2019"
+        },
+        {
+          "user": "Gary G.",
+          "commentBody": "It's a mutha!",
+          "date": "Apr 29, 2016"
+        },
+        {
+          "user": "NEIL",
+          "commentBody": "A Fender-designed Tele made in China, and you know what? It's pretty darn good. Great feel, action is nice (different at first, and then it starts to fit you like an old shoe). Doesn't have the greatest pickups, but hey, they can be replaced. Regarding electric guitar, I'm a beginner, but I had an experienced friend check it out, and he deemed it a fine instrument at the price point (which I got it through Slickdeals.net for $50 off). I'd recommend it to any beginner or maybe even intermediate guitarist.",
+          "date": "Jan 31, 2021"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "productImgUrl": "https://i.ibb.co/wYZnpWs/IBANEZ-1.jpg",
+      "categories": "Guitars",
+      "type": "Electric Guitars",
+      "name": "Ibanez miKro Series GRGM21L Left Handed Electric Guitar, Rosewood Fretboard, Black Night",
+      "description": "GRG miKro puts out sound way beyond its size. Perfect for young rockers on the way up or seasoned road warriors on the tour bus.",
+      "brand": "Ibanez",
+      "price": 199.99,
+      "used": true,
+      "deals": false,
+      "votes": 2,
+      "totalVotesValue": 7,
+      "reviews": [
+        {
+          "user": "Mauricio T",
+          "commentBody": "Beautiful guitar with perfect finishes and precision in its manufacture, it sounds very good, but you should consider its size before buying because it is smaller than the average",
+          "date": "Jun 5, 2020"
+        },
+        {
+          "user": "Christen S",
+          "commentBody": "Received quickly and it was packed very well. I also had ordered the wrong guitar the first time, and I returned it and the return was processed quickly.",
+          "date": "Jul 25, 2021"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "productImgUrl": "https://i.ibb.co/j3rVYgR/JACKSO-1.jpg",
+      "categories": "Guitars",
+      "type": "Electric Guitars",
+      "name": "Jackson JS Series King V JS32 Electric Guitar, Amaranth Fingerboard, Gloss Black",
+      "description": "The JS Series King V JS32 offers one of our most regal shapes and outstanding performers with an affordable price tag. This formidable King V has a poplar body, bolt-on maple speed neck with graphite reinforcement and scarf joint for rock-solid stability. Its 12-16 compound radius bound amaranth fingerboard features 24 jumbo frets and pearloid sharkfin inlays.",
+      "brand": "Jackson",
+      "price": 349.99,
+      "used": false,
+      "deals": true,
+      "votes": 3,
+      "totalVotesValue": 7,
+      "reviews": []
+    },
+    {
+      "id": 5,
+      "productImgUrl": "https://i.ibb.co/1G7km4X/IBANEZ-2.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Electric Guitars",
+      "name": "Ibanez AEG50N Semi-Acoustic Guitar, Walnut Fretboard, Black High Gloss",
+      "description": "The AEG Series' slender, single-cutaway bodies deliver powerful and balanced acoustic sound, unplugged or through an amp or PA system. These guitars combine easy playability, classic solid and sunburst finishes and mahogany bodies with spruce tops to create a quality, workhorse acoustic guitar that will rise to any occasion. High quality Fishman Sonicore pickups and Ibanez preamps with onboard tuners provide the sparkling tones that sound great in any venue.",
+      "brand": "Ibanez",
+      "price": 299.99,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": [
+        {
+          "user": "MARK C.",
+          "commentBody": "sounds great, feels and plays wonderfully...and very cool looking!",
+          "date": "Jul 21, 2019"
+        },
+        {
+          "user": "Howard",
+          "commentBody": "I am very happy with this guitar. The neck is smaller than my classical and easy to play. I also have a Fender 6 string steel and a 12 string, but this is my favorite.",
+          "date": "Jul 5, 2018"
+        },
+        {
+          "user": "THUY N.",
+          "commentBody": "I like the guitar about the shape, quality and sound. And the tune is so convenient for me to turn the strings!",
+          "date": "Jul 27, 2021"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "productImgUrl": "https://i.ibb.co/XDbmKCJ/D-ANGE-1.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Electric Guitars",
+      "name": "D'Angelico Guitars Premier Gramercy Single Cutaway Grand Auditorium Acoustic-Electric Guitar, Dark Cherry Burst",
+      "description": "The Premier Gramercy in Dark Cherry Burst offers a sparkling, articulate tone and outstanding player comfort by way of its undersized body shape, deep cutaway and solid spruce top. The Gramercy's slim C-shape neck now features a satin natural finish, allowing for maximum playability by preventing the fretting hand from sticking to the neck. This model's standout tone is complemented by antique bronze hardware and the Dark Cherry Burst finish, which is available exclusively at Adorama.",
+      "brand": "D'Angelico",
+      "price": 599.99,
+      "used": false,
+      "deals": true,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": [
+        {
+          "user": "BRANTLEY R.",
+          "commentBody": "Love this guitar. It looks & sounds great.Added a Pickguard to mine, because I prefer my guitars to have one...",
+          "date": "Aug 20, 2021"
+        },
+        {
+          "user": "Eric R.",
+          "commentBody": "It is a good guitar",
+          "date": "Aug 4, 2021"
+        },
+        {
+          "user": "WILLIAM F.",
+          "commentBody": "An amazing value. At first the action seemed a little high, but after a couple of days of playing and allowing it to adapt to the temperature and humidity, the sound and playability would rival many $1,000 guitars.",
+          "date": "Apr 11, 2021"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "productImgUrl": "https://i.ibb.co/0fjzGVb/D-ANGE-2.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Electric Guitars",
+      "name": "D'Angelico Guitars Premier Niagara Mini Dreadnought Body Acoustic-Electric Guitar with Onboard Preamp and Tuner, 20 Frets, C-Shape Neck, Ovangkol Fingerboard, Natural Spruce",
+      "description": "Introducing the Premier Niagara-the ultimate travel companion. A non-cutaway mini dreadnought boasting a tone far bigger than its compact body size, the Niagara is available with either a solid mahogany top for mid-range warmth or a solid spruce top for added resonance and clarity. Its 14-inch-wide body, slim C-shape neck and satin finish guarantee exceptional comfort. Featuring an onboard preamp and tuner, the Niagara is as well-suited for the stage as it is the campfire.",
+      "brand": "D'Angelico",
+      "price": 399.99,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 300,
+      "reviews": [
+        {
+          "user": "Ivan M.",
+          "commentBody": "Very good!",
+          "date": "Jul 20, 2019"
+        },
+        {
+          "user": "Martelino J.",
+          "commentBody": "Very nice guitar. Added to my collection",
+          "date": "Jul 12, 2019"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "productImgUrl": "https://i.ibb.co/ZG8t9Lr/GODINM-1.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Electric Guitars",
+      "name": "Godin Multiac Nylon Encore 7-String Acoustic Electric Guitar with Bag, Rosewood Fingerboard, Natural Semi-Gloss",
+      "description": "The Multiac Encore 7 is equipped with custom electronics by EPM. This easy to use Blendable Dual Source System features an undersaddle transducer as well as an acoustic soundboard transducer, with the ability to blend one into the other. Ideal guitar for players looking for a an incredible, amplified nylon string sound and feel in a live and loud band setting with virtually no feedback.",
+      "brand": "Godin",
+      "price": 1249.0,
+      "used": false,
+      "deals": false,
+      "votes": 222,
+      "totalVotesValue": 700,
+      "reviews": [
+        {
+          "user": "Jerome A.",
+          "commentBody": "Just simple awesome!",
+          "date": "Jan 20, 2020"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "productImgUrl": "https://i.ibb.co/FBcc0mQ/FENDER-1.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Guitars",
+      "name": "Fender Classic Design CD-60S Dreadnought Acoustic Guitar, Rosewood Fingerboard, All-Mahogany",
+      "description": "The CD-60S All-Mahogany adds a solid mahogany top to one of our most popular models for a distinctly organic flavor. It is ideal for players looking for a high-quality affordable dreadnought with great tone and excellent playability. Featuring the new easy-to-play neck and mahogany back and sides, the CD-60S All-Mahogany is perfect for the couch, the beach or the coffeehouse-anywhere you want classic Fender playability and sound.",
+      "brand": "Fender",
+      "price": 229.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": [
+        {
+          "user": "Linda B.",
+          "commentBody": "Great beginners guitar. I wanted a new hobby in retirement and decided to learn to play the acoustic guitar. Beautiful instrument.",
+          "date": "Jul 6, 2021"
+        },
+        {
+          "user": "DAVID S",
+          "commentBody": "Great service. Awesome guitar!",
+          "date": "Jan 22, 2021"
+        },
+        {
+          "user": "VITA S.",
+          "commentBody": "Came pretty quickly through delivery and in great condition. Beautiful guitar!",
+          "date": "Sep 22, 2020"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "productImgUrl": "https://i.ibb.co/K6vTcqN/GRETSC-1.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Guitars",
+      "name": "Gretsch Roots Collection G9500 Jim Dandy Flat Top Acoustic Guitar, Rosewood Fretboard, 2-Color Sunburst",
+      "description": "Since 1883, when 27-year-old Friedrich Gretsch founded his little shop in Brooklyn, N.Y., making banjos, drums and tambourines, The Gretsch Company has grown to produce some of the world's greatest drums and guitars over the span of four generations.",
+      "brand": "Gretsch",
+      "price": 179.0,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": [
+        {
+          "user": "Nicholas T.",
+          "commentBody": "Bought two great guitars here and will look to buy again!!",
+          "date": "Mar 7, 2017"
+        },
+        {
+          "user": "Nicholas T.",
+          "commentBody": "Great little guitar, smaller than a standard acoustic but has a very nice sound.",
+          "date": "Dec 28, 2018"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "productImgUrl": "https://i.ibb.co/VBhXQ5v/WASHBU-1.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Guitars",
+      "name": "Washburn Deep Forest Ebony ACE Acoustic Guitar, Striped Ebony",
+      "description": "With one strum you will hear that rich low-end. The Deep Forest Ebony ACE has a warmth that you will not find on a typical spruce top guitar. When the wood blends of the Ebony ACE are coupled with the size, shaping, and bracing of this auditorium cutaway, you enjoy added articulation and an easy-to-achieve great guitar tone that some have described like having a natural compression. With the integrated Barcus Berry active electronics, the Deep Forest Ebony ACE is ready for the stage as well as any all-acoustic opportunity you get.",
+      "brand": "Washburn",
+      "price": 349.0,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 12,
+      "productImgUrl": "https://i.ibb.co/NLXrnM2/KREMON-1.jpg",
+      "categories": "Guitars",
+      "type": "Acoustic Guitars",
+      "name": "Kremona Artist Series Solea Classical Acoustic Guitar with Hard Case, Ebony Fingerboard, Thin Polyurethane",
+      "description": "With a solid red cedar top and stunning solid cocobolo back and sides, Solea is perfect for Brazilian rhythms and a beautiful complement to any style. Handmade by skilled European artisans, Solea offers the finest playability with a sound that is welcome on any concert stage.",
+      "brand": "Kremola",
+      "price": 1799.0,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 13,
+      "productImgUrl": "https://i.ibb.co/2nzBRyd/FENDER-2.jpg",
+      "categories": "Guitars",
+      "type": "Bass Guitars",
+      "name": "Fender Limited Edition American Pro Jazz Bass Electric Guitar, Rosewood Fingerboard, Natural Roasted Ash",
+      "description": "At Fender, we live and breathe electric instruments. We never rest-pushing craftsmanship to its limits, we design, test and endlessly experiment to create the best instruments on the planet. The Jazz Bass, a refinement of concepts first introduced in the Precision Bass, is the earliest example of this philosophy in action. Evolved for today's musician, the American Professional Jazz Bass combines modern features and materials with Fender's craftsmanship and expertise to produce a truly contemporary bass.",
+      "brand": "Fender",
+      "price": 1749.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 14,
+      "productImgUrl": "https://i.ibb.co/8MnyFhG/IBANEZ-3.jpg",
+      "categories": "Guitars",
+      "type": "Bass Guitars",
+      "name": "Ibanez SRMD200D SR Standard Mezzo Electric Bass Guitar, Metallic Forest",
+      "description": "Electronics consist of an Ibanez Custom Electronics 2-band EQ and an Ibanez DXP neck pickup and DXJ bridge pickup for extra punch.",
+      "brand": "Ibanez",
+      "price": 299.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 15,
+      "productImgUrl": "https://i.ibb.co/bgSwhf7/JACKSO-2.jpg",
+      "categories": "Guitars",
+      "type": "Bass Guitars",
+      "name": "Jackson JS Series Concert Bass Minion JS1X Electric Guitar, Amaranth Fingerboard, Satin Black",
+      "description": "Experience massive low-end thunder in a compact package-at a steal! Ideal for little shredders, the new JS Series Concert Bass Minion JS1X features a shortened 28.6 scale length, poplar body, one-piece bolt-on maple neck with graphite reinforcement rods and a 12 radius amaranth fingerboard with 22 jumbo frets and pearloid sharkfin inlays. A Jackson P style neck pickup and Jackson J style bridge pickup power this 4-string bass, which also features a tone and pair of volume knobs, hardtail bridge with black base plate and Jackson-branded die-cast tuners.",
+      "brand": "Jackson",
+      "price": 189.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": [
+        {
+          "user": "RANDY H.",
+          "commentBody": "Great for a starter bass. Just fyi though, the tuning knobs are so big they run into each other. So if you want to change tuning often, this is a little bit of a pain.",
+          "date": "Jul 25, 2019"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "productImgUrl": "https://i.ibb.co/h2jLB0T/IBANEZ-4.jpg",
+      "categories": "Guitars",
+      "type": "Bass Guitars",
+      "name": "Ibanez GIO Series GSR200 Electric Bass Guitar, Rosewood Fretboard, Transparent Red",
+      "description": "A guitar doesn't have to cost a bundle to sound good. The GIO series was developed for players who want Ibanez quality in a more affordable package. Not only do they look and play better than everything else in their price range, but their rigorous inspection, set-up and warranty is the same as Ibanez's more expensive models.",
+      "brand": "Ibanez",
+      "price": 199.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 17,
+      "productImgUrl": "https://i.ibb.co/59Ym2x0/SAWTOO-1.jpg",
+      "categories": "Drums",
+      "type": "Acoustic Drums",
+      "name": "Sawtooth Command Series 7-Piece Drum Shell Pack with 22x18 Bass Drum, 12x9 13x10 10x8 Tom, 16x16 14x14 Floor Tom, 14x5.5 Snare Drum, Red Streak",
+      "description": "Command your audience's attention with Sawtooth's Command series drums. Experience inspired boutique styling with upgraded appointments at the very best value in the industry. Made from select 6-ply poplar shells producing a classic warm punchy tone with live sonic lows.",
+      "brand": "Sawtooth",
+      "price": 899.98,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 18,
+      "productImgUrl": "https://i.ibb.co/NrMkP6w/CRUSHD-1.jpg",
+      "categories": "Drums",
+      "type": "Acoustic Drums",
+      "name": "Crush Drums Chameleon Ash 5 Piece Shell Pack, Includes 22x18 Bass Drum, 10x7 Tom Drum, 12x8 Tom Drum, 16x14 Floor Tom Drum and 14x6 Snare Drum Red (Dark Satin)",
+      "description": "100% European Ash shells project an explosive and powerful tone with loads of bottom end and articulate highs. Satin finishes allow the natural beauty of the ash wood to be highlighted and less paint on the shells ensure that the desirable sonic qualities of the ash wood are unimpeded. The interchangeable lugs allow you to choose what color combinations options best fit you. Each ash shell is created to Crush Drums' highest construction standards. Double 45deg. bearing edges with outer edge round over ensures unrestricted tone from these ash shells. The edges are hand sanded and waxed to allow proper seating of drum heads allowing consistent and easy tuning.",
+      "brand": "Crush",
+      "price": 1099.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": [
+        {
+          "user": "Scott H.",
+          "commentBody": "Item was exactly as described. Great company to work with!",
+          "date": "May 30, 2018"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "productImgUrl": "https://i.ibb.co/TBRX44b/TAMACO-1.jpg",
+      "categories": "Drums",
+      "type": "Acoustic Drums",
+      "name": "Tama Cocktail-JAM 4-Piece Shell Pack with Hardware, Includes 6x16 Bass Drum, 5x10 Tom Tom, 5.5x14 Floor Tom, 5x12 Snare Drum, Bright Orange Sparkle",
+      "description": "The Cocktail-JAM Kit is a TAMA original in both appearance and sound. It's ideal for hip-hop, jazz, intimate acoustic settings and tight rehearsal rooms. Completely compact, this kit can easily be set up and played using a throne in spaces much smaller than a typical drum set. Additionally, the Cocktail-JAM Kit and its hardware can be easily packed into just two bags (included with the kit), making it super portable and easy to transport to any gig. Have fun jamming with the Cocktail-JAM Kit!",
+      "brand": "Tama",
+      "price": 699.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": [
+        {
+          "user": "JANA L.",
+          "commentBody": "My son is a drummer and wanted a kit that travels easily for jam sessions at his friends homes... This innovative product fits the bill...",
+          "date": "Apr 15, 2018"
+        },
+        {
+          "user": "Jt C.",
+          "commentBody": "Great looking and sounding kit. Feels well put together.",
+          "date": "Dec 29, 2017"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "productImgUrl": "https://i.ibb.co/frSXDJ4/ROLAND-1.jpg",
+      "categories": "Drums",
+      "type": "Acoustic Drums",
+      "name": "Roland KD-180 18 Acoustic Electronic Kick Drum",
+      "description": "The commanding stage presence and familiar feel of a full-size kick drum is something all drummers can identify with. And now you can incorporate the presence and performance of an acoustic kick drum into any V-Drums kit with the KD-180. This ready-to-play solution features a standard 18-inch, high-quality, all-birch acoustic bass drum shell with Roland's advanced kick trigger electronics pre-installed.",
+      "brand": "Roland",
+      "price": 1249.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 21,
+      "productImgUrl": "https://i.ibb.co/PrTKy2h/ZILDJI-1.jpg",
+      "categories": "Drums",
+      "type": "Cymbals Drums",
+      "name": "Zildjian A Custom Cymbal Set with 14 Hi-Hats, 16 Crash, 18 Crash, 20 Medium Ride",
+      "description": "Features crisp, sweet, sophisticated cymbals with a modern sound. Zildjian A Custom cymbals are made using radical rotary hammering techniques, thin weights, and a brilliant finish. Great for a variety of drumming styles.Your box set artwork may vary.",
+      "brand": "Zildjian",
+      "price": 849.95,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": [
+        {
+          "user": "JOHN I C.",
+          "commentBody": "Great Customer Service",
+          "date": "Jun 30, 2019"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "productImgUrl": "https://i.ibb.co/5kx1BLL/SABIAN-1.jpg",
+      "categories": "Drums",
+      "type": "Cymbals Drums",
+      "name": "Sabian B8X Performance Cymbals Set Plus",
+      "description": "Sonically matched in the SABIAN Vault, the SABIAN B8X Performance Set includes 14 B8X Hi-Hats, 16 B8X Thin Crash and a 20 B8X Ride. An ideal performance-ready set for the serious and discerning beginner. Precision formed, hammered and lathed for pure, tonally tight sounds, B8X is the bright, cutting sound of pure Bronze at a low price that makes your first move into this precious metal an easy one.",
+      "brand": "Sabian",
+      "price": 364.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 23,
+      "productImgUrl": "https://i.ibb.co/nCG0GPt/SABIAN-2.jpg",
+      "categories": "Drums",
+      "type": "Cymbals Drums",
+      "name": "Sabian 16 B8X Marching Band Hand Cymbal, Medium-Heavy, Natural Finish",
+      "description": "16 B8X Marching Band is designed for budget-sensitive percussionists, schools and marching ensembles. B8X technology offers full, bright sound that gets you heard through marching ensembles.",
+      "brand": "Sabian",
+      "price": 98.99,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 24,
+      "productImgUrl": "https://i.ibb.co/1JN19NX/ZILDJI-2.jpg",
+      "categories": "Drums",
+      "type": "Cymbals Drums",
+      "name": "Zildjian 21 A Zildjian Sweet Ride Cymbal",
+      "description": "Zildjian's classic sound is embodied by A Zildjian and immortalized in countless recordings by the greatest drummers of all time. Known for their versatility, these bright cymbals range from paper thin and delicate to extra heavy and cutting. Recent adjustments were made to the curvature and weights of many current models to capture the sweet spot of the classic A sound, producing crashes, rides, and hats that reflect today's musical styles.",
+      "brand": "Zildjian",
+      "price": 359.95,
+      "used": false,
+      "deals": true,
+      "votes": 22,
+      "totalVotesValue": 80,
+      "reviews": []
+    },
+    {
+      "id": 25,
+      "productImgUrl": "https://i.ibb.co/3mRFk8y/ALESIS-1.jpg",
+      "categories": "Drums",
+      "type": "Electronic Drums",
+      "name": "Alesis E-Drum Total Quiet Electronic Kit",
+      "description": "Playing drums has never been more accessible! Introducing E-Drum Total by Alesis, a complete electronic drumming system in one box. This is no toy - E-Drum Total comes with absolutely everything you need to start drumming right away. First, there are the drums themselves - (4) 6 adjustable mesh-head drums that feel great without any of the noise that comes with rubber e-drum pads. Each one of the (3) included cymbals boasts a large 10 playing surface so you never miss a beat. The Kick drum and Hi-Hat are controlled by responsive foot pedals that can be rolled up and put away while not in use and the adjustable drum throne and headphones provide comfort for players of all ages. Did we mention that drumsticks are included too? E-Drum Total is the perfect package for any aspiring drummer.",
+      "brand": "Alesis",
+      "price": 279.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 26,
+      "productImgUrl": "https://i.ibb.co/X8GdZzD/ROLAND-2.jpg",
+      "categories": "Drums",
+      "type": "Electronic Drums",
+      "name": "Roland TD-07KVX 4-Piece V-Drums Kit with 12 Snare",
+      "description": "As the pinnacle of Roland's TD-07 V-Drums series, the TD-07KVX offers the ultimate complement of pads and cymbals to satisfy the most demanding drummers. This top-tier kit has the largest pad offering of the series, with separately mounted VH-10 floating hi-hats, uprated CY-12C crash and larger 13-inch CY-13R ride that let you reach your true potential. Meanwhile, you'll find the same PDX-12 snare and PDX-8 toms as elsewhere in the range, with the unrivalled feel of our original ultra-quiet, double-ply mesh heads. And, as with all TD-07 kits, the powerful TD-07 module lets the TD-07KVX eclipse traditional drums, with deep editing tools for crafting custom kits, Bluetooth for audio playback from your phone, tablet or computer and one-cable USB connectivity to DAW recording software.",
+      "brand": "Roland",
+      "price": 1299.99,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+
+    {
+      "id": 27,
+      "productImgUrl": "https://i.ibb.co/3mRFk8y/ALESIS-1.jpg",
+      "categories": "Drums",
+      "type": "Electronic Drums",
+      "name": "Alesis Surge Mesh 8-Piece Electronic Drum Kit with Heads",
+      "description": "The Surge Mesh Kit is a complete 8-piece electronic drum kit that includes everything a drummer needs to play like a pro. It features a 10 dual-zone mesh snare and three 8 dual-zone mesh tom pads for great feel and natural response, plus an 8 mesh kick tower pad with pedal. Three cymbals provide a virtually unlimited range of playing expression: a ride cymbal, crash cymbal with choke function and hi-hat. Not only do the mesh heads deliver unmatched response and playability, the compact size means the Surge Kit goes where larger kits can't.",
+      "brand": "Alesis",
+      "price": 579.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 28,
+      "productImgUrl": "https://i.ibb.co/8jXDP6z/KORGB2-1.jpg",
+      "categories": "Pianos",
+      "type": "Digital Pianos",
+      "name": "Korg B2SP Black",
+      "description": "This set packages the B2 Black digital piano with a easily assembled stand and a three-pedal unit that gives you the experience of playing a real grand piano. This model includes everything you need to enjoy playing the piano seriously.",
+      "brand": "Korg",
+      "price": 579.0,
+      "used": true,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 29,
+      "productImgUrl": "https://i.ibb.co/HH8SR0m/YAMAHA-1.jpg",
+      "categories": "Pianos",
+      "type": "Digital Pianos",
+      "name": "Yamaha CLP735 Black",
+      "description": "This model includes everything you need to enjoy playing the piano seriously.",
+      "brand": "Yamaha",
+      "price": 1999.0,
+      "used": true,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 30,
+      "productImgUrl": "https://i.ibb.co/8DJ7wyc/MEDELI-1.jpg",
+      "categories": "Pianos",
+      "type": "Digital Pianos",
+      "name": "Medeli DP280KBK",
+      "description": "The Medeli DP280K, A piano for the pianist with higher requirements in terms of keyboard and playing pleasure. The Medeli DP280K is equipped with the high-quality K8 keyboard from Medeli. The keyboard is provided with a coating which gives you the feeling of playing on a keyboard with an ivory top layer. The keyboard is equipped with 3 sensors so that the release of the key is also registered. For study, it is useful that an external audio source can be connected, such as an MP3 player or CD player, you can play along with existing music. The dual and harmony functions make the whole thing even smoother by being able to assign an extra sound to the played part. The dual function adds a second sound, making the whole sound fuller because it gives the impression that two instruments are playing simultaneously. The harmony function adds harmony to the keys played to create a kind of duet-feel. When a piano sound is selected, pressing the sustain pedal will simulate the string resonance and resonance of the soundboard as it sounds on an acoustic piano. The other strings will vibrate and make the sound even more realistic. The twinova function is useful in a piano lessons. The keyboard is divided into two equal parts so that the left and right parts have exactly the same sound and pitch so lessons can be given without an extra piano.",
+      "brand": "Medeli",
+      "price": 849.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 31,
+      "productImgUrl": "https://i.ibb.co/HVGHqnw/KORGLP-1.jpg",
+      "categories": "Pianos",
+      "type": "Digital Pianos",
+      "name": "Korg LP 180 Black",
+      "description": "Emanating a sense of quality that exceeds its class, this slim, digital piano features a beautiful and rich piano sound, keyboard cover, a one-piece stand, and a three-pedal unit.",
+      "brand": "Korg",
+      "price": 499.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 32,
+      "productImgUrl": "https://i.ibb.co/BcdkNC9/CASIOC-1.jpg",
+      "categories": "Pianos",
+      "type": "Keyboards Pianos",
+      "name": "Casio CT-S1 RD",
+      "description": "In 1980, the original Casiotone CT-201 allowed anyone to make music, regardless of skill level or budget. With the CT-S1, its spiritual successor, we've raised our own bar. The Casiotone CT-S1 is a great-sounding, stylish, ultra-portable keyboard designed for anyone to enjoy playing. Its incredible sound quality makes it an ideal musical partner for beginners and seasoned players alike, and its sleek, portable design makes it fun to play anytime, anywhere.",
+      "brand": "Casio",
+      "price": 329.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 33,
+      "productImgUrl": "https://i.ibb.co/bJhXwLJ/YAMAHA-2.jpg",
+      "categories": "Pianos",
+      "type": "Keyboards Pianos",
+      "name": "Yamaha PSR-E360 Black",
+      "description": "Unfortunately it is too big to fit in a school bag but the CTK-240 is the ideal starter instrument for all beginners.",
+      "brand": "Yamaha",
+      "price": 222.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 34,
+      "productImgUrl": "https://i.ibb.co/548drrL/ROLAND-3.jpg",
+      "categories": "Pianos",
+      "type": "Keyboards Pianos",
+      "name": "Roland BK-5 Backing Keyboard",
+      "description": "One keyboard, one keyboardist…. With the debut of the BK-5, Roland proudly sets another milestone in the history of auto-accompaniment instruments. The BK-5 features high-quality, fresh sounds combined with an easy user interface and advanced features. It’s the perfect partner for the “one-man band” as well as music hobbyists and amateurs.",
+      "brand": "Roland",
+      "price": 766.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 35,
+      "productImgUrl": "https://i.ibb.co/85699C7/CASIOC-2.jpg",
+      "categories": "Pianos",
+      "type": "Keyboards Pianos",
+      "name": "Casio CTK240",
+      "description": "Unfortunately it is too big to fit in a school bag but the CTK-240 is the ideal starter instrument for all beginners. The CTK-240 comes with 49 standard keys (four octaves) and is perfect for combining fun with serious learning. 100 timbres, 100 rhythms and 50 songs all lend themselves to instructive music lessons. Where the music is! Even the design of the CTK model is extremely impressive: slimline, slender and black - it is a beautiful piece of technology.",
+      "brand": "Casio",
+      "price": 89.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 36,
+      "productImgUrl": "https://i.ibb.co/YXSJ5Ry/NORDGR-1.jpg",
+      "categories": "Pianos",
+      "type": "Stage Pianos",
+      "name": "Nord Grand",
+      "description": "The Nord Grand features a premium weighted keybed with advanced triple sensors that capture the movements of the hammers with exceptional precision, delivering the smooth and natural feel of an acoustic grand piano. Incorporating the award-winning performance features and hands-on user interface the lightweight Nord Grand not only provides an extraordinary playing experience, but is also an elegant new approach to the stage piano series.",
+      "brand": "Nord",
+      "price": 3229.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 37,
+      "productImgUrl": "https://i.ibb.co/ssHmSVN/VOXCON-1.jpg",
+      "categories": "Pianos",
+      "type": "Stage Pianos",
+      "name": "Vox Continental 73",
+      "description": "The VOX Continental uses a simple and intuitive interface that allows quick accessibility of every function. The high-quality sound engine section is centered on organ, electric piano, and acoustic piano, and provides a wealth of stage-ready sounds. In addition, the Continental features a powerful effects section to enhance these sounds, and even analog valve drive powered by Nutube, the cutting-edge vacuum tube. It's an instrument that perfectly fits your live performance requirements for a variety of styles including rock, pop, jazz, and more.",
+      "brand": "Vox",
+      "price": 1809.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 38,
+      "productImgUrl": "https://i.ibb.co/F5cMxXH/STUDIO-1.jpg",
+      "categories": "Pianos",
+      "type": "Stage Pianos",
+      "name": "Studiologic Numa Compact 2X",
+      "description": "Extremely mighty. Endless combinations. The Numa Compact 2x brings to the extreme the power of the Compact family. Packed in the same compact size cabinet there are now 3 sound engines. A tone wheel organ model derived from Numa Organ, the Sledge sound synthesis and 1GB of samples memory. The new USB port allows to transmit and receive digital audio. Save more space using the Numa Compact 2x speakers to amplify the sounds of your computer or tablet. Tone wheel organ A true tone wheel organ model derived from the acclaimed Numa Organ is implemented in the sound engine. The user interface gains 9 programmable sliders which can be used as Drawbars to control the organ sounds and as linear controls to send Midi CC as well.",
+      "brand": "Studiologic",
+      "price": 679.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    },
+    {
+      "id": 39,
+      "productImgUrl": "https://i.ibb.co/ngPQ3cp/ROLAND-4.jpg",
+      "categories": "Pianos",
+      "type": "Stage Pianos",
+      "name": "Roland FP-90X-WH Digital Piano",
+      "description": "For high-end piano performance in a portable instrument, there’s no better choice than the Roland FP-90X. Like the rest of the FP-X series, it features a slim and stylish cabinet that’s easy to transport. But when you invest in this range-topping model, you’re getting an instrument that represents the pinnacle of Roland’s acclaimed piano technology. From the addictively playable PHA-50 hybrid keyboard and PureAcoustic Piano Modeling from our premium pianos, to custom tone shaping and deep sound immersion from the onboard speaker system, the FP-90X delivers the ultimate FP-X experience.",
+      "brand": "Roland",
+      "price": 1800.0,
+      "used": false,
+      "deals": false,
+      "votes": 122,
+      "totalVotesValue": 400,
+      "reviews": []
+    }
+  ]
+}
