@@ -1,0 +1,204 @@
+.header {
+  display: grid;
+  grid-template-columns: 15% 30% 35% 18%;
+  gap: 0.5rem;
+  height: 70px;
+  margin: 0 auto;
+  max-width: 1400px;
+
+  .logo-container {
+    align-self: center;
+    width: 175px;
+    height: 60px;
+    margin-left: 0.6rem;
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+  .products-show {
+    height: 100%;
+    padding-top: calc(70px / 3);
+    &:hover > .products-details-nav {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .brand-show {
+    height: 100%;
+    padding-top: calc(70px / 3);
+    &:hover > .brands-details-nav {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  nav {
+    height: 100%;
+    align-self: center;
+    ul {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      li {
+        align-self: center;
+        position: relative;
+        list-style-type: none;
+        justify-self: center;
+        color: #000;
+        font-size: 1.2rem;
+        margin-right: 0.7rem;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+        &:hover {
+          text-decoration: underline;
+        }
+        .products-details-nav {
+          opacity: 0;
+          visibility: hidden;
+          z-index: 9;
+          display: flex;
+          position: absolute;
+          background-color: #fff;
+          padding: 1rem;
+          top: 70px;
+          &-categories {
+            padding-right: 1rem;
+            width: 10rem;
+            border-right: 1px solid #a39a99;
+            div {
+              margin-bottom: 1rem;
+              font-size: 1.2rem;
+              padding: 7px 5px;
+              transition: color 0.2s ease-in;
+              &:hover {
+                background-color: blue;
+                color: #fff;
+              }
+            }
+          }
+          &-types {
+            width: 240px;
+            margin-left: 1rem;
+            li {
+              font-weight: bold;
+              font-size: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .brands-details-nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    z-index: 9;
+    background-color: #fff;
+    padding: 50px 50px 0px 20px;
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    &-items {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      div {
+        width: 90px;
+        img {
+          width: inherit;
+        }
+      }
+    }
+  }
+
+  .search-container {
+    align-self: center;
+    justify-self: self-start;
+    width: 100%;
+    position: relative;
+    input {
+      width: 100%;
+      padding: 7px 0;
+      border-radius: 10px;
+      border: none;
+      padding-left: 1.5rem;
+    }
+    button {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 15px;
+      top: 6px;
+      cursor: pointer;
+    }
+  }
+
+  .auth-cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 1.5rem;
+
+    .auth-container {
+      display: flex;
+      gap: 10px;
+      height: 100%;
+      padding: 0 10px;
+      &:hover > .account-options-container {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover {
+        background-color: #fff;
+      }
+      i {
+        align-self: center;
+        font-size: 1.5rem;
+      }
+      div {
+        align-self: center;
+        span {
+          font-size: 0.7rem;
+          cursor: pointer;
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .account-options-container {
+        opacity: 0;
+        visibility: hidden;
+        padding: 22px 33px 22px 17px;
+        position: absolute;
+        z-index: 9;
+        background-color: #fff;
+        top: 70px;
+        left: 0;
+        ul {
+          list-style-type: none;
+          li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .cart-container {
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+  }
+}
