@@ -1,0 +1,135 @@
+footer {
+  background: transparent linear-gradient(180deg, #030f29 0%, #14213d 100%) 0%
+    0% no-repeat padding-box;
+}
+.help-feedback-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+  color: #fff;
+  padding: 1.5rem;
+  max-width: 1400px;
+  &-services {
+    h3 {
+      margin: 20px 0;
+    }
+    li {
+      margin-top: 8px;
+      list-style-type: none;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-shopping-help {
+    h3 {
+      margin: 20px 0;
+    }
+    li {
+      margin-top: 8px;
+      list-style-type: none;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-company-info {
+    h3 {
+      margin: 20px 0;
+    }
+    li {
+      margin-top: 8px;
+      list-style-type: none;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-newsletter {
+      h3 {
+        margin: 20px 0;
+      }
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+      &-input {
+        display: inline-flex;
+        input {
+          border: none;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          font-size: 1.2rem;
+          padding: 10px 0 10px 20px;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          font-size: 1.2rem;
+          padding: 10px;
+          border: none;
+          background-color: #055c97;
+          color: #fff;
+          font-weight: bold;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          transition: background-color 0.2s ease-in;
+          &:hover {
+            background-color: #2787e6;
+          }
+        }
+      }
+    }
+    &-social {
+      margin: 0;
+      h3 {
+        margin: 20px 0;
+      }
+      &-items {
+        ul {
+          display: flex;
+          li {
+            list-style-type: none;
+            color: #798794;
+            font-size: 2rem;
+            cursor: pointer;
+            &:nth-child(1):hover {
+              color: #3b5998;
+            }
+            &:nth-child(2):hover {
+              color: #2caae1;
+            }
+            &:nth-child(3):hover {
+              color: #f00;
+            }
+            &:nth-child(4):hover {
+              color: #f00075;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 50px 18px;
+  background-color: #00091d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
