@@ -1,15 +1,25 @@
-.featured-brands {
+.popular-categories {
   max-width: 1400px;
-  padding: 3rem 0;
-  .brands-list {
-    display: flex;
-    gap: 3rem;
-    margin-top: 2rem;
-    .brand-container {
+  margin-top: 20px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  .cat-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3em;
+    .cat-container {
       display: flex;
+      flex-direction: column;
+      text-align: center;
+      cursor: pointer;
       img {
-        height: 150px;
-        width: 300px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      span {
+        margin-top: 5px;
       }
     }
   }
