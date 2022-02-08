@@ -1,0 +1,16 @@
+.featured-brands {
+  max-width: 1400px;
+  padding: 3rem 0;
+  .brands-list {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    .brand-container {
+      display: flex;
+      img {
+        height: 150px;
+        width: 300px;
+      }
+    }
+  }
+}
