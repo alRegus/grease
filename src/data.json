@@ -1,5 +1,6 @@
 {
   "productsArrayLength": 39,
+  "categories": ["Guitars", "Drums", "Pianos"],
   "types": [
     { "typeName": "electric-guitars", "typeImgCode": "vP7FrDr" },
     {

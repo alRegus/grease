@@ -1,9 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+import useHttp from "../hooks/useHttp";
 
 import logo from "../instruments-logo.png";
 import classes from "./Header.module.scss";
 
 function Header() {
+  const [instrumentTypesState, setInstrumentTypesState] = useState([]);
+
+  const instrumentTypes = useHttp(
+    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
+  );
+  const instrumentCategories = useHttp(
+    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
+  );
+  const instrumentBrands = useHttp(
+    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
+  );
+
+  const getTypesHandler = (e) => {
+    const category = e.target.textContent.toLowerCase();
+
+    const filteredTypes = instrumentTypes.filter((type) =>
+      type.typeName.includes(category)
+    );
+
+    setInstrumentTypesState(filteredTypes);
+  };
+
+  const displayInstrumentsCategories = instrumentCategories.map((category) => (
+    <div onMouseOver={getTypesHandler} key={category}>
+      {category}
+    </div>
+  )); //тут поменял li чтобы уьрать ошибку div, надо продумать структуру получше тут
+
+  const displayInstrumentsTypes = instrumentTypesState.map((type) => (
+    <li key={type.typeName}>
+      {type.typeName
+        .split("-")
+        .map((word) => {
+          return word.charAt(0).toUpperCase() + word.substring(1);
+        })
+        .join(" ")}
+    </li>
+  )); //тут ошибка li
+
+  const displayInstrumentsBrands = instrumentBrands.map((brand) => (
+    <div key={brand.brandName}>
+      <img src={brand.brandImgUrl} alt={brand.brandName} />
+    </div>
+  ));
+
   return (
     <header className={classes["header"]}>
       <div className={classes["logo-container"]}>
@@ -15,10 +61,10 @@ function Header() {
             Product
             <div className={classes["products-details-nav"]}>
               <div className={classes["products-details-nav-categories"]}>
-                {/* {displayCategories} */}
+                {displayInstrumentsCategories}
               </div>
               <div className={classes["products-details-nav-types"]}>
-                {/* {displayTypes} */}
+                {displayInstrumentsTypes}
               </div>
             </div>
           </li>
@@ -27,7 +73,7 @@ function Header() {
             <div className={classes["brands-details-nav"]}>
               <h2>Featured Brands:</h2>
               <div className={classes["brands-details-nav-items"]}>
-                {/* {displayBrands} */}
+                {displayInstrumentsBrands}
               </div>
             </div>
           </li>
