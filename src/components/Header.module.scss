@@ -54,6 +54,10 @@
         &:hover {
           text-decoration: underline;
         }
+        a {
+          text-decoration: none;
+          color: #000;
+        }
         .products-details-nav {
           opacity: 0;
           visibility: hidden;
@@ -76,15 +80,22 @@
                 background-color: blue;
                 color: #fff;
               }
+              a {
+                text-decoration: none;
+                color: #000;
+              }
             }
           }
           &-types {
             width: 240px;
             margin-left: 1rem;
-            li {
-              font-weight: bold;
-              font-size: 1rem;
-              margin-bottom: 1rem;
+            a {
+              text-decoration: none;
+              li {
+                font-weight: bold;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+              }
             }
           }
         }

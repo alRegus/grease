@@ -17,7 +17,8 @@ export default function ProductsList() {
         filterParams.categories === "") &&
       (prod.brand === filterParams.brand || filterParams.brand === "") &&
       (prod.type === filterParams.type || filterParams.type === "") &&
-      (prod.name === filterParams.name || filterParams.name === "") &&
+      (prod.name.toLowerCase().includes(filterParams.name.toLowerCase()) ||
+        filterParams.name === "") &&
       (prod.used === filterParams.used || filterParams.used === false) &&
       (prod.deals === filterParams.deals || filterParams.deals === false)
     );
@@ -33,5 +34,5 @@ export default function ProductsList() {
       imgURL={instrument.productImgUrl}
     />
   ));
-  return <section>{displayProductsList}lol</section>;
+  return <section>{displayProductsList}</section>;
 }

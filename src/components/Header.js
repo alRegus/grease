@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useHttp from "../hooks/useHttp";
 import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 import logo from "../instruments-logo.png";
 import classes from "./Header.module.scss";
@@ -9,6 +10,8 @@ function Header() {
   const [instrumentTypesState, setInstrumentTypesState] = useState([]);
 
   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
 
   const instrumentTypes = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
@@ -42,7 +45,7 @@ function Header() {
       onClick={categoryRouteHandler}
       key={category}
     >
-      {category}
+      <Link to="category">{category}</Link>
     </div>
   )); //тут поменял li чтобы уьрать ошибку div, надо продумать структуру получше тут
 
@@ -63,14 +66,16 @@ function Header() {
   };
 
   const displayInstrumentsTypes = instrumentTypesState.map((type) => (
-    <li key={type.typeName} onClick={typeHandler}>
-      {type.typeName
-        .split("-")
-        .map((word) => {
-          return word.charAt(0).toUpperCase() + word.substring(1);
-        })
-        .join(" ")}
-    </li>
+    <Link to="products-list">
+      <li key={type.typeName} onClick={typeHandler}>
+        {type.typeName
+          .split("-")
+          .map((word) => {
+            return word.charAt(0).toUpperCase() + word.substring(1);
+          })
+          .join(" ")}
+      </li>
+    </Link>
   )); //тут ошибка li
 
   const brandHandler = (e) => {
@@ -89,9 +94,11 @@ function Header() {
   };
 
   const displayInstrumentsBrands = instrumentBrands.map((brand) => (
-    <div key={brand.brandName} onClick={brandHandler}>
-      <img src={brand.brandImgUrl} alt={brand.brandName} />
-    </div>
+    <Link to="products-list">
+      <div key={brand.brandName} onClick={brandHandler}>
+        <img src={brand.brandImgUrl} alt={brand.brandName} />
+      </div>
+    </Link>
   ));
 
   const usedHandler = () => {
@@ -122,11 +129,32 @@ function Header() {
     });
   };
 
+  const searchHandler = (e) => {
+    e.preventDefault();
+    const searchValue = e.target[0].value;
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: searchValue,
+        categories: "",
+        type: "",
+        used: false,
+        deals: false,
+        brand: "",
+      },
+    });
+
+    navigate("products-list");
+  };
+
   return (
     <header className={classes["header"]}>
-      <div className={classes["logo-container"]}>
-        <img src={logo} alt="logo" />
-      </div>
+      <Link to="/">
+        <div className={classes["logo-container"]}>
+          <img src={logo} alt="logo" />
+        </div>
+      </Link>
       <nav>
         <ul>
           <li className={classes["products-show"]}>
@@ -149,15 +177,21 @@ function Header() {
               </div>
             </div>
           </li>
-          <li onClick={usedHandler}>Used</li>
-          <li onClick={dealsHandler}>Deals</li>
+          <li onClick={usedHandler}>
+            <Link to="products-list">Used</Link>
+          </li>
+          <li onClick={dealsHandler}>
+            <Link to="products-list">Deals</Link>
+          </li>
         </ul>
       </nav>
       <div className={classes["search-container"]}>
-        <input type="text" placeholder="Search" />
-        <button>
-          <i className="fas fa-search"></i>
-        </button>
+        <form onSubmit={searchHandler}>
+          <input type="text" placeholder="Search" />
+          <button type="submit">
+            <i className="fas fa-search"></i>
+          </button>
+        </form>
       </div>
       <div className={classes["auth-cart-container"]}>
         <div className={classes["auth-container"]}>
