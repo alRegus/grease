@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./MainPopularCategories.module.scss";
-import useHttp from "../hooks/useHttp";
+import useHttp from "../../hooks/useHttp";
 
 export default function MainPopularCategories() {
   const instrumentTypes = useHttp(

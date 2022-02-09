@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "nuka-carousel";
-import useHttp from "../hooks/useHttp";
+import useHttp from "../../hooks/useHttp";
 
 import classes from "./MainFeaturedBrands.module.scss";
 

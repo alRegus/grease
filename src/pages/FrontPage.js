@@ -1,9 +1,9 @@
 import React from "react";
 
-import MainSlider from "../components/MainSlider";
-import MainPopularCategories from "../components/MainPopularCategories";
-import MainFeaturedBrands from "../components/MainFeaturedBrands";
-import MainDeals from "../components/MainDeals";
+import MainSlider from "../components/front-page/MainSlider";
+import MainPopularCategories from "../components/front-page/MainPopularCategories";
+import MainFeaturedBrands from "../components/front-page/MainFeaturedBrands";
+import MainDeals from "../components/front-page/MainDeals";
 
 export default function FrontPage() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import useHttp from "../hooks/useHttp";
+import useHttp from "../../hooks/useHttp";
 
 import classes from "./MainDeals.module.scss";
 
