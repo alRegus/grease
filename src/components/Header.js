@@ -46,8 +46,24 @@ function Header() {
     </div>
   )); //тут поменял li чтобы уьрать ошибку div, надо продумать структуру получше тут
 
+  const typeHandler = (e) => {
+    const typeValue = e.target.textContent;
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: typeValue,
+        used: false,
+        deals: false,
+        brand: "",
+      },
+    });
+  };
+
   const displayInstrumentsTypes = instrumentTypesState.map((type) => (
-    <li key={type.typeName}>
+    <li key={type.typeName} onClick={typeHandler}>
       {type.typeName
         .split("-")
         .map((word) => {

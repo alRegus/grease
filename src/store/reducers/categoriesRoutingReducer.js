@@ -6,7 +6,7 @@ export default function categoriesRoutingReducer(state = initialState, action) {
   switch (action.type) {
     case "GET_CATEGORY_ROUTE":
       return {
-        ...state,
+        /* ...state, */
         route: action.payload,
       };
     default:
