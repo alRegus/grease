@@ -43,95 +43,118 @@
   "brands": [
     {
       "brandName": "Fender",
-      "brandImgUrl": "https://i.ibb.co/Xt87SqJ/FENDER-1.png"
+      "brandImgUrl": "https://i.ibb.co/Xt87SqJ/FENDER-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Squier",
-      "brandImgUrl": "https://i.ibb.co/wdKGqmc/SQUIER-1.png"
+      "brandImgUrl": "https://i.ibb.co/wdKGqmc/SQUIER-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Ibanez",
-      "brandImgUrl": "https://i.ibb.co/kmqh0pw/IBANEZ-1.png"
+      "brandImgUrl": "https://i.ibb.co/kmqh0pw/IBANEZ-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Jackson",
-      "brandImgUrl": "https://i.ibb.co/dcQC7sd/JACKSO-1.png"
+      "brandImgUrl": "https://i.ibb.co/dcQC7sd/JACKSO-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "D`Angelico",
-      "brandImgUrl": "https://i.ibb.co/rm0LV4r/D-ANGE-1.png"
+      "brandImgUrl": "https://i.ibb.co/rm0LV4r/D-ANGE-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Godin",
-      "brandImgUrl": "https://i.ibb.co/jVxZKfv/GODIN-1.png"
+      "brandImgUrl": "https://i.ibb.co/jVxZKfv/GODIN-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Gretsch",
-      "brandImgUrl": "https://i.ibb.co/tzp4QKV/GRETSC-1.png"
+      "brandImgUrl": "https://i.ibb.co/tzp4QKV/GRETSC-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Washburn",
-      "brandImgUrl": "https://i.ibb.co/n14THxM/WASHBU-1.png"
+      "brandImgUrl": "https://i.ibb.co/n14THxM/WASHBU-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Kremola",
-      "brandImgUrl": "https://i.ibb.co/zSqvRcY/KREMOL-1.png"
+      "brandImgUrl": "https://i.ibb.co/zSqvRcY/KREMOL-1.png",
+      "categoryAssociation": ["guitars"]
     },
     {
       "brandName": "Sawtooth",
-      "brandImgUrl": "https://i.ibb.co/ZGG112X/SAWTOO-1.jpg"
+      "brandImgUrl": "https://i.ibb.co/ZGG112X/SAWTOO-1.jpg",
+      "categoryAssociation": ["drums"]
     },
     {
       "brandName": "Crush",
-      "brandImgUrl": "https://i.ibb.co/L9Tzzbr/CRUSH-1.png"
+      "brandImgUrl": "https://i.ibb.co/L9Tzzbr/CRUSH-1.png",
+      "categoryAssociation": ["drums"]
     },
     {
       "brandName": "Tama",
-      "brandImgUrl": "https://i.ibb.co/PM7PRY6/TAMA-L-1.png"
+      "brandImgUrl": "https://i.ibb.co/PM7PRY6/TAMA-L-1.png",
+      "categoryAssociation": ["drums"]
     },
     {
       "brandName": "Roland",
-      "brandImgUrl": "https://i.ibb.co/6mrk95B/ROLAND-1.png"
+      "brandImgUrl": "https://i.ibb.co/6mrk95B/ROLAND-1.png",
+      "categoryAssociation": ["drums", "pianos"]
     },
     {
       "brandName": "Zildjian",
-      "brandImgUrl": "https://i.ibb.co/GPZqsL7/ZILDJI-1.png"
+      "brandImgUrl": "https://i.ibb.co/GPZqsL7/ZILDJI-1.png",
+      "categoryAssociation": ["drums"]
     },
     {
       "brandName": "Sabian",
-      "brandImgUrl": "https://i.ibb.co/cNkmhxR/SABIAN-1.png"
+      "brandImgUrl": "https://i.ibb.co/cNkmhxR/SABIAN-1.png",
+      "categoryAssociation": ["drums"]
     },
     {
       "brandName": "Alesis",
-      "brandImgUrl": "https://i.ibb.co/v1PCDRs/ALESIS-1.png"
+      "brandImgUrl": "https://i.ibb.co/v1PCDRs/ALESIS-1.png",
+      "categoryAssociation": ["drums"]
     },
     {
       "brandName": "Korg",
-      "brandImgUrl": "https://i.ibb.co/zXZkGB3/KORG-L-1.png"
+      "brandImgUrl": "https://i.ibb.co/zXZkGB3/KORG-L-1.png",
+      "categoryAssociation": ["pianos"]
     },
     {
       "brandName": "Yamaha",
-      "brandImgUrl": "https://i.ibb.co/87DVLDb/YAMAHA-1.png"
+      "brandImgUrl": "https://i.ibb.co/87DVLDb/YAMAHA-1.png",
+      "categoryAssociation": ["pianos"]
     },
     {
       "brandName": "Medeli",
-      "brandImgUrl": "https://i.ibb.co/4SDQk48/MEDELI-1.png"
+      "brandImgUrl": "https://i.ibb.co/4SDQk48/MEDELI-1.png",
+      "categoryAssociation": ["pianos"]
     },
     {
       "brandName": "Casio",
-      "brandImgUrl": "https://i.ibb.co/bHDG8cG/CASIO-1.png"
+      "brandImgUrl": "https://i.ibb.co/bHDG8cG/CASIO-1.png",
+      "categoryAssociation": ["guitars", "pianos"]
     },
     {
       "brandName": "Nord",
-      "brandImgUrl": "https://i.ibb.co/nLwt8D9/NORD-L-1.png"
+      "brandImgUrl": "https://i.ibb.co/nLwt8D9/NORD-L-1.png",
+      "categoryAssociation": ["pianos"]
     },
     {
       "brandName": "Vox",
-      "brandImgUrl": "https://i.ibb.co/rwhLdXg/Vox-Logo.png"
+      "brandImgUrl": "https://i.ibb.co/rwhLdXg/Vox-Logo.png",
+      "categoryAssociation": ["pianos"]
     },
     {
       "brandName": "Studiologic",
-      "brandImgUrl": "https://i.ibb.co/DfL97Td/STUDIO-1.png"
+      "brandImgUrl": "https://i.ibb.co/DfL97Td/STUDIO-1.png",
+      "categoryAssociation": ["pianos"]
     }
   ],
   "allProducts": [

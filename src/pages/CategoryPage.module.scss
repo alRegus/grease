@@ -1,0 +1,61 @@
+section {
+  .categories {
+    h1 {
+      font-size: 6rem;
+      color: #14213d;
+      text-align: left;
+      font-weight: 300;
+      background-color: #fff;
+    }
+    margin-bottom: 50px;
+    max-width: 1400px;
+    h2 {
+      margin: 20px 0;
+    }
+    &-list {
+      display: flex;
+    }
+    div {
+      cursor: pointer;
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .brands {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    h2 {
+      margin: 20px 0;
+    }
+    cursor: pointer;
+    max-width: 1400px;
+    img {
+      width: 300px;
+      height: 150px;
+    }
+  }
+
+  .description {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 1400px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    h2 {
+      margin-bottom: 5px;
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #666666;
+    }
+    p {
+      font-size: 1rem;
+      color: #666666;
+    }
+  }
+}
