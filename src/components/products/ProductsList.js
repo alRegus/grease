@@ -10,7 +10,6 @@ export default function ProductsList() {
   );
 
   const filterParams = useSelector((state) => state.filter);
-  console.log(filterParams);
 
   const filteredProducts = allProducts.filter((prod) => {
     return (

@@ -73,11 +73,54 @@ function Header() {
     </li>
   )); //тут ошибка li
 
+  const brandHandler = (e) => {
+    const brandValue = e.target.alt;
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: "",
+        used: false,
+        deals: false,
+        brand: brandValue,
+      },
+    });
+  };
+
   const displayInstrumentsBrands = instrumentBrands.map((brand) => (
-    <div key={brand.brandName}>
+    <div key={brand.brandName} onClick={brandHandler}>
       <img src={brand.brandImgUrl} alt={brand.brandName} />
     </div>
   ));
+
+  const usedHandler = () => {
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: "",
+        used: true,
+        deals: false,
+        brand: "",
+      },
+    });
+  };
+
+  const dealsHandler = () => {
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: "",
+        used: false,
+        deals: true,
+        brand: "",
+      },
+    });
+  };
 
   return (
     <header className={classes["header"]}>
@@ -106,8 +149,8 @@ function Header() {
               </div>
             </div>
           </li>
-          <li>Used</li>
-          <li>Deals</li>
+          <li onClick={usedHandler}>Used</li>
+          <li onClick={dealsHandler}>Deals</li>
         </ul>
       </nav>
       <div className={classes["search-container"]}>
