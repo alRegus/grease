@@ -7,11 +7,11 @@ import MainDeals from "../components/front-page/MainDeals";
 
 export default function FrontPage() {
   return (
-    <>
+    <main>
       <MainSlider />
       <MainPopularCategories />
       <MainFeaturedBrands />
       <MainDeals />
-    </>
+    </main>
   );
 }

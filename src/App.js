@@ -5,6 +5,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import FrontPage from "./pages/FrontPage";
 import CategoryPage from "./pages/CategoryPage";
+import Help from "./components/help/Help";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="category" element={<CategoryPage />} />
       </Routes>
       <About />
+      <Help />
       <Footer />
     </>
   );

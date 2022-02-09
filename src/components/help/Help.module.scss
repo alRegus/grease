@@ -1,0 +1,39 @@
+.help-section {
+  padding: 48px 0;
+  background-color: #fff;
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      gap: 50px;
+      padding: 0 20px;
+      li {
+        list-style-type: none;
+        a {
+          display: flex;
+          flex-direction: column;
+          color: #14213d;
+          text-decoration: none;
+          i {
+            font-size: 4rem;
+            border: solid 1px #00264c5c;
+            padding: 20px;
+            border-radius: 32%;
+          }
+          div {
+            padding-top: 25px;
+            h2 {
+              text-align: center;
+              padding-bottom: 10px;
+              font-weight: 400;
+            }
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
