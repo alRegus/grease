@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import useHttp from "../hooks/useHttp";
+import { useDispatch } from "react-redux";
 
 import logo from "../instruments-logo.png";
 import classes from "./Header.module.scss";
 
 function Header() {
   const [instrumentTypesState, setInstrumentTypesState] = useState([]);
+
+  const dispatch = useDispatch();
 
   const instrumentTypes = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
@@ -27,8 +30,18 @@ function Header() {
     setInstrumentTypesState(filteredTypes);
   };
 
+  const categoryRouteHandler = (e) => {
+    const category = e.target.textContent.toLowerCase();
+
+    dispatch({ type: "GET_CATEGORY_ROUTE", payload: category });
+  };
+
   const displayInstrumentsCategories = instrumentCategories.map((category) => (
-    <div onMouseOver={getTypesHandler} key={category}>
+    <div
+      onMouseOver={getTypesHandler}
+      onClick={categoryRouteHandler}
+      key={category}
+    >
       {category}
     </div>
   )); //тут поменял li чтобы уьрать ошибку div, надо продумать структуру получше тут

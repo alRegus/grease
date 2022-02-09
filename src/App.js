@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import Header from "./components/Header";
 import About from "./components/About";
@@ -7,6 +8,9 @@ import FrontPage from "./pages/FrontPage";
 import CategoryPage from "./pages/CategoryPage";
 
 function App() {
+  const categoryRoute = useSelector((state) => state.categoryRoute.route);
+  console.log(categoryRoute);
+
   return (
     <>
       <Header />
