@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Carousel from "nuka-carousel";
 import useHttp from "../hooks/useHttp";
 
 import classes from "./CategoryPage.module.scss";
+import SliderComponent from "../components/SliderComponent";
 import CategoriesDescriptionDrums from "../components/categories/CategoriesDescriptionDrums";
 import CategoriesDescriptionGuitars from "../components/categories/CategoriesDescriptionGuitars";
 import CategoriesDescriptionPianos from "../components/categories/CategoriesDescriptionPianos";
@@ -85,29 +85,9 @@ export default function CategoryPage() {
       </div>
       <div className={classes["brands"]}>
         <h2>Featured Brands</h2>
-        <Carousel
-          slidesToShow={4}
-          slidesToScroll={4}
-          wrapAround={true}
-          defaultControlsConfig={{
-            nextButtonText: ">",
-            nextButtonStyle: {
-              fontSize: "1.2rem",
-              fontWeight: "700",
-            },
-            prevButtonStyle: {
-              fontSize: "1.2rem",
-              fontWeight: "700",
-            },
-            prevButtonText: "<",
-            pagingDotsStyle: {
-              fill: "gray",
-              marginLeft: "5px",
-            },
-          }}
-        >
-          {displayCategoryBrands}
-        </Carousel>
+        <div>
+          <SliderComponent displaySlider={displayCategoryBrands} />
+        </div>
       </div>
       <div className={classes["description"]}>
         {categoryRoute === "guitars" && <CategoriesDescriptionGuitars />}
