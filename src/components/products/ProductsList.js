@@ -4,12 +4,15 @@ import ProductsListItem from "./ProductsListItem";
 import { useSelector } from "react-redux";
 import useHttp from "../../hooks/useHttp";
 
+import classes from "./ProductsList.module.scss";
+
 export default function ProductsList() {
   const allProducts = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts.json"
   );
 
   const sortParam = useSelector((state) => state.sort.sortBy);
+  const viewParam = useSelector((state) => state.view.view);
   const filterParams = useSelector((state) => state.filter);
 
   const filteredProducts = allProducts.filter((prod) => {
@@ -46,5 +49,11 @@ export default function ProductsList() {
       imgURL={instrument.productImgUrl}
     />
   ));
-  return <section>{displayProductsList}</section>;
+
+  const gridView = viewParam === "grid" ? "grid" : "";
+  return (
+    <section className={(classes["products-list"], classes[`${gridView}`])}>
+      {displayProductsList}
+    </section>
+  );
 }

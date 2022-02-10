@@ -12,7 +12,7 @@ export default function ProductsListItem({
   const rating = (totalVotesValue / votesQuantity).toFixed(2);
 
   return (
-    <div className={classes["product-list-item"]}>
+    <article className={classes["product-list-item"]}>
       <div className={classes["product-list-item-img-container"]}>
         <img src={imgURL} alt={name} />
       </div>
@@ -28,6 +28,6 @@ export default function ProductsListItem({
         <strong>{price} $</strong>
         <button>Add to Cart</button>
       </div>
-    </div>
+    </article>
   );
 }
