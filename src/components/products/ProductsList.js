@@ -9,6 +9,9 @@ export default function ProductsList() {
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts.json"
   );
 
+  const sortParam = useSelector((state) => state.sort.sortBy);
+  console.log(sortParam);
+
   const filterParams = useSelector((state) => state.filter);
 
   const filteredProducts = allProducts.filter((prod) => {
@@ -23,6 +26,21 @@ export default function ProductsList() {
       (prod.deals === filterParams.deals || filterParams.deals === false)
     );
   });
+
+  /* const sortedProducts = filteredProducts.sort((a, b) => a.price - b.price); */
+  /* (totalVotesValue / votesQuantity).toFixed(2) */
+  /* console.log(sortedProducts); */
+
+  if (sortParam === "low-to-high")
+    filteredProducts.sort((a, b) => a.price - b.price);
+  if (sortParam === "high-to-low")
+    filteredProducts.sort((a, b) => b.price - a.price);
+  if (sortParam === "popular-result")
+    filteredProducts.sort((a, b) => b.votes - a.votes);
+  if (sortParam === "highest-rated")
+    filteredProducts.sort(
+      (a, b) => b.totalVotesValue / b.votes - a.totalVotesValue / a.votes
+    );
 
   const displayProductsList = filteredProducts.map((instrument) => (
     <ProductsListItem

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
 import ProductsList from "../components/products/ProductsList";
+import ProductsSort from "../components/products/ProductsSort";
 
 export default function ProductsListPage() {
   const filterParams = useSelector((state) => state.filter);
-  console.log(filterParams);
 
   let filteredParamValues = [];
   for (const [key, value] of Object.entries(filterParams)) {
@@ -23,11 +23,10 @@ export default function ProductsListPage() {
       filteredParamValues.push("Used Musical Instruments");
   }
 
-  console.log(filteredParamValues);
-
   return (
     <section>
       <h1>{filteredParamValues.flat().join(" ")}</h1>
+      <ProductsSort />
       <ProductsList />
     </section>
   );
