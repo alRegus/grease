@@ -8,18 +8,22 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3em;
-    .cat-container {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      cursor: pointer;
-      img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-      span {
-        margin-top: 5px;
+    a {
+      text-decoration: none;
+      color: #000;
+      .cat-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        cursor: pointer;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+        span {
+          margin-top: 5px;
+        }
       }
     }
   }

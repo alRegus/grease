@@ -1,14 +1,20 @@
 .deals {
   margin-top: 30px;
   max-width: 1400px;
-  h2 {
-    margin-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: #000;
+    h2 {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
   }
   .deals-list {
     display: flex;
     gap: 1em;
 
     .deals-container {
+      cursor: pointer;
       background-color: #fff;
       padding: 0 10px;
       display: flex;

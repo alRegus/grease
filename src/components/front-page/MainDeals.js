@@ -1,5 +1,7 @@
 import React from "react";
 import useHttp from "../../hooks/useHttp";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import classes from "./MainDeals.module.scss";
 
@@ -7,6 +9,7 @@ const MainDeals = function () {
   const instrumentDeals = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts.json"
   );
+  const dispatch = useDispatch();
 
   const deals = instrumentDeals.filter((instrument) => instrument.deals);
   const filteredToSixDeals = deals.filter((_, i) => i <= 5);
@@ -18,9 +21,25 @@ const MainDeals = function () {
     </div>
   ));
 
+  const dealsHandler = () => {
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: "",
+        used: false,
+        deals: true,
+        brand: "",
+      },
+    });
+  };
+
   return (
     <section className={classes["deals"]}>
-      <h2>Explore Deals &#8594;</h2>
+      <Link to="/products-list">
+        <h2 onClick={dealsHandler}>Explore Deals &#8594;</h2>
+      </Link>
       <div className={classes["deals-list"]}>{displayDeals}</div>
     </section>
   );
