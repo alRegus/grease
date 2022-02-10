@@ -1,0 +1,30 @@
+.products-sort {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(235, 231, 231);
+  padding: 20px 0;
+
+  &-select {
+    justify-self: start;
+    label {
+      margin-right: 10px;
+      color: #585c5f;
+    }
+    select {
+      border-radius: 5px;
+      padding: 7px 5px;
+      font-size: 1rem;
+    }
+  }
+
+  &-view {
+    i {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px;
+      margin-right: 5px;
+      font-size: 1.5rem;
+    }
+  }
+}

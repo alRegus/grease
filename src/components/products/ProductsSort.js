@@ -1,19 +1,42 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import useHttp from "../../hooks/useHttp";
+
+import classes from "./ProductsSort.module.scss";
 
 export default function ProductsSort() {
+  const productsQuantity = useHttp(
+    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/productsArrayLength.json"
+  );
+
+  const viewParam = useSelector((state) => state.view.view);
   const dispatch = useDispatch();
+
   const sortHandler = (e) => {
     const sortValue = e.target.value;
 
     dispatch({ type: "GET_SORT_BY", payload: sortValue });
   };
 
-  return (
-    <div>
-      <div className="products-sort">
-        <label htmlFor="sort-select">Sort By:</label>
+  const toggleViewHandler = (e) => {
+    const elemClass = e.target.className;
+    let viewToggle = "";
+    if (elemClass === "fa-solid fa-list") {
+      viewToggle = "list";
+    }
+    if (elemClass === "fa-solid fa-grid-2") {
+      viewToggle = "grid";
+    }
+    dispatch({ type: "VIEW_TOGGLE", payload: viewToggle });
+  };
 
+  const listBgc = viewParam === "list" ? { backgroundColor: "red" } : {};
+  const gridBgc = viewParam === "grid" ? { backgroundColor: "red" } : {};
+
+  return (
+    <section className={classes["products-sort"]}>
+      <div className={classes["products-sort-select"]}>
+        <label htmlFor="sort-select">Sort By:</label>
         <select name="instruments" id="sort-select" onChange={sortHandler}>
           <option value="popular-result">Popular Results</option>
           <option value="low-to-high">Price: Low to High</option>
@@ -21,6 +44,23 @@ export default function ProductsSort() {
           <option value="highest-rated">Highest Rated</option>
         </select>
       </div>
-    </div>
+
+      <div className={classes["products-sort-quantity"]}>
+        <p>lol of {productsQuantity} items</p>
+      </div>
+
+      <div className={classes["products-sort-view"]}>
+        <i
+          style={listBgc}
+          onClick={toggleViewHandler}
+          className="fa-solid fa-list"
+        ></i>
+        <i
+          style={gridBgc}
+          onClick={toggleViewHandler}
+          className="fa-solid fa-grid-2"
+        ></i>
+      </div>
+    </section>
   );
 }
