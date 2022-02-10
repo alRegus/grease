@@ -45,7 +45,7 @@ function Header() {
       onClick={categoryRouteHandler}
       key={category}
     >
-      <Link to="category">{category}</Link>
+      <Link to="/category">{category}</Link>
     </div>
   )); //тут поменял li чтобы уьрать ошибку div, надо продумать структуру получше тут
 
@@ -66,7 +66,7 @@ function Header() {
   };
 
   const displayInstrumentsTypes = instrumentTypesState.map((type) => (
-    <Link to="products-list">
+    <Link to="/products-list">
       <li key={type.typeName} onClick={typeHandler}>
         {type.typeName
           .split("-")
@@ -94,7 +94,7 @@ function Header() {
   };
 
   const displayInstrumentsBrands = instrumentBrands.map((brand) => (
-    <Link to="products-list">
+    <Link to="/products-list">
       <div key={brand.brandName} onClick={brandHandler}>
         <img src={brand.brandImgUrl} alt={brand.brandName} />
       </div>
@@ -178,10 +178,10 @@ function Header() {
             </div>
           </li>
           <li onClick={usedHandler}>
-            <Link to="products-list">Used</Link>
+            <Link to="/products-list">Used</Link>
           </li>
           <li onClick={dealsHandler}>
-            <Link to="products-list">Deals</Link>
+            <Link to="/products-list">Deals</Link>
           </li>
         </ul>
       </nav>

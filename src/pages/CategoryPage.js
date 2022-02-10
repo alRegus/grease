@@ -1,6 +1,7 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import useHttp from "../hooks/useHttp";
+import { Link } from "react-router-dom";
 
 import classes from "./CategoryPage.module.scss";
 import SliderComponent from "../components/SliderComponent";
@@ -10,6 +11,8 @@ import CategoriesDescriptionPianos from "../components/categories/CategoriesDesc
 
 export default function CategoryPage() {
   const categoryRoute = useSelector((state) => state.categoryRoute.route);
+
+  const dispatch = useDispatch();
 
   const instrumentTypes = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
@@ -23,30 +26,67 @@ export default function CategoryPage() {
     type.typeName.includes(categoryRoute)
   );
 
+  const typesHandler = (e) => {
+    const typeValue = e.target.closest("div").lastElementChild.textContent;
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: typeValue,
+        used: false,
+        deals: false,
+        brand: "",
+      },
+    });
+  };
+
   const displayCategoryTypes = categoryInstrumentTypes.map((type) => (
-    <div>
-      <img
-        src={`https://i.ibb.co/${type.typeImgCode}/${type.typeName}.jpg`}
-        alt={type.typeName}
-      />
-      <p>
-        {type.typeName
-          .split("-")
-          .map((word) => {
-            return word.charAt(0).toUpperCase() + word.substring(1);
-          })
-          .join(" ")}
-      </p>
-    </div>
+    <Link to="/products-list">
+      <div onClick={typesHandler}>
+        <img
+          src={`https://i.ibb.co/${type.typeImgCode}/${type.typeName}.jpg`}
+          alt={type.typeName}
+        />
+        <p>
+          {type.typeName
+            .split("-")
+            .map((word) => {
+              return word.charAt(0).toUpperCase() + word.substring(1);
+            })
+            .join(" ")}
+        </p>
+      </div>
+    </Link>
   ));
 
   const categoryBrands = instrumentBrands.filter((brand) =>
     brand.categoryAssociation.includes(categoryRoute)
   );
 
+  const brandHandler = (e) => {
+    const brandValue = e.target.alt;
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories:
+          categoryRoute.charAt(0).toUpperCase() + categoryRoute.substring(1),
+        type: "",
+        used: false,
+        deals: false,
+        brand: brandValue,
+      },
+    });
+  };
+
   const displayCategoryBrands = categoryBrands.map((brand) => (
-    <div>
-      <img src={brand.brandImgUrl} alt={brand.brandName} />
+    <div onClick={brandHandler}>
+      <Link to="/products-list">
+        <img src={brand.brandImgUrl} alt={brand.brandName} />
+      </Link>
     </div>
   ));
 
