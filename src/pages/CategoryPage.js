@@ -43,7 +43,7 @@ export default function CategoryPage() {
   };
 
   const displayCategoryTypes = categoryInstrumentTypes.map((type) => (
-    <Link to="/products-list">
+    <Link to="/products-list" key={type.typeName}>
       <div onClick={typesHandler}>
         <img
           src={`https://i.ibb.co/${type.typeImgCode}/${type.typeName}.jpg`}
@@ -72,18 +72,18 @@ export default function CategoryPage() {
       type: "SET_FILTER_PARAMS",
       payload: {
         name: "",
+        brand: brandValue,
         categories:
           categoryRoute.charAt(0).toUpperCase() + categoryRoute.substring(1),
         type: "",
         used: false,
         deals: false,
-        brand: brandValue,
       },
     });
   };
 
   const displayCategoryBrands = categoryBrands.map((brand) => (
-    <div onClick={brandHandler}>
+    <div onClick={brandHandler} key={brand.id}>
       <Link to="/products-list">
         <img src={brand.brandImgUrl} alt={brand.brandName} />
       </Link>

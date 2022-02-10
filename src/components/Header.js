@@ -66,8 +66,8 @@ function Header() {
   };
 
   const displayInstrumentsTypes = instrumentTypesState.map((type) => (
-    <Link to="/products-list">
-      <li key={type.typeName} onClick={typeHandler}>
+    <Link to="/products-list" key={type.typeName}>
+      <li onClick={typeHandler}>
         {type.typeName
           .split("-")
           .map((word) => {
@@ -94,8 +94,8 @@ function Header() {
   };
 
   const displayInstrumentsBrands = instrumentBrands.map((brand) => (
-    <Link to="/products-list">
-      <div key={brand.brandName} onClick={brandHandler}>
+    <Link to="/products-list" key={brand.brandName}>
+      <div onClick={brandHandler}>
         <img src={brand.brandImgUrl} alt={brand.brandName} />
       </div>
     </Link>

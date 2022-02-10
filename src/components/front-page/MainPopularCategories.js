@@ -28,12 +28,8 @@ export default function MainPopularCategories() {
   };
 
   const displayInstrumentTypes = instrumentTypes.map((type) => (
-    <Link to="/products-list">
-      <div
-        className={classes["cat-container"]}
-        key={type.typeName}
-        onClick={typesHandler}
-      >
+    <Link to="/products-list" key={type.typeName}>
+      <div className={classes["cat-container"]} onClick={typesHandler}>
         <img
           src={`https://i.ibb.co/${type.typeImgCode}/${type.typeName}.jpg`}
           alt={type.typeName}
