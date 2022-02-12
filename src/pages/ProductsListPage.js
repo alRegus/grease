@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 
 import ProductsList from "../components/products/ProductsList";
 import ProductsSort from "../components/products/ProductsSort";
+import ProductsFilterMenu from "../components/products/ProductsFilterMenu";
 
 export default function ProductsListPage() {
   const filterParams = useSelector((state) => state.filter);
@@ -26,6 +27,7 @@ export default function ProductsListPage() {
   return (
     <section>
       <h1>{filteredParamValues.flat().join(" ")}</h1>
+      <ProductsFilterMenu />
       <ProductsSort />
       <ProductsList />
     </section>
