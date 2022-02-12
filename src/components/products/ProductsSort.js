@@ -30,8 +30,8 @@ export default function ProductsSort() {
     dispatch({ type: "VIEW_TOGGLE", payload: viewToggle });
   };
 
-  const listBgc = viewParam === "list" ? { backgroundColor: "red" } : {};
-  const gridBgc = viewParam === "grid" ? { backgroundColor: "red" } : {};
+  const listBgc = viewParam === "list" ? { backgroundColor: "#686868" } : {};
+  const gridBgc = viewParam === "grid" ? { backgroundColor: "#686868" } : {};
 
   return (
     <section className={classes["products-sort"]}>

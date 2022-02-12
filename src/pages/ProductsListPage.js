@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
+import classes from "./ProductsListPage.module.scss";
 import ProductsList from "../components/products/ProductsList";
 import ProductsSort from "../components/products/ProductsSort";
 import ProductsFilterMenu from "../components/products/ProductsFilterMenu";
@@ -25,11 +26,17 @@ export default function ProductsListPage() {
   }
 
   return (
-    <section>
+    <section className={classes["products"]}>
       <h1>{filteredParamValues.flat().join(" ")}</h1>
-      <ProductsFilterMenu />
-      <ProductsSort />
-      <ProductsList />
+      <div className={classes["products-page"]}>
+        <div className={classes["products-page-filter"]}>
+          <ProductsFilterMenu />
+        </div>
+        <div className={classes["products-page-list"]}>
+          <ProductsSort />
+          <ProductsList />
+        </div>
+      </div>
     </section>
   );
 }
