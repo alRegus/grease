@@ -4,13 +4,14 @@ const initialState = {
   type: "",
   used: false,
   deals: false,
-  brand: "",
+  brand: [],
 };
 
 export default function filteredProductsReducer(state = initialState, action) {
   switch (action.type) {
     case "SET_FILTER_PARAMS":
       return {
+        ...state,
         ...action.payload,
       };
     default:

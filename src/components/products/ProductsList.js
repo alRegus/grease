@@ -21,7 +21,10 @@ export default function ProductsList() {
     return (
       (prod.categories === filterParams.categories ||
         filterParams.categories === "") &&
-      (prod.brand === filterParams.brand || filterParams.brand === "") &&
+      (prod.brand
+        .split(" ")
+        .some((brand) => filterParams.brand.includes(brand)) ||
+        filterParams.brand === "") &&
       (prod.type === filterParams.type || filterParams.type === "") &&
       (prod.name.toLowerCase().includes(filterParams.name.toLowerCase()) ||
         filterParams.name === "") &&

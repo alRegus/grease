@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import useHttp from "../../hooks/useHttp";
 
 import classes from "./ProductsFilterMenu.module.scss";
@@ -13,6 +14,11 @@ export default function ProductsFilterMenu() {
   const categories = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
   );
+
+  const prevBrandArr = useSelector((state) => state.filter.brand);
+  console.log(prevBrandArr);
+  /* const [brand, setBrand] = useState([]); */
+  const dispatch = useDispatch();
 
   const displayBrands = brands.map((brand) => (
     <li key={brand.brandName} data-brand={brand.brandName}>
@@ -47,8 +53,12 @@ export default function ProductsFilterMenu() {
   const [categoryClassToggle, setCategoryClassToggle] = useState(false);
 
   const brandHandler = (e) => {
-    console.log(e.target.getAttribute("data-brand"));
-    console.log(Object.keys(e.target.dataset)[0]);
+    const dataAttr = e.target.getAttribute("data-brand");
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: { brand: Array.from(new Set([...prevBrandArr, dataAttr])) },
+    });
   }; //!!
 
   return (
