@@ -67,6 +67,7 @@
           background-color: #fff;
           padding: 1rem;
           top: 70px;
+          width: fit-content;
           &-categories {
             padding-right: 1rem;
             width: 10rem;
@@ -105,6 +106,7 @@
 
   .brands-details-nav {
     opacity: 0;
+    width: fit-content;
     visibility: hidden;
     position: absolute;
     top: 70px;

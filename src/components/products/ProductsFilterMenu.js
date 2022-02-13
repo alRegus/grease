@@ -7,10 +7,37 @@ export default function ProductsFilterMenu() {
   const brands = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
   );
+  const types = useHttp(
+    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
+  );
+  const categories = useHttp(
+    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
+  );
 
   const displayBrands = brands.map((brand) => (
-    <li key={brand.brandName}>{brand.brandName}</li>
+    <li key={brand.brandName} data-brand={brand.brandName}>
+      {brand.brandName}
+    </li>
   ));
+
+  const displayTypes = types.map((type) => (
+    <li key={type.typeName} data-type={type.TypeName}>
+      {type.typeName
+        .split("-")
+        .map((word) => {
+          return word.charAt(0).toUpperCase() + word.substring(1);
+        })
+        .join(" ")}
+    </li>
+  ));
+
+  const displayCategories = categories.map((category) => (
+    <li key={category} data-category={category}>
+      {category}
+    </li>
+  ));
+
+  //!!если что удалить дата атрибуты
 
   const [brandClassToggle, setBrandClassToggle] = useState(false);
   const [priceClassToggle, setPriceClassToggle] = useState(false);
@@ -19,85 +46,124 @@ export default function ProductsFilterMenu() {
   const [typeClassToggle, setTypeClassToggle] = useState(false);
   const [categoryClassToggle, setCategoryClassToggle] = useState(false);
 
+  const brandHandler = (e) => {
+    console.log(e.target.getAttribute("data-brand"));
+    console.log(Object.keys(e.target.dataset)[0]);
+  }; //!!
+
   return (
     <div className={classes["products-filter"]}>
       <section
-        onClick={() => {
-          setBrandClassToggle((prevState) => !prevState);
+        onClick={(e) => {
+          setBrandClassToggle((prevState) => {
+            if (e.target.tagName === "LI") {
+              return prevState;
+            } else {
+              return !prevState;
+            }
+          });
         }}
       >
-        Brand
-        <div className={classes[`${brandClassToggle ? "" : "none"}`]}>
+        <p>Brand</p>
+        <div
+          className={classes[`${brandClassToggle ? "" : "none"}`]}
+          onClick={brandHandler}
+        >
           <ul>{displayBrands}</ul>
         </div>
       </section>
       <section
-        onClick={() => {
-          setPriceClassToggle((prevState) => !prevState);
+        onClick={(e) => {
+          setPriceClassToggle((prevState) => {
+            if (e.target.tagName === "LI") {
+              return prevState;
+            } else {
+              return !prevState;
+            }
+          });
         }}
       >
-        Price Range{" "}
+        <p>Price Range</p>
         <div className={classes[`${priceClassToggle ? "" : "none"}`]}>
           <ul>
-            <li>Less then 100$</li>
-            <li>More then 100$</li>
+            <li>Under 50$</li>
+            <li>50$ to 100$</li>
+            <li>100$ to 250$</li>
+            <li>250$ to 500$</li>
+            <li>Over 500$</li>
           </ul>
         </div>
       </section>
       <section
-        onClick={() => {
-          setRatingClassToggle((prevState) => !prevState);
+        onClick={(e) => {
+          setRatingClassToggle((prevState) => {
+            if (e.target.tagName === "LI") {
+              return prevState;
+            } else {
+              return !prevState;
+            }
+          });
         }}
       >
-        Rating & Reviews
+        <p>Rating & Reviews</p>
         <div className={classes[`${ratingClassToggle ? "" : "none"}`]}>
           <ul>
-            <li>lo1</li>
-            <li>LOL2</li>
-            <li>LOLLZZ3</li>
+            <li>Less than 3</li>
+            <li>3 and more</li>
+            <li>4 and more</li>
           </ul>
         </div>
       </section>
       <section
-        onClick={() => {
-          setDiscountClassToggle((prevState) => !prevState);
+        onClick={(e) => {
+          setDiscountClassToggle((prevState) => {
+            if (e.target.tagName === "LI") {
+              return prevState;
+            } else {
+              return !prevState;
+            }
+          });
         }}
       >
-        Discount
+        <p>Discount</p>
         <div className={classes[`${discountClassToggle ? "" : "none"}`]}>
           <ul>
-            <li>lo1</li>
-            <li>LOL2</li>
-            <li>LOLLZZ3</li>
+            <li>10% Off or More </li>
+            <li>25% Off or More </li>
+            <li>50% Off or More </li>
           </ul>
         </div>
       </section>
       <section
-        onClick={() => {
-          setTypeClassToggle((prevState) => !prevState);
+        onClick={(e) => {
+          setTypeClassToggle((prevState) => {
+            if (e.target.tagName === "LI") {
+              return prevState;
+            } else {
+              return !prevState;
+            }
+          });
         }}
       >
-        Type
+        <p>Type</p>
         <div className={classes[`${typeClassToggle ? "" : "none"}`]}>
-          <ul>
-            <li>lo1</li>
-            <li>LOL2</li>
-            <li>LOLLZZ3</li>
-          </ul>
+          <ul>{displayTypes}</ul>
         </div>
       </section>
       <section
-        onClick={() => {
-          setCategoryClassToggle((prevState) => !prevState);
+        onClick={(e) => {
+          setCategoryClassToggle((prevState) => {
+            if (e.target.tagName === "LI") {
+              return prevState;
+            } else {
+              return !prevState;
+            }
+          });
         }}
       >
-        Category
+        <p>Category</p>
         <div className={classes[`${categoryClassToggle ? "" : "none"}`]}>
-          <ul>
-            <li>lo1</li>
-            <li>LOL2</li>
-            <li>LOLLZZ3</li>
-          </ul>
+          <ul>{displayCategories}</ul>
         </div>
       </section>
     </div>
