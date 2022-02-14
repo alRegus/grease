@@ -70,6 +70,16 @@ export default function ProductsFilterMenu() {
     });
   };
 
+  const ratingHandler = (e) => {
+    const ratingAttr = e.target.getAttribute("data-rating");
+    const ratingArr = ratingAttr.split("-").map((str) => +str);
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: { rating: ratingArr },
+    });
+  };
+
   return (
     <div className={classes["products-filter"]}>
       <section
@@ -128,11 +138,14 @@ export default function ProductsFilterMenu() {
         }}
       >
         <p>Rating & Reviews</p>
-        <div className={classes[`${ratingClassToggle ? "" : "none"}`]}>
+        <div
+          onClick={ratingHandler}
+          className={classes[`${ratingClassToggle ? "" : "none"}`]}
+        >
           <ul>
-            <li>Less than 3</li>
-            <li>3 and more</li>
-            <li>4 and more</li>
+            <li data-rating="1-2">Less than 3</li>
+            <li data-rating="3-5">3 and more</li>
+            <li data-rating="4-5">4 and more</li>
           </ul>
         </div>
       </section>

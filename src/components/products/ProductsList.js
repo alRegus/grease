@@ -35,7 +35,11 @@ export default function ProductsList() {
       (prod.price >= filterParams.priceRange[0] ||
         filterParams.priceRange.length === 0) &&
       (prod.price <= filterParams.priceRange[1] ||
-        filterParams.priceRange.length === 0)
+        filterParams.priceRange.length === 0) &&
+      (prod.totalVotesValue / prod.votes >= filterParams.rating[0] ||
+        filterParams.rating.length === 0) &&
+      (prod.totalVotesValue / prod.votes <= filterParams.rating[1] ||
+        filterParams.rating.length === 0)
     );
   });
 
