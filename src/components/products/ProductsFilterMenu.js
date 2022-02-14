@@ -106,6 +106,15 @@ export default function ProductsFilterMenu() {
     });
   };
 
+  const categoryHandler = (e) => {
+    const categoryAttr = e.target.getAttribute("data-category");
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: { categories: categoryAttr },
+    });
+  };
+
   return (
     <div className={classes["products-filter"]}>
       <section
@@ -229,7 +238,10 @@ export default function ProductsFilterMenu() {
         }}
       >
         <p>Category</p>
-        <div className={classes[`${categoryClassToggle ? "" : "none"}`]}>
+        <div
+          onClick={categoryHandler}
+          className={classes[`${categoryClassToggle ? "" : "none"}`]}
+        >
           <ul>{displayCategories}</ul>
         </div>
       </section>

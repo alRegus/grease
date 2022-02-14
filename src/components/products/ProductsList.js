@@ -16,7 +16,6 @@ export default function ProductsList() {
   const filterParams = useSelector((state) => state.filter);
 
   console.log(filterParams);
-  console.log("Electric Guitars".split("  "));
 
   //!!console.log("lol".split(" ").some((el) => ["lol", "tol"].includes(el))) логика для массива с множеством элементов фильтрации;
 
