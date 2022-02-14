@@ -115,6 +115,23 @@ export default function ProductsFilterMenu() {
     });
   };
 
+  const clearHandler = () => {
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: {
+        name: "",
+        categories: "",
+        type: [],
+        used: false,
+        deals: false,
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
+      },
+    });
+  };
+
   return (
     <div className={classes["products-filter"]}>
       <section
@@ -245,7 +262,9 @@ export default function ProductsFilterMenu() {
           <ul>{displayCategories}</ul>
         </div>
       </section>
-      <button className={classes["clear-all"]}>Clear All</button>
+      <button onClick={clearHandler} className={classes["clear-all"]}>
+        Clear All
+      </button>
     </div>
   );
 }

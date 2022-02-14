@@ -5,7 +5,7 @@ const initialState = {
   used: false,
   deals: false,
   brand: [],
-  priceRange: [], //!!не забыть добавить в остальных диспатчах
+  priceRange: [],
   rating: [],
   discount: [],
 };
