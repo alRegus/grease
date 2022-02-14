@@ -11,12 +11,18 @@ export default function ProductReviews() {
     `https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts/${id}/reviews.json`
   );
 
-  const reviews = ProductReviews.map((review) => (
-    <div key={review.user}>
-      <div>{review.user}</div>
-      <div>{review.commentBody}</div>
-      <div>{review.date}</div>
-    </div>
-  ));
+  const reviews = ProductReviews ? (
+    ProductReviews.map((review) => (
+      <div key={review.user}>
+        <div className={classes["product-reviews-user"]}>{review.user}</div>
+        <div className={classes["product-reviews-comment"]}>
+          {review.commentBody}
+        </div>
+        <div className={classes["product-reviews-date"]}>{review.date}</div>
+      </div>
+    ))
+  ) : (
+    <div className={classes["product-reviews-empty"]}>No Reviews Yet</div>
+  );
   return <section className={classes["product-reviews"]}>{reviews}</section>;
 }
