@@ -257,6 +257,7 @@
       "price": 349.99,
       "used": false,
       "deals": true,
+      "discount": 12,
       "votes": 3,
       "totalVotesValue": 7,
       "reviews": []
@@ -303,6 +304,7 @@
       "price": 599.99,
       "used": false,
       "deals": true,
+      "discount": 5,
       "votes": 122,
       "totalVotesValue": 400,
       "reviews": [
@@ -381,6 +383,7 @@
       "price": 229.99,
       "used": false,
       "deals": true,
+      "discount": 30,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": [
@@ -412,6 +415,7 @@
       "price": 179.0,
       "used": false,
       "deals": true,
+      "discount": 70,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": [
@@ -438,6 +442,7 @@
       "price": 349.0,
       "used": false,
       "deals": true,
+      "discount": 20,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -453,6 +458,7 @@
       "price": 1799.0,
       "used": false,
       "deals": true,
+      "discount": 15,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -468,6 +474,7 @@
       "price": 1749.99,
       "used": false,
       "deals": true,
+      "discount": 20,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -483,6 +490,7 @@
       "price": 299.99,
       "used": false,
       "deals": true,
+      "discount": 60,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -498,6 +506,7 @@
       "price": 189.99,
       "used": false,
       "deals": true,
+      "discount": 7,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": [
@@ -519,6 +528,7 @@
       "price": 199.99,
       "used": false,
       "deals": true,
+      "discount": 25,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -534,6 +544,7 @@
       "price": 899.98,
       "used": false,
       "deals": true,
+      "discount": 30,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -549,6 +560,7 @@
       "price": 1099.99,
       "used": false,
       "deals": true,
+      "discount": 50,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": [
@@ -570,6 +582,7 @@
       "price": 699.99,
       "used": false,
       "deals": true,
+      "discount": 15,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": [
@@ -596,6 +609,7 @@
       "price": 1249.99,
       "used": false,
       "deals": true,
+      "discount": 15,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -611,6 +625,7 @@
       "price": 849.95,
       "used": false,
       "deals": true,
+      "discount": 50,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": [
@@ -632,6 +647,7 @@
       "price": 364.99,
       "used": false,
       "deals": true,
+      "discount": 10,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -647,6 +663,7 @@
       "price": 98.99,
       "used": false,
       "deals": true,
+      "discount": 5,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []
@@ -662,6 +679,7 @@
       "price": 359.95,
       "used": false,
       "deals": true,
+      "discount": 7,
       "votes": 22,
       "totalVotesValue": 80,
       "reviews": []

@@ -16,8 +16,7 @@ export default function ProductsFilterMenu() {
   );
 
   const prevBrandArr = useSelector((state) => state.filter.brand);
-  console.log(prevBrandArr);
-  /* const [brand, setBrand] = useState([]); */
+
   const dispatch = useDispatch();
 
   const displayBrands = brands.map((brand) => (
@@ -61,6 +60,16 @@ export default function ProductsFilterMenu() {
     });
   }; //!!
 
+  const priceHandler = (e) => {
+    const priceAttr = e.target.getAttribute("data-price");
+    const priceArr = priceAttr.split("-").map((str) => +str);
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: { priceRange: priceArr },
+    });
+  };
+
   return (
     <div className={classes["products-filter"]}>
       <section
@@ -94,13 +103,16 @@ export default function ProductsFilterMenu() {
         }}
       >
         <p>Price Range</p>
-        <div className={classes[`${priceClassToggle ? "" : "none"}`]}>
+        <div
+          className={classes[`${priceClassToggle ? "" : "none"}`]}
+          onClick={priceHandler}
+        >
           <ul>
-            <li>Under 50$</li>
-            <li>50$ to 100$</li>
-            <li>100$ to 250$</li>
-            <li>250$ to 500$</li>
-            <li>Over 500$</li>
+            <li data-price="1-49">Under 50$</li>
+            <li data-price="50-100">50$ to 100$</li>
+            <li data-price="100-250">100$ to 250$</li>
+            <li data-price="250-500">250$ to 500$</li>
+            <li data-price="501-9999999999">Over 500$</li>
           </ul>
         </div>
       </section>
@@ -176,6 +188,7 @@ export default function ProductsFilterMenu() {
           <ul>{displayCategories}</ul>
         </div>
       </section>
+      <button className={classes["clear-all"]}>Clear All</button>
     </div>
   );
 }

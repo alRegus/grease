@@ -5,6 +5,7 @@ const initialState = {
   used: false,
   deals: false,
   brand: [],
+  priceRange: [], //!!не забыть добавить в остальных диспатчах
 };
 
 export default function filteredProductsReducer(state = initialState, action) {

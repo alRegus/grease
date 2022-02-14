@@ -15,6 +15,8 @@ export default function ProductsList() {
   const viewParam = useSelector((state) => state.view.view);
   const filterParams = useSelector((state) => state.filter);
 
+  console.log(filterParams);
+
   //!!console.log("lol".split(" ").some((el) => ["lol", "tol"].includes(el))) логика для массива с множеством элементов фильтрации;
 
   const filteredProducts = allProducts.filter((prod) => {
@@ -24,12 +26,16 @@ export default function ProductsList() {
       (prod.brand
         .split(" ")
         .some((brand) => filterParams.brand.includes(brand)) ||
-        filterParams.brand === "") &&
+        filterParams.brand.length === 0) &&
       (prod.type === filterParams.type || filterParams.type === "") &&
       (prod.name.toLowerCase().includes(filterParams.name.toLowerCase()) ||
         filterParams.name === "") &&
       (prod.used === filterParams.used || filterParams.used === false) &&
-      (prod.deals === filterParams.deals || filterParams.deals === false)
+      (prod.deals === filterParams.deals || filterParams.deals === false) &&
+      (prod.price >= filterParams.priceRange[0] ||
+        filterParams.priceRange.length === 0) &&
+      (prod.price <= filterParams.priceRange[1] ||
+        filterParams.priceRange.length === 0)
     );
   });
 
