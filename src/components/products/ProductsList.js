@@ -15,8 +15,6 @@ export default function ProductsList() {
   const viewParam = useSelector((state) => state.view.view);
   const filterParams = useSelector((state) => state.filter);
 
-  console.log(filterParams);
-
   //!!console.log("lol".split(" ").some((el) => ["lol", "tol"].includes(el))) логика для массива с множеством элементов фильтрации;
 
   const filteredProducts = allProducts.filter((prod) => {
@@ -67,6 +65,7 @@ export default function ProductsList() {
       votesQuantity={instrument.votes}
       key={instrument.id}
       imgURL={instrument.productImgUrl}
+      prodId={instrument.id}
     />
   ));
 
