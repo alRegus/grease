@@ -7,6 +7,7 @@ const initialState = {
   brand: [],
   priceRange: [], //!!не забыть добавить в остальных диспатчах
   rating: [],
+  discount: [],
 };
 
 export default function filteredProductsReducer(state = initialState, action) {

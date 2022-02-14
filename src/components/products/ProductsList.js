@@ -39,7 +39,11 @@ export default function ProductsList() {
       (prod.totalVotesValue / prod.votes >= filterParams.rating[0] ||
         filterParams.rating.length === 0) &&
       (prod.totalVotesValue / prod.votes <= filterParams.rating[1] ||
-        filterParams.rating.length === 0)
+        filterParams.rating.length === 0) &&
+      (prod.discount >= filterParams.discount[0] ||
+        filterParams.discount.length === 0) &&
+      (prod.discount <= filterParams.discount[1] ||
+        filterParams.discount.length === 0)
     );
   });
 

@@ -80,6 +80,16 @@ export default function ProductsFilterMenu() {
     });
   };
 
+  const discountHandler = (e) => {
+    const discountAttr = e.target.getAttribute("data-discount");
+    const discountArr = discountAttr.split("-").map((str) => +str);
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: { discount: discountArr },
+    });
+  };
+
   return (
     <div className={classes["products-filter"]}>
       <section
@@ -161,11 +171,14 @@ export default function ProductsFilterMenu() {
         }}
       >
         <p>Discount</p>
-        <div className={classes[`${discountClassToggle ? "" : "none"}`]}>
+        <div
+          onClick={discountHandler}
+          className={classes[`${discountClassToggle ? "" : "none"}`]}
+        >
           <ul>
-            <li>10% Off or More </li>
-            <li>25% Off or More </li>
-            <li>50% Off or More </li>
+            <li data-discount="10-100">10% Off or More </li>
+            <li data-discount="25-100">25% Off or More </li>
+            <li data-discount="50-100">50% Off or More </li>
           </ul>
         </div>
       </section>
