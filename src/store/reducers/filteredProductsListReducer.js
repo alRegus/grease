@@ -1,7 +1,7 @@
 const initialState = {
   name: "",
   categories: "",
-  type: "",
+  type: [],
   used: false,
   deals: false,
   brand: [],

@@ -16,6 +16,7 @@ export default function ProductsList() {
   const filterParams = useSelector((state) => state.filter);
 
   console.log(filterParams);
+  console.log("Electric Guitars".split("  "));
 
   //!!console.log("lol".split(" ").some((el) => ["lol", "tol"].includes(el))) логика для массива с множеством элементов фильтрации;
 
@@ -27,7 +28,8 @@ export default function ProductsList() {
         .split(" ")
         .some((brand) => filterParams.brand.includes(brand)) ||
         filterParams.brand.length === 0) &&
-      (prod.type === filterParams.type || filterParams.type === "") &&
+      (prod.type.split("  ").some((type) => filterParams.type.includes(type)) ||
+        filterParams.type.length === 0) &&
       (prod.name.toLowerCase().includes(filterParams.name.toLowerCase()) ||
         filterParams.name === "") &&
       (prod.used === filterParams.used || filterParams.used === false) &&

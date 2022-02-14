@@ -16,6 +16,7 @@ export default function ProductsFilterMenu() {
   );
 
   const prevBrandArr = useSelector((state) => state.filter.brand);
+  const prevTypeArr = useSelector((state) => state.filter.type);
 
   const dispatch = useDispatch();
 
@@ -26,7 +27,7 @@ export default function ProductsFilterMenu() {
   ));
 
   const displayTypes = types.map((type) => (
-    <li key={type.typeName} data-type={type.TypeName}>
+    <li key={type.typeName} data-type={type.typeName}>
       {type.typeName
         .split("-")
         .map((word) => {
@@ -58,7 +59,7 @@ export default function ProductsFilterMenu() {
       type: "SET_FILTER_PARAMS",
       payload: { brand: Array.from(new Set([...prevBrandArr, dataAttr])) },
     });
-  }; //!!
+  };
 
   const priceHandler = (e) => {
     const priceAttr = e.target.getAttribute("data-price");
@@ -87,6 +88,21 @@ export default function ProductsFilterMenu() {
     dispatch({
       type: "SET_FILTER_PARAMS",
       payload: { discount: discountArr },
+    });
+  };
+
+  const typeHandler = (e) => {
+    const typeAttr = e.target
+      .getAttribute("data-type")
+      .split("-")
+      .map((word) => {
+        return word.charAt(0).toUpperCase() + word.substring(1);
+      })
+      .join(" ");
+
+    dispatch({
+      type: "SET_FILTER_PARAMS",
+      payload: { type: Array.from(new Set([...prevTypeArr, typeAttr])) },
     });
   };
 
@@ -194,7 +210,10 @@ export default function ProductsFilterMenu() {
         }}
       >
         <p>Type</p>
-        <div className={classes[`${typeClassToggle ? "" : "none"}`]}>
+        <div
+          onClick={typeHandler}
+          className={classes[`${typeClassToggle ? "" : "none"}`]}
+        >
           <ul>{displayTypes}</ul>
         </div>
       </section>
