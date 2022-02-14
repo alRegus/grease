@@ -15,10 +15,12 @@ const MainDeals = function () {
   const filteredToSixDeals = deals.filter((_, i) => i <= 5);
 
   const displayDeals = filteredToSixDeals.map((instrument) => (
-    <div className={classes["deals-container"]} key={instrument.id}>
-      <img src={instrument.productImgUrl} alt={instrument.name} />
-      <span>{instrument.name}</span>
-    </div>
+    <Link to={`/product/${instrument.id}`} key={instrument.id}>
+      <div className={classes["deals-container"]}>
+        <img src={instrument.productImgUrl} alt={instrument.name} />
+        <span>{instrument.name}</span>
+      </div>
+    </Link>
   ));
 
   const dealsHandler = () => {

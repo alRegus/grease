@@ -13,7 +13,7 @@ export default function ProductReviews() {
 
   const reviews = ProductReviews ? (
     ProductReviews.map((review) => (
-      <div key={review.user}>
+      <div key={review.date}>
         <div className={classes["product-reviews-user"]}>{review.user}</div>
         <div className={classes["product-reviews-comment"]}>
           {review.commentBody}

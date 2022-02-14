@@ -27,6 +27,9 @@
       span {
         font-size: 0.9rem;
         text-align: center;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
