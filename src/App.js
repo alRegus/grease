@@ -8,6 +8,7 @@ import FrontPage from "./pages/FrontPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductsListPage from "./pages/ProductsListPage";
 import ProductPage from "./pages/ProductPage";
+import FooterLinksPage from "./pages/FooterLinksPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="product" element={<ProductPage />}>
           <Route path=":id" element={<ProductPage />} />
         </Route>
+        <Route path="help" element={<FooterLinksPage />} />
       </Routes>
       <About />
       <Help />
