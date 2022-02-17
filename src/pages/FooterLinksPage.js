@@ -14,3 +14,5 @@ export default function FooterLinksPage() {
     </section>
   );
 }
+
+//!!исправить grid
