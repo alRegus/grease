@@ -1,0 +1,14 @@
+.login-register {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-card {
+    height: 580px;
+    width: 1024px;
+    display: flex;
+    border: 1px solid red;
+    border-radius: 20px;
+    box-shadow: 5px 16px 24px #00000080;
+  }
+}

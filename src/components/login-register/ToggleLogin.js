@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+import classes from "./ToggleLogin.module.scss";
+
 export default function ToggleLogin() {
   const signIn = useSelector((state) => state.signIn.signIn);
   const dispatch = useDispatch();
@@ -14,7 +16,7 @@ export default function ToggleLogin() {
   };
 
   return (
-    <section>
+    <section className={classes["toggle-login"]}>
       <h1>Grease</h1>
       {signIn && (
         <div>
