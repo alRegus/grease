@@ -5,8 +5,8 @@ import classes from "./LetUsHelpYou.module.scss";
 export default function LetUsHelpYou() {
   return (
     <section className={classes["help-letUs"]}>
+      <h2>Quick Links</h2>
       <div className={classes["help-letUs-quick"]}>
-        <h2>Quick Links</h2>
         <div>
           <ul>
             <h2>Products Info</h2>
