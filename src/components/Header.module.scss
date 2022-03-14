@@ -158,52 +158,56 @@
     align-items: center;
     position: relative;
     gap: 1.5rem;
-
-    .auth-container {
-      display: flex;
-      gap: 10px;
+    a {
       height: 100%;
-      padding: 0 10px;
-      &:hover > .account-options-container {
-        opacity: 1;
-        visibility: visible;
-      }
-      &:hover {
-        background-color: #fff;
-      }
-      i {
-        align-self: center;
-        font-size: 1.5rem;
-      }
-      div {
-        align-self: center;
-        span {
-          font-size: 0.7rem;
-          cursor: pointer;
+      text-decoration: none;
+      color: #000;
+      .auth-container {
+        display: flex;
+        gap: 10px;
+        height: 100%;
+        padding: 0 10px;
+        &:hover > .account-options-container {
+          opacity: 1;
+          visibility: visible;
         }
-        p {
-          font-size: 0.9rem;
-          font-weight: bold;
-          cursor: pointer;
+        &:hover {
+          background-color: #fff;
         }
-      }
-      .account-options-container {
-        opacity: 0;
-        visibility: hidden;
-        padding: 22px 33px 22px 17px;
-        position: absolute;
-        z-index: 9;
-        background-color: #fff;
-        top: 70px;
-        left: 0;
-        ul {
-          list-style-type: none;
-          li {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
+        i {
+          align-self: center;
+          font-size: 1.5rem;
+        }
+        div {
+          align-self: center;
+          span {
+            font-size: 0.7rem;
             cursor: pointer;
-            &:hover {
-              text-decoration: underline;
+          }
+          p {
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+        .account-options-container {
+          opacity: 0;
+          visibility: hidden;
+          padding: 22px 33px 22px 17px;
+          position: absolute;
+          z-index: 9;
+          background-color: #fff;
+          top: 70px;
+          left: 0;
+          ul {
+            list-style-type: none;
+            li {
+              margin-bottom: 0.5rem;
+              font-size: 0.9rem;
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }

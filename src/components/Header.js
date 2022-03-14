@@ -194,20 +194,26 @@ function Header() {
         </form>
       </div>
       <div className={classes["auth-cart-container"]}>
-        <div className={classes["auth-container"]}>
-          <i className="far fa-user-circle"></i>
-          <div>
-            <span>Sign In</span>
-            <p>My Account</p>
+        <Link to="/login">
+          <div className={classes["auth-container"]}>
+            <i className="far fa-user-circle"></i>
+            <div>
+              <span>Sign In</span>
+              <p>My Account</p>
+            </div>
+            <div className={classes["account-options-container"]}>
+              <ul>
+                <li>
+                  <Link to="/login">My Account</Link>
+                </li>
+                <li>Order Status</li>
+                <li>
+                  <Link to="/help">Help</Link>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className={classes["account-options-container"]}>
-            <ul>
-              <li>My Account</li>
-              <li>Order Status</li>
-              <li>Help</li>
-            </ul>
-          </div>
-        </div>
+        </Link>
         <div className={classes["cart-container"]}>
           <i className="fas fa-shopping-cart"></i>
         </div>
