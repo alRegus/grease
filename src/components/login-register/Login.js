@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./Login.module.scss";
+import classes from "./LoginRegister.module.scss";
 
 export default function Login() {
   return (
