@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./Footer.module.scss";
 
@@ -9,9 +10,15 @@ export default function Footer() {
         <div className={classes["help-feedback-container-services"]}>
           <h3>How Can We Help?</h3>
           <ul>
-            <li>Customer Service</li>
-            <li>Track Your Order</li>
-            <li>Shipping & Delivery</li>
+            <li>
+              <Link to="/help/customerService">Customer Service</Link>
+            </li>
+            <li>
+              <Link to="/help/trackOrder">Track Your Order</Link>
+            </li>
+            <li>
+              <Link to="/help/shippingDelivery">Shipping & Delivery</Link>
+            </li>
             <li>In-Store Pickup</li>
             <li>International Orders</li>
             <li>Return Policy</li>

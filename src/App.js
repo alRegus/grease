@@ -21,7 +21,9 @@ function App() {
         <Route path="product" element={<ProductPage />}>
           <Route path=":id" element={<ProductPage />} />
         </Route>
-        <Route path="help" element={<FooterLinksPage />} />
+        <Route path="help" element={<FooterLinksPage />}>
+          <Route path=":type" element={<FooterLinksPage />} />
+        </Route>
       </Routes>
       <About />
       <Help />
