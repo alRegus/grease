@@ -1,12 +1,14 @@
 .help-letUs {
+  width: 100%;
   h2 {
     border-bottom: 2px solid #000;
     margin-bottom: 10px;
   }
   &-quick {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     div {
+      margin: 0;
       ul {
         h2 {
           border-bottom: none;
@@ -22,6 +24,77 @@
             color: #06c;
             font-size: 0.8rem;
           }
+        }
+      }
+    }
+  }
+  &-letUs {
+    h2 {
+      border-bottom: none;
+      margin: 40px 0;
+    }
+    &-questionsHeader {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #000;
+      h2 {
+        border-bottom: none;
+        justify-self: flex-end;
+        margin: 0;
+      }
+      span {
+        margin: 0;
+        a {
+          color: #06c;
+          text-decoration: none;
+        }
+      }
+    }
+    ul {
+      margin-top: 10px;
+      li {
+        &::marker {
+          color: #06c;
+          font-size: 10px;
+        }
+        a {
+          text-decoration: none;
+          color: #06c;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  &-shipping {
+    margin-top: 40px;
+    ul {
+      margin-top: 10px;
+      li {
+        &::marker {
+          color: #06c;
+          font-size: 10px;
+        }
+        a {
+          text-decoration: none;
+          color: #06c;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  &-about {
+    margin-top: 40px;
+    ul {
+      margin-top: 10px;
+      li {
+        &::marker {
+          color: #06c;
+          font-size: 10px;
+        }
+        a {
+          text-decoration: none;
+          color: #06c;
+          font-size: 0.8rem;
         }
       }
     }

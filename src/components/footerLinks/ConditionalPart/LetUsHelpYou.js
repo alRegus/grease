@@ -70,7 +70,7 @@ export default function LetUsHelpYou() {
       </div>
       <div className={classes["help-letUs-letUs"]}>
         <h2>Let Us Help You</h2>
-        <div className={classes['"help-letUs-letUs-questionsHeader']}>
+        <div className={classes["help-letUs-letUs-questionsHeader"]}>
           <h2>Most Frequently Asked Questions</h2>
           <span>
             <a href="#">All FAQs</a>
