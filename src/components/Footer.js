@@ -19,11 +19,11 @@ export default function Footer() {
             <li>
               <Link to="/help/shippingDelivery">Shipping & Delivery</Link>
             </li>
-            <li>In-Store Pickup</li>
-            <li>International Orders</li>
-            <li>Return Policy</li>
-            <li>Contact Us</li>
-            <li>Warranties</li>
+            <Link to="/help/storePickups">In-Store Pickup</Link>
+            <Link to="/help/internationalOrders">International Orders</Link>
+            <Link to="/help/returnPolicy">Return Policy</Link>
+            <Link to="/help/contactUs">Contact Us</Link>
+            <Link to="/help/warranties">Warranties</Link>
           </ul>
         </div>
         <div className={classes["help-feedback-container-shopping-help"]}>

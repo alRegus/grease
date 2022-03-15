@@ -28,6 +28,21 @@ export default function FooterLinksPage() {
     case "shippingDelivery":
       displayResult = <ShippingAndDelivery />;
       break;
+    case "storePickups":
+      displayResult = <StorePickup />;
+      break;
+    case "internationalOrders":
+      displayResult = <InternationalOrders />;
+      break;
+    case "returnPolicy":
+      displayResult = <ReturnPolicy />;
+      break;
+    case "contactUs":
+      displayResult = <ContactUs />;
+      break;
+    case "warranties":
+      displayResult = <Warranties />;
+      break;
     default:
       displayResult = <LetUsHelpYou />;
   }
@@ -35,8 +50,7 @@ export default function FooterLinksPage() {
   return (
     <section className={classes["help"]}>
       <CustomerService />
-      {/* {displayResult} */}
-      <ContactUs />
+      {displayResult}
       <HearFromYou />
     </section>
   );
