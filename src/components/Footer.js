@@ -32,7 +32,6 @@ export default function Footer() {
             <li>Gift Cards</li>
             <li>VIP360</li>
             <li>Rewards</li>
-            <li>Rebate Center</li>
             <li>Grease Edge Credit Card</li>
             <li>Student Discounts</li>
           </ul>

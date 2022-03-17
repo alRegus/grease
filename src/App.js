@@ -9,6 +9,7 @@ import CategoryPage from "./pages/CategoryPage";
 import ProductsListPage from "./pages/ProductsListPage";
 import ProductPage from "./pages/ProductPage";
 import FooterLinksPage from "./pages/FooterLinksPage";
+import ShoppingHelpPage from "./pages/ShoppingHelpPage";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="help" element={<FooterLinksPage />}>
           <Route path=":type" element={<FooterLinksPage />} />
+        </Route>
+        <Route path="nspc" element={<ShoppingHelpPage />}>
+          <Route path=":nspc-type" element={<ShoppingHelpPage />} />
         </Route>
       </Routes>
       <About />
