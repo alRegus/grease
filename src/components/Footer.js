@@ -29,11 +29,21 @@ export default function Footer() {
         <div className={classes["help-feedback-container-shopping-help"]}>
           <h3>Shopping Help</h3>
           <ul>
-            <li>Gift Cards</li>
-            <li>VIP360</li>
-            <li>Rewards</li>
-            <li>Grease Edge Credit Card</li>
-            <li>Student Discounts</li>
+            <li>
+              <Link to="/nspc/giftCards">Gift Cards</Link>
+            </li>
+            <li>
+              <Link to="/nspc/vip360">VIP360</Link>
+            </li>
+            <li>
+              <Link to="/nspc/rewards">Rewards</Link>
+            </li>
+            <li>
+              <Link to="/nspc/edgeCredit">Grease Edge Credit Card</Link>
+            </li>
+            <li>
+              <Link to="/nspc/studentDiscount">Student Discounts</Link>
+            </li>
           </ul>
         </div>
         <div className={classes["help-feedback-container-company-info"]}>

@@ -26,7 +26,7 @@ function App() {
           <Route path=":type" element={<FooterLinksPage />} />
         </Route>
         <Route path="nspc" element={<ShoppingHelpPage />}>
-          <Route path=":nspc-type" element={<ShoppingHelpPage />} />
+          <Route path=":nspcType" element={<ShoppingHelpPage />} />
         </Route>
       </Routes>
       <About />
