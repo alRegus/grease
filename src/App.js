@@ -10,6 +10,7 @@ import ProductsListPage from "./pages/ProductsListPage";
 import ProductPage from "./pages/ProductPage";
 import FooterLinksPage from "./pages/FooterLinksPage";
 import ShoppingHelpPage from "./pages/ShoppingHelpPage";
+import CompanyInfoPage from "./pages/CompanyInfoPage";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="nspc" element={<ShoppingHelpPage />}>
           <Route path=":nspcType" element={<ShoppingHelpPage />} />
+        </Route>
+        <Route path="info" element={<CompanyInfoPage />}>
+          <Route path=":infoType" element={<CompanyInfoPage />} />
         </Route>
       </Routes>
       <About />

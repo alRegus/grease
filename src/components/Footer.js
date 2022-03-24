@@ -49,10 +49,15 @@ export default function Footer() {
         <div className={classes["help-feedback-container-company-info"]}>
           <h3>Company Info</h3>
           <ul>
-            <li>About Us</li>
-            <li>Our History</li>
-            <li>Our Store</li>
-            <li>Careers</li>
+            <li>
+              <Link to="/info/aboutUs">About Us</Link>
+            </li>
+            <li>
+              <Link to="/info/history">Our History</Link>
+            </li>
+            <li>
+              <Link to="/info/store">Our Store</Link>
+            </li>
           </ul>
         </div>
         <div className={classes["help-feedback-container-feedback"]}>
