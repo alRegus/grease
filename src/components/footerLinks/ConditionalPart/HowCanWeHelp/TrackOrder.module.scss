@@ -1,0 +1,97 @@
+.track-order {
+  width: 80%;
+  margin-top: 50px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  &-err {
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+  }
+  &-cont {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 25px;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        label {
+          margin-top: 10px;
+          font-size: 0.8rem;
+          font-weight: bold;
+          margin-inline: 0;
+        }
+        input {
+          width: 100%;
+          padding: 8px 5px;
+          border-radius: 5px;
+          outline: none;
+          border: 1px solid #ccc;
+          font-size: 0.9rem;
+          margin-top: 3px;
+          &:focus {
+            border-color: #06c;
+            box-shadow: 0 0 2px #06c;
+          }
+        }
+      }
+      button {
+        background: linear-gradient(
+          180deg,
+          #fc5d37 0%,
+          #ed5132 49%,
+          #e64525 100%
+        );
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        border: none;
+        padding: 12px;
+        width: 75px;
+        margin: 25px auto;
+        &:active {
+          border: 2px solid #06c;
+          transform: scale(90%);
+        }
+      }
+    }
+  }
+  &-text {
+    p {
+      background-color: #ebe4e4;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        color: #06c;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &-bottom {
+    margin-top: 27px;
+    font-size: 0.9rem;
+    a {
+      text-decoration: none;
+      color: #06c;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

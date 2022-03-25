@@ -47,11 +47,14 @@ export default function FooterLinksPage() {
       displayResult = <LetUsHelpYou />;
   }
 
+  const trackOrder =
+    mainHelpDisplayCondition === "trackOrder" ? "help-track" : "help";
+
   return (
-    <section className={classes["help"]}>
+    <section className={classes[`${trackOrder}`]}>
       <CustomerService />
       {displayResult}
-      <HearFromYou />
+      {mainHelpDisplayCondition !== "trackOrder" && <HearFromYou />}
     </section>
   );
 }
