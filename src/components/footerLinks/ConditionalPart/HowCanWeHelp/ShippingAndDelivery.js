@@ -1,82 +1,90 @@
 import React from "react";
 
+import classes from "./ShippingAndDelivery.module.scss";
+
+//!! НЕ ЗАБЫТЬ СДЕЛАТЬ ССЫЛКИ
+
 export default function ShippingAndDelivery() {
   return (
-    <section>
-      <div>
-        <h2>Shipping & Delivery</h2>
+    <section className={classes["shipping-delivery"]}>
+      <div className={classes["shipping-delivery-links"]}>
+        <h2 id="top">Shipping & Delivery</h2>
         <div>
           <ul>
             <li>
-              <a href="">What do you charge for standard shipping?</a>
+              <a href="#charge">What do you charge for standard shipping?</a>
             </li>
             <li>
-              <a href="">
+              <a href="#order-line">
                 I just placed an order online. When will I receive my
                 merchandise?
               </a>
             </li>
             <li>
-              <a href="">What are your shipping destinations?</a>
+              <a href="#counties">What are your shipping destinations?</a>
             </li>
             <li>
-              <a href="">Will I have to sign for my package?</a>
+              <a href="#sign">Will I have to sign for my package?</a>
             </li>
             <li>
-              <a href="">
+              <a href="#damage-missing">
                 What do I do if there are damaged or missing items upon
                 delivery?
               </a>
             </li>
             <li>
-              <a href="">Do you ship internationally?</a>
+              <a href="#internationally">Do you ship internationally?</a>
             </li>
             <li>
-              <a href="">What countries does Adorama ship to?</a>
+              <a href="#counties">What countries does Adorama ship to?</a>
             </li>
             <li>
-              <a href="">How long will it be before I receive my order?</a>
+              <a href="#receiving">
+                How long will it be before I receive my order?
+              </a>
             </li>
             <li>
-              <a href="">Can I expedite shipping?</a>
+              <a href="#expedite">Can I expedite shipping?</a>
             </li>
             <li>
-              <a href="">
+              <a href="#military">
                 Do you ship to P.O. boxes or military APO/FPO addresses?
               </a>
             </li>
             <li>
-              <a href="">How can I track my order?</a>
+              <a href="#track-order">How can I track my order?</a>
             </li>
             <li>
-              <a href="">What Are the Delivery Requirements?</a>
+              <a href="#requirements">What Are the Delivery Requirements?</a>
             </li>
             <li>
-              <a href="">
+              <a href="#online">
                 How can I buy online and pick up my merchandise in the store?
               </a>
             </li>
             <li>
-              <a href="">Will I get free expedited shipping on my order?</a>
+              <a href="#free-shipping">
+                Will I get free expedited shipping on my order?
+              </a>
             </li>
             <li>
-              <a href="">
+              <a href="#rules">
                 What are the rules for transporting Hazardous Goods?
               </a>
             </li>
             <li>
-              <a href="">Do you offer Free Shipping?</a>
+              <a href="#offer-free">Do you offer Free Shipping?</a>
             </li>
           </ul>
         </div>
       </div>
-      <div>
-        <div>
-          <div>
+      <div className={classes["shipping-delivery-info"]} id="charge">
+        <div className={classes["shipping-delivery-info-segment"]}>
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>What do you charge for standard shipping?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Shipping charges are not included in our pricing. Please place
               your order in the Shopping Cart to view shipping charges.
@@ -87,14 +95,17 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="order-line"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>
               I just placed an order online. When will I receive my merchandise?
             </h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Adorama Camera makes every effort to get your order to you as soon
               as possible. Regular orders for in-stock items placed on business
@@ -143,12 +154,12 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className={classes["shipping-delivery-info-segment"]} id="sign">
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>Will I have to sign for my package?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               A signature is required for most UPS shipments upon receipt. An
               adult must be at the address to receive the package and sign for
@@ -179,14 +190,17 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="damage-missing"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>
               What do I do if there are damaged or missing items upon delivery?
             </h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               <span>Damaged in delivery:</span> If there is damage to the
               package, or if merchandise is missing, please keep the original
@@ -220,12 +234,15 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="internationally"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>Do you ship internationally?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Yes, Adorama ships throughout the U.S., Canada and to over 200
               countries worldwide. International shipments are subject to import
@@ -250,12 +267,15 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="counties"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>What countries does Adorama ship to?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Adorama ships throughout the U.S., Canada and to over 200
               countries worldwide. Please see the listing here.
@@ -269,12 +289,15 @@ export default function ShippingAndDelivery() {
             </select>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="receiving"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>How long will it be before I receive my order?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Orders are generally delivered based on the shipping timeframe
               selected during checkout.
@@ -285,12 +308,15 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="expedite"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>Can I expedite shipping?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               There are generally options that allow for expedited shipping that
               are displayed at checkout, at an additional cost, subject to terms
@@ -319,12 +345,15 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="military"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>Do you ship to P.O. boxes or military APO/FPO addresses?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Shipments can be sent to both P.O. boxes and military APO/FPO
               addresses. Note: Please allow 6-8 weeks for orders shipped to
@@ -332,12 +361,15 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="track-order"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>How can I track my order?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Once an order has shipped out, we will send you an e-mail with the
               tracking number. Just click on the link and it will take you to
@@ -361,12 +393,15 @@ export default function ShippingAndDelivery() {
             </ul>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="requirements"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>What Are the Delivery Requirements?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               A signature is required for most UPS shipments upon receipt.
               Someone must be at the address to receive the package and sign for
@@ -376,14 +411,14 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className={classes["shipping-delivery-info-segment"]} id="online">
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>
               How can I buy online and pick up my merchandise in the store?
             </h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Adorama offers the convenience of in-store pickup at our retail
               store located at 42 West 18th Street, New York City, NY 10011.{" "}
@@ -392,7 +427,7 @@ export default function ShippingAndDelivery() {
             <p>
               <span>Simple steps:</span>
             </p>
-            <ul>
+            <ul className={classes["shipping-delivery-info-segment-body-ul"]}>
               <li>
                 Choose the in-store pickup option located at the top of the
                 checkout page.
@@ -402,29 +437,32 @@ export default function ShippingAndDelivery() {
                 for in-store pickup"
               </li>
               <li>
-                ou can pick up the order during store hours{" "}
+                You can pick up the order during store hours{" "}
                 <a href="">See Here</a>.
               </li>
               <li>
-                <p>
-                  To pick up your order, please bring your Credit Card which
-                  will be charged at time of pickup.
-                </p>
+                To pick up your order, please bring your Credit Card which will
+                be charged at time of pickup.
+              </li>
+              <div>
                 <p>
                   Note: Only the person who placed the order and is listed on
                   the purchasing credit card may pick it up.
                 </p>
-              </li>
+                <p>Call us at 1-212-741-0063 with any questions.</p>
+              </div>
             </ul>
-            <p>Call us at 1-212-741-0063 with any questions.</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="free-shipping"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>Will I get free expedited shipping on my order?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               Most items will be eligible for free, expedited (1-3 Day) shipping
               when ordered through our web site. Some Items are excluded. You'll
@@ -436,7 +474,7 @@ export default function ShippingAndDelivery() {
               Orders must be greater than $49 to qualify, and must be shipping
               within the *contiguous 48 U.S. states*. PO box addresses as well
               as shipping to Hawaii, Alaska or Puerto Rico are not included in
-              this offer.{" "}
+              this offer.
               <span>
                 This offer is a benefit of Adorama VIP and valid on all
                 qualifying VIP customer purchases
@@ -451,12 +489,12 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className={classes["shipping-delivery-info-segment"]} id="rules">
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>What are the rules for transporting Hazardous Goods?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
               This item cannot be shipped outside the USA and must ship via UPS
               Ground. Pursuant to terms as defined{" "}
@@ -467,12 +505,15 @@ export default function ShippingAndDelivery() {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div
+          className={classes["shipping-delivery-info-segment"]}
+          id="offer-free"
+        >
+          <div className={classes["shipping-delivery-info-segment-heading"]}>
             <h2>Do you offer Free Shipping?</h2>
-            <a href="">Return to Top</a>
+            <a href="#top">Return to Top</a>
           </div>
-          <div>
+          <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>Free Shipping (All types)</p>
             <ul>
               <li>
