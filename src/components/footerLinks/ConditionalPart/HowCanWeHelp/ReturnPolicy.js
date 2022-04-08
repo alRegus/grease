@@ -1,29 +1,33 @@
 import React from "react";
 
+import classes from "./ReturnPolicy.module.scss";
+
 export default function ReturnPolicy() {
   return (
-    <section>
-      <h2>Return Policy</h2>
-      <p>
-        We believe that in order to have the best possible online shopping
-        experience, our customers should be 100% satisfied with their purchase.
-        So, if you're not happy with your purchase for any reason, just go
-        through our easy self-service return process.
-      </p>
-      <p>
-        All returns must meet our guidelines, please review our full Return
-        Policy carefully.
-      </p>
-      <div>
-        <h3>How To Return</h3>
+    <section className={classes["return-policy"]}>
+      <div className={classes["return-policy-return"]}>
+        <h1>Return Policy</h1>
+        <p>
+          We believe that in order to have the best possible online shopping
+          experience, our customers should be 100% satisfied with their
+          purchase. So, if you're not happy with your purchase for any reason,
+          just go through our easy self-service return process.
+        </p>
+        <p>
+          All returns must meet our guidelines, please review our full Return
+          Policy carefully.
+        </p>
+      </div>
+      <div className={classes["return-policy-how"]}>
+        <h2>How To Return</h2>
         <img src="https://i.ibb.co/6wmqZVQ/pps-return.jpg" alt="pack" />
-        <p>Registered Users</p>
+        <h3>Registered Users</h3>
         <p>
           Simply go to <a href="">your orders page</a> and start a self-return
           process
         </p>
         <img src="https://i.ibb.co/R0s8dRm/selfreturn.jpg" alt="selfreturn" />
-        <p>Non–Registered Users</p>
+        <h3>Non–Registered Users</h3>
         <ul>
           <li>
             <a href="">Create an account</a> - (use the same email associated
@@ -35,14 +39,16 @@ export default function ReturnPolicy() {
           For a manual return, fill out <a href="">RM Form</a> and enclose it
           with your package and return to:
         </p>
-        <p>Order Processing</p>
-        <p>7 Slater Drive</p>
-        <p>Elizabeth, NJ 07206</p>
-        <p>
+        <div className={classes["return-policy-how-address"]}>
+          <p>Order Processing</p>
+          <p>7 Slater Drive</p>
+          <p>Elizabeth, NJ 07206</p>
+        </div>
+        <b>
           International returns, please mark the item as "VENDOR RETURN" to
           avoid duties and customs.
-        </p>
-        <p>Refund Policy</p>
+        </b>
+        <h3>Refund Policy</h3>
         <p>
           Please allow 3-5 business days from when we receive your return to
           process your refund. You will be notified by email once your return is
@@ -51,8 +57,8 @@ export default function ReturnPolicy() {
           above mentioned requirements.
         </p>
       </div>
-      <div>
-        <h3>30 Day Return Policy.</h3>
+      <div className={classes["return-policy-policy"]}>
+        <h2>30 Day Return Policy.</h2>
         <p>
           For the first 30 days after your purchase you may return merchandise
           for a full money back refund, excluding any shipping charges.
@@ -77,8 +83,8 @@ export default function ReturnPolicy() {
           will only cover return shipping if we are notified prior to return.
         </p>
       </div>
-      <div>
-        <h3>Non returnable items</h3>
+      <div className={classes["return-policy-returnable"]}>
+        <h2>Non returnable items</h2>
         <p>Following items cannot be returned once opened</p>
         <p>
           Software, Film, Paper, DVDs, Bulbs, flash tubes, Batteries, Ink
@@ -89,7 +95,7 @@ export default function ReturnPolicy() {
         <p>
           Underwater equipment cannot be returned once it has been used in water
         </p>
-        <p>Oversize Return Policy</p>
+        <h3>Oversize Return Policy</h3>
         <p>
           Oversize items that are required to ship via truck, are returnable
           pending they meet our standard return requirements. Return shipping
