@@ -1,10 +1,12 @@
 import React from "react";
 
+import classes from "./InternationalOrders.module.scss";
+
 export default function InternationalOrders() {
   return (
-    <section>
-      <h2>International Orders</h2>
-      <a href="">Do you ship internationally?</a>
+    <section className={classes["international-shipping"]}>
+      <h1>International Orders</h1>
+      <h2>Do you ship internationally?</h2>
       <p>
         Yes, Adorama ships throughout the U.S., Canada and to over 200 countries
         worldwide. International shipments are subject to import fees, duties,
@@ -20,7 +22,7 @@ export default function InternationalOrders() {
           cannot ship any order that includes backordered items. We will hold
           the order until all items are in stock and available to ship. Please
           contact us
-        </a>
+        </a>{" "}
         if you wish to cancel or change these items.
       </p>
       <p>
@@ -36,7 +38,9 @@ export default function InternationalOrders() {
         by the recipient. Adorama has no control over these charges and cannot
         predict what they might be.
       </p>
-      <p>What countries does Adorama ship to?</p>
+      <h2 className={classes["international-shipping-countries"]}>
+        What countries does Adorama ship to?
+      </h2>
       <p>
         Adorama ships throughout the U.S., Canada and to over 200 countries
         worldwide. Please see the listing here.
