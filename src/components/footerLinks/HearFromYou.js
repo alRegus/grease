@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 import classes from "./HearFromYou.module.scss";
 
 export default function HearFromYou() {
+  const [hover, setHover] = useState({ visibility: "hidden", opacity: "0" });
+
   return (
     <section className={classes["help-hear"]}>
       <h2>We`d Love to Hear From You</h2>
-      <div className={classes["help-hear-phone"]}>
+      <div
+        className={classes["help-hear-phone"]}
+        onMouseEnter={() => {
+          setHover({ visibility: "visible", opacity: "1" });
+        }}
+        onMouseLeave={() => {
+          setHover({ visibility: "hidden", opacity: "0" });
+        }}
+      >
         <i className="fa-solid fa-phone"></i>
         <a href="tel:+8002232500">800-223-2500</a>
         <i className="fa-solid fa-square-question">?</i>
-        <div className={classes["help-hear-phone-hover"]}>
+        <div style={hover} className={classes["help-hear-phone-hover"]}>
           <h2>CUSTOMER SERVICE HOURS:</h2>
           <ul>
             <li>Mon. - Thurs. 9:30am to 7:00pm</li>
