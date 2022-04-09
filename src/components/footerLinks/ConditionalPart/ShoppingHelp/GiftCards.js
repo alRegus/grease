@@ -1,13 +1,15 @@
 import React from "react";
 
+import classes from "./GiftCards.module.scss";
+
 export default function GiftCards() {
   return (
-    <section>
+    <section className={classes["gift-card"]}>
       <img
         src="https://i.ibb.co/QPjYD5s/static-banners-giftcard-holiday2020.jpg"
         alt="gift-card"
       />
-      <div>
+      <div className={classes["gift-card-desc"]}>
         <h1>The Adorama Gift Card</h1>
         <p>
           Adorama carries the best in musical gear from top brands. With an
@@ -15,96 +17,115 @@ export default function GiftCards() {
           find the right products to unleash their creativity.
         </p>
       </div>
-      <h2>GIFT CARD DETAILS</h2>
-      <form>
-        <h5>Select Amount</h5>
-        <div>
-          <input
-            id="v25"
-            type="radio"
-            data-value="$25"
-            name="amountValue"
-            value="GIFT25"
-          />
-          <label htmlFor="v25">$25</label>
-          <input
-            id="v30"
-            type="radio"
-            data-value="$30"
-            name="amountValue"
-            value="GIFT30"
-          />
-          <label htmlFor="v30">$30</label>
-          <input
-            id="v40"
-            type="radio"
-            data-value="$40"
-            name="amountValue"
-            value="GIFT40"
-          />
-          <label htmlFor="v40">$40</label>
-          <input
-            id="v50"
-            type="radio"
-            data-value="$50"
-            name="amountValue"
-            value="GIFT50"
-          />
-          <label htmlFor="v50">$50</label>
-          <input
-            id="v100"
-            type="radio"
-            data-value="$100"
-            name="amountValue"
-            value="GIFT100"
-          />
-          <label htmlFor="v100">$100</label>
-          <input
-            id="v250"
-            type="radio"
-            data-value="$250"
-            name="amountValue"
-            value="GIFT250"
-          />
-          <label htmlFor="v250">$250</label>
-          <input
-            id="v500"
-            type="radio"
-            data-value="$500"
-            name="amountValue"
-            value="GIFT500"
-          />
-          <label htmlFor="v500">$500</label>
-          <input
-            id="v600"
-            type="radio"
-            data-value="$600"
-            name="amountValue"
-            value="GIFT600"
-          />
-          <label htmlFor="v600">$600</label>
+
+      <form className={classes["gift-card-form"]}>
+        <h2>GIFT CARD DETAILS</h2>
+        <h3>Select Amount</h3>
+        <div className={classes["gift-card-form-radio"]}>
+          <div>
+            <input
+              id="v25"
+              type="radio"
+              data-value="$25"
+              name="amountValue"
+              value="GIFT25"
+            />
+            <label htmlFor="v25">$25</label>
+          </div>
+          <div>
+            <input
+              id="v30"
+              type="radio"
+              data-value="$30"
+              name="amountValue"
+              value="GIFT30"
+            />
+            <label htmlFor="v30">$30</label>
+          </div>
+          <div>
+            <input
+              id="v40"
+              type="radio"
+              data-value="$40"
+              name="amountValue"
+              value="GIFT40"
+            />
+            <label htmlFor="v40">$40</label>
+          </div>
+          <div>
+            <input
+              id="v50"
+              type="radio"
+              data-value="$50"
+              name="amountValue"
+              value="GIFT50"
+            />
+            <label htmlFor="v50">$50</label>
+          </div>
+          <div>
+            <input
+              id="v100"
+              type="radio"
+              data-value="$100"
+              name="amountValue"
+              value="GIFT100"
+            />
+            <label htmlFor="v100">$100</label>
+          </div>
+          <div>
+            <input
+              id="v250"
+              type="radio"
+              data-value="$250"
+              name="amountValue"
+              value="GIFT250"
+            />
+            <label htmlFor="v250">$250</label>
+          </div>
+          <div>
+            <input
+              id="v500"
+              type="radio"
+              data-value="$500"
+              name="amountValue"
+              value="GIFT500"
+            />
+            <label htmlFor="v500">$500</label>
+          </div>
+          <div>
+            <input
+              id="v600"
+              type="radio"
+              data-value="$600"
+              name="amountValue"
+              value="GIFT600"
+            />
+            <label htmlFor="v600">$600</label>
+          </div>
         </div>
-        <div>
-          <h5>Send Via</h5>
+        <div className={classes["gift-card-form-radio"]}>
+          <h3>Send Via</h3>
           <div>
             <input id="v-email" type="radio" name="via" value="email" />
             <label htmlFor="">Email</label>
+          </div>
+          <div>
             <input id="v-post-email" type="radio" name="via" value="post" />
             <label htmlFor="">Via post mail</label>
           </div>
           <input type="email" placeholder="Recipient`s Email Address" />
         </div>
-        <div>
-          <h5>
+        <div className={classes["gift-card-form-radio"]}>
+          <h3>
             Personalize Your Gift <span>(optional)</span>
-          </h5>
+          </h3>
           <input type="text" placeholder="To" />
           <input type="text" placeholder="Greeting(40 characters max) " />
           <input type="text" placeholder="From" />
         </div>
         <button>Add to Cart</button>
       </form>
-      <div>
+      <div className={classes["gift-card-list"]}>
         <h2>Terms and Conditions</h2>
         <ul>
           <li>Gift cards do not have an expiration date.</li>
@@ -139,8 +160,8 @@ export default function GiftCards() {
             in our store.
           </li>
         </ul>
-        <div>
-          <p>Already have an Adorama Gift Card?</p>
+        <div className={classes["gift-card-check"]}>
+          <h2>Already have an Adorama Gift Card?</h2>
           <button>Check gift card balance</button>
         </div>
       </div>
