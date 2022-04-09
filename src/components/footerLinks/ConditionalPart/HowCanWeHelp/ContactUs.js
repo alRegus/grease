@@ -1,15 +1,17 @@
 import React from "react";
 
+import classes from "./ContactUs.module.scss";
+
 export default function ContactUs() {
   return (
-    <div>
+    <section className={classes["contact-us"]}>
       <h1>Contact Us</h1>
-      <div>
-        <h3>
-          <span>For</span> Sales Assistance, call{" "}
+      <div className={classes["contact-us-phone"]}>
+        <h2>
+          For <span>Sales Assistance</span>, call{" "}
           <a href="tel:">800-223-2500</a>
-        </h3>
-        <div>
+        </h2>
+        <div className={classes["contact-us-phone-hours"]}>
           <div>
             <p>Monday–Thursday:</p>
             <p>Friday:</p>
@@ -24,12 +26,12 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div>
-        <h3>
-          <span>For</span> Customer Service, call{" "}
+      <div className={classes["contact-us-phone"]}>
+        <h2>
+          For <span>Customer Service</span>, call{" "}
           <a href="tel:">800-815-0702</a>
-        </h3>
-        <div>
+        </h2>
+        <div className={classes["contact-us-phone-hours"]}>
           <div>
             <p>Monday–Thursday:</p>
             <p>Friday:</p>
@@ -44,26 +46,27 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div>
-        <h3>
+      <div className={classes["contact-us-input"]}>
+        <h2>
           <span>Questions?</span> Send Us a Note:
-        </h3>
+        </h2>
         <form>
           <div>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" required />
           </div>
           <div>
             <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
           </div>
           <div>
             <label htmlFor="order-number">
               Order Number (for existing orders)
             </label>
-            <input type="number" id="order-number" />
+            <input type="text" id="order-number" required />
           </div>
-          <div>
+          <div className={classes["contact-us-input-select"]}>
+            <label htmlFor="department">Choose Department</label>
             <select name="department" id="department">
               <option value="select">--select--</option>
               <option value="customer-service">
@@ -80,11 +83,12 @@ export default function ContactUs() {
               id="comment"
               cols="30"
               rows="10"
+              required
             ></textarea>
           </div>
           <button type="submit">Contact Us</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

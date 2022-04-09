@@ -5,7 +5,7 @@ import classes from "./ReturnPolicy.module.scss";
 export default function ReturnPolicy() {
   return (
     <section className={classes["return-policy"]}>
-      <div className={classes["return-policy-return"]}>
+      <div>
         <h1>Return Policy</h1>
         <p>
           We believe that in order to have the best possible online shopping
@@ -57,7 +57,7 @@ export default function ReturnPolicy() {
           above mentioned requirements.
         </p>
       </div>
-      <div className={classes["return-policy-policy"]}>
+      <div>
         <h2>30 Day Return Policy.</h2>
         <p>
           For the first 30 days after your purchase you may return merchandise
@@ -83,7 +83,7 @@ export default function ReturnPolicy() {
           will only cover return shipping if we are notified prior to return.
         </p>
       </div>
-      <div className={classes["return-policy-returnable"]}>
+      <div>
         <h2>Non returnable items</h2>
         <p>Following items cannot be returned once opened</p>
         <p>

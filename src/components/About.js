@@ -5,7 +5,7 @@ import classes from "./About.module.scss";
 export default function About() {
   return (
     <section className={classes["about-us"]}>
-      <h1>Find the Best Musical Instrument for Your Next Gig or Project</h1>
+      <h2>Find the Best Musical Instrument for Your Next Gig or Project</h2>
       <p>
         If you're looking for excellent sound quality and significant long-term
         savings, it's great to invest in pro gear. Browse instruments from top

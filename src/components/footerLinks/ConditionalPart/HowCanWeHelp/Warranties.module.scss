@@ -1,0 +1,35 @@
+.warranties {
+  h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-size: 14px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+  ul {
+    margin-left: 20px;
+    li {
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #555;
+      font-weight: normal;
+    }
+  }
+  a {
+    color: #06c;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

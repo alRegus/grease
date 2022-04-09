@@ -9,6 +9,14 @@ footer {
   color: #fff;
   padding: 1.5rem;
   max-width: 1400px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   &-services {
     h3 {
       margin: 20px 0;
@@ -16,10 +24,6 @@ footer {
     li {
       margin-top: 8px;
       list-style-type: none;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
   &-shopping-help {
@@ -29,10 +33,6 @@ footer {
     li {
       margin-top: 8px;
       list-style-type: none;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
   &-company-info {
@@ -42,10 +42,6 @@ footer {
     li {
       margin-top: 8px;
       list-style-type: none;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
   &-feedback {

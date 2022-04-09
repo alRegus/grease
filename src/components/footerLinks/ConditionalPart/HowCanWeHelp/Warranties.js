@@ -1,9 +1,12 @@
 import React from "react";
 
+import classes from "./Warranties.module.scss";
+
 export default function Warranties() {
   return (
-    <section>
-      <h5>New product Warranties</h5>
+    <section className={classes["warranties"]}>
+      <h1>Warranties</h1>
+      <h2>New product Warranties</h2>
       <ul>
         <li>
           All new products are covered by the full manufacturer's warranty(N
@@ -14,7 +17,7 @@ export default function Warranties() {
           (unless stated otherwise)
         </li>
       </ul>
-      <h5>Used product Warranties</h5>
+      <h2>Used product Warranties</h2>
       <ul>
         <li>
           Used photo equipment (D, E+, E, E-, V, and G conditions ) carry a

@@ -1,0 +1,115 @@
+.contact-us {
+  width: 100%;
+  margin-top: 50px;
+  h2 {
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: #222;
+    span {
+      font-weight: bold;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  a {
+    color: #06c;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &-phone {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 10px;
+
+    &-hours {
+      margin-block: 10px;
+      display: flex;
+      width: 50%;
+      margin-inline: 0;
+      p {
+        color: #555;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    }
+    &:first-of-type {
+      border-bottom: none;
+    }
+  }
+  &-input {
+    &-select {
+      margin-bottom: 40px;
+      margin-top: 40px !important;
+      select {
+        margin-inline: 0;
+        width: 42%;
+        &:focus {
+          border-color: #06c;
+          outline: 0;
+          background-color: #fafcff;
+          box-shadow: 0 0 2px #06c;
+        }
+      }
+    }
+    form {
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        label {
+          font-size: 0.75rem;
+          color: #222;
+          font-weight: bold;
+          margin-bottom: 5px;
+          margin-inline: 0;
+          &::after {
+            content: "*";
+            color: #cb0f14;
+            font-weight: bold;
+          }
+        }
+        input {
+          width: 50%;
+          height: 28px;
+          padding: 0 7px;
+          border-radius: 4px;
+          border: 1px solid #bfbfbf;
+          margin-inline: 0;
+          &:focus {
+            border-color: #06c;
+            outline: 0;
+            background-color: #fafcff;
+            box-shadow: 0 0 2px #06c;
+          }
+        }
+        textarea {
+          margin-inline: 0;
+          width: 80%;
+          border: 1px solid #bfbfbf;
+          border-radius: 4px;
+          margin-bottom: 50px;
+          &:focus {
+            border-color: #06c;
+            outline: 0;
+            background-color: #fafcff;
+            box-shadow: 0 0 2px #06c;
+          }
+        }
+      }
+
+      button {
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 1rem;
+        background-color: #0060bf;
+        border-radius: 4px;
+        border: none;
+      }
+    }
+  }
+}
