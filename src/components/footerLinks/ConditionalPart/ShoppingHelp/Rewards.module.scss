@@ -1,0 +1,368 @@
+.rewards {
+  &-heading {
+    max-height: 500px;
+    background: url(https://i.ibb.co/mNSzP9K/header-bg-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 105px 33px;
+    &-content {
+      h1 {
+        font-size: 6rem;
+        color: #fff;
+        text-align: center;
+      }
+      h2 {
+        color: #fff;
+        text-align: center;
+        font: normal normal bold 29px/35px Lato;
+        letter-spacing: 8.7px;
+        text-shadow: 0px 3px 8px #000000c4;
+        font-size: 1.8rem;
+      }
+      p {
+        text-align: center;
+        color: #fff;
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        &:last-of-type {
+          font-size: 1.1rem;
+          margin-top: 15px;
+          margin-bottom: 12px;
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      button {
+        color: #ffffff;
+        background: transparent
+          linear-gradient(180deg, #fc5d37 0%, #ed5132 49%, #e64525 100%) 0% 0%
+          no-repeat padding-box;
+        box-shadow: 0px 3px 9px #000000cc;
+        border-radius: 4px;
+        border: none;
+        padding: 10px 80px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-self: center;
+        cursor: pointer;
+      }
+    }
+  }
+  &-gearup {
+    max-width: 1400px;
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      padding-block: 90px 20px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: center;
+      &-card {
+        img {
+          display: flex;
+          justify-self: center;
+        }
+        h4 {
+          text-align: center;
+          color: #004387;
+          text-transform: capitalize;
+          font-size: 1.5rem;
+          margin-top: 15px;
+        }
+        p {
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &-ads {
+    background: transparent linear-gradient(289deg, #00144c 0%, #0057ad 100%) 0%
+      0% no-repeat padding-box;
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      text-transform: capitalize;
+      font-size: 3rem;
+      padding-top: 100px;
+      font-weight: normal;
+    }
+    p {
+      text-align: center;
+      color: #fff;
+      font-size: 1.3rem;
+      margin-top: 20px;
+    }
+    &-cards {
+      display: flex;
+      padding: 70px 0 113px 0;
+      max-width: 1300px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: flex-start;
+      vertical-align: baseline;
+      &-card {
+        flex: 0 0 165px;
+        margin: 10px;
+        align-content: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+          width: 47%;
+          height: 78px;
+        }
+        p {
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 1.3rem;
+          height: 50px;
+        }
+        hr {
+          margin: 7px auto 4px;
+          width: 48px;
+          height: 1px;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          opacity: 0.39;
+        }
+        span {
+          text-align: center;
+          color: #fff;
+          font-size: 2.8rem;
+          display: flex;
+        }
+        &-spec {
+          /* width: 100px; */
+          font: normal normal 600 19px/21px Lato;
+          font-size: 0.8rem;
+        }
+        &-points {
+          font-size: 0.7rem !important;
+        }
+      }
+    }
+  }
+  &-more {
+    h2 {
+      padding: 90px 20px 0 20px;
+      text-align: center;
+      font: normal normal normal 48px/57px Lato;
+      letter-spacing: 0px;
+    }
+    p {
+      padding: 0 0 30px 0;
+      text-align: center;
+      font: normal normal normal 21px/27px Lato;
+      letter-spacing: 0px;
+      color: #222222;
+      margin-top: 15px;
+    }
+    &-grid {
+      max-width: 1040px;
+      margin-top: 20px;
+      b {
+        color: #004387;
+        font-size: 3.8rem;
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        color: #222222;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-top: 0;
+      }
+      &-upper {
+        display: flex;
+        border-bottom: 1px solid #004387;
+        &-part {
+          padding-top: 10px;
+          border-right: 1px solid #004387;
+          width: 25%;
+          &:last-of-type {
+            border-right: none;
+          }
+        }
+      }
+      &-lower {
+        display: flex;
+        &-part {
+          padding-top: 10px;
+          border-right: 1px solid #004387;
+          width: 25%;
+          &:last-of-type {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+  &-login {
+    margin-top: 50px;
+    display: flex;
+  }
+  &-perks {
+    background: url(https://i.ibb.co/gwvBHyw/VIP360-G-Page-Banner-Refresh-Desktop-2x.jpg);
+    padding-block: 90px;
+    h3 {
+      color: #fff;
+      text-align: center;
+      font: normal normal normal 18px/27px Lato;
+      letter-spacing: 3.42px;
+      margin-bottom: 20px;
+    }
+    img {
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      max-width: 850px;
+      font: normal normal normal 16px/21px Lato;
+      color: #ffffff;
+      text-align: center;
+      margin-block: 20px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      background: transparent
+        linear-gradient(180deg, #197adb 0%, #0066cc 53%, #0060bf 100%) 0% 0%
+        no-repeat padding-box;
+      border-radius: 4px;
+      color: #ffffff;
+      padding-block: 10px;
+      text-decoration: none;
+      width: 150px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+  }
+  &-faq {
+    max-width: 1200px;
+    margin-top: 100px;
+    h2 {
+      font: normal normal normal 42px/50px Lato;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    &-accordion {
+      button {
+        color: #0066cc;
+        font: normal normal normal 21px/25px Lato;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: none;
+        background-color: #f3f3f3;
+        border-bottom: 1px solid #ccc;
+        width: 90%;
+        text-align-last: left;
+        padding-block: 30px;
+        &::before {
+          font-family: "iCons";
+          content: ">";
+          margin-right: 10px;
+        }
+      }
+
+      p {
+        font-size: 5rem;
+        font: normal normal normal 16px/21px Lato;
+        a {
+          color: #06c;
+          cursor: pointer;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      ul {
+        margin-block: 10px;
+        padding-left: 30px;
+        list-style-position: outside;
+        li {
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+  &-terms {
+    max-width: 1200px;
+    margin-top: 100px;
+    a {
+      color: #06c;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h2 {
+      color: #333e49;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    p {
+      color: #333e49;
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+    strong {
+      display: block;
+      color: #333e49;
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+    span {
+      font-weight: bold;
+    }
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      li {
+        color: #333e49;
+        font-size: 0.8rem;
+        line-height: 1.4;
+      }
+      &:first-of-type {
+        margin-left: 50px;
+        li {
+          list-style-type: decimal;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.active2 {
+  &::before {
+    transform: rotate(90deg); /* !!не работает */
+  }
+}
+
+.border2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  margin-top: -20px;
+}

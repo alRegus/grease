@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-export default function Accordion({ title, content, classDiv, classBtn }) {
+export default function Accordion({
+  title,
+  content,
+  classDiv,
+  classBtn,
+  classBorder,
+}) {
   const [accordion, setAccordion] = useState(false);
 
   const accordionHandler = () => {
@@ -18,7 +24,8 @@ export default function Accordion({ title, content, classDiv, classBtn }) {
       </button>
       {accordion && (
         <div
-          style={accordion ? { borderBottom: " 1px solid #4a5865" } : null}
+          /* style={accordion ? { borderBottom: " 1px solid #4a5865" } : null} */
+          className={accordion ? classBorder : null}
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>
       )}
