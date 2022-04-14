@@ -274,7 +274,7 @@
         background-color: #f3f3f3;
         border-bottom: 1px solid #ccc;
         width: 90%;
-        text-align-last: left;
+        text-align: left;
         padding-block: 30px;
         &::before {
           font-family: "iCons";
@@ -286,10 +286,17 @@
       p {
         font-size: 5rem;
         font: normal normal normal 16px/21px Lato;
+        line-height: 1.5;
+        max-width: 800px;
+        text-align: left;
+        margin-inline: 0;
         a {
           color: #06c;
           cursor: pointer;
           text-decoration: none;
+          max-width: 800px;
+          text-align: left;
+          margin-inline: 0;
           &:hover {
             text-decoration: underline;
           }
@@ -299,6 +306,9 @@
         margin-block: 10px;
         padding-left: 30px;
         list-style-position: outside;
+        max-width: 800px;
+        text-align: left;
+        margin-inline: 0;
         li {
           line-height: 1.4;
         }
