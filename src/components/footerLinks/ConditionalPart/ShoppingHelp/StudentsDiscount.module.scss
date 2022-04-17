@@ -1,0 +1,218 @@
+.student {
+  &-heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: transparent linear-gradient(114deg, #00144c 50%, #004d9a 100%)
+      0% 0% no-repeat padding-box;
+    &-img {
+      width: 100%;
+      background-size: cover;
+      background-image: url(https://i.ibb.co/ygT7NxK/Creators-Gear-UP-BTS-Header.jpg);
+      background-position-y: 40%;
+    }
+    &-text {
+      max-width: 620px;
+      padding-top: 58px;
+      padding-bottom: 46px;
+      padding-left: 30px;
+      padding-right: 40px;
+      img {
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 12px;
+        font-size: 1rem;
+        color: #fff;
+        line-height: 1.5;
+        font-weight: normal;
+        &:last-of-type {
+          font-size: 0.9rem;
+        }
+      }
+      span {
+        color: #ace2ff;
+      }
+      a {
+        color: #fff;
+      }
+      &-btn {
+        display: flex;
+        align-items: center;
+        margin-block: 30px;
+        button {
+          background: transparent
+            linear-gradient(180deg, #fc5d37 0%, #ed5132 49%, #e64525 100%) 0% 0%
+            no-repeat padding-box;
+          font-weight: bold;
+          color: #fff;
+          border: none;
+          font-size: 1.5rem;
+          border-radius: 5px;
+          padding-block: 15px;
+          width: 50%;
+          margin: 0;
+        }
+        p {
+          color: #ace2ff;
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+  &-how {
+    margin-top: 70px;
+    max-width: 1200px;
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 50px;
+    }
+    &-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      &-step {
+        img {
+          display: flex;
+          justify-content: center;
+        }
+        h4 {
+          text-align: center;
+          font-size: 1.6rem;
+          margin-top: 20px;
+        }
+        p {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 1.1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  &-connected {
+    background: transparent linear-gradient(279deg, #00144c 0%, #0057ad 100%) 0%
+      0% no-repeat padding-box;
+    padding-block: 50px;
+    margin-top: 50px;
+    &-container {
+      h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 2.7rem;
+      }
+      p {
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+      }
+      &-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        margin-top: 20px;
+        img {
+          width: 72px;
+        }
+      }
+    }
+  }
+  &-accordion {
+    width: 1400px;
+    margin-top: 50px;
+    h2 {
+      font: normal normal normal 42px/50px Lato;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    &-part {
+      button {
+        color: #0066cc;
+        font: normal normal normal 21px/25px Lato;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: none;
+        background-color: #f3f3f3;
+        border-bottom: 1px solid #ccc;
+        width: 90%;
+        text-align: left;
+        padding-block: 30px;
+        &::before {
+          font-family: "iCons";
+          content: ">";
+          margin-right: 10px;
+        }
+      }
+
+      p {
+        font-size: 5rem;
+        font: normal normal normal 16px/21px Lato;
+        margin-top: 10px;
+        max-width: 800px;
+        text-align: left;
+        margin-inline: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+  &-miss {
+    background: transparent linear-gradient(279deg, #00144c 0%, #0057ad 100%) 0%
+      0% no-repeat padding-box;
+    padding-block: 67px;
+    margin-top: 50px;
+    &-container {
+      max-width: 1200px;
+      color: #fff;
+      /* display: grid;
+      grid-template-columns: 65% 35%; */
+      display: flex;
+      justify-content: space-between;
+      &-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          margin-left: 10px;
+        }
+      }
+      &-button {
+        button {
+          background: transparent
+            linear-gradient(180deg, #fc5d37 0%, #ed5132 49%, #e64525 100%) 0% 0%
+            no-repeat padding-box;
+          color: #fff;
+          border: none;
+          font-size: 1.2rem;
+          border-radius: 5px;
+          padding-block: 15px;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #ace2ff;
+          font-size: 0.9rem;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active4 {
+  &::before {
+    transform: rotate(90deg); /* !!не работает */
+  }
+}
+
+.border4 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  margin-top: -20px;
+}
