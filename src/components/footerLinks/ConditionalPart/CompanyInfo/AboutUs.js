@@ -1,35 +1,37 @@
 import React from "react";
 
+import classes from "./AboutUs.module.scss";
+
 export default function AboutUs() {
   return (
-    <section>
-      <div
-        style={{ background: "url(https://i.ibb.co/ZSsfmKd/hero-equip.jpg)" }}
-      >
-        <h2>Grease</h2>
+    <section className={classes["about"]}>
+      <div className={classes["about-heading"]}>
+        <h1>Grease</h1>
       </div>
-      <div>
-        <h1>Equip Your Creativity</h1>
-        <div>
-          <div>
-            <h3>Our Mission</h3>
-            <p>
-              We believe everyone is a creator. Our mission is to inspire,
-              educate and equip to make dreams a reality.
-            </p>
-          </div>
-          <div>
-            <h3>Our Vision</h3>
-            <p>Be an integral part of every creator’s success story.</p>
-          </div>
-          <div>
-            <h3>Our Pledge</h3>
-            <p>Keep you inspired and connected to our pros and your peers.</p>
+      <div className={classes["about-creativity"]}>
+        <div className={classes["about-creativity-container"]}>
+          <h2>Equip Your Creativity</h2>
+          <div className={classes["about-creativity-container-list"]}>
+            <div className={classes["about-creativity-container-list-part"]}>
+              <h3>Our Mission</h3>
+              <p>
+                We believe everyone is a creator. Our mission is to inspire,
+                educate and equip to make dreams a reality.
+              </p>
+            </div>
+            <div className={classes["about-creativity-container-list-part"]}>
+              <h3>Our Vision</h3>
+              <p>Be an integral part of every creator’s success story.</p>
+            </div>
+            <div className={classes["about-creativity-container-list-part"]}>
+              <h3>Our Pledge</h3>
+              <p>Keep you inspired and connected to our pros and your peers.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <h3>We See It Your Way</h3>
+      <div className={classes["about-way"]}>
+        <h2>We See It Your Way</h2>
         <p>
           If you’re going to manifest your creative vision, you need the right
           equipment. At Adorama, our store has been an icon for New York City’s
@@ -43,12 +45,8 @@ export default function AboutUs() {
         </p>
         <button>Shop Now</button>
       </div>
-      <div
-        style={{
-          background: "url(https://i.ibb.co/n1zt5jZ/more-than-meets.jpg)",
-        }}
-      >
-        <h3>More Than Meets the Eye</h3>
+      <div className={classes["about-eye"]}>
+        <h2>More Than Meets the Eye</h2>
         <p>
           Your art is our passion, and we are here to supply you with
           state-of-the-art equipment and the significant support of people who
@@ -66,14 +64,14 @@ export default function AboutUs() {
         </p>
         <button>Learn More At 42 West</button>
       </div>
-      <div>
-        <h3>The Adorama Promise</h3>
+      <div className={classes["about-promise"]}>
+        <h2>The Adorama Promise</h2>
         <p>
           We’re here for you with the best in video, camera, and audio, plus
           complete customer service, tailored to your every need.
         </p>
-        <div>
-          <div>
+        <div className={classes["about-promise-benefits"]}>
+          <div className={classes["about-promise-benefits-part"]}>
             <i className="fa-solid fa-tag"></i>
             <h4>BUY ONLINE</h4>
             <p>
@@ -81,15 +79,15 @@ export default function AboutUs() {
               Read reviews and ask questions.
             </p>
           </div>
-          <div>
+          <div className={classes["about-promise-benefits-part"]}>
             <i className="fa-solid fa-city"></i>
             <h4>SHOP IN STORE</h4>
             <p>
               Test the gear. Get specs and recommendations from our kind,
-              knowledgeable staff. Visit our NYC store.
+              knowledgeable staff. <a href="">Visit our NYC store</a>.
             </p>
           </div>
-          <div>
+          <div className={classes["about-promise-benefits-part"]}>
             <i className="fa-solid fa-medal"></i>
             <h4>EARN REWARDS</h4>
             <p>
@@ -98,7 +96,7 @@ export default function AboutUs() {
               <a href="">VIP360 membership</a>.
             </p>
           </div>
-          <div>
+          <div className={classes["about-promise-benefits-part"]}>
             <i className="fa-solid fa-comment"></i>
             <h4>CONNECT WITH US</h4>
             <p>
@@ -106,7 +104,7 @@ export default function AboutUs() {
               live in-store events.
             </p>
           </div>
-          <div>
+          <div className={classes["about-promise-benefits-part"]}>
             <i className="fa-solid fa-address-card"></i>
             <h4>GET SUPPORT</h4>
             <p>
@@ -117,10 +115,10 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div>
-        <div>
+      <div className={classes["about-brand"]}>
+        <div className={classes["about-brand-item"]}>
           <img src="https://i.ibb.co/LdG81Mv/about-abs.jpg" alt="about-abs" />
-          <div>
+          <div className={classes["about-brand-item-header"]}>
             <h2>Grease</h2>
             <span>BUSINESS SOLUTION</span>
           </div>
@@ -131,9 +129,9 @@ export default function AboutUs() {
           </p>
           <a href="">Learn More</a>
         </div>
-        <div>
+        <div className={classes["about-brand-item"]}>
           <img src="https://i.ibb.co/tc9qYTW/about-arc.jpg" alt="about-arc" />
-          <div>
+          <div className={classes["about-brand-item-header"]}>
             <h2>Grease</h2>
             <span>RENTAL COMPANY</span>
           </div>
@@ -145,12 +143,12 @@ export default function AboutUs() {
           </p>
           <a href="">Start Renting</a>
         </div>
-        <div>
+        <div className={classes["about-brand-item"]}>
           <img
             src="https://i.ibb.co/WGBsP9f/about-trade.jpg"
             alt="about-trade"
           />
-          <div>
+          <div className={classes["about-brand-item-header"]}>
             <h2>Grease</h2>
             <span>TRADE</span>
           </div>
@@ -162,12 +160,12 @@ export default function AboutUs() {
           </p>
           <a href="">Learn More</a>
         </div>
-        <div>
+        <div className={classes["about-brand-item"]}>
           <img
             src="https://i.ibb.co/k1zpzn6/about-printique.jpg"
             alt="about-printique"
           />
-          <div>
+          <div className={classes["about-brand-item-header"]}>
             <h2>Grease</h2>
             <span>PRINTIQUE</span>
           </div>
@@ -177,12 +175,12 @@ export default function AboutUs() {
           </p>
           <a href="">Get Started</a>
         </div>
-        <div>
+        <div className={classes["about-brand-item"]}>
           <img
             src="https://i.ibb.co/BT7kVv8/about-42-west.jpg"
             alt="about-42-west"
           />
-          <div>
+          <div className={classes["about-brand-item-header"]}>
             <h2>Grease</h2>
             <span>42 WEST</span>
           </div>
@@ -194,9 +192,9 @@ export default function AboutUs() {
           </p>
           <a href="">Read More</a>
         </div>
-        <div>
+        <div className={classes["about-brand-item"]}>
           <img src="https://i.ibb.co/FwCnjdh/about-jobs.jpg" alt="about-jobs" />
-          <div>
+          <div className={classes["about-brand-item-header"]}>
             <h2>WORKING AT ADORAMA</h2>
           </div>
           <p>
