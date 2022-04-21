@@ -1,0 +1,46 @@
+.product-reviews {
+  background-color: #fff;
+  padding-bottom: 50px;
+  &-container {
+    max-width: 1400px;
+    background: #f8f4f4;
+    border-radius: 10px;
+    padding: 50px 30px;
+    position: relative;
+    h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      padding-block: 13px;
+      background-color: #dddada;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-size: clamp(1.2rem, 2vw, 1.8rem);
+      color: #222;
+    }
+    &-review {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      min-height: 100px;
+      border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.12);
+      padding-block: 20px;
+      &-user {
+        font-size: clamp(1.3rem, 2.2vw, 2.5rem);
+        &-date {
+          font-size: 1rem;
+        }
+      }
+      &-comment {
+        line-height: 1.4;
+      }
+    }
+    &-empty {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: clamp(1.1rem, 2vw, 4rem);
+    }
+  }
+}

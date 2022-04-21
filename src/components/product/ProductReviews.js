@@ -13,16 +13,34 @@ export default function ProductReviews() {
 
   const reviews = ProductReviews ? (
     ProductReviews.map((review) => (
-      <div key={review.date}>
-        <div className={classes["product-reviews-user"]}>{review.user}</div>
-        <div className={classes["product-reviews-comment"]}>
+      <div
+        className={classes["product-reviews-container-review"]}
+        key={review.date}
+      >
+        <div className={classes["product-reviews-container-review-user"]}>
+          {review.user}
+          <div
+            className={classes["product-reviews-container-review-user-date"]}
+          >
+            {review.date}
+          </div>
+        </div>
+        <div className={classes["product-reviews-container-review-comment"]}>
           {review.commentBody}
         </div>
-        <div className={classes["product-reviews-date"]}>{review.date}</div>
       </div>
     ))
   ) : (
-    <div className={classes["product-reviews-empty"]}>No Reviews Yet</div>
+    <div className={classes["product-reviews-container-empty"]}>
+      No Reviews Yet
+    </div>
   );
-  return <section className={classes["product-reviews"]}>{reviews}</section>;
+  return (
+    <section className={classes["product-reviews"]}>
+      <div className={classes["product-reviews-container"]}>
+        <h2>Reviews</h2>
+        {reviews}
+      </div>
+    </section>
+  );
 }
