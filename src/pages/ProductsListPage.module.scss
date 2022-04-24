@@ -1,6 +1,6 @@
 .products {
   margin-top: 50px;
-  max-width: 1400px;
+  width: calc(min(80vw, 1400px)); //просто min тут не работает, такой обходик
   h1 {
     margin-bottom: 50px;
   }

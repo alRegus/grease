@@ -6,14 +6,17 @@
   margin: 0 auto;
   max-width: 1400px;
 
-  .logo-container {
-    align-self: center;
-    width: 175px;
-    height: 60px;
-    margin-left: 0.6rem;
-    img {
-      width: inherit;
-      height: inherit;
+  a {
+    outline: none;
+    .logo-container {
+      align-self: center;
+      width: 175px;
+      height: 60px;
+      margin-left: 0.6rem;
+      img {
+        width: inherit;
+        height: inherit;
+      }
     }
   }
   .products-show {

@@ -69,6 +69,8 @@ export default function ProductsList() {
     />
   ));
 
+  /*   console.log(displayProductsList.length); */
+
   const gridView = viewParam === "grid" ? "grid" : "";
   return (
     <section className={(classes["products-list"], classes[`${gridView}`])}>
