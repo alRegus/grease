@@ -22,8 +22,8 @@ export default function CategoryPage() {
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
   );
 
-  const categoryInstrumentTypes = instrumentTypes.filter(
-    (type) => type.typeName.includes(categoryRoute) //!!
+  const categoryInstrumentTypes = instrumentTypes.filter((type) =>
+    type.typeName.includes(categoryRoute)
   );
 
   const typesHandler = (e) => {

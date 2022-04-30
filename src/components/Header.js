@@ -35,9 +35,13 @@ function Header() {
 
   const categoryRouteHandler = (e) => {
     const category = e.target.textContent.toLowerCase();
-
-    dispatch({ type: "GET_CATEGORY_ROUTE", payload: category });
+    localStorage.setItem("categoryRoute", category);
   };
+
+  const storedCategoryRoute = localStorage.getItem("categoryRoute");
+  console.log(storedCategoryRoute);
+
+  dispatch({ type: "GET_CATEGORY_ROUTE", payload: storedCategoryRoute });
 
   const displayInstrumentsCategories = instrumentCategories.map((category) => (
     <div
