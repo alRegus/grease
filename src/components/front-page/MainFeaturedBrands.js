@@ -20,10 +20,13 @@ export default function MainFeaturedBrands() {
       payload: {
         name: "",
         categories: "",
-        type: "",
+        type: [],
         used: false,
         deals: false,
         brand: brandValue,
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };

@@ -60,7 +60,10 @@ function Header() {
         type: typeValue,
         used: false,
         deals: false,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };
@@ -85,10 +88,13 @@ function Header() {
       payload: {
         name: "",
         categories: "",
-        type: "",
+        type: [],
         used: false,
         deals: false,
         brand: brandValue,
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };
@@ -107,10 +113,13 @@ function Header() {
       payload: {
         name: "",
         categories: "",
-        type: "",
+        type: [],
         used: true,
         deals: false,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };
@@ -121,10 +130,13 @@ function Header() {
       payload: {
         name: "",
         categories: "",
-        type: "",
+        type: [],
         used: false,
         deals: true,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };
@@ -138,10 +150,13 @@ function Header() {
       payload: {
         name: searchValue,
         categories: "",
-        type: "",
+        type: [],
         used: false,
         deals: false,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
 

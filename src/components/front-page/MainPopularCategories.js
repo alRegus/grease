@@ -22,7 +22,10 @@ export default function MainPopularCategories() {
         type: typeValue,
         used: false,
         deals: false,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };

@@ -14,7 +14,7 @@ export default function ProductsList() {
   const sortParam = useSelector((state) => state.sort.sortBy);
   const viewParam = useSelector((state) => state.view.view);
   const filterParams = useSelector((state) => state.filter);
-
+  console.log(filterParams);
   //!!console.log("lol".split(" ").some((el) => ["lol", "tol"].includes(el))) логика для массива с множеством элементов фильтрации;
 
   const filteredProducts = allProducts.filter((prod) => {

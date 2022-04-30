@@ -22,8 +22,8 @@ export default function CategoryPage() {
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
   );
 
-  const categoryInstrumentTypes = instrumentTypes.filter((type) =>
-    type.typeName.includes(categoryRoute)
+  const categoryInstrumentTypes = instrumentTypes.filter(
+    (type) => type.typeName.includes(categoryRoute) //!!
   );
 
   const typesHandler = (e) => {
@@ -37,7 +37,10 @@ export default function CategoryPage() {
         type: typeValue,
         used: false,
         deals: false,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };
@@ -72,12 +75,15 @@ export default function CategoryPage() {
       type: "SET_FILTER_PARAMS",
       payload: {
         name: "",
-        brand: brandValue,
         categories:
           categoryRoute.charAt(0).toUpperCase() + categoryRoute.substring(1),
-        type: "",
+        type: [],
         used: false,
         deals: false,
+        brand: brandValue,
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };
