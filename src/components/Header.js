@@ -39,8 +39,6 @@ function Header() {
   };
 
   const storedCategoryRoute = localStorage.getItem("categoryRoute");
-  console.log(storedCategoryRoute);
-
   dispatch({ type: "GET_CATEGORY_ROUTE", payload: storedCategoryRoute });
 
   const displayInstrumentsCategories = instrumentCategories.map((category) => (

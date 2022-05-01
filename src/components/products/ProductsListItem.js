@@ -13,7 +13,6 @@ export default function ProductsListItem({
   prodId,
 }) {
   const viewParam = useSelector((state) => state.view.view);
-  console.log(viewParam); //!!иправить то что 39 раз повторяется
   const rating = (totalVotesValue / votesQuantity).toFixed(2);
 
   return (

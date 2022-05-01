@@ -172,7 +172,7 @@ export default function ProductsFilterMenu() {
           <ul>
             <li data-price="1-49">Under 50$</li>
             <li data-price="50-100">50$ to 100$</li>
-            <li data-price="100-250">100$ to 250$</li>
+            <li data-price="100-249">100$ to 250$</li>
             <li data-price="250-500">250$ to 500$</li>
             <li data-price="501-9999999999">Over 500$</li>
           </ul>
