@@ -15,6 +15,9 @@ export default function ProductsFilterMenu() {
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
   );
 
+  const filterBrands = useSelector((state) => state.filter.brand);
+  const filterTypes = useSelector((state) => state.filter.type);
+
   const prevBrandArr = useSelector((state) => state.filter.brand);
   const prevTypeArr = useSelector((state) => state.filter.type);
 
@@ -54,11 +57,16 @@ export default function ProductsFilterMenu() {
 
   const brandHandler = (e) => {
     const dataAttr = e.target.getAttribute("data-brand");
-
     dispatch({
       type: "SET_FILTER_PARAMS",
       payload: { brand: Array.from(new Set([...prevBrandArr, dataAttr])) },
     });
+    if (filterBrands.includes(dataAttr)) {
+      dispatch({
+        type: "SET_FILTER_PARAMS",
+        payload: { brand: filterBrands.filter((brand) => brand !== dataAttr) },
+      });
+    }
   };
 
   const priceHandler = (e) => {
@@ -104,6 +112,13 @@ export default function ProductsFilterMenu() {
       type: "SET_FILTER_PARAMS",
       payload: { type: Array.from(new Set([...prevTypeArr, typeAttr])) },
     });
+
+    if (filterTypes.includes(typeAttr)) {
+      dispatch({
+        type: "SET_FILTER_PARAMS",
+        payload: { type: filterTypes.filter((type) => type !== typeAttr) },
+      });
+    }
   };
 
   const categoryHandler = (e) => {

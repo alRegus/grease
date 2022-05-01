@@ -61,7 +61,13 @@ export default function ProductsListPage() {
   return (
     <section className={classes["products"]}>
       <h1>
-        {filteredParamValues
+        {
+          filteredParamValues
+            .flat(7)
+            .filter((item) => typeof item === "string")
+            .join(" > ")
+          /* 
+          Проблема была в том что в массиве образовывались другие массивы различной глубины при нажатии какого либа параметра, поэтому одни значения переходили в другие, и выровнить массив затем проверить строка ли это, чтоб избавится от пустных массивов глубоких в главном массиве
           .flat()
           .join(" ")
           .split(",")
@@ -92,7 +98,8 @@ export default function ProductsListPage() {
           .replace("5 From 4 stars", "From 4 stars")
           .replace("100 Discount 10% or more", "Discount 10% or more")
           .replace("100 Discount 25% or more", "Discount 25% or more")
-          .replace("100 Discount 50% or more", "Discount 50% or more")}
+          .replace("100 Discount 50% or more", "Discount 50% or more") */
+        }
       </h1>
       <div className={classes["products-page"]}>
         <div className={classes["products-page-filter"]}>
