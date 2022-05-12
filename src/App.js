@@ -12,8 +12,12 @@ import ProductPage from "./pages/ProductPage";
 import FooterLinksPage from "./pages/FooterLinksPage";
 import ShoppingHelpPage from "./pages/ShoppingHelpPage";
 import CompanyInfoPage from "./pages/CompanyInfoPage";
+import { useSelector } from "react-redux";
 
 function App() {
+  const overflow = useSelector((state) => state.overflow.overflow.overflow);
+  document.body.style.overflow = overflow;
+
   return (
     <>
       <Header />

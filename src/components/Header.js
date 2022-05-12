@@ -1,16 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useHttp from "../hooks/useHttp";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 import logo from "../instruments-logo.png";
 import classes from "./Header.module.scss";
+import HamburgerMenu from "./HamburgerMenu";
+
+function debounce(fn, ms) {
+  let timer;
+  return () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
 
 function Header() {
   const [instrumentTypesState, setInstrumentTypesState] = useState([]);
 
-  const dispatch = useDispatch();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }, 50);
+    window.addEventListener("resize", debouncedHandleResize);
+    return () => {
+      window.removeEventListener("resize", debouncedHandleResize);
+    };
+  });
 
+  console.log(windowWidth);
+
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const instrumentTypes = useHttp(
@@ -59,7 +83,7 @@ function Header() {
       payload: {
         name: "",
         categories: "",
-        type: typeValue,
+        type: [typeValue],
         used: false,
         deals: false,
         brand: [],
@@ -93,7 +117,7 @@ function Header() {
         type: [],
         used: false,
         deals: false,
-        brand: brandValue,
+        brand: [brandValue],
         priceRange: [],
         rating: [],
         discount: [],
@@ -167,74 +191,121 @@ function Header() {
 
   return (
     <header className={classes["header"]}>
-      <Link to="/">
-        <div className={classes["logo-container"]}>
-          <img src={logo} alt="logo" />
-        </div>
-      </Link>
-      <nav>
-        <ul>
-          <li className={classes["products-show"]}>
-            Product
-            <div className={classes["products-details-nav"]}>
-              <div className={classes["products-details-nav-categories"]}>
-                {displayInstrumentsCategories}
-              </div>
-              <div className={classes["products-details-nav-types"]}>
-                {displayInstrumentsTypes}
-              </div>
+      {windowWidth > 801 && (
+        <>
+          <Link to="/">
+            <div className={classes["logo-container"]}>
+              <img src={logo} alt="logo" />
             </div>
-          </li>
-          <li className={classes["brand-show"]}>
-            Brands
-            <div className={classes["brands-details-nav"]}>
-              <h2>Featured Brands:</h2>
-              <div className={classes["brands-details-nav-items"]}>
-                {displayInstrumentsBrands}
+          </Link>
+          <nav>
+            <ul>
+              <li className={classes["products-show"]}>
+                Product
+                <div className={classes["products-details-nav"]}>
+                  <div className={classes["products-details-nav-categories"]}>
+                    {displayInstrumentsCategories}
+                  </div>
+                  <div className={classes["products-details-nav-types"]}>
+                    {displayInstrumentsTypes}
+                  </div>
+                </div>
+              </li>
+              <li className={classes["brand-show"]}>
+                Brands
+                <div className={classes["brands-details-nav"]}>
+                  <h2>Featured Brands:</h2>
+                  <div className={classes["brands-details-nav-items"]}>
+                    {displayInstrumentsBrands}
+                  </div>
+                </div>
+              </li>
+              <li onClick={usedHandler}>
+                <Link to="/products-list">Used</Link>
+              </li>
+              <li onClick={dealsHandler}>
+                <Link to="/products-list">Deals</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={classes["search-container"]}>
+            <form onSubmit={searchHandler}>
+              <input type="text" placeholder="Search" />
+              <button type="submit">
+                <i className="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div className={classes["auth-cart-container"]}>
+            <Link to="/login">
+              <div className={classes["auth-container"]}>
+                <i className="far fa-user-circle"></i>
+                <div>
+                  <span>Sign In</span>
+                  <p>My Account</p>
+                </div>
+                <div className={classes["account-options-container"]}>
+                  <ul>
+                    <li>
+                      <Link to="/login">My Account</Link>
+                    </li>
+                    <li>Order Status</li>
+                    <li>
+                      <Link to="/help">Help</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <li onClick={usedHandler}>
-            <Link to="/products-list">Used</Link>
-          </li>
-          <li onClick={dealsHandler}>
-            <Link to="/products-list">Deals</Link>
-          </li>
-        </ul>
-      </nav>
-      <div className={classes["search-container"]}>
-        <form onSubmit={searchHandler}>
-          <input type="text" placeholder="Search" />
-          <button type="submit">
-            <i className="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
-      <div className={classes["auth-cart-container"]}>
-        <Link to="/login">
-          <div className={classes["auth-container"]}>
-            <i className="far fa-user-circle"></i>
-            <div>
-              <span>Sign In</span>
-              <p>My Account</p>
-            </div>
-            <div className={classes["account-options-container"]}>
-              <ul>
-                <li>
-                  <Link to="/login">My Account</Link>
-                </li>
-                <li>Order Status</li>
-                <li>
-                  <Link to="/help">Help</Link>
-                </li>
-              </ul>
+            </Link>
+            <div className={classes["cart-container"]}>
+              <i className="fas fa-shopping-cart"></i>
             </div>
           </div>
-        </Link>
-        <div className={classes["cart-container"]}>
-          <i className="fas fa-shopping-cart"></i>
-        </div>
-      </div>
+        </>
+      )}
+      {windowWidth <= 801 && (
+        <>
+          <HamburgerMenu />
+          <Link to="/">
+            <div className={classes["logo-container"]}>
+              <img src={logo} alt="logo" />
+            </div>
+          </Link>
+          <div className={classes["auth-cart-container"]}>
+            <Link to="/login">
+              <div className={classes["auth-container"]}>
+                <i className="far fa-user-circle"></i>
+                {/*  <div>
+                  <span>Sign In</span>
+                  <p>My Account</p>
+                </div>
+                <div className={classes["account-options-container"]}>
+                  <ul>
+                    <li>
+                      <Link to="/login">My Account</Link>
+                    </li>
+                    <li>Order Status</li>
+                    <li>
+                      <Link to="/help">Help</Link>
+                    </li>
+                  </ul>
+                </div> */}
+              </div>
+            </Link>
+            <div className={classes["cart-container"]}>
+              <i className="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div className={classes["search-container"]}>
+            <form onSubmit={searchHandler}>
+              <input type="text" placeholder="Search" />
+              <button type="submit">
+                <i className="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </>
+      )}
     </header>
   );
 }

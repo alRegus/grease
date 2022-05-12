@@ -1,21 +1,22 @@
 .header {
-  display: grid;
+  /*  display: grid;
   grid-template-columns: 15% 30% 35% 18%;
-  gap: 0.5rem;
+  gap: 0.5rem; */
+  display: flex;
+  gap: 1rem;
   height: 70px;
   margin: 0 auto;
   max-width: 1400px;
-
   a {
     outline: none;
     .logo-container {
-      align-self: center;
       width: 175px;
       height: 60px;
       margin-left: 0.6rem;
       img {
         width: inherit;
         height: inherit;
+        margin-top: 4px;
       }
     }
   }
@@ -219,6 +220,89 @@
     .cart-container {
       font-size: 1.3rem;
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .header {
+    a {
+      .logo-container {
+        align-self: center;
+        width: 150px;
+        height: 50px;
+        margin-left: 0.6rem;
+        img {
+          width: inherit;
+          height: inherit;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .header {
+    display: grid;
+    grid-template-columns: 65px 1fr 34%;
+    grid-template-rows: 1fr auto;
+    padding-right: 0;
+    margin-bottom: 10px;
+    align-items: center;
+    height: auto;
+    a {
+      margin: 0;
+      .logo-container {
+        display: flex;
+        align-items: center;
+        img {
+          width: 100px;
+          height: 40px;
+          margin: 0;
+        }
+      }
+    }
+    .search-container {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      padding-inline: 30px;
+      input {
+        border: 1px solid rgb(204, 204, 204);
+      }
+      button {
+        right: 43px;
+        top: 8px;
+      }
+    }
+    .auth-cart-container {
+      a {
+        .auth-container {
+          padding: 0;
+          &:hover {
+            background-color: #f3f3f3;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .header {
+    grid-template-columns: 50px 1fr 18%;
+    .auth-cart-container {
+      gap: 0.3rem;
+      a {
+        .auth-container {
+          i {
+            align-self: center;
+            font-size: 1rem;
+          }
+        }
+      }
+      .cart-container {
+        font-size: 1rem;
+      }
     }
   }
 }

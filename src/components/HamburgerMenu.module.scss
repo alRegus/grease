@@ -1,0 +1,154 @@
+.hamburger {
+  width: 20%;
+  position: relative;
+  &-display {
+    cursor: pointer;
+    width: 30px;
+    hr {
+      width: 20px;
+      margin-top: 5px;
+      height: 3px;
+      background-color: #000;
+    }
+  }
+  &-sliding {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    width: 50vw;
+    height: 100vh;
+    background-color: #fff;
+    left: -26px;
+    top: -18px;
+    transform: translateX(calc(max(-400px, -50vw)));
+    transition: all 0.3s ease-in;
+    &-close {
+      background-color: #003265;
+      color: #fff;
+      text-align: right;
+      padding-right: 15px;
+      padding-block: 10px;
+      span {
+        cursor: pointer;
+      }
+    }
+    &-acc {
+      display: flex;
+      flex-direction: column;
+      margin-inline: 20px;
+      border-bottom: 1px solid #222;
+      padding-bottom: 20px;
+      span {
+        font-size: 1rem;
+        color: #222;
+        margin: 0;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+    &-products {
+      margin-inline: 20px;
+      margin-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #222;
+      span {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      ul {
+        margin-top: 6px;
+        margin-left: 15px;
+        li {
+          list-style-type: none;
+          margin-top: 7px;
+          cursor: pointer;
+        }
+      }
+    }
+    &-brands {
+      margin-inline: 20px;
+      margin-top: 20px;
+      span {
+        cursor: pointer;
+      }
+    }
+    &-chat {
+      margin-inline: 20px;
+      margin-top: 10px;
+      a {
+        margin: 0;
+        margin-block: 7px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #222;
+      }
+    }
+  }
+  &-secondary-sliding {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    width: 50vw;
+    height: 100vh;
+    background-color: #fff;
+    left: -26px;
+    top: -18px;
+    transform: translateX(-50vw);
+    transition: all 0.3s ease-in;
+    &-close {
+      display: flex;
+      justify-content: space-between;
+      background-color: #003265;
+      span {
+        margin: 0;
+        padding: 10px 15px;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+    &-types {
+      margin: 20px;
+      li {
+        list-style-type: none;
+        margin-top: 10px;
+        a {
+          text-decoration: none;
+          color: #222;
+        }
+      }
+    }
+    &-help,
+    &-acc {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      span {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        margin-top: 10px;
+      }
+      a {
+        margin-top: 15px;
+        text-decoration: none;
+        color: #222;
+      }
+    }
+    &-brands {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      li {
+        list-style-type: none;
+        margin-top: 10px;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

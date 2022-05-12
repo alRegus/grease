@@ -1,16 +1,16 @@
 section {
   .categories {
+    margin-bottom: 50px;
+    max-width: 1400px;
     h1 {
-      font-size: 6rem;
+      font-size: clamp(3rem, 5vw, 6rem);
       color: #14213d;
       text-align: left;
       font-weight: 300;
-      background-color: #fff;
     }
-    margin-bottom: 50px;
-    max-width: 1400px;
     h2 {
       margin: 20px 0;
+      font-size: clamp(1.5rem, 2vw, 3rem);
     }
     &-list {
       display: flex;
@@ -20,7 +20,6 @@ section {
       color: #000;
       div {
         cursor: pointer;
-
         img {
           width: 200px;
           border-radius: 50%;
@@ -61,6 +60,96 @@ section {
     p {
       font-size: 1rem;
       color: #666666;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  section {
+    .brands {
+      div {
+        a {
+          img {
+            width: 200px;
+            height: 125px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 873px) {
+  section {
+    .categories {
+      a {
+        margin-top: 20px;
+        div {
+          img {
+            width: 180px;
+          }
+        }
+      }
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+      }
+    }
+    .brands {
+      div {
+        a {
+          img {
+            width: 150px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 636px) {
+  section {
+    .brands {
+      div {
+        a {
+          img {
+            width: 100px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  section {
+    .brands {
+      div {
+        a {
+          img {
+            width: 70px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    .categories {
+      a {
+        div {
+          img {
+            display: flex;
+            width: 100px;
+          }
+        }
+      }
     }
   }
 }
