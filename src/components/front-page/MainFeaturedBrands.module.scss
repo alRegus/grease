@@ -14,3 +14,55 @@
     }
   }
 }
+
+@media (max-width: 1320px) {
+  .featured-brands {
+    .brands-list {
+      .brand-container {
+        img {
+          width: 200px;
+          height: 125px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 873px) {
+  .featured-brands {
+    .brands-list {
+      .brand-container {
+        img {
+          width: 150px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 636px) {
+  .featured-brands {
+    .brands-list {
+      .brand-container {
+        img {
+          width: 100px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .featured-brands {
+    .brands-list {
+      .brand-container {
+        img {
+          width: 70px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

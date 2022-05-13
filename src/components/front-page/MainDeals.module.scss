@@ -11,9 +11,12 @@
   }
   .deals-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 
     .deals-container {
+      width: 200px;
+      height: 300px;
       cursor: pointer;
       background-color: #fff;
       padding: 0 10px;
@@ -22,7 +25,7 @@
       justify-content: center;
       align-items: center;
       img {
-        width: 200px;
+        width: 190px;
       }
       span {
         font-size: 0.9rem;
