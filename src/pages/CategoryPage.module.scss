@@ -111,6 +111,14 @@ section {
 
 @media (max-width: 636px) {
   section {
+    .categories {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
     .brands {
       div {
         a {

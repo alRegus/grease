@@ -37,3 +37,30 @@
     }
   }
 }
+
+@media (max-width: 476px) {
+  .help-section {
+    nav {
+      ul {
+        gap: 20px;
+        li {
+          a {
+            i {
+              font-size: 2rem;
+            }
+            div {
+              padding-top: 10px;
+              h2 {
+                font-size: 1.2rem;
+                padding-bottom: 5px;
+              }
+              p {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
