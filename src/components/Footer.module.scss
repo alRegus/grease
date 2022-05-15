@@ -18,6 +18,7 @@ footer {
     }
   }
   &-services {
+    margin: 0;
     h3 {
       margin: 20px 0;
     }
@@ -27,6 +28,7 @@ footer {
     }
   }
   &-shopping-help {
+    margin: 0;
     h3 {
       margin: 20px 0;
     }
@@ -36,6 +38,7 @@ footer {
     }
   }
   &-company-info {
+    margin: 0;
     h3 {
       margin: 20px 0;
     }
@@ -127,5 +130,34 @@ footer {
   span {
     text-decoration: underline;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 745px) {
+  .help-feedback-container {
+    grid-template-columns: repeat(2, 1fr);
+    &-services {
+      padding-left: 50px;
+    }
+    &-company-info {
+      padding-left: 50px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .help-feedback-container {
+    grid-template-columns: repeat(1, 1fr);
+    &-services {
+      justify-self: center;
+      padding-left: 0px;
+    }
+    &-shopping-help {
+      justify-self: center;
+    }
+    &-company-info {
+      justify-self: center;
+      padding-right: 57px;
+      padding-left: 0px;
+    }
   }
 }
