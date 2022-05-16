@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./LetUsHelpYou.module.scss";
 
@@ -11,19 +12,19 @@ export default function LetUsHelpYou() {
           <ul>
             <h2>Products Info</h2>
             <li>
-              <a href="#">Return Policy</a>
+              <Link to="/help/returnPolicy">Return Policy</Link>
             </li>
             <li>
-              <a href="#">Refurbished</a>
+              <Link to="#">Refurbished</Link>
             </li>
             <li>
-              <a href="#">Grey Market</a>
+              <Link to="#">Grey Market</Link>
             </li>
             <li>
-              <a href="#">Open Box</a>
+              <Link to="#">Open Box</Link>
             </li>
             <li>
-              <a href="#">Rebates</a>
+              <Link to="#">Rebates</Link>
             </li>
           </ul>
         </div>
@@ -31,19 +32,19 @@ export default function LetUsHelpYou() {
           <ul>
             <h2>Orders Info</h2>
             <li>
-              <a href="#">Ordering Information</a>
+              <Link to="#">Ordering Information</Link>
             </li>
             <li>
-              <a href="#">Payment Methods</a>
+              <Link to="#">Payment Methods</Link>
             </li>
             <li>
-              <a href="#">Safe Shopping</a>
+              <Link to="#">Safe Shopping</Link>
             </li>
             <li>
-              <a href="#">Shipping Info</a>
+              <Link to="#">Shipping Info</Link>
             </li>
             <li>
-              <a href="#">International</a>
+              <Link to="#">International</Link>
             </li>
           </ul>
         </div>
@@ -51,19 +52,19 @@ export default function LetUsHelpYou() {
           <ul>
             <h2>Support</h2>
             <li>
-              <a href="#">Store Pickup</a>
+              <Link to="#">Store Pickup</Link>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link to="#">Contact Us</Link>
             </li>
             <li>
-              <a href="#">Hours of Operation</a>
+              <Link to="#">Hours of Operation</Link>
             </li>
             <li>
-              <a href="#">Maps & Directions</a>
+              <Link to="#">Maps & Directions</Link>
             </li>
             <li>
-              <a href="#">Department & Services</a>
+              <Link to="#">Department & Services</Link>
             </li>
           </ul>
         </div>
@@ -73,25 +74,25 @@ export default function LetUsHelpYou() {
         <div className={classes["help-letUs-letUs-questionsHeader"]}>
           <h2>Most Frequently Asked Questions</h2>
           <span>
-            <a href="#">All FAQs</a>
+            <Link to="#">All FAQs</Link>
           </span>
         </div>
         <div>
           <ul>
             <li>
-              <a href="#">How can I check the status of my order?</a>
+              <Link to="#">How can I check the status of my order?</Link>
             </li>
             <li>
-              <a href="#">What happens if my item is on backorder?</a>
+              <Link to="#">What happens if my item is on backorder?</Link>
             </li>
             <li>
-              <a href="#">How do I return an item?</a>
+              <Link to="#">How do I return an item?</Link>
             </li>
             <li>
-              <a href="#">What is your return policy?</a>
+              <Link to="#">What is your return policy?</Link>
             </li>
             <li>
-              <a href="#">How do I cancel an order</a>
+              <Link to="#">How do I cancel an order</Link>
             </li>
           </ul>
         </div>
@@ -100,19 +101,19 @@ export default function LetUsHelpYou() {
         <h2>Shipping Information</h2>
         <ul>
           <li>
-            <a href="#">Shipping Information</a>
+            <Link to="#">Shipping Information</Link>
           </li>
           <li>
-            <a href="#">Delivery Times</a>
+            <Link to="#">Delivery Times</Link>
           </li>
           <li>
-            <a href="#">Delivery Requirements</a>
+            <Link to="#">Delivery Requirements</Link>
           </li>
           <li>
-            <a href="#">Damaged / Missing items upon delivery</a>
+            <Link to="#">Damaged / Missing items upon delivery</Link>
           </li>
           <li>
-            <a href="#">International Shipments</a>
+            <Link to="#">International Shipments</Link>
           </li>
         </ul>
       </div>
@@ -121,22 +122,22 @@ export default function LetUsHelpYou() {
         <span>Read on for information about our products.</span>
         <ul>
           <li>
-            <a href="#">Refurbished Information</a>
+            <Link to="#">Refurbished Information</Link>
           </li>
           <li>
-            <a href="#">Grey Market Information</a>
+            <Link to="#">Grey Market Information</Link>
           </li>
           <li>
-            <a href="#">Open Box</a>
+            <Link to="#">Open Box</Link>
           </li>
           <li>
-            <a href="#">Gift Certificates</a>
+            <Link to="#">Gift Certificates</Link>
           </li>
           <li>
-            <a href="#">Rebates</a>
+            <Link to="#">Rebates</Link>
           </li>
           <li>
-            <a href="#">Trade In Equipment</a>
+            <Link to="#">Trade In Equipment</Link>
           </li>
         </ul>
       </div>

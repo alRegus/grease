@@ -1,6 +1,7 @@
 .help {
   display: grid;
   grid-template-columns: 25% 50% 25%;
+  gap: 10px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -10,4 +11,10 @@
   grid-template-columns: 25% 75%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+@media (max-width: 801px) {
+  .help {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

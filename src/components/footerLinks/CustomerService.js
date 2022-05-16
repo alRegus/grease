@@ -1,99 +1,134 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
+import useWidth from "../../hooks/useWidth";
 import classes from "./CustomerService.module.scss";
 
 export default function CustomerService() {
+  const width = useWidth();
+
+  const [accordion1, setAccordion1] = useState(false);
+  const [accordion2, setAccordion2] = useState(false);
+  const [accordion3, setAccordion3] = useState(false);
+  const [accordion4, setAccordion4] = useState(false);
+
   return (
     <section className={classes["help-customer"]}>
-      <a href="#" className={classes["help-customer-header"]}>
+      <Link to="#" className={classes["help-customer-header"]}>
         Customer Service
-      </a>
+      </Link>
       <div>
-        <h2>Let Us Help You</h2>
-        <ul>
+        <h2
+          onClick={() =>
+            width <= 801 ? setAccordion1(!accordion1) : setAccordion1(false)
+          }
+        >
+          Let Us Help You {!accordion1 && <i className="fa-solid fa-plus"></i>}
+        </h2>
+        <ul style={accordion1 ? { display: "block" } : null}>
           <li>
-            <a href="#">Track Your Order</a>
+            <Link to="#">Track Your Order</Link>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <Link to="#">Contact Us</Link>
           </li>
           <li>
-            <a href="#">Departments & Services</a>
+            <Link to="#">Departments & Services</Link>
           </li>
           <li>
-            <a href="#">Map and Directions</a>
+            <Link to="#">Map and Directions</Link>
           </li>
           <li>
-            <a href="#">Affiliate Program</a>
+            <Link to="#">Affiliate Program</Link>
           </li>
         </ul>
       </div>
       <div>
-        <h2>Ordering Information</h2>
-        <ul>
+        <h2
+          onClick={() =>
+            width <= 801 ? setAccordion2(!accordion2) : setAccordion2(false)
+          }
+        >
+          Ordering Information{" "}
+          {!accordion2 && <i className="fa-solid fa-plus"></i>}
+        </h2>
+        <ul style={accordion2 ? { display: "block" } : null}>
           <li>
-            <a href="#">FAQ`s</a>
+            <Link to="#">FAQ`s</Link>
           </li>
           <li>
-            <a href="#">Shipping & Delivery</a>
+            <Link to="#">Shipping & Delivery</Link>
           </li>
           <li>
-            <a href="#">In-Store Pickup</a>
+            <Link to="#">In-Store Pickup</Link>
           </li>
           <li>
-            <a href="#">Buying and Selling Used</a>
+            <Link to="#">Buying and Selling Used</Link>
           </li>
           <li>
-            <a href="#">Return Policy</a>
+            <Link to="#">Return Policy</Link>
           </li>
           <li>
-            <a href="#">Warranties</a>
+            <Link to="#">Warranties</Link>
           </li>
           <li>
-            <a href="#">Expired Rebates</a>
+            <Link to="#">Expired Rebates</Link>
           </li>
           <li>
-            <a href="#">International Orders</a>
+            <Link to="#">International Orders</Link>
           </li>
           <li>
-            <a href="#">Payment Methods</a>
+            <Link to="#">Payment Methods</Link>
           </li>
           <li>
-            <a href="#">Safe Shopping</a>
+            <Link to="#">Safe Shopping</Link>
           </li>
           <li>
-            <a href="#">Privacy Policy</a>
+            <Link to="#">Privacy Policy</Link>
           </li>
           <li>
-            <a href="#">Terms & Conditions</a>
+            <Link to="#">Terms & Conditions</Link>
           </li>
           <li>
-            <a href="#">Ordering</a>
+            <Link to="#">Ordering</Link>
           </li>
           <li>
-            <a href="#">General Information</a>
+            <Link to="#">General Information</Link>
           </li>
           <li>
-            <a href="#">Gift Certificates</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h2>Ways to Shop</h2>
-        <ul>
-          <li>
-            <a href="#">Goverment Accounts</a>
-          </li>
-          <li>
-            <a href="#">Corporate Accounts</a>
+            <Link to="#">Gift Certificates</Link>
           </li>
         </ul>
       </div>
       <div>
-        <h2>Downloadable Software</h2>
-        <ul>
+        <h2
+          onClick={() =>
+            width <= 801 ? setAccordion3(!accordion3) : setAccordion3(false)
+          }
+        >
+          Ways to Shop {!accordion3 && <i className="fa-solid fa-plus"></i>}
+        </h2>
+        <ul style={accordion3 ? { display: "block" } : null}>
           <li>
-            <a href="#">Downloadables</a>
+            <Link to="#">Goverment Accounts</Link>
+          </li>
+          <li>
+            <Link to="#">Corporate Accounts</Link>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2
+          onClick={() =>
+            width <= 801 ? setAccordion4(!accordion4) : setAccordion4(false)
+          }
+        >
+          Downloadable Software{" "}
+          {!accordion4 && <i className="fa-solid fa-plus"></i>}
+        </h2>
+        <ul style={accordion4 ? { display: "block" } : null}>
+          <li>
+            <Link to="#">Downloadables</Link>
           </li>
         </ul>
       </div>

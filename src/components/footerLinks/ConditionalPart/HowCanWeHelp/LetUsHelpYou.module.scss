@@ -100,3 +100,25 @@
     }
   }
 }
+
+@media (max-width: 801px) {
+  .help-letUs {
+    padding: 20px;
+    max-width: 90%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    &-quick {
+      flex-direction: column;
+      div {
+        margin-top: 20px;
+        ul {
+          padding-left: 20px;
+          h2 {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

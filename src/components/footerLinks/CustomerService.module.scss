@@ -26,3 +26,23 @@
     }
   }
 }
+
+@media (max-width: 801px) {
+  .help-customer {
+    margin: 0;
+    padding-inline: 40px;
+    div {
+      h2 {
+        cursor: pointer;
+        i {
+          font-size: 0.8rem;
+          margin-left: 5px;
+        }
+      }
+      ul {
+        display: none;
+        padding-left: 10px;
+      }
+    }
+  }
+}
