@@ -105,5 +105,10 @@
     &-departments {
       text-align: center;
     }
+    &-phone {
+      &-hover {
+        left: 20px;
+      }
+    }
   }
 }
