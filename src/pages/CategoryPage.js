@@ -34,7 +34,7 @@ export default function CategoryPage() {
       payload: {
         name: "",
         categories: "",
-        type: typeValue,
+        type: [typeValue],
         used: false,
         deals: false,
         brand: [],
@@ -80,7 +80,7 @@ export default function CategoryPage() {
         type: [],
         used: false,
         deals: false,
-        brand: brandValue,
+        brand: [brandValue],
         priceRange: [],
         rating: [],
         discount: [],

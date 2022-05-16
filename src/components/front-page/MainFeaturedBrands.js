@@ -23,7 +23,7 @@ export default function MainFeaturedBrands() {
         type: [],
         used: false,
         deals: false,
-        brand: brandValue,
+        brand: [brandValue],
         priceRange: [],
         rating: [],
         discount: [],

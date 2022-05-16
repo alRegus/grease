@@ -21,6 +21,11 @@ export default function ProductsFilterMenu() {
   const prevBrandArr = useSelector((state) => state.filter.brand);
   const prevTypeArr = useSelector((state) => state.filter.type);
 
+  const displayFilterMenu = useSelector((state) => state.display.display);
+  const filteredParamReducer = useSelector(
+    (state) => state.filteredParamValues.filteredParamValues
+  );
+
   const dispatch = useDispatch();
 
   const displayBrands = brands.map((brand) => (
@@ -146,6 +151,13 @@ export default function ProductsFilterMenu() {
       },
     });
   };
+
+  const closeFilterMenuHandler = () => {
+    dispatch({ type: "GET_DISPLAY_FILTER_MENU", payload: false });
+    dispatch({ type: "OVERFLOW_TOGGLE", payload: { overflow: "scroll" } });
+  };
+
+  console.log(filteredParamReducer);
 
   return (
     <div className={classes["products-filter"]}>
@@ -277,9 +289,22 @@ export default function ProductsFilterMenu() {
           <ul>{displayCategories}</ul>
         </div>
       </section>
+      {displayFilterMenu && (
+        <h2 style={{ fontSize: "1rem", paddingTop: "20px" }}>
+          {filteredParamReducer}
+        </h2>
+      )}
       <button onClick={clearHandler} className={classes["clear-all"]}>
         Clear All
       </button>
+      {displayFilterMenu && (
+        <button
+          className={classes["done-btn"]}
+          onClick={closeFilterMenuHandler}
+        >
+          I`m Done
+        </button>
+      )}
     </div>
   );
 }

@@ -32,3 +32,25 @@
     }
   }
 }
+
+.refine {
+  border-radius: 4px;
+  background-color: #0060bf;
+  font-size: 1rem;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: bold;
+  padding-inline: 20px;
+  cursor: pointer;
+  transition: background-color, 0.15s ease-in;
+  &:hover {
+    background-color: #2787e6;
+  }
+}
+
+@media (max-width: 801px) {
+  .products-sort {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

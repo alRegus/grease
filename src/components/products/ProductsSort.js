@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useHttp from "../../hooks/useHttp";
+import useWidth from "../../hooks/useWidth";
 
 import classes from "./ProductsSort.module.scss";
 
@@ -9,7 +10,10 @@ export default function ProductsSort() {
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/productsArrayLength.json"
   );
 
+  const windowWidth = useWidth();
+
   const viewParam = useSelector((state) => state.view.view);
+  const filteredCount = useSelector((state) => state.count.count.count);
   const dispatch = useDispatch();
 
   const sortHandler = (e) => {
@@ -30,6 +34,11 @@ export default function ProductsSort() {
     dispatch({ type: "VIEW_TOGGLE", payload: viewToggle });
   };
 
+  const displayFilterMenuHandler = () => {
+    dispatch({ type: "GET_DISPLAY_FILTER_MENU", payload: true });
+    dispatch({ type: "OVERFLOW_TOGGLE", payload: { overflow: "hidden" } });
+  };
+
   const listBgc =
     viewParam === "list" ? { backgroundColor: "#686868", color: "#fff" } : {};
   const gridBgc =
@@ -47,22 +56,38 @@ export default function ProductsSort() {
         </select>
       </div>
 
-      <div className={classes["products-sort-quantity"]}>
-        <p>lol of {productsQuantity} items</p>
-      </div>
+      {windowWidth > 801 && (
+        <>
+          <div className={classes["products-sort-quantity"]}>
+            <p>
+              {filteredCount} of {productsQuantity} items
+            </p>
+          </div>
 
-      <div className={classes["products-sort-view"]}>
-        <i
-          style={listBgc}
-          onClick={toggleViewHandler}
-          className="fa-solid fa-list"
-        ></i>
-        <i
-          style={gridBgc}
-          onClick={toggleViewHandler}
-          className="fa-solid fa-grid-2"
-        ></i>
-      </div>
+          <div className={classes["products-sort-view"]}>
+            <i
+              style={listBgc}
+              onClick={toggleViewHandler}
+              className="fa-solid fa-list"
+            ></i>
+            <i
+              style={gridBgc}
+              onClick={toggleViewHandler}
+              className="fa-solid fa-grid-2"
+            ></i>
+          </div>
+        </>
+      )}
+      {windowWidth <= 801 && (
+        <>
+          <span
+            className={classes["refine"]}
+            onClick={displayFilterMenuHandler}
+          >
+            Refine {filteredCount} Results
+          </span>
+        </>
+      )}
     </section>
   );
 }

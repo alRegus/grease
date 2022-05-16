@@ -6,8 +6,9 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../instruments-logo.png";
 import classes from "./Header.module.scss";
 import HamburgerMenu from "./HamburgerMenu";
+import useWidth from "../hooks/useWidth";
 
-function debounce(fn, ms) {
+/* function debounce(fn, ms) {
   let timer;
   return () => {
     clearTimeout(timer);
@@ -16,12 +17,12 @@ function debounce(fn, ms) {
       fn.apply(this, arguments);
     }, ms);
   };
-}
+} */
 
 function Header() {
   const [instrumentTypesState, setInstrumentTypesState] = useState([]);
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  /* const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
       setWindowWidth(window.innerWidth);
@@ -30,9 +31,9 @@ function Header() {
     return () => {
       window.removeEventListener("resize", debouncedHandleResize);
     };
-  });
+  }); */
 
-  console.log(windowWidth);
+  const windowWidth = useWidth();
 
   const dispatch = useDispatch();
   const navigate = useNavigate();

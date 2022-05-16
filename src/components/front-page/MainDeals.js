@@ -29,10 +29,13 @@ const MainDeals = function () {
       payload: {
         name: "",
         categories: "",
-        type: "",
+        type: [],
         used: false,
         deals: true,
-        brand: "",
+        brand: [],
+        priceRange: [],
+        rating: [],
+        discount: [],
       },
     });
   };

@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProductsListItem from "./ProductsListItem";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import useHttp from "../../hooks/useHttp";
 
 import classes from "./ProductsList.module.scss";
@@ -10,6 +10,7 @@ export default function ProductsList() {
   const allProducts = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts.json"
   );
+  const dispatch = useDispatch();
 
   const sortParam = useSelector((state) => state.sort.sortBy);
   const viewParam = useSelector((state) => state.view.view);
@@ -44,6 +45,11 @@ export default function ProductsList() {
       (prod.discount <= filterParams.discount[1] ||
         filterParams.discount.length === 0)
     );
+  });
+
+  dispatch({
+    type: "GET_FILTERED_QUANTITY",
+    payload: { count: filteredProducts.length },
   });
 
   if (sortParam === "low-to-high")

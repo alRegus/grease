@@ -19,7 +19,7 @@ export default function MainPopularCategories() {
       payload: {
         name: "",
         categories: "",
-        type: typeValue,
+        type: [typeValue],
         used: false,
         deals: false,
         brand: [],

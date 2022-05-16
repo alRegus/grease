@@ -1,13 +1,43 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import classes from "./ProductsListPage.module.scss";
 import ProductsList from "../components/products/ProductsList";
 import ProductsSort from "../components/products/ProductsSort";
 import ProductsFilterMenu from "../components/products/ProductsFilterMenu";
+import useWidth from "../hooks/useWidth";
+
+/* function debounce(fn, ms) {
+  let timer;
+  return () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+} */
 
 export default function ProductsListPage() {
   const filterParams = useSelector((state) => state.filter);
+  const displayFilterMenu = useSelector((state) => state.display.display);
+
+  const dispatch = useDispatch();
+  /* console.log(filteredParamsReducer);
+   */
+
+  /* const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }, 50);
+    window.addEventListener("resize", debouncedHandleResize);
+    return () => {
+      window.removeEventListener("resize", debouncedHandleResize);
+    };
+  }); */
+
+  const windowWidth = useWidth();
 
   let filteredParamValues = [];
   for (const [key, value] of Object.entries(filterParams)) {
@@ -58,15 +88,25 @@ export default function ProductsListPage() {
     }
   }
 
+  dispatch({
+    type: "GET_FILTERED_PARAM_VALUES",
+    payload: filteredParamValues
+      .flat(7)
+      .filter((item) => typeof item === "string")
+      .join(" > "),
+  });
+
   return (
     <section className={classes["products"]}>
-      <h1>
-        {
-          filteredParamValues
-            .flat(7)
-            .filter((item) => typeof item === "string")
-            .join(" > ")
-          /* 
+      {windowWidth > 801 && (
+        <>
+          <h1>
+            {
+              filteredParamValues
+                .flat(7)
+                .filter((item) => typeof item === "string")
+                .join(" > ")
+              /* 
           Проблема была в том что в массиве образовывались другие массивы различной глубины при нажатии какого либа параметра, поэтому одни значения переходили в другие, и выровнить массив затем проверить строка ли это, чтоб избавится от пустных массивов глубоких в главном массиве
           .flat()
           .join(" ")
@@ -99,17 +139,34 @@ export default function ProductsListPage() {
           .replace("100 Discount 10% or more", "Discount 10% or more")
           .replace("100 Discount 25% or more", "Discount 25% or more")
           .replace("100 Discount 50% or more", "Discount 50% or more") */
-        }
-      </h1>
-      <div className={classes["products-page"]}>
-        <div className={classes["products-page-filter"]}>
-          <ProductsFilterMenu />
-        </div>
-        <div className={classes["products-page-list"]}>
-          <ProductsSort />
-          <ProductsList />
-        </div>
-      </div>
+            }
+          </h1>
+          <div className={classes["products-page"]}>
+            <div className={classes["products-page-filter"]}>
+              <ProductsFilterMenu />
+            </div>
+            <div className={classes["products-page-list"]}>
+              <ProductsSort />
+              <ProductsList />
+            </div>
+          </div>
+        </>
+      )}
+      {windowWidth <= 801 && (
+        <>
+          <h1>
+            {filteredParamValues
+              .flat(7)
+              .filter((item) => typeof item === "string")
+              .join(" > ")}
+          </h1>
+          {displayFilterMenu && <ProductsFilterMenu />}
+          <div className={classes["products-page-list"]}>
+            <ProductsSort />
+            <ProductsList />
+          </div>
+        </>
+      )}
     </section>
   );
 }
