@@ -28,3 +28,10 @@
     color: #222;
   }
 }
+
+@media (max-width: 801px) {
+  .store-pickups {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
