@@ -12,14 +12,14 @@
       }
     }
     &-info {
+      margin: 0;
+      max-width: 750px;
       h1 {
         font-size: clamp(1.2rem, 2vw, 1.8rem);
         font-weight: 400;
       }
       &-rating {
         margin-top: 20px;
-        span {
-        }
       }
       &-price {
         margin-top: 10px;
@@ -64,6 +64,101 @@
         margin-top: 20px;
         line-height: 1.5;
         color: rgb(82, 80, 80);
+      }
+    }
+  }
+}
+
+@media (max-width: 1317px) {
+  .product-details {
+    &-container {
+      grid-template-columns: 30% 70%;
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 1121px) {
+  .product-details {
+    &-container {
+      gap: 30px;
+      &-info {
+        &-btn {
+          button {
+            padding: 20px 70px;
+          }
+        }
+        &-description {
+          max-width: 600px;
+          margin: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .product-details {
+    &-container {
+      gap: 20px;
+      &-info {
+        &-btn {
+          button {
+            padding: 15px 60px;
+            font-size: 1rem;
+          }
+        }
+        &-description {
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 759px) {
+  .product-details {
+    &-container {
+      gap: 10px;
+      &-info {
+        &-btn {
+          margin-top: 10px;
+          button {
+            padding: 15px 40px;
+            font-size: 1rem;
+          }
+        }
+        &-stock {
+          margin-top: 10px;
+        }
+        &-description {
+          max-width: 300px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .product-details {
+    &-container {
+      gap: 10px;
+      &-info {
+        &-btn {
+          button {
+            padding: 15px 40px;
+            font-size: 1rem;
+          }
+        }
+        &-stock {
+          margin-top: 10px;
+        }
+        &-description {
+          max-width: 200px;
+          font-size: 0.8rem;
+        }
       }
     }
   }
