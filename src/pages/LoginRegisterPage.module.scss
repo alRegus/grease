@@ -11,3 +11,14 @@
     box-shadow: 5px 16px 24px #00000080;
   }
 }
+
+@media (max-width: 801px) {
+  .login-register {
+    align-items: flex-start;
+    &-card {
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+    }
+  }
+}

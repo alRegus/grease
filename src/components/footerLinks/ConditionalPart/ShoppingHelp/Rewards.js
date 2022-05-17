@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import Accordion from "./Accordion";
+import Login from "../../../login-register/Login";
 import Register from "../../../login-register/Register";
 import ToggleLogin from "../../../login-register/ToggleLogin";
 import classes from "./Rewards.module.scss";
@@ -305,6 +307,8 @@ participating to join.
 ];
 
 export default function Rewards() {
+  const signIn = useSelector((state) => state.signIn.signIn);
+
   return (
     <section className={classes["rewards"]}>
       <div className={classes["rewards-heading"]}>
@@ -501,7 +505,7 @@ export default function Rewards() {
       </div>
       <div className={classes["rewards-login"]}>
         <ToggleLogin />
-        <Register />
+        {signIn ? <Login /> : <Register />}
       </div>
       <div className={classes["rewards-perks"]}>
         <h3>GET EVEN MORE PERKS WITH</h3>

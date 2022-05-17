@@ -3,6 +3,7 @@
     background: url(https://i.ibb.co/MV6LgvF/Adorama-Quick-Apply-Header-1900.jpg)
       center center no-repeat;
     padding-block: 50px;
+    background-size: cover;
   }
   &-grid {
     display: grid;
@@ -16,7 +17,7 @@
     max-width: 1440px;
     h1 {
       grid-area: h1;
-      font-size: 3rem;
+      font-size: clamp(2rem, 3vw, 3rem);
       text-shadow: 1px 3px 6px #00000029;
       color: #fff;
     }
@@ -25,7 +26,7 @@
       color: #fff;
       grid-area: sub;
       &:first-of-type {
-        font-size: 1.5rem;
+        font-size: clamp(1.1rem, 2vw, 1.5rem);
         margin-bottom: 20px;
       }
       &:nth-of-type(2) {
@@ -33,6 +34,7 @@
       }
       &:last-of-type {
         grid-area: btn2Text;
+        font-size: clamp(0.7rem, 2vw, 1rem);
       }
     }
     button {
@@ -59,7 +61,7 @@
     max-width: 1000px;
     margin-top: -20px;
     h2 {
-      font-size: 1.3rem;
+      font-size: clamp(1rem, 2vw, 1.3rem);
       text-align: center;
       padding: 32px;
       border-top-right-radius: 5px;
@@ -76,16 +78,17 @@
         color: #004387;
         display: flex;
         justify-content: center;
-        font-size: 6rem;
+        font-size: clamp(4rem, 7vw, 6rem);
         margin-bottom: 30px;
       }
       h3 {
         color: #004387;
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        text-align: center;
         margin-bottom: 20px;
       }
       p {
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 2vw, 1.3rem);
         max-width: 350px;
         text-align: center;
         color: #222;
@@ -102,11 +105,11 @@
         z-index: 999;
         margin-top: 40px;
         background-color: #f3f3f3;
-        padding: 20px;
+        padding: clamp(11px, 2vw, 20px);
         left: 0;
         right: 0;
         border-radius: 50%;
-        width: 70px;
+        width: clamp(50px, 7vw, 70px);
         font-weight: bold;
         color: #004387 !important;
       }
@@ -149,9 +152,9 @@
           color: #fff;
           border-radius: 5px;
           text-decoration: none;
-          padding: 10px 50px;
+          padding: 10px clamp(20px, 4vw, 50px);
           font-weight: bold;
-          font-size: 1.5rem;
+          font-size: clamp(0.8rem, 2vw, 1.5rem);
           cursor: pointer;
           background: linear-gradient(
             180deg,
@@ -167,7 +170,7 @@
       }
       p {
         text-align: right;
-        font-size: 1.4rem;
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
         font-weight: bold;
       }
     }
@@ -177,6 +180,9 @@
     grid-template-columns: 40% 60%;
     max-width: 1400px;
     margin-top: 50px;
+    img {
+      width: min(100%, 90%);
+    }
     &-content {
       position: relative;
       &-part {
@@ -185,14 +191,14 @@
         padding: 20px;
         margin-top: 5px;
         h2 {
-          font-size: 2.2rem;
+          font-size: clamp(1.8rem, 4vw, 2.2rem);
           font-weight: 400;
           color: #222;
           margin-bottom: 5px;
         }
         span {
           color: #004387;
-          font-size: 1.3rem;
+          font-size: clamp(1rem, 4vw, 1.3rem);
           margin-left: 20px;
         }
         strong {
@@ -201,22 +207,27 @@
           margin-left: 20px;
         }
         p {
+          margin-top: 10px;
           font-size: 0.9rem;
           color: #585c5f;
           line-height: 1.5;
           text-rendering: optimizeLegibility;
           margin-left: 20px;
         }
-      }
-      &-or {
-        position: absolute;
-        left: 50%;
-        bottom: 40%;
-        background-color: #f3f3f3;
-        padding: 15px;
-        border-radius: 50%;
-        color: #004387;
-        font-weight: bold;
+        &:first-of-type {
+          position: relative;
+        }
+        &-or {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-82%);
+          bottom: -26px;
+          background-color: #f3f3f3;
+          padding: 12px;
+          border-radius: 50%;
+          color: #004387 !important;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -230,12 +241,12 @@
       h2 {
         text-align: center;
         font-weight: 400;
-        font-size: 2.2rem;
+        font-size: clamp(1.5rem, 6vw, 2.2rem);
         text-rendering: optimizeLegibility;
         margin-bottom: 20px;
       }
       p {
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 5vw, 1.3rem);
         text-rendering: optimizeLegibility;
         line-height: 1.5;
         color: #222;
@@ -255,7 +266,7 @@
         grid-template-columns: repeat(4, 1fr);
         &-part {
           i {
-            font-size: 5rem;
+            font-size: clamp(3rem, 7vw, 5rem);
             color: #06c;
             display: flex;
             justify-content: center;
@@ -264,13 +275,13 @@
             text-align: center;
             font-weight: 700;
             text-rendering: optimizeLegibility;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 5vw, 1.3rem);
             color: #222;
             margin-top: 15px;
           }
           p {
             color: #222;
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 5vw, 1rem);
             text-rendering: optimizeLegibility;
             text-align: center;
             margin-top: 10px;
@@ -293,7 +304,7 @@
       gap: 20px;
       color: #fff;
       h2 {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 3vw, 2.5rem);
         font-weight: 400;
         color: #fff;
         text-rendering: optimizeLegibility;
@@ -301,7 +312,7 @@
       }
       p {
         text-align: left;
-        font-size: 1rem;
+        font-size: clamp(0.9rem, 2vw, 1rem);
       }
       &-btns {
         display: flex;
@@ -310,9 +321,9 @@
           color: #fff;
           border-radius: 5px;
           text-decoration: none;
-          padding: 10px 26px;
+          padding: 10px clamp(15px, 3vw, 26px);
           font-weight: bold;
-          font-size: 1rem;
+          font-size: clamp(0.8rem, 1vw, 1rem);
           cursor: pointer;
           background: linear-gradient(
             180deg,
@@ -329,18 +340,18 @@
     }
   }
   &-accordion {
-    width: 1400px;
+    max-width: 1400px;
     margin-top: 50px;
     h2 {
       font: normal normal normal 42px/50px Lato;
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       margin-bottom: 10px;
     }
     &-part {
       button {
         color: #0066cc;
         font: normal normal normal 21px/25px Lato;
-        font-size: 1.5rem;
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
         cursor: pointer;
         border: none;
         background-color: #f3f3f3;
@@ -415,6 +426,7 @@
 .active3 {
   &::before {
     transform: rotate(90deg); /* !!не работает */
+    color: red;
   }
 }
 
@@ -423,4 +435,127 @@
   padding-bottom: 30px;
   padding-left: 40px;
   margin-top: -20px;
+}
+
+@media (max-width: 1247px) {
+  .edge-credit-card {
+    &-grid {
+      grid-template-columns: 32% 250px 20px 250px;
+      gap: 10px 20px;
+      max-width: 1024px;
+      /* padding: 50px 0; */
+      grid-template-areas:
+        "space h1 h1 h1"
+        "space sub sub sub"
+        "space btn1 or btn2"
+        "space space2 space2 btn2Text";
+    }
+    &-gearup {
+      &-apply {
+        grid-template-columns: repeat(1, 1fr);
+        p {
+          text-align: center;
+        }
+      }
+    }
+    &-miss {
+      &-container {
+        flex-direction: column;
+        h2 {
+          width: 100%;
+        }
+        p {
+          text-align: center;
+        }
+        &-btns {
+          width: clamp(200px, 70vw, 300px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 896px) {
+  .edge-credit-card {
+    &-grid {
+      grid-template-columns: 26.25% 190px 20px 190px;
+      gap: 5px 10px;
+      grid-template-areas:
+        "space h1 h1 h1"
+        "space sub sub sub"
+        "space btn1 or btn2"
+        "space space2 space2 btn2Text";
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      /*  padding: 20px 0 40px; */
+    }
+    &-benefits {
+      grid-template-columns: repeat(1, 1fr);
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .edge-credit-card {
+    &-heading {
+      background: url(https://i.ibb.co/N3hvJtf/Adorama-CC-GLP-Header-Mobile.png)
+        center center no-repeat;
+      max-height: 380px;
+      min-height: 150px;
+    }
+    &-grid {
+      display: none;
+    }
+    &-gearup {
+      h2 {
+        background: none;
+        color: #222;
+        margin-bottom: 0;
+      }
+      &-benefits {
+        flex-direction: column;
+        &-part {
+          margin-top: 20px;
+          &:first-of-type {
+            margin-top: 0;
+          }
+          p {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    &-benefits {
+      &-content {
+        &-part {
+          h2,
+          strong,
+          p {
+            text-align: center;
+          }
+          span {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    &-works {
+      &-container {
+        &-spec {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+    &-accordion {
+      width: 90%;
+    }
+    &-terms {
+      width: 90%;
+    }
+  }
 }

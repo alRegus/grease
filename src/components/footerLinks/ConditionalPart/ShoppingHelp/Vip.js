@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Accordion from "./Accordion";
+import useWidth from "../../../../hooks/useWidth";
 import classes from "./Vip.module.scss";
 
 const accordionContent = [
@@ -72,7 +73,7 @@ const accordionContent = [
 export default function Vip() {
   const [displayh5, setDisplayh5] = useState(1);
 
-  console.log(displayh5);
+  const width = useWidth();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -100,13 +101,17 @@ export default function Vip() {
             <a href="#">Member Login</a>
           </div>
         </div>
-        <div>
-          {displayh5 === 1 && <h5>Dedicated Customer Service</h5>}
-          {displayh5 === 2 && <h5>Members-Only Discounts & Perks</h5>}
-          {displayh5 === 3 && <h5>1-Year “Drops & Spills” Protection</h5>}
-          {displayh5 === 4 && <h5>60-Day Return Policy</h5>}
-          {displayh5 === 5 && <h5>Free 2-Day Shipping</h5>}
-        </div>
+        {width > 801 && (
+          <>
+            <div>
+              {displayh5 === 1 && <h5>Dedicated Customer Service</h5>}
+              {displayh5 === 2 && <h5>Members-Only Discounts & Perks</h5>}
+              {displayh5 === 3 && <h5>1-Year “Drops & Spills” Protection</h5>}
+              {displayh5 === 4 && <h5>60-Day Return Policy</h5>}
+              {displayh5 === 5 && <h5>Free 2-Day Shipping</h5>}
+            </div>
+          </>
+        )}
       </div>
       <p className={classes["vip-passion"]}>
         Now you can feed your passion for photography, video and audio—and pick

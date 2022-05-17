@@ -2,7 +2,7 @@
   &-header {
     background: url(https://i.ibb.co/XSDnrRs/VIP360-header.jpg);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     align-items: center;
     div {
       padding-block: 30px;
@@ -46,7 +46,7 @@
     }
   }
   &-passion {
-    font-size: 1.875rem;
+    font-size: clamp(1rem, 4vw, 1.875rem);
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -136,7 +136,7 @@
         background: none;
         width: 100%;
         color: #fff;
-        font-size: 2.2rem;
+        font-size: clamp(1rem, 4vw, 2.2rem);
         border: none;
         border-bottom: 1px solid #4a5865;
         text-align: left;
@@ -222,4 +222,22 @@
 }
 .border {
   border-bottom: 1px solid #4a5865;
+}
+
+@media (max-width: 801px) {
+  .vip {
+    &-header {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-cards1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-cards2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-terms {
+      max-width: 85%;
+      margin: 0 auto;
+    }
+  }
 }

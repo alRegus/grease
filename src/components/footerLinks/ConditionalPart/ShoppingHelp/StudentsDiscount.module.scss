@@ -18,10 +18,11 @@
       padding-right: 40px;
       img {
         margin-bottom: 20px;
+        width: clamp(200px, 50vw, 482px);
       }
       p {
         margin-bottom: 12px;
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 3vw, 1rem);
         color: #fff;
         line-height: 1.5;
         font-weight: normal;
@@ -38,6 +39,7 @@
       &-btn {
         display: flex;
         align-items: center;
+        gap: 5px;
         margin-block: 30px;
         button {
           background: transparent
@@ -46,7 +48,7 @@
           font-weight: bold;
           color: #fff;
           border: none;
-          font-size: 1.5rem;
+          font-size: clamp(1rem, 3vw, 1.5rem);
           border-radius: 5px;
           padding-block: 15px;
           width: 50%;
@@ -54,7 +56,6 @@
         }
         p {
           color: #ace2ff;
-          font-size: 1rem !important;
         }
       }
     }
@@ -64,7 +65,7 @@
     max-width: 1200px;
     h2 {
       text-align: center;
-      font-size: 3rem;
+      font-size: clamp(2rem, 4vw, 3rem);
       margin-bottom: 50px;
     }
     &-steps {
@@ -73,12 +74,13 @@
       gap: 20px;
       &-step {
         img {
+          width: clamp(100px, 17vw, 190px);
           display: flex;
           justify-content: center;
         }
         h4 {
           text-align: center;
-          font-size: 1.6rem;
+          font-size: clamp(1.2rem, 4vw, 1.6rem);
           margin-top: 20px;
         }
         p {
@@ -119,18 +121,18 @@
     }
   }
   &-accordion {
-    width: 1400px;
+    max-width: 1400px;
     margin-top: 50px;
     h2 {
       font: normal normal normal 42px/50px Lato;
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
       margin-bottom: 10px;
     }
     &-part {
       button {
         color: #0066cc;
         font: normal normal normal 21px/25px Lato;
-        font-size: 1.5rem;
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
         cursor: pointer;
         border: none;
         background-color: #f3f3f3;
@@ -207,6 +209,7 @@
 .active4 {
   &::before {
     transform: rotate(90deg); /* !!не работает */
+    color: red;
   }
 }
 
@@ -215,4 +218,39 @@
   padding-bottom: 30px;
   padding-left: 40px;
   margin-top: -20px;
+}
+
+@media (max-width: 945px) {
+  .student {
+    &-heading {
+      grid-template-columns: repeat(1, 1fr);
+      &-img {
+        height: clamp(200px, 50vw, 520px);
+      }
+    }
+    &-how {
+      &-steps {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    &-accordion {
+      width: 90%;
+    }
+    &-miss {
+      &-container {
+        flex-direction: column;
+        &-text {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 10px;
+          h2 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }

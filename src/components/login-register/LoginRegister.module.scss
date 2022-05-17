@@ -3,7 +3,7 @@
   padding: 10%;
   margin: 0;
   h2 {
-    font-size: 2.3rem;
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
     margin-bottom: 30px;
     text-align: center;
   }
@@ -20,11 +20,13 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 10px;
-        width: 300px;
+        max-width: 100%;
         font-size: 1.2rem;
       }
     }
     button {
+      display: flex;
+      justify-content: center;
       background: linear-gradient(
         180deg,
         #fc5d37 0%,
@@ -36,22 +38,42 @@
       border-radius: 5px;
       padding: 10px;
       font-weight: bold;
-      font-size: 1.2rem;
-      width: 300px;
+      font-size: clamp(1rem, 4vw, 1.2rem);
+      max-width: 100%;
       cursor: pointer;
     }
   }
 }
 .register-field {
-  padding: 6%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   form {
     div {
       input {
-        width: 400px;
+        max-width: 100%;
       }
     }
     button {
-      width: 400px;
+      max-width: 100%;
     }
+  }
+}
+
+@media (max-width: 801px) {
+  .login-field {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .register-field {
+    width: 100%;
+    margin-top: 20px;
   }
 }

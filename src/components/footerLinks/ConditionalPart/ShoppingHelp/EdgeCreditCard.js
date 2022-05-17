@@ -194,8 +194,11 @@ export default function EdgeCreditCard() {
               the promotional balance is not paid in full within 6 or 12 Months.
               Minimum monthly payments required.
             </p>
+            <p className={classes["edge-credit-card-benefits-content-part-or"]}>
+              OR
+            </p>
           </div>
-          <p className={classes["edge-credit-card-benefits-content-or"]}>OR</p>
+
           <div className={classes["edge-credit-card-benefits-content-part"]}>
             <h2>Every Day Savings</h2>
             <span>5% OFF† Every Day with your Adorama Edge Credit Card</span>

@@ -8,7 +8,7 @@
     padding-block: 105px 33px;
     &-content {
       h1 {
-        font-size: 6rem;
+        font-size: clamp(2rem, 4vw, 6rem);
         color: #fff;
         text-align: center;
       }
@@ -18,14 +18,14 @@
         font: normal normal bold 29px/35px Lato;
         letter-spacing: 8.7px;
         text-shadow: 0px 3px 8px #000000c4;
-        font-size: 1.8rem;
+        font-size: clamp(1.2rem, 2vw, 1.8rem);
       }
       p {
         text-align: center;
         color: #fff;
         margin-top: 30px;
         font-weight: normal;
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 4vw, 1.4rem);
         margin-bottom: 30px;
         &:last-of-type {
           font-size: 1.1rem;
@@ -61,7 +61,7 @@
     max-width: 1400px;
     h2 {
       text-align: center;
-      font-size: 3rem;
+      font-size: clamp(2rem, 4vw, 3rem);
       padding-block: 90px 20px;
     }
     p {
@@ -219,6 +219,7 @@
   &-login {
     margin-top: 50px;
     display: flex;
+    margin-bottom: 20px;
   }
   &-perks {
     background: url(https://i.ibb.co/gwvBHyw/VIP360-G-Page-Banner-Refresh-Desktop-2x.jpg);
@@ -367,6 +368,7 @@
 .active2 {
   &::before {
     transform: rotate(90deg); /* !!не работает */
+    color: red;
   }
 }
 
@@ -375,4 +377,73 @@
   padding-bottom: 30px;
   padding-left: 40px;
   margin-top: -20px;
+}
+
+@media (max-width: 801px) {
+  .rewards {
+    &-gearup {
+      &-cards {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    &-more {
+      &-grid {
+        &-upper {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          &-part {
+            width: 100%;
+            height: 100%;
+            &:nth-of-type(1) {
+              border-bottom: 1px solid #004387;
+            }
+            &:nth-of-type(2) {
+              border-bottom: 1px solid #004387;
+              border-right: none;
+            }
+          }
+        }
+        &-lower {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          &-part {
+            width: 100%;
+            height: 100%;
+            &:nth-of-type(2) {
+              border-right: none;
+            }
+            &:nth-of-type(4) {
+              border-top: 1px solid #004387;
+            }
+            &:nth-of-type(3) {
+              border-top: 1px solid #004387;
+            }
+            &:nth-of-type(4) {
+              border-top: 1px solid #004387;
+            }
+          }
+        }
+      }
+    }
+    &-login {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-faq {
+      max-width: 90%;
+      margin-top: 20px;
+      h2 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        margin-bottom: 20px;
+      }
+      &-accordion {
+        button {
+          font-size: clamp(1.1rem, 4vw, 1.5rem);
+        }
+      }
+    }
+    &-terms {
+      max-width: 90%;
+    }
+  }
 }
