@@ -22,6 +22,8 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
     /* border-bottom: 1px solid #ababab; */
     &-item {
       color: #ababab;
@@ -31,11 +33,11 @@
       padding-bottom: 20px;
       cursor: pointer;
       strong {
-        font-size: clamp(2rem, 2.5vw, 5rem);
+        font-size: clamp(1.5rem, 3vw, 5rem);
         margin-bottom: 10px;
       }
       span {
-        font-size: clamp(1rem, 1vw, 2rem);
+        font-size: clamp(0.9rem, 1.5vw, 2rem);
         text-align: center;
       }
     }
@@ -51,11 +53,12 @@
       margin-bottom: 100px;
       h2 {
         text-align: left;
-        font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+        font-size: clamp(1.9rem, 5vw, 3.5rem);
         margin-bottom: 20px;
       }
       img {
         margin-block: 20px;
+        max-width: 100%;
       }
       p {
         color: #585c5f;
@@ -81,6 +84,73 @@
           font-size: clamp(1.2rem, 1.6vw, 2.2rem);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .history {
+    &-part {
+      width: 80%;
+      &::before {
+        content: "";
+        position: absolute;
+        transform: translateX(-5vw);
+        width: 1px;
+        background-color: #222;
+        top: 770px;
+      }
+      &-containers {
+        h2 {
+          &::before {
+            content: "";
+            position: absolute;
+            transform: translate(-5vw, 22px);
+            height: 1px;
+            width: clamp(10px, 5vw, 24px);
+            background-color: #222;
+          }
+        }
+      }
+    }
+
+    #history-part-one {
+      &::before {
+        height: 562px;
+      }
+    }
+    #history-part-two {
+      &::before {
+        height: 1478px;
+      }
+    }
+    #history-part-three {
+      &::before {
+        height: 1078px;
+      }
+    }
+    #history-part-four {
+      &::before {
+        height: 500px;
+      }
+    }
+    #history-part-five {
+      &::before {
+        height: 3750px;
+      }
+    }
+    #history-part-six {
+      &::before {
+        height: 488px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .history {
+    &-nav {
+      overflow-x: scroll;
     }
   }
 }

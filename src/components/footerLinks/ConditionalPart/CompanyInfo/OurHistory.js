@@ -5,6 +5,11 @@ import classes from "./OurHistory.module.scss";
 export default function OurHistory() {
   const [year, setYear] = useState("1970s");
 
+  /* const elemRef = useRef();
+  useEffect(() => {
+    console.log(elemRef.current.clientHeight);
+  });
+ */
   const yearHandler = (e) => {
     setYear(e.target.closest("div").children[0].textContent);
   };
@@ -75,7 +80,11 @@ export default function OurHistory() {
       </nav>
       <hr />
       {year === "1970s" && (
-        <div className={classes["history-part"]}>
+        <div
+          className={classes["history-part"]}
+          id={classes["history-part-one"]}
+          /* ref={elemRef} */
+        >
           <div className={classes["history-part-containers"]}>
             <h2>1974</h2>
             <img
@@ -107,7 +116,10 @@ export default function OurHistory() {
         </div>
       )}
       {year === "1980s" && (
-        <div className={classes["history-part"]}>
+        <div
+          className={classes["history-part"]}
+          id={classes["history-part-two"]}
+        >
           <div className={classes["history-part-containers"]}>
             <h2>1982</h2>
             <img
@@ -163,7 +175,10 @@ export default function OurHistory() {
         </div>
       )}
       {year === "1990s" && (
-        <div className={classes["history-part"]}>
+        <div
+          className={classes["history-part"]}
+          id={classes["history-part-three"]}
+        >
           <div className={classes["history-part-containers"]}>
             <h2>1997</h2>
             <img
@@ -205,7 +220,10 @@ export default function OurHistory() {
         </div>
       )}
       {year === "2000s" && (
-        <div className={classes["history-part"]}>
+        <div
+          className={classes["history-part"]}
+          id={classes["history-part-four"]}
+        >
           <div className={classes["history-part-containers"]}>
             <h2>2005</h2>
             <img
@@ -235,7 +253,10 @@ export default function OurHistory() {
         </div>
       )}
       {year === "2010s" && (
-        <div className={classes["history-part"]}>
+        <div
+          className={classes["history-part"]}
+          id={classes["history-part-five"]}
+        >
           <div className={classes["history-part-containers"]}>
             <h2>2011</h2>
             <p>
@@ -345,7 +366,10 @@ export default function OurHistory() {
         </div>
       )}
       {year === "2020s" && (
-        <div className={classes["history-part"]}>
+        <div
+          className={classes["history-part"]}
+          id={classes["history-part-six"]}
+        >
           <div className={classes["history-part-containers"]}>
             <h2>2020</h2>
             <img

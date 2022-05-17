@@ -6,7 +6,7 @@
     h1 {
       color: #fff;
       text-align: center;
-      font-size: 8em;
+      font-size: clamp(4rem, 8vw, 8rem);
     }
   }
   &-creativity {
@@ -18,7 +18,7 @@
         text-rendering: optimizeLegibility;
         color: #222;
         font-size: clamp(
-          3rem,
+          2.5rem,
           4vw,
           6rem
         ); /* //!! походу придется везде потом его использовать для больших текстов*/
@@ -28,7 +28,7 @@
       &-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 1200px;
+        max-width: 1200px;
         &-part {
           padding-inline: 10px;
           border-right: 1px solid #a1a5a8;
@@ -222,6 +222,67 @@
         &:hover {
           text-decoration: underline;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1145px) {
+  .about {
+    &-brand {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .about {
+    &-promise {
+      &-benefits {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    &-creativity {
+      &-container {
+        &-list {
+          grid-template-columns: repeat(1, 1fr);
+          &-part {
+            border: none;
+            margin-top: 40px;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -17px);
+              width: 50px;
+              height: 2px;
+              background-color: #a1a5a8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    &-brand {
+      grid-template-columns: repeat(1, 1fr);
+      &-item {
+        p {
+          padding-inline: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .about {
+    &-promise {
+      &-benefits {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
