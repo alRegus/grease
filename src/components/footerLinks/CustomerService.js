@@ -102,15 +102,13 @@ export default function CustomerService() {
           </li>
           <li>
             <Link to="/help/ordering">Ordering</Link>
-            {/* //!! */}
           </li>
           <li>
             <Link to="#">General Information</Link>
             {/* //!! */}
           </li>
           <li>
-            <Link to="#">Gift Certificates</Link>
-            {/* //!! */}
+            <Link to="/help/GiftCertificates">Gift Certificates</Link>
           </li>
         </ul>
       </div>
