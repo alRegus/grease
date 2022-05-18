@@ -143,8 +143,7 @@ export default function CustomerService() {
         </h2>
         <ul style={accordion4 ? { display: "block" } : null}>
           <li>
-            <Link to="#">Downloadables</Link>
-            {/* //!! */}
+            <Link to="/help/downloadables">Downloadables</Link>
           </li>
         </ul>
       </div>
