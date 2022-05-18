@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./HearFromYou.module.scss";
 
@@ -38,12 +39,14 @@ export default function HearFromYou() {
           <li>New York, NY 10011</li>
           <li>N212-741-0063</li>
           <li>
-            <a href="#">Maps & Directions</a>
+            <Link to="/info/store">Maps & Directions</Link>
           </li>
         </ul>
       </div>
       <div className={classes["help-hear-departments"]}>
-        <a href="#">All Departments & Services</a>
+        <Link to="/help/DepartmentsAndServices">
+          All Departments & Services
+        </Link>
       </div>
       <div className={classes["help-hear-payments"]}>
         <h2>We Accept</h2>

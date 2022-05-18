@@ -14,7 +14,10 @@ export default function CustomerService() {
 
   return (
     <section className={classes["help-customer"]}>
-      <Link to="#" className={classes["help-customer-header"]}>
+      <Link
+        to="/help/customerService"
+        className={classes["help-customer-header"]}
+      >
         Customer Service
       </Link>
       <div>
@@ -23,23 +26,27 @@ export default function CustomerService() {
             width <= 801 ? setAccordion1(!accordion1) : setAccordion1(false)
           }
         >
-          Let Us Help You {!accordion1 && <i className="fa-solid fa-plus"></i>}
+          Let Us Help You{" "}
+          {width <= 801 && !accordion1 && <i className="fa-solid fa-plus"></i>}
         </h2>
         <ul style={accordion1 ? { display: "block" } : null}>
           <li>
-            <Link to="#">Track Your Order</Link>
+            <Link to="/help/trackOrder">Track Your Order</Link>
           </li>
           <li>
-            <Link to="#">Contact Us</Link>
+            <Link to="/help/contactUs">Contact Us</Link>
           </li>
           <li>
-            <Link to="#">Departments & Services</Link>
+            <Link to="/help/DepartmentsAndServices">
+              Departments & Services
+            </Link>
           </li>
           <li>
-            <Link to="#">Map and Directions</Link>
+            <Link to="/info/store">Map and Directions</Link>
           </li>
           <li>
             <Link to="#">Affiliate Program</Link>
+            {/* //!! */}
           </li>
         </ul>
       </div>
@@ -50,53 +57,61 @@ export default function CustomerService() {
           }
         >
           Ordering Information{" "}
-          {!accordion2 && <i className="fa-solid fa-plus"></i>}
+          {width <= 801 && !accordion2 && <i className="fa-solid fa-plus"></i>}
         </h2>
         <ul style={accordion2 ? { display: "block" } : null}>
           <li>
             <Link to="#">FAQ`s</Link>
+            {/* //!! */}
           </li>
           <li>
-            <Link to="#">Shipping & Delivery</Link>
+            <Link to="/help/shippingDelivery">Shipping & Delivery</Link>
           </li>
           <li>
-            <Link to="#">In-Store Pickup</Link>
+            <Link to="/help/storePickups">In-Store Pickup</Link>
           </li>
           <li>
             <Link to="#">Buying and Selling Used</Link>
+            {/* //!! */}
           </li>
           <li>
-            <Link to="#">Return Policy</Link>
+            <Link to="/help/returnPolicy">Return Policy</Link>
           </li>
           <li>
-            <Link to="#">Warranties</Link>
+            <Link to="/help/warranties">Warranties</Link>
           </li>
-          <li>
+          {/*           <li>
             <Link to="#">Expired Rebates</Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="#">International Orders</Link>
+            <Link to="/help/internationalOrders">International Orders</Link>
           </li>
           <li>
             <Link to="#">Payment Methods</Link>
+            {/* //!! */}
           </li>
           <li>
             <Link to="#">Safe Shopping</Link>
+            {/* //!! */}
           </li>
           <li>
             <Link to="#">Privacy Policy</Link>
+            {/* //!! */}
           </li>
           <li>
-            <Link to="#">Terms & Conditions</Link>
+            <Link to="#">Terms & Conditions</Link> {/* //!! */}
           </li>
           <li>
             <Link to="#">Ordering</Link>
+            {/* //!! */}
           </li>
           <li>
             <Link to="#">General Information</Link>
+            {/* //!! */}
           </li>
           <li>
             <Link to="#">Gift Certificates</Link>
+            {/* //!! */}
           </li>
         </ul>
       </div>
@@ -106,14 +121,17 @@ export default function CustomerService() {
             width <= 801 ? setAccordion3(!accordion3) : setAccordion3(false)
           }
         >
-          Ways to Shop {!accordion3 && <i className="fa-solid fa-plus"></i>}
+          Ways to Shop{" "}
+          {width <= 801 && !accordion3 && <i className="fa-solid fa-plus"></i>}
         </h2>
         <ul style={accordion3 ? { display: "block" } : null}>
           <li>
             <Link to="#">Goverment Accounts</Link>
+            {/* //!! */}
           </li>
           <li>
             <Link to="#">Corporate Accounts</Link>
+            {/* //!! */}
           </li>
         </ul>
       </div>
@@ -124,11 +142,12 @@ export default function CustomerService() {
           }
         >
           Downloadable Software{" "}
-          {!accordion4 && <i className="fa-solid fa-plus"></i>}
+          {width <= 801 && !accordion4 && <i className="fa-solid fa-plus"></i>}
         </h2>
         <ul style={accordion4 ? { display: "block" } : null}>
           <li>
             <Link to="#">Downloadables</Link>
+            {/* //!! */}
           </li>
         </ul>
       </div>
