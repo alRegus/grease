@@ -13,6 +13,7 @@ import ReturnPolicy from "../components/footerLinks/ConditionalPart/HowCanWeHelp
 import ContactUs from "../components/footerLinks/ConditionalPart/HowCanWeHelp/ContactUs";
 import Warranties from "../components/footerLinks/ConditionalPart/HowCanWeHelp/Warranties";
 import DepartmentsAndServices from "../components/footerLinks/ConditionalPart/Other/DepartmentsAndServices";
+import OrderInformation from "../components/footerLinks/ConditionalPart/Other/OrderInformation";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -46,6 +47,9 @@ export default function FooterLinksPage() {
       break;
     case "DepartmentsAndServices":
       displayResult = <DepartmentsAndServices />;
+      break;
+    case "ordering":
+      displayResult = <OrderInformation />;
       break;
     default:
       displayResult = <LetUsHelpYou />;
