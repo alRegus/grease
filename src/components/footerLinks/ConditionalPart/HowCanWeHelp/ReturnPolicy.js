@@ -18,7 +18,7 @@ export default function ReturnPolicy() {
           Policy carefully.
         </p>
       </div>
-      <div className={classes["return-policy-how"]}>
+      <div className={classes["return-policy-how"]} id="how-return">
         <h2>How To Return</h2>
         <img src="https://i.ibb.co/6wmqZVQ/pps-return.jpg" alt="pack" />
         <h3>Registered Users</h3>
@@ -84,7 +84,7 @@ export default function ReturnPolicy() {
         </p>
       </div>
       <div>
-        <h2>Non returnable items</h2>
+        <h2 id="non-return">Non returnable items</h2>
         <p>Following items cannot be returned once opened</p>
         <p>
           Software, Film, Paper, DVDs, Bulbs, flash tubes, Batteries, Ink

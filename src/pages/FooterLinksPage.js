@@ -24,6 +24,7 @@ import PublicPrivacy from "../components/footerLinks/ConditionalPart/Other/Publi
 import SafeShopping from "../components/footerLinks/ConditionalPart/Other/SafeShopping";
 import PaymentMethods from "../components/footerLinks/ConditionalPart/Other/PaymentMethods";
 import BuyingSellingUsed from "../components/footerLinks/ConditionalPart/Other/BuyingSellingUsed";
+import Faq from "../components/footerLinks/ConditionalPart/Other/Faq";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -90,6 +91,9 @@ export default function FooterLinksPage() {
       break;
     case "usedMarketplace":
       displayResult = <BuyingSellingUsed />;
+      break;
+    case "faq":
+      displayResult = <Faq />;
       break;
     default:
       displayResult = <LetUsHelpYou />;

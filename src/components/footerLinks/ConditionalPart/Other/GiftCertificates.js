@@ -7,7 +7,7 @@ export default function GiftCertificates() {
   return (
     <section className={classes["gift-certificates"]}>
       <h1 id="header-gift">Gift Certificates</h1>
-      <div className={classes["gift-certificates-gift"]}>
+      <div className={classes["gift-certificates-gift"]} id="purchase-gift">
         <div className={classes["gift-certificates-gift-header"]}>
           <h2>How Can I Purchase Gift Certificates?</h2>
           <a href="#header-gift">Return to Top</a>
@@ -22,7 +22,7 @@ export default function GiftCertificates() {
           </div>
         </div>
       </div>
-      <div className={classes["gift-certificates-gift"]}>
+      <div className={classes["gift-certificates-gift"]} id="redeem-gift">
         <div className={classes["gift-certificates-gift-header"]}>
           <h2>How Can I Redeem my Gift Certificate?</h2>
           <a href="#header-gift">Return to Top</a>
@@ -93,7 +93,7 @@ export default function GiftCertificates() {
           </div>
         </div>
       </div>
-      <div className={classes["gift-certificates-gift"]}>
+      <div className={classes["gift-certificates-gift"]} id="balance-gift">
         <div className={classes["gift-certificates-gift-header"]}>
           <h2>How do I check my Gift Certificate Balance?</h2>
           <a href="#header-gift">Return to Top</a>

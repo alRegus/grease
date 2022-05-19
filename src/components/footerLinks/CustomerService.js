@@ -60,7 +60,7 @@ export default function CustomerService() {
         </h2>
         <ul style={accordion2 ? { display: "block" } : null}>
           <li>
-            <Link to="#">FAQ`s</Link>
+            <Link to="/help/faq">FAQ`s</Link>
             {/* //!! */}
           </li>
           <li>
