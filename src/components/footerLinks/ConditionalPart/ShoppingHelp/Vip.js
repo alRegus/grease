@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Accordion from "./Accordion";
 import useWidth from "../../../../hooks/useWidth";
@@ -97,8 +98,8 @@ export default function Vip() {
           </p>
           <b>Just $49.99 a year</b>
           <div>
-            <a href="#">Join Now</a>
-            <a href="#">Member Login</a>
+            <Link to="/login">Join Now</Link>
+            <Link to="/login">Member Login</Link>
           </div>
         </div>
         {width > 801 && (
@@ -228,16 +229,22 @@ export default function Vip() {
         <h5>Free 2-Day Guaranteed Delivery Policy</h5>
         <p>
           Most items are eligible for Free 2-Day Guaranteed delivery when
-          ordered through <a href="">adorama.com</a> or by phone:{" "}
-          <a href="">855-291-3845</a>. Look for the VIP360 icons on eligible
-          product pages, and you'll automatically have a notice in your shopping
-          cart and at checkout whenever your order is eligible. Some exclusions
-          apply. Any item that doesn’t have a message indicating that it’s
-          eligible for VIP360 on its product page doesn’t qualify. Excluded
-          items include but are not limited to: drop-shipped items, oversized
-          items, TVs and Monitors greater than 32”, printers containing ink,
-          hazardous goods that must be shipped by UPS Ground. For full list{" "}
-          <a href="">Click here.</a>
+          ordered through <Link to="/">adorama.com</Link> or by phone:{" "}
+          <a href="tel:855-291-3845">855-291-3845</a>. Look for the VIP360 icons
+          on eligible product pages, and you'll automatically have a notice in
+          your shopping cart and at checkout whenever your order is eligible.
+          Some exclusions apply. Any item that doesn’t have a message indicating
+          that it’s eligible for VIP360 on its product page doesn’t qualify.
+          Excluded items include but are not limited to: drop-shipped items,
+          oversized items, TVs and Monitors greater than 32”, printers
+          containing ink, hazardous goods that must be shipped by UPS Ground.
+          For full list{" "}
+          <a
+            href="https://www.ups.com/us/en/support/shipping-support/"
+            target="_blank"
+          >
+            Click here.
+          </a>
         </p>
         <p>
           Orders must be shipping within the 48 contiguous United States. PO box
@@ -283,13 +290,13 @@ export default function Vip() {
           from Adorama during your VIP360 membership term can be repaired or
           replaced at no additional cost, and no deductible. *Limitations apply.
           Review the full terms and conditions here.{" "}
-          <a href="">See the policy here</a>.
+          <a href="https://www.extend.com">See the policy here</a>.
         </p>
         <h5>60-Day Return Policy</h5>
         <p>
           Return shipping is also free. For a Free Shipping label please email
-          us at <a href="">VIP360@adorama.com</a> or call us{" "}
-          <a href="">1-800-811-4001</a>.
+          us at <a href="mailto:webmaster@example.com">VIP360@adorama.com</a> or
+          call us <a href="tel:1-800-811-4001">1-800-811-4001</a>.
         </p>
         <h5>
           If a product is received defective or incorrect, please contact us

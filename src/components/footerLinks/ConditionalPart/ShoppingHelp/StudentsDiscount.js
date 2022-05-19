@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import Accordion from "./Accordion";
 import classes from "./StudentsDiscount.module.scss";
@@ -42,6 +43,11 @@ const accContent = [
 ];
 
 export default function StudentsDiscount() {
+  const navigate = useNavigate();
+
+  const navigateToLoginHandler = () => {
+    navigate("/login");
+  };
   return (
     <section className={classes["student"]}>
       <div className={classes["student-heading"]}>
@@ -60,9 +66,9 @@ export default function StudentsDiscount() {
             <span>and verify your student status with SheerID.</span>
           </p>
           <div className={classes["student-heading-text-btn"]}>
-            <button>SIGN UP</button>
+            <button onClick={navigateToLoginHandler}>SIGN UP</button>
             <p>
-              Already a member? <a href="">Sign in</a>.
+              Already a member? <Link to="/login">Sign in</Link>.
             </p>
           </div>
           <p>
@@ -113,19 +119,19 @@ export default function StudentsDiscount() {
             Follow us for the latest gear news, expert advice, and inspiration!
           </p>
           <div className={classes["student-connected-container-links"]}>
-            <a href="">
+            <a href="https://www.facebook.com">
               <img src="https://i.ibb.co/XCBgFyw/facebook.png" alt="facebook" />
             </a>
-            <a href="">
+            <a href="https://www.twitter.com">
               <img src="https://i.ibb.co/1vHknjS/twitter.png" alt="twitter" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com">
               <img
                 src="https://i.ibb.co/j8sXVfJ/instagram.png"
                 alt="instagram"
               />
             </a>
-            <a href="">
+            <a href="https://www.youtube.com">
               <img src="https://i.ibb.co/pbJ2yf4/youtube.png" alt="youtube" />
             </a>
           </div>
@@ -154,7 +160,7 @@ export default function StudentsDiscount() {
           <div className={classes["student-miss-container-button"]}>
             <button>JOIN NOW</button>
             <p>
-              Already a member? <a href="">Sign in</a>.
+              Already a member? <Link to="/login">Sign in</Link>.
             </p>
           </div>
         </div>

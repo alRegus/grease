@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import Accordion from "./Accordion";
 import Login from "../../../login-register/Login";
@@ -308,7 +309,6 @@ participating to join.
 
 export default function Rewards() {
   const signIn = useSelector((state) => state.signIn.signIn);
-
   return (
     <section className={classes["rewards"]}>
       <div className={classes["rewards-heading"]}>
@@ -319,9 +319,11 @@ export default function Rewards() {
             Create an account to join Adorama Rewards, and earn points for
             signing up, shopping, and much more!
           </p>
-          <button>Join Now</button>
+          <button>
+            <a href="#login-rewards">Join Now</a>
+          </button>
           <p>
-            Already enrolled? <a href="">Sign In</a>
+            Already enrolled? <Link to="/login">Sign In</Link>
           </p>
         </div>
       </div>
@@ -503,7 +505,7 @@ export default function Rewards() {
           </div>
         </div>
       </div>
-      <div className={classes["rewards-login"]}>
+      <div className={classes["rewards-login"]} id="login-rewards">
         <ToggleLogin />
         {signIn ? <Login /> : <Register />}
       </div>
@@ -516,7 +518,7 @@ export default function Rewards() {
           dedicated customer service and other member-only benefits, all for
           just $49.99 a year.
         </p>
-        <a href="">Learn More</a>
+        <Link to="/nspc/vip360">Learn More</Link>
       </div>
       <div className={classes["rewards-faq"]}>
         <h2>FAQ</h2>
@@ -607,7 +609,7 @@ export default function Rewards() {
           agree to receive promotional communications from Adorama. Information
           collected from Account holders and Rewards Program Members is subject
           to Adorama’s Privacy Policy, found at{" "}
-          <a href="">https://www.adorama.com/help/privacy</a>
+          <Link to="/help/privacy">https://www.adorama.com/help/privacy</Link>
         </p>
         <p>
           One Program Membership per person, per registered Account, per valid
@@ -634,7 +636,7 @@ export default function Rewards() {
         <p>
           Points may only be earned on eligible purchases made: (1) through a
           registered Adorama Account on the Adorama website at 
-          <a href="">https://www.adorama.com/</a>; or (2) over the phone or
+          <Link to="/">https://www.adorama.com/</Link>; or (2) over the phone or
           in-store at the Adorama store, located at 42 West 18th St., New York,
           NY 10011, with an authorized Adorama representative, by providing a
           valid email address that will correlate to the purchaser’s Membership
@@ -673,7 +675,7 @@ export default function Rewards() {
             Purchases made at a store or by phone; (ii) upon shipment of a
             Qualifying Purchase made online; or (iii) at the time of shipment of
             Qualifying Purchase for VIP360 Members (
-            <a href="">https://www.adorama.com/g/VIP360</a>).
+            <Link to="/nspc/vip360">https://www.adorama.com/g/VIP360</Link>).
           </li>
           <li>
             Members can earn an additional one hundred (100) Points when they
@@ -692,7 +694,7 @@ export default function Rewards() {
             friend an invitation to join the Program. Members will receive 1,000
             Points if and when the referred friend creates an Adorama account
             and makes their first Qualifying Purchase of $50 or more on 
-            <a href="">www.adorama.com</a> as provided in these Terms and
+            <Link to="/">www.adorama.com</Link> as provided in these Terms and
             Conditions. If the Member’s friend returns the Qualifying Purchase,
             the Member’s Points may be invalidated. These Points will be posted
             to the Member’s Account thirty five (35) calendar days from the
@@ -751,7 +753,7 @@ export default function Rewards() {
         <p>
           Points may only be redeemed for value to be applied toward qualifying
           products offered by Adorama online at 
-          <a href="">www.adorama.com</a>, or with authorized Adorama
+          <Link to="/">www.adorama.com</Link>, or with authorized Adorama
           representative(s) in-store or by phone where permitted when Members
           provide the valid e-mail address connected to their Adorama
           Account. Reward Value may not be used for payment of taxes or shipping
@@ -849,8 +851,8 @@ export default function Rewards() {
           to imposing time limits and changes in Points values. Adorama may give
           you notice of changes to the Program Terms & Conditions by posting an
           updated version of this page at [
-          <a href="">https://www.adorama.com/g/rewards</a>] or via
-          email. Adorama may make these changes even though the changes may
+          <Link to="/nspc/rewards">https://www.adorama.com/g/rewards</Link>] or
+          via email. Adorama may make these changes even though the changes may
           affect the value of Points already accumulated at any time and from
           time to time. Members understand and agree by participating in the
           Program that Adorama can make these changes at any time, with or
@@ -913,7 +915,7 @@ export default function Rewards() {
           By participating in the Program, each Member expressly consents to the
           storing, sharing and using the personal information in accordance with
           the privacy policy found at 
-          <a href="">https://www.adorama.com/</a>.
+          <Link to="/">https://www.adorama.com/</Link>.
         </p>
         <strong>Dispute Resolution</strong>
         <p>
@@ -990,7 +992,7 @@ export default function Rewards() {
         </p>
         <p>
           Members may review their Account information at  
-          <a href="">https://www.adorama.com</a>/.
+          <Link to="/">https://www.adorama.com</Link>.
         </p>
         <p>
           If you have any questions regarding the Program, Adorama can be

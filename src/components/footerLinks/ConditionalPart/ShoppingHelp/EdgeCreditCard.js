@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import Accordion from "./Accordion";
 import classes from "./EdgeCreditCard.module.scss";
@@ -106,6 +107,12 @@ at <a href="">adorama.com</a>.
 ];
 
 export default function EdgeCreditCard() {
+  const navigate = useNavigate();
+
+  const navigateToLoginHandler = () => {
+    navigate("/login");
+  };
+
   return (
     <section className={classes["edge-credit-card"]}>
       <div className={classes["edge-credit-card-heading"]}>
@@ -116,9 +123,9 @@ export default function EdgeCreditCard() {
             advantage.
           </span>
 
-          <button>Apply Now</button>
+          <button onClick={navigateToLoginHandler}>Apply Now</button>
           <span>or</span>
-          <button>Pre-Qualify</button>
+          <button onClick={navigateToLoginHandler}>Pre-Qualify</button>
           <span>
             See if you pre-qualify with no impact to your credit bureau score.
           </span>
@@ -166,9 +173,9 @@ export default function EdgeCreditCard() {
             </p>
           </div>
           <div className={classes["edge-credit-card-gearup-apply-buttons"]}>
-            <a href="">Apply Now</a>
+            <Link to="/login">Apply Now</Link>
             <p>or</p>
-            <a href="">Pre-Qualify</a>
+            <Link to="/login">Pre-Qualify</Link>
           </div>
         </div>
       </div>
@@ -221,7 +228,8 @@ export default function EdgeCreditCard() {
           <p>
             Adorama Financing offers instant personalized financing at checkout.
             We work with multiple lenders to find the best financing solution
-            for you. See <a href="">financing details</a> for more information.⤉
+            for you. See <a href="#terms-credit">financing details</a> for more
+            information.⤉
           </p>
           <div className={classes["edge-credit-card-works-container-spec"]}>
             <div
@@ -267,9 +275,9 @@ export default function EdgeCreditCard() {
             credit bureau score.
           </p>
           <div className={classes["edge-credit-card-miss-container-btns"]}>
-            <a>Apply Now</a>
+            <Link to="/login">Apply Now</Link>
             <p>or</p>
-            <a>Pre-Qualify</a>
+            <Link to="/login">Pre-Qualify</Link>
           </div>
         </div>
       </div>
@@ -288,7 +296,7 @@ export default function EdgeCreditCard() {
         })}
       </div>
 
-      <div className={classes["edge-credit-card-terms"]}>
+      <div className={classes["edge-credit-card-terms"]} id="terms-credit">
         <h3>TERMS & DISCLOSURES</h3>
         <p>
           ⤉ Financing details: Additional offers may be available that are not
