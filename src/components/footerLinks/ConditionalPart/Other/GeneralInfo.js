@@ -23,8 +23,9 @@ export default function GeneralInfo() {
               {/* //!! */}
             </li>
             <li>
-              <a href="">What Are Your Terms & Conditions?</a>
-              {/* //!! */}
+              <Link to="/help/termsAndConditions">
+                What Are Your Terms & Conditions?
+              </Link>
             </li>
             <li>
               <a href="">

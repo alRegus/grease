@@ -19,6 +19,7 @@ import Downloadables from "../components/footerLinks/ConditionalPart/Other/Downl
 import CorporateAccounts from "../components/footerLinks/ConditionalPart/Other/CorporateAccounts";
 import GovernmentAccounts from "../components/footerLinks/ConditionalPart/Other/GovernmentAccounts";
 import GeneralInfo from "../components/footerLinks/ConditionalPart/Other/GeneralInfo";
+import TermsAndConditions from "../components/footerLinks/ConditionalPart/Other/TermsAndConditions";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -70,6 +71,9 @@ export default function FooterLinksPage() {
       break;
     case "GeneralInfo":
       displayResult = <GeneralInfo />;
+      break;
+    case "termsAndConditions":
+      displayResult = <TermsAndConditions />;
       break;
     default:
       displayResult = <LetUsHelpYou />;

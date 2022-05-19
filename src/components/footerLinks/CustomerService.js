@@ -98,7 +98,7 @@ export default function CustomerService() {
             {/* //!! */}
           </li>
           <li>
-            <Link to="#">Terms & Conditions</Link> {/* //!! */}
+            <Link to="/help/termsAndConditions">Terms & Conditions</Link>{" "}
           </li>
           <li>
             <Link to="/help/ordering">Ordering</Link>
