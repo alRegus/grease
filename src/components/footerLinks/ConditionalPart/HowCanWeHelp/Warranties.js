@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./Warranties.module.scss";
 
@@ -24,7 +25,7 @@ export default function Warranties() {
           180-day warranty. F condition items have a 30 day return policy, No
           Warranty. X condition items are final sale, for parts only, sold as
           is, no warranties or returns. See our{" "}
-          <a href="">return policy here.</a>
+          <Link to="/help/returnPolicy">return policy here.</Link>
         </li>
         <li>
           Used Video, Audio, Lighting and Computer equipment carry a 90-day
@@ -61,7 +62,7 @@ export default function Warranties() {
         As some states do not allow the exclusion or limitation of incidental or
         consequential damages, the above limitation may not apply. Our warranty
         is valid only in the U.S. For additional information on how to obtain
-        warranty service, please <a href="">contact us.</a>
+        warranty service, please <Link to="/help/contactUs">contact us.</Link>
       </p>
     </section>
   );

@@ -70,8 +70,7 @@ export default function CustomerService() {
             <Link to="/help/storePickups">In-Store Pickup</Link>
           </li>
           <li>
-            <Link to="#">Buying and Selling Used</Link>
-            {/* //!! */}
+            <Link to="/help/usedMarketplace">Buying and Selling Used</Link>
           </li>
           <li>
             <Link to="/help/returnPolicy">Return Policy</Link>

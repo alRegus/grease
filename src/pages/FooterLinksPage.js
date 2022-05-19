@@ -23,6 +23,7 @@ import TermsAndConditions from "../components/footerLinks/ConditionalPart/Other/
 import PublicPrivacy from "../components/footerLinks/ConditionalPart/Other/PublicPrivacy";
 import SafeShopping from "../components/footerLinks/ConditionalPart/Other/SafeShopping";
 import PaymentMethods from "../components/footerLinks/ConditionalPart/Other/PaymentMethods";
+import BuyingSellingUsed from "../components/footerLinks/ConditionalPart/Other/BuyingSellingUsed";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -86,6 +87,9 @@ export default function FooterLinksPage() {
       break;
     case "paymentMethods":
       displayResult = <PaymentMethods />;
+      break;
+    case "usedMarketplace":
+      displayResult = <BuyingSellingUsed />;
       break;
     default:
       displayResult = <LetUsHelpYou />;
