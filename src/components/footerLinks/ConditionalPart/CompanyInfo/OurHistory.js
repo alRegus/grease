@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./OurHistory.module.scss";
 
@@ -378,9 +379,9 @@ export default function OurHistory() {
             />
             <p>
               We are here to serve the creators. With a renewed mission to{" "}
-              <a href="">equip your creativity</a>, Adorama is here to equip you
-              with the ultimate in photography, filmmaking, audio, technology,
-              and more.
+              <Link to="/info/aboutUs">equip your creativity</Link>, Adorama is
+              here to equip you with the ultimate in photography, filmmaking,
+              audio, technology, and more.
             </p>
             <div
               className={classes["history-part-containers-years"]}

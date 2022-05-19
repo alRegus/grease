@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./AboutUs.module.scss";
 
@@ -35,7 +36,8 @@ export default function AboutUs() {
         <p>
           If you’re going to manifest your creative vision, you need the right
           equipment. At Adorama, our store has been an icon for New York City’s
-          creatives since 1974. <a href="">Read more about our history</a>.
+          creatives since 1974.{" "}
+          <Link to="/info/history">Read more about our history</Link>.
         </p>
         <p>
           Shop Adorama for a powerhouse lineup of cameras, lenses,
@@ -84,7 +86,8 @@ export default function AboutUs() {
             <h4>SHOP IN STORE</h4>
             <p>
               Test the gear. Get specs and recommendations from our kind,
-              knowledgeable staff. <a href="">Visit our NYC store</a>.
+              knowledgeable staff.{" "}
+              <Link to="/info/store">Visit our NYC store</Link>.
             </p>
           </div>
           <div className={classes["about-promise-benefits-part"]}>
@@ -92,8 +95,8 @@ export default function AboutUs() {
             <h4>EARN REWARDS</h4>
             <p>
               Shopping at Adorama is always rewarding with our point-based{" "}
-              <a href="">loyalty program</a>, and even more perks with our{" "}
-              <a href="">VIP360 membership</a>.
+              <Link to="/nspc/rewards">loyalty program</Link>, and even more
+              perks with our <Link to="/nspc/vip360">VIP360 membership</Link>.
             </p>
           </div>
           <div className={classes["about-promise-benefits-part"]}>
@@ -110,7 +113,8 @@ export default function AboutUs() {
             <p>
               In the unlikely event of an issue with your order or if you have
               questions, we’re here for you. Call us at
-              <a href="">800-223-2500 </a> or <a href="">email </a> us anytime.
+              <a href="tel:800-223-2500">800-223-2500 </a> or{" "}
+              <a href="mailto:webmaster@example.com">email </a> us anytime.
             </p>
           </div>
         </div>
@@ -127,7 +131,7 @@ export default function AboutUs() {
             services to design, install and support the unique technology needs
             of businesses, educational institutions and government agencies.
           </p>
-          <a href="">Learn More</a>
+          <a href="https://bsd.md/en">Learn More</a>
         </div>
         <div className={classes["about-brand-item"]}>
           <img src="https://i.ibb.co/tc9qYTW/about-arc.jpg" alt="about-arc" />
@@ -141,7 +145,7 @@ export default function AboutUs() {
             for the duration of your project. Renting is also a great way to
             test out gear before you buy.
           </p>
-          <a href="">Start Renting</a>
+          <a href="https://www.rentalcars.com">Start Renting</a>
         </div>
         <div className={classes["about-brand-item"]}>
           <img
@@ -158,7 +162,7 @@ export default function AboutUs() {
             would like to turn into cash, we're here to help with a wide
             selection, accurate ratings, and industry experts to assist.
           </p>
-          <a href="">Learn More</a>
+          <a href="https://en.wikipedia.org/wiki/Trading_company">Learn More</a>
         </div>
         <div className={classes["about-brand-item"]}>
           <img
@@ -173,7 +177,7 @@ export default function AboutUs() {
             We produce pro-quality prints with excellent white-glove service,
             all at an affordable price.
           </p>
-          <a href="">Get Started</a>
+          <a href="https://ceramictoner.com">Get Started</a>
         </div>
         <div className={classes["about-brand-item"]}>
           <img
@@ -190,7 +194,7 @@ export default function AboutUs() {
             share their expertise with you in our blog. Get reviews,
             recommendations, and event invites.
           </p>
-          <a href="">Read More</a>
+          <a href="https://www.linkedin.com/company/42west">Read More</a>
         </div>
         <div className={classes["about-brand-item"]}>
           <img src="https://i.ibb.co/FwCnjdh/about-jobs.jpg" alt="about-jobs" />
@@ -202,7 +206,7 @@ export default function AboutUs() {
             sales, rentals, and education. We work in New York and New Jersey
             and serve customers around the world.
           </p>
-          <a href="">See open positions</a>
+          <a href="https://www.rabota.md">See open positions</a>
         </div>
       </div>
     </section>
