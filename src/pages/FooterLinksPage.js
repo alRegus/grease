@@ -20,6 +20,7 @@ import CorporateAccounts from "../components/footerLinks/ConditionalPart/Other/C
 import GovernmentAccounts from "../components/footerLinks/ConditionalPart/Other/GovernmentAccounts";
 import GeneralInfo from "../components/footerLinks/ConditionalPart/Other/GeneralInfo";
 import TermsAndConditions from "../components/footerLinks/ConditionalPart/Other/TermsAndConditions";
+import PublicPrivacy from "../components/footerLinks/ConditionalPart/Other/PublicPrivacy";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -74,6 +75,9 @@ export default function FooterLinksPage() {
       break;
     case "termsAndConditions":
       displayResult = <TermsAndConditions />;
+      break;
+    case "privacy":
+      displayResult = <PublicPrivacy />;
       break;
     default:
       displayResult = <LetUsHelpYou />;

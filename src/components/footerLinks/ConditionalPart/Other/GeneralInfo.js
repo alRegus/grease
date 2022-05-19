@@ -19,8 +19,9 @@ export default function GeneralInfo() {
               </a>
             </li>
             <li>
-              <a href="">What Are Your Privacy & Security Policies?</a>
-              {/* //!! */}
+              <Link to="/help/privacy">
+                What Are Your Privacy & Security Policies?
+              </Link>
             </li>
             <li>
               <Link to="/help/termsAndConditions">

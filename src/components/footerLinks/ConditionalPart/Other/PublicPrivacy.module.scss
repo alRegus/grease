@@ -1,0 +1,47 @@
+.public-privacy {
+  h1 {
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+    margin-top: 30px;
+  }
+
+  &-body {
+    color: #555;
+    div {
+      margin-top: 20px;
+      ul {
+        padding-left: 20px;
+        margin-bottom: 50px;
+        li {
+          line-height: 1.4;
+          font-size: 0.7rem;
+          margin-top: 10px;
+          span {
+            font-weight: bold;
+            color: #222;
+          }
+        }
+      }
+      p {
+        line-height: 1.4;
+        font-size: 0.9rem;
+        span {
+          font-weight: bold;
+          color: #222;
+        }
+        a {
+          color: #06c;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .public-privacy {
+    max-width: 90%;
+  }
+}
