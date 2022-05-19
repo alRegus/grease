@@ -86,8 +86,7 @@ export default function CustomerService() {
             <Link to="/help/internationalOrders">International Orders</Link>
           </li>
           <li>
-            <Link to="#">Payment Methods</Link>
-            {/* //!! */}
+            <Link to="/help/paymentMethods">Payment Methods</Link>
           </li>
           <li>
             <Link to="/help/safeShopping">Safe Shopping</Link>

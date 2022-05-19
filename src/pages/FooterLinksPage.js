@@ -22,6 +22,7 @@ import GeneralInfo from "../components/footerLinks/ConditionalPart/Other/General
 import TermsAndConditions from "../components/footerLinks/ConditionalPart/Other/TermsAndConditions";
 import PublicPrivacy from "../components/footerLinks/ConditionalPart/Other/PublicPrivacy";
 import SafeShopping from "../components/footerLinks/ConditionalPart/Other/SafeShopping";
+import PaymentMethods from "../components/footerLinks/ConditionalPart/Other/PaymentMethods";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -82,6 +83,9 @@ export default function FooterLinksPage() {
       break;
     case "safeShopping":
       displayResult = <SafeShopping />;
+      break;
+    case "paymentMethods":
+      displayResult = <PaymentMethods />;
       break;
     default:
       displayResult = <LetUsHelpYou />;
