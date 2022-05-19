@@ -104,8 +104,7 @@ export default function CustomerService() {
             <Link to="/help/ordering">Ordering</Link>
           </li>
           <li>
-            <Link to="#">General Information</Link>
-            {/* //!! */}
+            <Link to="/help/GeneralInfo">General Information</Link>
           </li>
           <li>
             <Link to="/help/GiftCertificates">Gift Certificates</Link>
