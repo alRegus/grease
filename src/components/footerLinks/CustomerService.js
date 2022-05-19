@@ -127,8 +127,7 @@ export default function CustomerService() {
             {/* //!! */}
           </li>
           <li>
-            <Link to="#">Corporate Accounts</Link>
-            {/* //!! */}
+            <Link to="/help/corporateAccounts">Corporate Accounts</Link>
           </li>
         </ul>
       </div>

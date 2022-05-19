@@ -16,6 +16,7 @@ import DepartmentsAndServices from "../components/footerLinks/ConditionalPart/Ot
 import OrderInformation from "../components/footerLinks/ConditionalPart/Other/OrderInformation";
 import GiftCertificates from "../components/footerLinks/ConditionalPart/Other/GiftCertificates";
 import Downloadables from "../components/footerLinks/ConditionalPart/Other/Downloadables";
+import CorporateAccounts from "../components/footerLinks/ConditionalPart/Other/CorporateAccounts";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -58,6 +59,9 @@ export default function FooterLinksPage() {
       break;
     case "downloadables":
       displayResult = <Downloadables />;
+      break;
+    case "corporateAccounts":
+      displayResult = <CorporateAccounts />;
       break;
     default:
       displayResult = <LetUsHelpYou />;
