@@ -123,8 +123,7 @@ export default function CustomerService() {
         </h2>
         <ul style={accordion3 ? { display: "block" } : null}>
           <li>
-            <Link to="#">Goverment Accounts</Link>
-            {/* //!! */}
+            <Link to="/help/governmentAccounts">Goverment Accounts</Link>
           </li>
           <li>
             <Link to="/help/corporateAccounts">Corporate Accounts</Link>

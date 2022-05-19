@@ -17,6 +17,7 @@ import OrderInformation from "../components/footerLinks/ConditionalPart/Other/Or
 import GiftCertificates from "../components/footerLinks/ConditionalPart/Other/GiftCertificates";
 import Downloadables from "../components/footerLinks/ConditionalPart/Other/Downloadables";
 import CorporateAccounts from "../components/footerLinks/ConditionalPart/Other/CorporateAccounts";
+import GovernmentAccounts from "../components/footerLinks/ConditionalPart/Other/GovernmentAccounts";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -62,6 +63,9 @@ export default function FooterLinksPage() {
       break;
     case "corporateAccounts":
       displayResult = <CorporateAccounts />;
+      break;
+    case "governmentAccounts":
+      displayResult = <GovernmentAccounts />;
       break;
     default:
       displayResult = <LetUsHelpYou />;
