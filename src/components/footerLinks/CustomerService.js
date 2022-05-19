@@ -90,12 +90,10 @@ export default function CustomerService() {
             {/* //!! */}
           </li>
           <li>
-            <Link to="#">Safe Shopping</Link>
-            {/* //!! */}
+            <Link to="/help/safeShopping">Safe Shopping</Link>
           </li>
           <li>
             <Link to="/help/privacy">Privacy Policy</Link>
-            {/* //!! */}
           </li>
           <li>
             <Link to="/help/termsAndConditions">Terms & Conditions</Link>

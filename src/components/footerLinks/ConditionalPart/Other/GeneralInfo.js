@@ -29,11 +29,10 @@ export default function GeneralInfo() {
               </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/help/termsAndConditions">
                 What Happens in the Event of Typographical, Illustration, or
                 Price Errors?
-              </a>
-              {/* //!! */}
+              </Link>
             </li>
           </ul>
         </div>

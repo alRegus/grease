@@ -425,13 +425,18 @@ export default function PublicPrivacy() {
             You may also decide to opt-out of receiving this type of
             advertising. In order to opt-out of some interest-based advertising,
             please visit{" "}
-            <a href="https://youradchoices.com" target="_blank">
+            <a
+              href="https://youradchoices.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://youradchoices.com
             </a>{" "}
             or{" "}
             <a
               href="https://optout.networkadvertising.org/?c=1"
               target="_blank"
+              rel="noreferrer"
             >
               https://optout.networkadvertising.org/?c=1
             </a>

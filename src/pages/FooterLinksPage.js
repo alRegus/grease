@@ -21,6 +21,7 @@ import GovernmentAccounts from "../components/footerLinks/ConditionalPart/Other/
 import GeneralInfo from "../components/footerLinks/ConditionalPart/Other/GeneralInfo";
 import TermsAndConditions from "../components/footerLinks/ConditionalPart/Other/TermsAndConditions";
 import PublicPrivacy from "../components/footerLinks/ConditionalPart/Other/PublicPrivacy";
+import SafeShopping from "../components/footerLinks/ConditionalPart/Other/SafeShopping";
 
 export default function FooterLinksPage() {
   const parameter = useParams();
@@ -78,6 +79,9 @@ export default function FooterLinksPage() {
       break;
     case "privacy":
       displayResult = <PublicPrivacy />;
+      break;
+    case "safeShopping":
+      displayResult = <SafeShopping />;
       break;
     default:
       displayResult = <LetUsHelpYou />;
