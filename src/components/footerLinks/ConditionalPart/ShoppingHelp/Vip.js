@@ -242,6 +242,7 @@ export default function Vip() {
           <a
             href="https://www.ups.com/us/en/support/shipping-support/"
             target="_blank"
+            rel="noreferrer"
           >
             Click here.
           </a>

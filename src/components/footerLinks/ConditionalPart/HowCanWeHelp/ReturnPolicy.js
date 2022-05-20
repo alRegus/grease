@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./ReturnPolicy.module.scss";
 
@@ -23,21 +24,28 @@ export default function ReturnPolicy() {
         <img src="https://i.ibb.co/6wmqZVQ/pps-return.jpg" alt="pack" />
         <h3>Registered Users</h3>
         <p>
-          Simply go to <a href="">your orders page</a> and start a self-return
-          process
+          Simply go to <Link to="/login">your orders page</Link> and start a
+          self-return process
         </p>
         <img src="https://i.ibb.co/R0s8dRm/selfreturn.jpg" alt="selfreturn" />
         <h3>Non–Registered Users</h3>
         <ul>
           <li>
-            <a href="">Create an account</a> - (use the same email associated
-            with the order)
+            <Link to="/login">Create an account</Link> - (use the same email
+            associated with the order)
           </li>
           <li>Start the self-return process</li>
         </ul>
         <p>
-          For a manual return, fill out <a href="">RM Form</a> and enclose it
-          with your package and return to:
+          For a manual return, fill out{" "}
+          <a
+            href="https://www.adorama.com/artworks2/forms/adorama_RMA.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            RM Form
+          </a>{" "}
+          and enclose it with your package and return to:
         </p>
         <div className={classes["return-policy-how-address"]}>
           <p>Order Processing</p>
@@ -78,9 +86,10 @@ export default function ReturnPolicy() {
         </p>
         <p>
           If a product is received defective or incorrect, please please submit
-          an <a href="">online return request</a> or <a href="">contact us</a>{" "}
-          immediately and we will do whatever possible to resolve the issue. We
-          will only cover return shipping if we are notified prior to return.
+          an <Link to="/login">online return request</Link> or{" "}
+          <Link to="/help/contactUs">contact us</Link> immediately and we will
+          do whatever possible to resolve the issue. We will only cover return
+          shipping if we are notified prior to return.
         </p>
       </div>
       <div>
@@ -106,8 +115,8 @@ export default function ReturnPolicy() {
         <p>
           If an oversize item shipped directly from the manufacturer, it will
           need to be returned to their location. Please{" "}
-          <a href="">contact us</a> prior to return and we will assist getting
-          the return set up.
+          <Link to="/help/contactUs">contact us</Link> prior to return and we
+          will assist getting the return set up.
         </p>
       </div>
     </section>

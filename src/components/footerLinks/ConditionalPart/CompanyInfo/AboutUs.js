@@ -1,9 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import classes from "./AboutUs.module.scss";
 
 export default function AboutUs() {
+  const navigate = useNavigate();
+
+  const navigateToProductListHandler = () => {
+    navigate("/products-list");
+  };
+  const navigateTo42Handler = () => {
+    window.location.href = "https://www.linkedin.com/company/42west";
+  };
+
   return (
     <section className={classes["about"]}>
       <div className={classes["about-heading"]}>
@@ -45,7 +54,7 @@ export default function AboutUs() {
           printers, and every cutting-edge accessory you need to create
           triumphant work.
         </p>
-        <button>Shop Now</button>
+        <button onClick={navigateToProductListHandler}>Shop Now</button>
       </div>
       <div className={classes["about-eye"]}>
         <h2>More Than Meets the Eye</h2>
@@ -64,7 +73,7 @@ export default function AboutUs() {
           scenes on real photo and video shoots, and join invitational groups to
           help you build your craft and meet your peers.
         </p>
-        <button>Learn More At 42 West</button>
+        <button onClick={navigateTo42Handler}>Learn More At 42 West</button>
       </div>
       <div className={classes["about-promise"]}>
         <h2>The Adorama Promise</h2>

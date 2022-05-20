@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import classes from "./LetUsHelpYou.module.scss";
 
@@ -12,19 +12,23 @@ export default function LetUsHelpYou() {
           <ul>
             <h2>Products Info</h2>
             <li>
-              <Link to="/help/returnPolicy">Return Policy</Link>
+              <HashLink to="/help/returnPolicy">Return Policy</HashLink>
             </li>
             <li>
-              <Link to="#">Refurbished</Link>
+              <HashLink to="/help/GeneralInfo#refurbished-info">
+                Refurbished
+              </HashLink>
             </li>
             <li>
-              <Link to="#">Grey Market</Link>
+              <HashLink to="/help/GeneralInfo#imported-info">
+                Grey Market
+              </HashLink>
             </li>
             <li>
-              <Link to="#">Open Box</Link>
+              <HashLink to="/help/GeneralInfo#open-box-info">Open Box</HashLink>
             </li>
             <li>
-              <Link to="#">Rebates</Link>
+              <HashLink to="/help/GeneralInfo#claim-info">Rebates</HashLink>
             </li>
           </ul>
         </div>
@@ -32,19 +36,19 @@ export default function LetUsHelpYou() {
           <ul>
             <h2>Orders Info</h2>
             <li>
-              <Link to="#">Ordering Information</Link>
+              <HashLink to="/help/ordering">Ordering Information</HashLink>
             </li>
             <li>
-              <Link to="#">Payment Methods</Link>
+              <HashLink to="/help/paymentMethods">Payment Methods</HashLink>
             </li>
             <li>
-              <Link to="#">Safe Shopping</Link>
+              <HashLink to="/help/safeShopping">Safe Shopping</HashLink>
             </li>
             <li>
-              <Link to="#">Shipping Info</Link>
+              <HashLink to="/help/shippingDelivery">Shipping Info</HashLink>
             </li>
             <li>
-              <Link to="#">International</Link>
+              <HashLink to="/help/internationalOrders">International</HashLink>
             </li>
           </ul>
         </div>
@@ -52,19 +56,21 @@ export default function LetUsHelpYou() {
           <ul>
             <h2>Support</h2>
             <li>
-              <Link to="#">Store Pickup</Link>
+              <HashLink to="/help/storePickups">Store Pickup</HashLink>
             </li>
             <li>
-              <Link to="#">Contact Us</Link>
+              <HashLink to="/help/contactUs">Contact Us</HashLink>
             </li>
             <li>
-              <Link to="#">Hours of Operation</Link>
+              <HashLink to="/info/store">Hours of Operation</HashLink>
             </li>
             <li>
-              <Link to="#">Maps & Directions</Link>
+              <HashLink to="/info/store">Maps & Directions</HashLink>
             </li>
             <li>
-              <Link to="#">Department & Services</Link>
+              <HashLink to="/help/DepartmentsAndServices">
+                Department & Services
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -74,25 +80,35 @@ export default function LetUsHelpYou() {
         <div className={classes["help-letUs-letUs-questionsHeader"]}>
           <h2>Most Frequently Asked Questions</h2>
           <span>
-            <Link to="#">All FAQs</Link>
+            <HashLink to="/help/faq">All FAQs</HashLink>
           </span>
         </div>
         <div>
           <ul>
             <li>
-              <Link to="#">How can I check the status of my order?</Link>
+              <HashLink to="/help/ordering#check-order-status">
+                How can I check the status of my order?
+              </HashLink>
             </li>
             <li>
-              <Link to="#">What happens if my item is on backorder?</Link>
+              <HashLink to="/help/ordering#order-backorder">
+                What happens if my item is on backorder?
+              </HashLink>
             </li>
             <li>
-              <Link to="#">How do I return an item?</Link>
+              <HashLink to="/help/returnPolicy">
+                How do I return an item?
+              </HashLink>
             </li>
             <li>
-              <Link to="#">What is your return policy?</Link>
+              <HashLink to="/help/returnPolicy">
+                What is your return policy?
+              </HashLink>
             </li>
             <li>
-              <Link to="#">How do I cancel an order</Link>
+              <HashLink to="/help/ordering#cancel-order">
+                How do I cancel an order
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -101,19 +117,29 @@ export default function LetUsHelpYou() {
         <h2>Shipping Information</h2>
         <ul>
           <li>
-            <Link to="#">Shipping Information</Link>
+            <HashLink to="/help/shippingDelivery">
+              Shipping Information
+            </HashLink>
           </li>
           <li>
-            <Link to="#">Delivery Times</Link>
+            <HashLink to="/help/shippingDelivery#order-line">
+              Delivery Times
+            </HashLink>
           </li>
           <li>
-            <Link to="#">Delivery Requirements</Link>
+            <HashLink to="/help/shippingDelivery#requirements">
+              Delivery Requirements
+            </HashLink>
           </li>
           <li>
-            <Link to="#">Damaged / Missing items upon delivery</Link>
+            <HashLink to="/help/shippingDelivery#damage-missing">
+              Damaged / Missing items upon delivery
+            </HashLink>
           </li>
           <li>
-            <Link to="#">International Shipments</Link>
+            <HashLink to="/help/shippingDelivery#internationally">
+              International Shipments
+            </HashLink>
           </li>
         </ul>
       </div>
@@ -122,22 +148,28 @@ export default function LetUsHelpYou() {
         <span>Read on for information about our products.</span>
         <ul>
           <li>
-            <Link to="#">Refurbished Information</Link>
+            <HashLink to="/help/GeneralInfo#refurbished-info">
+              Refurbished Information
+            </HashLink>
           </li>
           <li>
-            <Link to="#">Grey Market Information</Link>
+            <HashLink to="/help/GeneralInfo#imported-info">
+              Grey Market Information
+            </HashLink>
           </li>
           <li>
-            <Link to="#">Open Box</Link>
+            <HashLink to="/help/GeneralInfo#open-box-info">Open Box</HashLink>
           </li>
           <li>
-            <Link to="#">Gift Certificates</Link>
+            <HashLink to="/help/GiftCertificates">Gift Certificates</HashLink>
           </li>
           <li>
-            <Link to="#">Rebates</Link>
+            <HashLink to="/help/GeneralInfo#claim-info">Rebates</HashLink>
           </li>
           <li>
-            <Link to="#">Trade In Equipment</Link>
+            <HashLink to="/help/GeneralInfo#trade-in-info">
+              Trade In Equipment
+            </HashLink>
           </li>
         </ul>
       </div>

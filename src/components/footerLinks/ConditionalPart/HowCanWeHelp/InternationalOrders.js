@@ -17,12 +17,12 @@ export default function InternationalOrders() {
         what they might be
       </p>
       <p>
-        <a href="">
+        <span>
           Due to high international shipping costs, taxes, and duty fees, we
           cannot ship any order that includes backordered items. We will hold
           the order until all items are in stock and available to ship. Please
           contact us
-        </a>{" "}
+        </span>{" "}
         if you wish to cancel or change these items.
       </p>
       <p>

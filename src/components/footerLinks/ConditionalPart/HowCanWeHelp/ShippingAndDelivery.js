@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 import classes from "./ShippingAndDelivery.module.scss";
 
@@ -111,11 +112,13 @@ export default function ShippingAndDelivery() {
               as possible. Regular orders for in-stock items placed on business
               days before 2:00 PM ET (Eastern Time) and Rush orders before 4:00
               PM ET are generally shipped the same day (subject to verification,
-              <a href="">click here</a> for details). Please note weekend
-              orders, placed on Fridays after 12:00 PM ET will be processed on
-              the following Monday. If there is a problem with your order, you
-              will receive an e-mail within one business day to advise you about
-              the situation.
+              <HashLink to="/help/ordering#verify-order">
+                click here
+              </HashLink>{" "}
+              for details). Please note weekend orders, placed on Fridays after
+              12:00 PM ET will be processed on the following Monday. If there is
+              a problem with your order, you will receive an e-mail within one
+              business day to advise you about the situation.
             </p>
             <h5>Used items:</h5>
             <p>
@@ -170,7 +173,7 @@ export default function ShippingAndDelivery() {
             </p>
             <p>
               If you require additional help to receive your package, please{" "}
-              <a href="">contact us</a>.
+              <HashLink to="/help/contactUs">contact us</HashLink>.
             </p>
             <p>
               Oversize items shipped by Truck are delivered by appointment which
@@ -229,8 +232,8 @@ export default function ShippingAndDelivery() {
             <p>
               If the merchandise is damaged, please make a notation on the
               delivery manifest, and have the person delivering the merchandise
-              sign as well. <a href="">Contact us</a> within 48 business hours
-              to report the damage.
+              sign as well. <HashLink to="/help/contactUs">Contact us</HashLink>{" "}
+              within 48 business hours to report the damage.
             </p>
           </div>
         </div>
@@ -256,8 +259,8 @@ export default function ShippingAndDelivery() {
               Due to high international shipping costs, taxes, and duty fees, we
               cannot ship any order that includes backordered items. We will
               hold the order until all items are in stock and available to ship.
-              Please <a href="">contact us</a> if you wish to cancel or change
-              these items.
+              Please <HashLink to="/help/contactUs">contact us</HashLink> if you
+              wish to cancel or change these items.
             </p>
             <p>
               If an international shipment is refused and/or returned, any
@@ -325,9 +328,9 @@ export default function ShippingAndDelivery() {
             <p>
               Orders for in-stock items placed on business days are typically
               shipped the same day (subject to verification,{" "}
-              <a href="">click here</a> for details). Please note weekend
-              orders, placed on Fridays after 1:00 PM ET will be processed on
-              the following Monday.
+              <HashLink to="/help/ordering#verify-order">click here</HashLink>{" "}
+              for details). Please note weekend orders, placed on Fridays after
+              1:00 PM ET will be processed on the following Monday.
             </p>
             <p>Standard Shipping Options</p>
             <ul>
@@ -376,7 +379,8 @@ export default function ShippingAndDelivery() {
               the carrier's website.
             </p>
             <p>
-              You can also track your order by <a href="">click</a> here and:
+              You can also track your order by{" "}
+              <HashLink to="/help/trackOrder">click</HashLink> here and:
             </p>
             <ul>
               <li>
@@ -407,7 +411,7 @@ export default function ShippingAndDelivery() {
               Someone must be at the address to receive the package and sign for
               it. Packages cannot be rerouted or picked up from UPS. If you
               require additional help to receive your package, please{" "}
-              <a href="">contact us</a>.
+              <HashLink to="/help/contactUs">contact us</HashLink>.
             </p>
           </div>
         </div>
@@ -422,7 +426,10 @@ export default function ShippingAndDelivery() {
             <p>
               Adorama offers the convenience of in-store pickup at our retail
               store located at 42 West 18th Street, New York City, NY 10011.{" "}
-              <a href="">See Map</a> / <a href="">See directions</a>
+              <HashLink to="/info/store">See Map</HashLink> /{" "}
+              <HashLink to="/info/store#our-store-directions">
+                See directions
+              </HashLink>
             </p>
             <p>
               <span>Simple steps:</span>
@@ -438,7 +445,7 @@ export default function ShippingAndDelivery() {
               </li>
               <li>
                 You can pick up the order during store hours{" "}
-                <a href="">See Here</a>.
+                <HashLink to="/info/store">See Here</HashLink>.
               </li>
               <li>
                 To pick up your order, please bring your Credit Card which will
@@ -498,7 +505,11 @@ export default function ShippingAndDelivery() {
             <p>
               This item cannot be shipped outside the USA and must ship via UPS
               Ground. Pursuant to terms as defined{" "}
-              <a href="">
+              <a
+                href="https://www.ups.com/us/en/support/shipping-support/shipping-special-care-regulated-items.page"
+                target="_blank"
+                rel="noreferrer"
+              >
                 This item cannot be shipped outside the USA and must ship via
                 UPS Ground. Pursuant to terms as defined here
               </a>
