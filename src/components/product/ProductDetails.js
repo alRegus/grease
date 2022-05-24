@@ -1,5 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import useHttp from "../../hooks/useHttp";
 
 import classes from "./ProductDetails.module.scss";
@@ -10,7 +11,40 @@ export default function ProductDetails() {
   const product = useHttp(
     `https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts/${id}.json`
   );
-  /* const productBrandImageUrl =  */
+
+  const dispatch = useDispatch();
+
+  const addToCartHandler = () => {
+    const productInfo = {
+      name: product.name,
+      price: product.price,
+      imgURL: product.productImgUrl,
+      prodId: product.id,
+    };
+    if (localStorage) {
+      let cart;
+      if (!localStorage["cart"]) cart = [];
+      else cart = JSON.parse(localStorage["cart"]);
+      if (!(cart instanceof Array)) cart = [];
+      cart.push(productInfo);
+
+      const removedDuplicates = cart.reduce((acc, current) => {
+        const x = acc.find((item) => item.prodId === current.prodId);
+        if (!x) {
+          return acc.concat([current]);
+        } else {
+          return acc;
+        }
+      }, []);
+
+      localStorage.setItem("cart", JSON.stringify(removedDuplicates));
+
+      dispatch({
+        type: "GET_CART",
+        payload: JSON.parse(localStorage.getItem("cart")),
+      });
+    }
+  };
 
   return (
     <section className={classes["product-details"]}>
@@ -30,8 +64,8 @@ export default function ProductDetails() {
             ${product.price}
           </div>
           <div className={classes["product-details-container-info-btn"]}>
-            <button>Add to Cart</button>
-            <a href="">Add to wish list</a>
+            <button onClick={addToCartHandler}>Add to Cart</button>
+            <Link to="/cart">Go To Cart</Link>
           </div>
           <div className={classes["product-details-container-info-stock"]}>
             In stock
