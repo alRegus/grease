@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useHttp from "../hooks/useHttp";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 import logo from "../instruments-logo.png";
@@ -21,7 +21,8 @@ import useWidth from "../hooks/useWidth";
 
 function Header() {
   const [instrumentTypesState, setInstrumentTypesState] = useState([]);
-
+  const cartStore = useSelector((state) => state.cart);
+  console.log(cartStore);
   /* const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
@@ -47,6 +48,10 @@ function Header() {
   const instrumentBrands = useHttp(
     "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
   );
+
+  const navigateToCartHandler = () => {
+    navigate("/cart");
+  };
 
   const getTypesHandler = (e) => {
     const category = e.target.textContent.toLowerCase();
@@ -258,7 +263,11 @@ function Header() {
                 </div>
               </div>
             </Link>
-            <div className={classes["cart-container"]}>
+            <div
+              className={classes["cart-container"]}
+              onClick={navigateToCartHandler}
+            >
+              {cartStore.length !== 0 && <span></span>}
               <i className="fas fa-shopping-cart"></i>
             </div>
           </div>
@@ -293,7 +302,12 @@ function Header() {
                 </div> */}
               </div>
             </Link>
-            <div className={classes["cart-container"]}>
+
+            <div
+              className={classes["cart-container"]}
+              onClick={navigateToCartHandler}
+            >
+              {cartStore.length !== 0 && <span></span>}
               <i className="fas fa-shopping-cart"></i>
             </div>
           </div>

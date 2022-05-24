@@ -1,0 +1,17 @@
+.cart-page {
+  max-width: 1400px;
+  &-container {
+    display: grid;
+    grid-template-columns: 70% 27%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 801px) {
+  .cart-page {
+    &-container {
+      max-width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

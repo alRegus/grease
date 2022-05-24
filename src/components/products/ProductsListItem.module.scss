@@ -82,6 +82,9 @@
       padding: 10px 40px;
       margin-top: 20px;
       cursor: pointer;
+      &:active {
+        transform: scale(0.9);
+      }
     }
   }
 }

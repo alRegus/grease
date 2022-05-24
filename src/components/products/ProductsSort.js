@@ -34,6 +34,10 @@ export default function ProductsSort() {
     dispatch({ type: "VIEW_TOGGLE", payload: viewToggle });
   };
 
+  if (windowWidth <= 801) {
+    dispatch({ type: "VIEW_TOGGLE", payload: "list" });
+  }
+
   const displayFilterMenuHandler = () => {
     dispatch({ type: "GET_DISPLAY_FILTER_MENU", payload: true });
     dispatch({ type: "OVERFLOW_TOGGLE", payload: { overflow: "hidden" } });

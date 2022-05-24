@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import ScrollToTop from "./ScrollToTop";
 import Header from "./components/Header";
@@ -12,7 +13,7 @@ import ProductPage from "./pages/ProductPage";
 import FooterLinksPage from "./pages/FooterLinksPage";
 import ShoppingHelpPage from "./pages/ShoppingHelpPage";
 import CompanyInfoPage from "./pages/CompanyInfoPage";
-import { useSelector } from "react-redux";
+import CartPage from "./pages/CartPage";
 
 function App() {
   const overflow = useSelector((state) => state.overflow.overflow.overflow);
@@ -38,6 +39,7 @@ function App() {
           <Route path="info" element={<CompanyInfoPage />}>
             <Route path=":infoType" element={<CompanyInfoPage />} />
           </Route>
+          <Route path="cart" element={<CartPage />} />
         </Routes>
       </ScrollToTop>
       <About />

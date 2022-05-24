@@ -8,6 +8,7 @@ import overflowReducer from "./overflowReducer";
 import filteredProductQuantityReducer from "./filteredProductQuantityReducer";
 import displayFilterMenuReducer from "./displayFilterMenuReducer";
 import filteredParamValuesReducer from "./filteredParamValuesReducer";
+import cartStoreReducer from "./cartStoreReducer";
 
 const rootReducer = combineReducers({
   categoryRoute: categoriesRoutingReducer,
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
   count: filteredProductQuantityReducer,
   display: displayFilterMenuReducer,
   filteredParamValues: filteredParamValuesReducer,
+  cart: cartStoreReducer,
 });
 
 export default rootReducer;
