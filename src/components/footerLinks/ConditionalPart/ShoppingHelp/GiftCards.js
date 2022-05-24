@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
+import Modal from "../../../modal/Modal";
 import classes from "./GiftCards.module.scss";
 
 export default function GiftCards() {
+  const [modal, setModal] = useState(false);
+  const [wrongInput, setWrongInput] = useState(false);
+
+  const modalHandler = () => {
+    setModal((prevState) => !prevState);
+    document.body.style.overflow = modal ? "scroll" : "hidden";
+    setWrongInput(false);
+  };
+
+  const formHandler = (e) => {
+    e.preventDefault();
+    setWrongInput(true);
+  };
+
+  const inputModalElement = (
+    <>
+      <form action="#" onSubmit={formHandler}>
+        <input
+          placeholder="Gift Card Number"
+          required
+          style={wrongInput ? { borderColor: "#d83220" } : null}
+        />
+        {wrongInput && <span>This is not a valid gift card</span>}
+        <button type="submit">Check Balance</button>
+      </form>
+    </>
+  );
+
   return (
     <section className={classes["gift-card"]}>
       <img
@@ -162,9 +191,17 @@ export default function GiftCards() {
         </ul>
         <div className={classes["gift-card-check"]}>
           <h2>Already have an Adorama Gift Card?</h2>
-          <button>Check gift card balance</button>
+          <button onClick={modalHandler}>Check gift card balance</button>
         </div>
       </div>
+      {modal && (
+        <Modal
+          header="Check gift card balance"
+          TextContent="Check the balance on your gift card or e-gift card by entering the card number from the back of your card below, or call 800-223-2500"
+          closeHandler={modalHandler}
+          addedContent={inputModalElement}
+        />
+      )}
     </section>
   );
 }

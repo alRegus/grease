@@ -33,6 +33,58 @@
     line-height: 1.4;
     color: #555;
   }
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    form {
+      width: 90%;
+      input {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #222;
+        padding: 10px 0px 10px 15px;
+        &:focus {
+          outline: none;
+        }
+      }
+      span {
+        display: block;
+        background-color: #d83220;
+        width: 100%;
+        color: #fff;
+        padding: 5px 0px 5px 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+      button {
+        width: 100%;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0060bf;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding-block: 12px;
+        background-image: linear-gradient(
+          to bottom,
+          hsla(0, 0%, 100%, 0.12) 0%,
+          hsla(0, 0%, 100%, 0) 100%
+        );
+        &:hover {
+          box-shadow: 0 1px 4px #0000000d;
+          background-image: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 100%, 0.2) 0%,
+            hsla(0, 0%, 100%, 0.1) 100%
+          );
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 570px) {

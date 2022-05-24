@@ -13,6 +13,7 @@ export default function ModalOverlay({
       <i onClick={closeHandler} className="fa-solid fa-xmark"></i>
       <h2>{header}</h2>
       <p>{TextContent}</p>
+      <div>{addedContent}</div>
     </div>
   );
 }
