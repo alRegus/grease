@@ -36,6 +36,11 @@
       a {
         color: #fff;
       }
+      &-modal {
+        color: #fff !important;
+        text-decoration: underline;
+        cursor: pointer;
+      }
       &-btn {
         display: flex;
         align-items: center;

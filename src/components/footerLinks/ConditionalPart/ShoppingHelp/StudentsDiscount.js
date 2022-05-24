@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import Accordion from "./Accordion";
+import Modal from "../../../modal/Modal";
 import classes from "./StudentsDiscount.module.scss";
 
 const accContent = [
@@ -44,10 +45,18 @@ const accContent = [
 
 export default function StudentsDiscount() {
   const navigate = useNavigate();
+  const [modal, setModal] = useState(false);
 
-  const navigateToLoginHandler = () => {
+  const navigateToLoginHandler = (e) => {
+    e.preventDefault();
     navigate("/login");
   };
+
+  const modalHandler = () => {
+    setModal((prevState) => !prevState);
+    document.body.style.overflow = modal ? "scroll" : "hidden";
+  };
+
   return (
     <section className={classes["student"]}>
       <div className={classes["student-heading"]}>
@@ -72,8 +81,13 @@ export default function StudentsDiscount() {
             </p>
           </div>
           <p>
-            <a href="">Important information</a> for VIP360, Adorama Edge card,
-            and Rewards members.
+            <span
+              className={classes["student-heading-text-modal"]}
+              onClick={modalHandler}
+            >
+              Important information
+            </span>{" "}
+            for VIP360, Adorama Edge card, and Rewards members.
           </p>
         </div>
       </div>
@@ -165,6 +179,13 @@ export default function StudentsDiscount() {
           </div>
         </div>
       </div>
+      {modal && (
+        <Modal
+          header="Important information for VIP360, Adorama Edge card, and Rewards members."
+          TextContent="Presently, you are not able to combine membership in VIP360, Adorama Rewards, and Adorama Edge credit card benefits with membership in Creators GearUP. If you are currently enrolled in any of these programs, we recommend that you sign up for a new adorama.com account for your student profile. Please use an email address separate from the one attached to your current account."
+          closeHandler={modalHandler}
+        />
+      )}
     </section>
   );
 }
