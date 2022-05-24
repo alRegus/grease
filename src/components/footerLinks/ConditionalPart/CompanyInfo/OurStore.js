@@ -1,5 +1,5 @@
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, Marker } from "pigeon-maps";
 
 import classes from "./OurStore.module.scss";
 import CustomerService from "../../CustomerService";
@@ -11,27 +11,40 @@ export default function OurStore() {
       <CustomerService />
       <div className={classes["our-store-container"]}>
         <h1>Map and Directions</h1>
-        {/* <div style={{ width: "300px", height: "300px" }}>
-        <MapContainer center={[45.4, -75.7]} zoom={12} scrollWheelZoom={false}>
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          />
-        </MapContainer>
-      </div> */}
+        <Map
+          height={400}
+          defaultCenter={[47.014725, 28.853694]}
+          defaultZoom={16}
+        >
+          <Marker width={50} anchor={[47.014725, 28.853694]} />
+        </Map>
         <div
-          className={classes["our-store-container-directions"]}
           id="our-store-directions"
+          /* className={classes["our-store-container-directions"]} не работает почему-то */
         >
           <h2>Travel Directions</h2>
           <p>Adorama is accessible by public transportation.</p>
           <div>
-            <strong>By Subway</strong>
+            <strong>By Bus</strong>
             <p>
-              <span>Please be sure to check for any schedule advisories</span>
+              <span>19</span>
+              <span>18</span>
+              <span>49</span>
+              <span>33</span>
+              <span>44</span>
             </p>
           </div>
-          <p>Take the L F M to 14th Street and 6th Avenue</p>
+          <div>
+            <strong>By Trolleybus</strong>
+            <p>
+              <span>17</span>
+              <span>20</span>
+              <span>28</span>
+              <span>36</span>
+              <span>37</span>
+              <span>31</span>
+            </p>
+          </div>
         </div>
       </div>
       <HearFromYou />
