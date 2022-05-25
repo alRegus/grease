@@ -20,6 +20,7 @@ export default function ProductDetails() {
       price: product.price,
       imgURL: product.productImgUrl,
       prodId: product.id,
+      discount: product.discount,
     };
     if (localStorage) {
       let cart;
@@ -51,6 +52,24 @@ export default function ProductDetails() {
       <div className={classes["product-details-container"]}>
         <div className={classes["product-details-container-imgContainer"]}>
           <img src={product.productImgUrl} alt={product.name} />
+          {product.discount && (
+            <div
+              style={{
+                position: "absolute",
+                fontWeight: "bold",
+                right: "-8px",
+                top: " 2px",
+                color: "#fff",
+                backgroundColor: "rgb(226, 95, 19)",
+                padding: "1px 10px",
+                borderRadius: "5px",
+                transform: "rotate(24deg)",
+                fontSize: "clamp(0.8rem,2vw,1rem)",
+              }}
+            >
+              {product.discount}% off
+            </div>
+          )}
         </div>
         <div className={classes["product-details-container-info"]}>
           <h1>{product.name}</h1>
@@ -61,6 +80,15 @@ export default function ProductDetails() {
             </span>
           </div>
           <div className={classes["product-details-container-info-price"]}>
+            {product.discount && (
+              <span style={{ textDecoration: "line-through" }}>
+                {(
+                  product.price +
+                  product.price * (product.discount / 100) * 2
+                ).toFixed(2)}
+                $
+              </span>
+            )}
             ${product.price}
           </div>
           <div className={classes["product-details-container-info-btn"]}>

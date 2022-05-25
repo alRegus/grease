@@ -11,6 +11,7 @@ export default function ProductsListItem({
   price,
   imgURL,
   prodId,
+  discount,
 }) {
   const viewParam = useSelector((state) => state.view.view);
   const rating = (totalVotesValue / votesQuantity).toFixed(2);
@@ -22,6 +23,7 @@ export default function ProductsListItem({
       price,
       imgURL,
       prodId,
+      discount,
     };
     if (localStorage) {
       let cart;
@@ -76,9 +78,15 @@ export default function ProductsListItem({
       </div>
       <div className={classes["product-list-item-price-container"]}>
         <em>Our price</em>
+        {discount && (
+          <span style={{ textDecoration: "line-through" }}>
+            {(price + price * (discount / 100) * 2).toFixed(2)}$
+          </span>
+        )}
         <strong>{price} $</strong>
         <button onClick={addToCartHandler}>Add to Cart</button>
       </div>
+      {discount && <div className={classes["product"]}>{discount}% off</div>}
     </article>
   );
 }

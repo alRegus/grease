@@ -72,6 +72,7 @@ export default function ProductsList() {
       key={instrument.id}
       imgURL={instrument.productImgUrl}
       prodId={instrument.id}
+      discount={instrument.discount ? instrument.discount : null}
     />
   ));
 

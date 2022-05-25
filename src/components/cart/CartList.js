@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -40,13 +40,40 @@ export default function CartList() {
       <article>
         <div>
           <img src={cartItem.imgURL} alt={cartItem.name} />
+          {cartItem.discount && (
+            <div
+              style={{
+                position: "absolute",
+                fontWeight: "bold",
+                right: "-8px",
+                top: " 2px",
+                color: "#fff",
+                backgroundColor: "rgb(226, 95, 19)",
+                padding: "1px 10px",
+                borderRadius: "5px",
+                transform: "rotate(24deg)",
+                fontSize: "clamp(0.8rem,2vw,1rem)",
+              }}
+            >
+              {cartItem.discount}% off
+            </div>
+          )}
         </div>
         <div>
           <Link to={`/product/${cartItem.prodId}`}>{cartItem.name}</Link>
           <p className={classes["stock"]}>In Stock</p>
         </div>
         <div>
-          <p>${cartItem.price}</p>
+          {cartItem.discount && (
+            <span style={{ textDecoration: "line-through" }}>
+              {(
+                cartItem.price +
+                cartItem.price * (cartItem.discount / 100) * 2
+              ).toFixed(2)}
+              $
+            </span>
+          )}
+          <p style={{ fontWeight: "bold" }}>${cartItem.price}</p>
         </div>
         <i onClick={removeFromCartHandler} className="fa-solid fa-xmark"></i>
       </article>
