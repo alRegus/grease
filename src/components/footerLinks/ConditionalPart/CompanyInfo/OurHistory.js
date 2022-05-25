@@ -5,20 +5,30 @@ import classes from "./OurHistory.module.scss";
 
 export default function OurHistory() {
   const [year, setYear] = useState("1970s");
+  const [opacity, setOpacity] = useState(false);
+  const [navClickYear, setNavClickYear] = useState("1970s");
 
   /* const elemRef = useRef();
   useEffect(() => {
     console.log(elemRef.current.clientHeight);
   });
  */
-  const yearHandler = (e) => {
+  /*  const yearHandler = (e) => {
     setYear(e.target.closest("div").children[0].textContent);
+    setOpacity(false);
+  }; */
+
+  const opacityHandler = (e) => {
+    const year = e.target.closest("div").children[0].textContent;
+    setOpacity(true);
+    setNavClickYear(year);
   };
 
   const bottomYearHandler = (e) => {
-    setYear(
+    setNavClickYear(
       e.target.closest("span") ? e.target.closest("span").textContent : year
     );
+    setOpacity(true);
     window.scrollTo({ top: 550, left: 0, behavior: "smooth" });
   };
 
@@ -32,7 +42,8 @@ export default function OurHistory() {
       <nav className={classes["history-nav"]}>
         <div
           className={classes["history-nav-item"]}
-          onClick={yearHandler}
+          //onClick={yearHandler}
+          onClick={opacityHandler}
           style={year === "1970s" ? activeStyle : null}
         >
           <strong>1970s</strong>
@@ -40,7 +51,8 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          onClick={yearHandler}
+          //onClick={yearHandler}
+          onClick={opacityHandler}
           style={year === "1980s" ? activeStyle : null}
         >
           <strong>1980s</strong>
@@ -48,7 +60,8 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          onClick={yearHandler}
+          //onClick={yearHandler}
+          onClick={opacityHandler}
           style={year === "1990s" ? activeStyle : null}
         >
           <strong>1990s</strong>
@@ -56,7 +69,8 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          onClick={yearHandler}
+          //onClick={yearHandler}
+          onClick={opacityHandler}
           style={year === "2000s" ? activeStyle : null}
         >
           <strong>2000s</strong>
@@ -64,7 +78,8 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          onClick={yearHandler}
+          //onClick={yearHandler}
+          onClick={opacityHandler}
           style={year === "2010s" ? activeStyle : null}
         >
           <strong>2010s</strong>
@@ -72,7 +87,8 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          onClick={yearHandler}
+          //onClick={yearHandler}
+          onClick={opacityHandler}
           style={year === "2020s" ? activeStyle : null}
         >
           <strong>2020s</strong>
@@ -82,8 +98,16 @@ export default function OurHistory() {
       <hr />
       {year === "1970s" && (
         <div
-          className={classes["history-part"]}
+          className={
+            opacity
+              ? `${classes["hide"]} ${classes["history-part"]}`
+              : classes["history-part"]
+          }
           id={classes["history-part-one"]}
+          onTransitionEnd={() => {
+            setYear(navClickYear);
+            setOpacity(false);
+          }}
           /* ref={elemRef} */
         >
           <div className={classes["history-part-containers"]}>
@@ -118,8 +142,16 @@ export default function OurHistory() {
       )}
       {year === "1980s" && (
         <div
-          className={classes["history-part"]}
+          className={
+            opacity
+              ? `${classes["hide"]} ${classes["history-part"]}`
+              : classes["history-part"]
+          }
           id={classes["history-part-two"]}
+          onTransitionEnd={() => {
+            setYear(navClickYear);
+            setOpacity(false);
+          }}
         >
           <div className={classes["history-part-containers"]}>
             <h2>1982</h2>
@@ -177,8 +209,16 @@ export default function OurHistory() {
       )}
       {year === "1990s" && (
         <div
-          className={classes["history-part"]}
+          className={
+            opacity
+              ? `${classes["hide"]} ${classes["history-part"]}`
+              : classes["history-part"]
+          }
           id={classes["history-part-three"]}
+          onTransitionEnd={() => {
+            setYear(navClickYear);
+            setOpacity(false);
+          }}
         >
           <div className={classes["history-part-containers"]}>
             <h2>1997</h2>
@@ -222,8 +262,16 @@ export default function OurHistory() {
       )}
       {year === "2000s" && (
         <div
-          className={classes["history-part"]}
+          className={
+            opacity
+              ? `${classes["hide"]} ${classes["history-part"]}`
+              : classes["history-part"]
+          }
           id={classes["history-part-four"]}
+          onTransitionEnd={() => {
+            setYear(navClickYear);
+            setOpacity(false);
+          }}
         >
           <div className={classes["history-part-containers"]}>
             <h2>2005</h2>
@@ -255,8 +303,16 @@ export default function OurHistory() {
       )}
       {year === "2010s" && (
         <div
-          className={classes["history-part"]}
+          className={
+            opacity
+              ? `${classes["hide"]} ${classes["history-part"]}`
+              : classes["history-part"]
+          }
           id={classes["history-part-five"]}
+          onTransitionEnd={() => {
+            setYear(navClickYear);
+            setOpacity(false);
+          }}
         >
           <div className={classes["history-part-containers"]}>
             <h2>2011</h2>
@@ -368,8 +424,16 @@ export default function OurHistory() {
       )}
       {year === "2020s" && (
         <div
-          className={classes["history-part"]}
+          className={
+            opacity
+              ? `${classes["hide"]} ${classes["history-part"]}`
+              : classes["history-part"]
+          }
           id={classes["history-part-six"]}
+          onTransitionEnd={() => {
+            setYear(navClickYear);
+            setOpacity(false);
+          }}
         >
           <div className={classes["history-part-containers"]}>
             <h2>2020</h2>

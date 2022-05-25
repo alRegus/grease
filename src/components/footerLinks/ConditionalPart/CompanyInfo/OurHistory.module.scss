@@ -49,6 +49,7 @@
   }
   &-part {
     max-width: 800px;
+    transition: opacity 0.2s ease-out;
     &-containers {
       margin-bottom: 100px;
       h2 {
@@ -86,6 +87,11 @@
       }
     }
   }
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
 }
 
 @media (max-width: 801px) {
