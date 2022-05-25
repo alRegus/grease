@@ -149,3 +149,8 @@
     }
   }
 }
+@media (max-width: 363px) {
+  .product-list-item {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
