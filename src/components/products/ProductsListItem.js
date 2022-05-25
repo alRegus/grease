@@ -72,7 +72,7 @@ export default function ProductsListItem({
       <div className={classes["product-list-item-info-container"]}>
         <Link to={`/product/${prodId}`}>{name}</Link>
         <span>
-          {rating} ({votesQuantity})
+          {rating} ({votesQuantity}) rating
         </span>
         <span>In Stock</span>
       </div>
