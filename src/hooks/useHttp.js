@@ -10,9 +10,20 @@ const useHttp = function (url) {
   }, [url]); */
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch(url);
-      const json = await data.json();
-      setState(json);
+      try {
+        const data = await fetch(url);
+
+        if (!data.ok) {
+          throw new Error(
+            data.status === 404 ? "Bad Request" : "Something went wrong"
+          );
+        }
+
+        const json = await data.json();
+        setState(json);
+      } catch (err) {
+        alert(err.message);
+      }
     };
     fetchData();
   }, [url]);
