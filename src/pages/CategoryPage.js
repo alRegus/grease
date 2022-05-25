@@ -14,13 +14,9 @@ export default function CategoryPage() {
 
   const dispatch = useDispatch();
 
-  const instrumentTypes = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
-  );
+  const instrumentTypes = useHttp(`${process.env.REACT_APP_API}/types.json`);
 
-  const instrumentBrands = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
-  );
+  const instrumentBrands = useHttp(`${process.env.REACT_APP_API}/brands.json`);
 
   const categoryInstrumentTypes = instrumentTypes.filter((type) =>
     type.typeName.includes(categoryRoute)

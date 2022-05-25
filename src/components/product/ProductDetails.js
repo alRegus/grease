@@ -9,7 +9,7 @@ export default function ProductDetails() {
   const { id } = useParams();
 
   const product = useHttp(
-    `https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts/${id}.json`
+    `${process.env.REACT_APP_API}/allProducts/${id}.json`
   );
 
   const dispatch = useDispatch();

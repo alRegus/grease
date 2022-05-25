@@ -7,7 +7,7 @@ import classes from "./MainDeals.module.scss";
 
 const MainDeals = function () {
   const instrumentDeals = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts.json"
+    `${process.env.REACT_APP_API}/allProducts.json`
   );
   const dispatch = useDispatch();
 

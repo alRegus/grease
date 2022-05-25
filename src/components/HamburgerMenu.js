@@ -6,17 +6,11 @@ import useHttp from "../hooks/useHttp";
 import classes from "./HamburgerMenu.module.scss";
 
 function HamburgerMenu() {
-  const products = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
-  );
+  const products = useHttp(`${process.env.REACT_APP_API}/categories.json`);
 
-  const types = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
-  );
+  const types = useHttp(`${process.env.REACT_APP_API}/types.json`);
 
-  const brands = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
-  );
+  const brands = useHttp(`${process.env.REACT_APP_API}/brands.json`);
 
   const dispatch = useDispatch();
 

@@ -8,7 +8,7 @@ export default function ProductReviews() {
   const { id } = useParams();
 
   const ProductReviews = useHttp(
-    `https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts/${id}/reviews.json`
+    `${process.env.REACT_APP_API}/allProducts/${id}/reviews.json`
   );
 
   const reviews = ProductReviews ? (

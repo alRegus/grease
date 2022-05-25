@@ -7,9 +7,7 @@ import useHttp from "../../hooks/useHttp";
 import classes from "./ProductsList.module.scss";
 
 export default function ProductsList() {
-  const allProducts = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/allProducts.json"
-  );
+  const allProducts = useHttp(`${process.env.REACT_APP_API}/allProducts.json`);
   const dispatch = useDispatch();
 
   const sortParam = useSelector((state) => state.sort.sortBy);

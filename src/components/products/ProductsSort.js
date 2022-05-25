@@ -7,7 +7,7 @@ import classes from "./ProductsSort.module.scss";
 
 export default function ProductsSort() {
   const productsQuantity = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/productsArrayLength.json"
+    `${process.env.REACT_APP_API}/productsArrayLength.json`
   );
 
   const windowWidth = useWidth();

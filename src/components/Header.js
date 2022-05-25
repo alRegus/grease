@@ -39,15 +39,11 @@ function Header() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const instrumentTypes = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
-  );
+  const instrumentTypes = useHttp(`${process.env.REACT_APP_API}/types.json`);
   const instrumentCategories = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
+    `${process.env.REACT_APP_API}/categories.json`
   );
-  const instrumentBrands = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
-  );
+  const instrumentBrands = useHttp(`${process.env.REACT_APP_API}/brands.json`);
 
   const navigateToCartHandler = () => {
     navigate("/cart");

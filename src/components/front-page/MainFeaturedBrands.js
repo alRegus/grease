@@ -7,9 +7,7 @@ import classes from "./MainFeaturedBrands.module.scss";
 import SliderComponent from "../SliderComponent";
 
 export default function MainFeaturedBrands() {
-  const brands = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
-  );
+  const brands = useHttp(`${process.env.REACT_APP_API}/brands.json`);
   const dispatch = useDispatch();
 
   const brandHandler = (e) => {

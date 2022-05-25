@@ -5,15 +5,9 @@ import useHttp from "../../hooks/useHttp";
 import classes from "./ProductsFilterMenu.module.scss";
 
 export default function ProductsFilterMenu() {
-  const brands = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/brands.json"
-  );
-  const types = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
-  );
-  const categories = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/categories.json"
-  );
+  const brands = useHttp(`${process.env.REACT_APP_API}/brands.json`);
+  const types = useHttp(`${process.env.REACT_APP_API}/types.json`);
+  const categories = useHttp(`${process.env.REACT_APP_API}/categories.json`);
 
   const filterBrands = useSelector((state) => state.filter.brand);
   const filterTypes = useSelector((state) => state.filter.type);

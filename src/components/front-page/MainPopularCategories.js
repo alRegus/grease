@@ -6,9 +6,7 @@ import classes from "./MainPopularCategories.module.scss";
 import useHttp from "../../hooks/useHttp";
 
 export default function MainPopularCategories() {
-  const instrumentTypes = useHttp(
-    "https://musical-instruments-c9bcf-default-rtdb.europe-west1.firebasedatabase.app/types.json"
-  );
+  const instrumentTypes = useHttp(`${process.env.REACT_APP_API}/types.json`);
   const dispatch = useDispatch();
 
   const typesHandler = (e) => {
