@@ -28,7 +28,7 @@ export default function ProductsSort() {
     if (elemClass === "fa-solid fa-list") {
       viewToggle = "list";
     }
-    if (elemClass === "fa-solid fa-grid-2") {
+    if (elemClass === "fa-solid fa-border-all") {
       viewToggle = "grid";
     }
     dispatch({ type: "VIEW_TOGGLE", payload: viewToggle });
@@ -77,7 +77,7 @@ export default function ProductsSort() {
             <i
               style={gridBgc}
               onClick={toggleViewHandler}
-              className="fa-solid fa-grid-2"
+              className="fa-solid fa-border-all"
             ></i>
           </div>
         </>
