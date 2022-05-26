@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import Modal from "../../../modal/Modal";
 import classes from "./GiftCards.module.scss";
@@ -6,6 +6,27 @@ import classes from "./GiftCards.module.scss";
 export default function GiftCards() {
   const [modal, setModal] = useState(false);
   const [wrongInput, setWrongInput] = useState(false);
+  const [postCheck, setPostCheck] = useState("email");
+  const [sumCheck, setSumCheck] = useState();
+  const [sumMessage, setSumMessage] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState(false);
+
+  const postHandler = (e) => {
+    setPostCheck(e.target.value);
+  };
+
+  const sumHandler = (e) => {
+    setSumCheck(e.target.value);
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (sumCheck === undefined) setSumMessage(true);
+    if (sumCheck) {
+      setSumMessage(false);
+      setSubmitMessage(true);
+    }
+  };
 
   const modalHandler = () => {
     setModal((prevState) => !prevState);
@@ -47,7 +68,7 @@ export default function GiftCards() {
         </p>
       </div>
 
-      <form className={classes["gift-card-form"]}>
+      <form className={classes["gift-card-form"]} onSubmit={submitHandler}>
         <h2>GIFT CARD DETAILS</h2>
         <h3>Select Amount</h3>
         <div className={classes["gift-card-form-radio"]}>
@@ -58,6 +79,7 @@ export default function GiftCards() {
               data-value="$25"
               name="amountValue"
               value="GIFT25"
+              onChange={sumHandler}
             />
             <label htmlFor="v25">$25</label>
           </div>
@@ -68,6 +90,7 @@ export default function GiftCards() {
               data-value="$30"
               name="amountValue"
               value="GIFT30"
+              onChange={sumHandler}
             />
             <label htmlFor="v30">$30</label>
           </div>
@@ -78,6 +101,7 @@ export default function GiftCards() {
               data-value="$40"
               name="amountValue"
               value="GIFT40"
+              onChange={sumHandler}
             />
             <label htmlFor="v40">$40</label>
           </div>
@@ -88,6 +112,7 @@ export default function GiftCards() {
               data-value="$50"
               name="amountValue"
               value="GIFT50"
+              onChange={sumHandler}
             />
             <label htmlFor="v50">$50</label>
           </div>
@@ -98,6 +123,7 @@ export default function GiftCards() {
               data-value="$100"
               name="amountValue"
               value="GIFT100"
+              onChange={sumHandler}
             />
             <label htmlFor="v100">$100</label>
           </div>
@@ -108,6 +134,7 @@ export default function GiftCards() {
               data-value="$250"
               name="amountValue"
               value="GIFT250"
+              onChange={sumHandler}
             />
             <label htmlFor="v250">$250</label>
           </div>
@@ -118,6 +145,7 @@ export default function GiftCards() {
               data-value="$500"
               name="amountValue"
               value="GIFT500"
+              onChange={sumHandler}
             />
             <label htmlFor="v500">$500</label>
           </div>
@@ -128,21 +156,57 @@ export default function GiftCards() {
               data-value="$600"
               name="amountValue"
               value="GIFT600"
+              onChange={sumHandler}
             />
             <label htmlFor="v600">$600</label>
           </div>
+          {sumMessage && (
+            <p
+              style={{
+                fontSize: "0.8rem",
+                marginTop: "10px",
+                color: "#d83220",
+              }}
+            >
+              Please select amount.
+            </p>
+          )}
         </div>
         <div className={classes["gift-card-form-radio"]}>
           <h3>Send Via</h3>
           <div>
-            <input id="v-email" type="radio" name="via" value="email" />
+            <input
+              id="v-email"
+              type="radio"
+              name="via"
+              value="email"
+              onChange={postHandler}
+            />
             <label htmlFor="">Email</label>
           </div>
           <div>
-            <input id="v-post-email" type="radio" name="via" value="post" />
+            <input
+              id="v-post-email"
+              type="radio"
+              name="via"
+              value="post"
+              onChange={postHandler}
+            />
             <label htmlFor="">Via post mail</label>
           </div>
-          <input type="email" placeholder="Recipient`s Email Address" />
+          {postCheck === "email" && (
+            <input
+              type="email"
+              placeholder="Recipient`s Email Address"
+              required
+            />
+          )}
+          {postCheck === "post" && (
+            <p style={{ fontSize: "0.8rem" }}>
+              We will mail the gift card to your selected address in shopping
+              cart. (only one shipping address per order)
+            </p>
+          )}
         </div>
         <div className={classes["gift-card-form-radio"]}>
           <h3>
@@ -152,8 +216,19 @@ export default function GiftCards() {
           <input type="text" placeholder="Greeting(40 characters max) " />
           <input type="text" placeholder="From" />
         </div>
+        {submitMessage && (
+          <p
+            style={{
+              marginBlock: "10px",
+              color: "#d83220",
+            }}
+          >
+            Your country is not supported ;(
+          </p>
+        )}
         <button>Add to Cart</button>
       </form>
+
       <div className={classes["gift-card-list"]}>
         <h2>Terms and Conditions</h2>
         <ul>

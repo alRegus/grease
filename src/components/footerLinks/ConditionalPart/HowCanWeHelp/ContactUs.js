@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import classes from "./ContactUs.module.scss";
 
 export default function ContactUs() {
+  const [notSupported, setNotSupported] = useState(false);
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setNotSupported(true);
+  };
+
   return (
     <section className={classes["contact-us"]}>
       <h1>Contact Us</h1>
@@ -50,7 +56,7 @@ export default function ContactUs() {
         <h2>
           <span>Questions?</span> Send Us a Note:
         </h2>
-        <form>
+        <form onSubmit={submitHandler}>
           <div>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" required />
@@ -63,7 +69,7 @@ export default function ContactUs() {
             <label htmlFor="order-number">
               Order Number (for existing orders)
             </label>
-            <input type="text" id="order-number" required />
+            <input type="number" id="order-number" required />
           </div>
           <div className={classes["contact-us-input-select"]}>
             <label htmlFor="department">Choose Department</label>
@@ -88,6 +94,12 @@ export default function ContactUs() {
           </div>
           <button type="submit">Contact Us</button>
         </form>
+        {notSupported && (
+          <p style={{ marginTop: "10px", color: "#d83220" }}>
+            {" "}
+            Your country is not supported ;(
+          </p>
+        )}
       </div>
     </section>
   );

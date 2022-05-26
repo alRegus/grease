@@ -109,6 +109,9 @@
         background-color: #0060bf;
         border-radius: 4px;
         border: none;
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
   }
