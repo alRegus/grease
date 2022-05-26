@@ -8,16 +8,6 @@ export default function OurHistory() {
   const [opacity, setOpacity] = useState(false);
   const [navClickYear, setNavClickYear] = useState("1970s");
 
-  /* const elemRef = useRef();
-  useEffect(() => {
-    console.log(elemRef.current.clientHeight);
-  });
- */
-  /*  const yearHandler = (e) => {
-    setYear(e.target.closest("div").children[0].textContent);
-    setOpacity(false);
-  }; */
-
   const opacityHandler = (e) => {
     const year = e.target.closest("div").children[0].textContent;
     setOpacity(true);
@@ -42,7 +32,6 @@ export default function OurHistory() {
       <nav className={classes["history-nav"]}>
         <div
           className={classes["history-nav-item"]}
-          //onClick={yearHandler}
           onClick={opacityHandler}
           style={year === "1970s" ? activeStyle : null}
         >
@@ -51,7 +40,6 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          //onClick={yearHandler}
           onClick={opacityHandler}
           style={year === "1980s" ? activeStyle : null}
         >
@@ -60,7 +48,6 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          //onClick={yearHandler}
           onClick={opacityHandler}
           style={year === "1990s" ? activeStyle : null}
         >
@@ -69,7 +56,6 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          //onClick={yearHandler}
           onClick={opacityHandler}
           style={year === "2000s" ? activeStyle : null}
         >
@@ -78,7 +64,6 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          //onClick={yearHandler}
           onClick={opacityHandler}
           style={year === "2010s" ? activeStyle : null}
         >
@@ -87,7 +72,6 @@ export default function OurHistory() {
         </div>
         <div
           className={classes["history-nav-item"]}
-          //onClick={yearHandler}
           onClick={opacityHandler}
           style={year === "2020s" ? activeStyle : null}
         >
@@ -108,7 +92,6 @@ export default function OurHistory() {
             setYear(navClickYear);
             setOpacity(false);
           }}
-          /* ref={elemRef} */
         >
           <div className={classes["history-part-containers"]}>
             <h2>1974</h2>

@@ -14,12 +14,6 @@ export default function Help() {
             description="Questions? We’re happy to help! Call us at 800-223-2500"
             linkTo="#"
           />
-          {/* <HelpPart
-            icon="fa-solid fa-comment"
-            header="Chat Now"
-            description="Chat live with an expert and get the help you need now."
-            linkTo=""
-          /> */}
           <HelpPart
             icon="fa-solid fa-envelope"
             header="Email Us"
@@ -37,10 +31,3 @@ export default function Help() {
     </section>
   );
 }
-
-/* 
---- phone
- --- chat
-fa-solid fa-envelope ---email
-<fa-solid fa-location-dot --- location
-*/

@@ -3,8 +3,6 @@ import { HashLink } from "react-router-hash-link";
 
 import classes from "./ShippingAndDelivery.module.scss";
 
-//!! НЕ ЗАБЫТЬ СДЕЛАТЬ ССЫЛКИ
-
 export default function ShippingAndDelivery() {
   return (
     <section className={classes["shipping-delivery"]}>

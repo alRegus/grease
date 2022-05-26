@@ -44,9 +44,6 @@ export default function CustomerService() {
           <li>
             <Link to="/info/store">Map and Directions</Link>
           </li>
-          {/* <li>
-            <Link to="#">Affiliate Program</Link>
-          </li> */}
         </ul>
       </div>
       <div>
@@ -77,9 +74,6 @@ export default function CustomerService() {
           <li>
             <Link to="/help/warranties">Warranties</Link>
           </li>
-          {/*           <li>
-            <Link to="#">Expired Rebates</Link>
-          </li> */}
           <li>
             <Link to="/help/internationalOrders">International Orders</Link>
           </li>

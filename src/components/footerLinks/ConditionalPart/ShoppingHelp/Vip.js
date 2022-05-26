@@ -120,8 +120,6 @@ export default function Vip() {
       </p>
       <div className={classes["vip-cards1"]}>
         <div className={classes["vip-cards1-card"]}>
-          {" "}
-          {/* !!повтор, подумать над отдельным компонентом */}
           <h4>Free</h4>
           <strong>2-Day Shipping</strong>
           <p>

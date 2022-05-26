@@ -154,7 +154,6 @@
           display: flex;
         }
         &-spec {
-          /* width: 100px; */
           font: normal normal 600 19px/21px Lato;
           font-size: 0.8rem;
         }
@@ -371,7 +370,7 @@
 
 .active2 {
   &::before {
-    transform: rotate(90deg); /* !!не работает */
+    transform: rotate(90deg);
     color: red;
   }
 }

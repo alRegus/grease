@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -7,12 +7,6 @@ import classes from "./CartList.module.scss";
 export default function CartList() {
   const cartStore = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  /* const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    const cartData = JSON.parse(localStorage.getItem("cart"));
-    setCart(cartData);
-  }, []); */ //будет бесконечно обновляться так как зависимость массив и сравнение массивов с одинаковым содержимым будет давать false
 
   let displayCart;
 
@@ -24,16 +18,12 @@ export default function CartList() {
     );
 
     localStorage.setItem("cart", JSON.stringify(cartWithRemovedItem));
-    /* setCart(JSON.parse(localStorage.getItem("cart"))); */
+
     dispatch({
       type: "GET_CART",
       payload: JSON.parse(localStorage.getItem("cart")),
     });
   };
-
-  useEffect(() => {
-    console.log(cartStore);
-  }, [cartStore]);
 
   if (cartStore) {
     displayCart = cartStore.map((cartItem) => (

@@ -24,7 +24,6 @@ export default function Accordion({
       </button>
       {accordion && (
         <div
-          /* style={accordion ? { borderBottom: " 1px solid #4a5865" } : null} */
           className={accordion ? classBorder : null}
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>

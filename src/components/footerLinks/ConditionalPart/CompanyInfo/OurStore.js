@@ -18,10 +18,7 @@ export default function OurStore() {
         >
           <Marker width={50} anchor={[47.014725, 28.853694]} />
         </Map>
-        <div
-          id="our-store-directions"
-          /* className={classes["our-store-container-directions"]} не работает почему-то */
-        >
+        <div id="our-store-directions">
           <h2>Travel Directions</h2>
           <p>Grease is accessible by public transportation.</p>
           <div>

@@ -5,12 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: 0 auto; /* !! подумать как исправить так как распространяется на все */
+  margin: 0 auto;
 }
-
-/* html {
-  scroll-behavior: smooth;
-} */
 
 body {
   background-color: #f3f3f3;

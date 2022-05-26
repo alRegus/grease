@@ -13,8 +13,6 @@ export default function ProductsList() {
   const sortParam = useSelector((state) => state.sort.sortBy);
   const viewParam = useSelector((state) => state.view.view);
   const filterParams = useSelector((state) => state.filter);
-  console.log(filterParams); //2 раза, может решить??
-  //!!console.log("lol".split(" ").some((el) => ["lol", "tol"].includes(el))) логика для массива с множеством элементов фильтрации;
 
   const filteredProducts = allProducts.filter((prod) => {
     return (
@@ -73,8 +71,6 @@ export default function ProductsList() {
       discount={instrument.discount ? instrument.discount : null}
     />
   ));
-
-  /*   console.log(displayProductsList.length); */
 
   const gridView = viewParam === "grid" ? "grid" : "";
   return (

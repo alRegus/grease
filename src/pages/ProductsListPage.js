@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import classes from "./ProductsListPage.module.scss";
@@ -7,36 +7,11 @@ import ProductsSort from "../components/products/ProductsSort";
 import ProductsFilterMenu from "../components/products/ProductsFilterMenu";
 import useWidth from "../hooks/useWidth";
 
-/* function debounce(fn, ms) {
-  let timer;
-  return () => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      timer = null;
-      fn.apply(this, arguments);
-    }, ms);
-  };
-} */
-
 export default function ProductsListPage() {
   const filterParams = useSelector((state) => state.filter);
   const displayFilterMenu = useSelector((state) => state.display.display);
 
   const dispatch = useDispatch();
-  /* console.log(filteredParamsReducer);
-   */
-
-  /* const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const debouncedHandleResize = debounce(function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }, 50);
-    window.addEventListener("resize", debouncedHandleResize);
-    return () => {
-      window.removeEventListener("resize", debouncedHandleResize);
-    };
-  }); */
-
   const windowWidth = useWidth();
 
   let filteredParamValues = [];
@@ -101,45 +76,10 @@ export default function ProductsListPage() {
       {windowWidth > 801 && (
         <>
           <h1>
-            {
-              filteredParamValues
-                .flat(7)
-                .filter((item) => typeof item === "string")
-                .join(" > ")
-              /* 
-          Проблема была в том что в массиве образовывались другие массивы различной глубины при нажатии какого либа параметра, поэтому одни значения переходили в другие, и выровнить массив затем проверить строка ли это, чтоб избавится от пустных массивов глубоких в главном массиве
-          .flat()
-          .join(" ")
-          .split(",")
-          .filter(
-            (item) =>
-              item !== "" &&
-              item !== " " &&
-              item !== "1" &&
-              item !== "49" &&
-              item !== "50" &&
-              item !== "100" &&
-              item !== "249" &&
-              item !== "250" &&
-              item !== "500" &&
-              item !== "501" &&
-              item !== "9999999999" &&
-              item !== "2 " &&
-              item !== "3" &&
-              item !== "4" &&
-              item !== "5 " &&
-              item !== " 10" &&
-              item !== " 25" &&
-              item !== " 50"
-          )
-          .join(" > ")
-          .replace("2 Less then 3 stars", "Less then 3 stars")
-          .replace("5 From 3 stars", "From 3 stars")
-          .replace("5 From 4 stars", "From 4 stars")
-          .replace("100 Discount 10% or more", "Discount 10% or more")
-          .replace("100 Discount 25% or more", "Discount 25% or more")
-          .replace("100 Discount 50% or more", "Discount 50% or more") */
-            }
+            {filteredParamValues
+              .flat(7)
+              .filter((item) => typeof item === "string")
+              .join(" > ")}
           </h1>
           <div className={classes["products-page"]}>
             <div className={classes["products-page-filter"]}>

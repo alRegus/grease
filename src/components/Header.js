@@ -8,31 +8,9 @@ import classes from "./Header.module.scss";
 import HamburgerMenu from "./HamburgerMenu";
 import useWidth from "../hooks/useWidth";
 
-/* function debounce(fn, ms) {
-  let timer;
-  return () => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      timer = null;
-      fn.apply(this, arguments);
-    }, ms);
-  };
-} */
-
 function Header() {
   const [instrumentTypesState, setInstrumentTypesState] = useState([]);
   const cartStore = useSelector((state) => state.cart);
-  console.log(cartStore);
-  /* const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const debouncedHandleResize = debounce(function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }, 50);
-    window.addEventListener("resize", debouncedHandleResize);
-    return () => {
-      window.removeEventListener("resize", debouncedHandleResize);
-    };
-  }); */
 
   const windowWidth = useWidth();
 
@@ -75,7 +53,7 @@ function Header() {
     >
       <Link to="/category">{category}</Link>
     </div>
-  )); //тут поменял li чтобы уьрать ошибку div, надо продумать структуру получше тут
+  ));
 
   const typeHandler = (e) => {
     const typeValue = e.target.textContent;
@@ -107,7 +85,7 @@ function Header() {
           .join(" ")}
       </li>
     </Link>
-  )); //тут ошибка li
+  ));
 
   const brandHandler = (e) => {
     const brandValue = e.target.alt;
@@ -281,21 +259,6 @@ function Header() {
             <Link to="/login">
               <div className={classes["auth-container"]}>
                 <i className="far fa-user-circle"></i>
-                {/*  <div>
-                  <span>Sign In</span>
-                  <p>My Account</p>
-                </div>
-                <div className={classes["account-options-container"]}>
-                  <ul>
-                    <li>
-                      <Link to="/login">My Account</Link>
-                    </li>
-                    <li>Order Status</li>
-                    <li>
-                      <Link to="/help">Help</Link>
-                    </li>
-                  </ul>
-                </div> */}
               </div>
             </Link>
 

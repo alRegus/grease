@@ -8,8 +8,6 @@ import Register from "../../../login-register/Register";
 import ToggleLogin from "../../../login-register/ToggleLogin";
 import classes from "./Rewards.module.scss";
 
-//Компонент Link не работает при циклировании и выводе на экран accContent тут и в других местах где в accContent ecть ссылки, поэтому я их убрал
-
 const accContent = [
   {
     title: "How do I sign up for Grease Rewards?",
@@ -456,7 +454,6 @@ export default function Rewards() {
               Double Or More Points On Qualifying Items & Activities
             </p>
           </div>
-          {/* !!повторяющиеся элементы */}
         </div>
       </div>
       <div className={classes["rewards-more"]}>

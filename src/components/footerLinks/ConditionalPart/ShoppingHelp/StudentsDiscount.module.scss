@@ -172,8 +172,6 @@
     &-container {
       max-width: 1200px;
       color: #fff;
-      /* display: grid;
-      grid-template-columns: 65% 35%; */
       display: flex;
       justify-content: space-between;
       &-text {
@@ -214,7 +212,7 @@
 
 .active4 {
   &::before {
-    transform: rotate(90deg); /* !!не работает */
+    transform: rotate(90deg);
     color: red;
   }
 }

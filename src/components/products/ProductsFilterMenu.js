@@ -45,8 +45,6 @@ export default function ProductsFilterMenu() {
     </li>
   ));
 
-  //!!если что удалить дата атрибуты
-
   const [brandClassToggle, setBrandClassToggle] = useState(false);
   const [priceClassToggle, setPriceClassToggle] = useState(false);
   const [ratingClassToggle, setRatingClassToggle] = useState(false);
@@ -150,8 +148,6 @@ export default function ProductsFilterMenu() {
     dispatch({ type: "GET_DISPLAY_FILTER_MENU", payload: false });
     dispatch({ type: "OVERFLOW_TOGGLE", payload: { overflow: "scroll" } });
   };
-
-  console.log(filteredParamReducer);
 
   return (
     <div className={classes["products-filter"]}>

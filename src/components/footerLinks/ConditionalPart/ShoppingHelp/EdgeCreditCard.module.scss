@@ -425,7 +425,7 @@
 
 .active3 {
   &::before {
-    transform: rotate(90deg); /* !!не работает */
+    transform: rotate(90deg);
     color: red;
   }
 }
@@ -443,7 +443,6 @@
       grid-template-columns: 32% 250px 20px 250px;
       gap: 10px 20px;
       max-width: 1024px;
-      /* padding: 50px 0; */
       grid-template-areas:
         "space h1 h1 h1"
         "space sub sub sub"
@@ -488,7 +487,6 @@
       max-width: 600px;
       width: 100%;
       margin: 0 auto;
-      /*  padding: 20px 0 40px; */
     }
     &-benefits {
       grid-template-columns: repeat(1, 1fr);

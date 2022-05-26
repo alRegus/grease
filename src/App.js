@@ -8,14 +8,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Help from "./components/help/Help";
 import Footer from "./components/Footer";
-/* import FrontPage from "";
-import CategoryPage from "./pages/CategoryPage";
-import ProductsListPage from "./pages/ProductsListPage";
-import ProductPage from "./pages/ProductPage";
-import FooterLinksPage from "./pages/FooterLinksPage";
-import ShoppingHelpPage from "./pages/ShoppingHelpPage";
-import CompanyInfoPage from "./pages/CompanyInfoPage";
-import CartPage from "./pages/CartPage"; */
+
 const FrontPage = React.lazy(() => import("./pages/FrontPage"));
 const CategoryPage = React.lazy(() => import("./pages/CategoryPage"));
 const ProductsListPage = React.lazy(() => import("./pages/ProductsListPage"));

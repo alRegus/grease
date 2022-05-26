@@ -8,8 +8,6 @@ export default function OrderInformation() {
     <section className={classes["order-info"]}>
       <h1 id="header-order">Order Information</h1>
       <div className={classes["order-info-links"]}>
-        {" "}
-        {/* что тут что в департментс можно сделать отдельный компонент. НЕОБЯЗАТЕЛЬНО */}
         <ul>
           <li>
             <a href="#place-order">How Do I Place an Order?</a>
