@@ -527,6 +527,7 @@ export default function Rewards() {
                 classDiv={classes["rewards-faq-accordion"]}
                 classBorder={classes["border2"]}
                 classBtn={classes["active2"]}
+                key={title}
               />
             );
           })}

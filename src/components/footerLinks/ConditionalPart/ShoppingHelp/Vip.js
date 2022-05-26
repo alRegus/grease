@@ -192,6 +192,7 @@ export default function Vip() {
                 classDiv={classes["vip-accordions-accordion"]}
                 classBtn={classes["active"]}
                 classBorder={classes["border"]}
+                key={title}
               />
             );
           })}

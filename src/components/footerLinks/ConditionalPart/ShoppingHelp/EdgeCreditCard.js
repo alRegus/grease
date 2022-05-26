@@ -290,6 +290,7 @@ export default function EdgeCreditCard() {
               classDiv={classes["edge-credit-card-accordion-part"]}
               classBtn={classes["active3"]}
               classBorder={classes["border3"]}
+              key={title}
             />
           );
         })}

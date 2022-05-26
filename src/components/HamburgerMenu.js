@@ -101,7 +101,7 @@ function HamburgerMenu() {
   };
 
   const displayTypes = typesFilter.map((type) => (
-    <li>
+    <li key={type.typeName}>
       <Link to="/products-list" onClick={typeHandler2}>
         {type.typeName
           .split("-")
@@ -113,7 +113,7 @@ function HamburgerMenu() {
     </li>
   ));
   const displayBrands = brandsFilter.map((brand) => (
-    <li>
+    <li key={brand.brandName}>
       <Link to="/products-list">
         <img
           onClick={brandHandler2}
@@ -154,7 +154,9 @@ function HamburgerMenu() {
           <span>Products</span>
           <ul>
             {products.map((prod) => (
-              <li onClick={typeHandler}>{prod}</li>
+              <li onClick={typeHandler} key={prod}>
+                {prod}
+              </li>
             ))}
           </ul>
         </div>

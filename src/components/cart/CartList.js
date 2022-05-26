@@ -27,7 +27,7 @@ export default function CartList() {
 
   if (cartStore) {
     displayCart = cartStore.map((cartItem) => (
-      <article>
+      <article key={cartItem.prodId}>
         <div>
           <img src={cartItem.imgURL} alt={cartItem.name} />
           {cartItem.discount && (

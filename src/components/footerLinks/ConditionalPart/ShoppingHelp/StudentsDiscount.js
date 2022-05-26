@@ -161,6 +161,7 @@ export default function StudentsDiscount() {
               classDiv={classes["student-accordion-part"]}
               classBtn={classes["active4"]}
               classBorder={classes["border4"]}
+              key={title}
             />
           );
         })}
