@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import classes from "./Footer.module.scss";
 
 export default function Footer() {
+  const [emailErr, setEmailErr] = useState(false);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setEmailErr((prevState) => !prevState);
+  };
+
   return (
     <footer>
       <section className={classes["help-feedback-container"]}>
@@ -83,10 +90,21 @@ export default function Footer() {
               className={
                 classes["help-feedback-container-feedback-newsletter-input"]
               }
+              onSubmit={submitHandler}
             >
-              <input type="email" placeholder="Email Address" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                style={emailErr ? { border: "1px solid #d83220" } : null}
+              />
               <button>Submit</button>
             </form>
+            {emailErr && (
+              <p style={{ color: "#d83220" }}>
+                ✖ Your email address is not valid
+              </p>
+            )}
           </div>
           <div className={classes["help-feedback-container-feedback-social"]}>
             <h3>Follow Us</h3>
