@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import ProductsListItem from "./ProductsListItem";
 import { useSelector, useDispatch } from "react-redux";
@@ -43,10 +43,12 @@ export default function ProductsList() {
     );
   });
 
-  dispatch({
-    type: "GET_FILTERED_QUANTITY",
-    payload: { count: filteredProducts.length },
-  });
+  useEffect(() => {
+    dispatch({
+      type: "GET_FILTERED_QUANTITY",
+      payload: { count: filteredProducts.length },
+    });
+  }, [dispatch, filteredProducts]);
 
   if (sortParam === "low-to-high")
     filteredProducts.sort((a, b) => a.price - b.price);

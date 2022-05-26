@@ -76,14 +76,14 @@ function Header() {
 
   const displayInstrumentsTypes = instrumentTypesState.map((type) => (
     <Link to="/products-list" key={type.typeName}>
-      <li onClick={typeHandler}>
+      <p onClick={typeHandler}>
         {type.typeName
           .split("-")
           .map((word) => {
             return word.charAt(0).toUpperCase() + word.substring(1);
           })
           .join(" ")}
-      </li>
+      </p>
     </Link>
   ));
 
@@ -217,7 +217,7 @@ function Header() {
             </form>
           </div>
           <div className={classes["auth-cart-container"]}>
-            <Link to="/login">
+            <div onClick={() => navigate("/login")}>
               <div className={classes["auth-container"]}>
                 <i className="far fa-user-circle"></i>
                 <div>
@@ -236,7 +236,7 @@ function Header() {
                   </ul>
                 </div>
               </div>
-            </Link>
+            </div>
             <div
               className={classes["cart-container"]}
               onClick={navigateToCartHandler}

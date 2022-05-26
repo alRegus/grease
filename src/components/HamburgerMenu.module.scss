@@ -97,6 +97,7 @@
     top: -18px;
     transform: translateX(-50vw);
     transition: all 0.3s ease-in;
+    overflow: scroll;
     &-close {
       display: flex;
       justify-content: space-between;
@@ -116,6 +117,9 @@
         a {
           text-decoration: none;
           color: #222;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -137,6 +141,9 @@
         margin-top: 15px;
         text-decoration: none;
         color: #222;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     &-brands {
@@ -148,6 +155,16 @@
         img {
           width: 100px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hamburger {
+    &-secondary-sliding {
+      &-brands {
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }

@@ -93,7 +93,7 @@
             margin-left: 1rem;
             a {
               text-decoration: none;
-              li {
+              p {
                 font-weight: bold;
                 font-size: 1rem;
                 margin-bottom: 1rem;
@@ -159,7 +159,7 @@
     align-items: center;
     position: relative;
     gap: 1.5rem;
-    a {
+    div {
       height: 100%;
       text-decoration: none;
       color: #000;
@@ -208,6 +208,10 @@
               cursor: pointer;
               &:hover {
                 text-decoration: underline;
+              }
+              a {
+                text-decoration: none;
+                color: #000;
               }
             }
           }

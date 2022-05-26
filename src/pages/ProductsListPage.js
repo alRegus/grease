@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import classes from "./ProductsListPage.module.scss";
@@ -63,13 +63,15 @@ export default function ProductsListPage() {
     }
   }
 
-  dispatch({
-    type: "GET_FILTERED_PARAM_VALUES",
-    payload: filteredParamValues
-      .flat(7)
-      .filter((item) => typeof item === "string")
-      .join(" > "),
-  });
+  useEffect(() => {
+    dispatch({
+      type: "GET_FILTERED_PARAM_VALUES",
+      payload: filteredParamValues
+        .flat(7)
+        .filter((item) => typeof item === "string")
+        .join(" > "),
+    });
+  }, [dispatch, filteredParamValues]);
 
   return (
     <section className={classes["products"]}>

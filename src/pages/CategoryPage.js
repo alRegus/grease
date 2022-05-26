@@ -85,7 +85,7 @@ export default function CategoryPage() {
   };
 
   const displayCategoryBrands = categoryBrands.map((brand) => (
-    <div onClick={brandHandler} key={brand.id}>
+    <div onClick={brandHandler} key={brand.brandName}>
       <Link to="/products-list">
         <img src={brand.brandImgUrl} alt={brand.brandName} />
       </Link>
