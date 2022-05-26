@@ -8,16 +8,16 @@ import Register from "../../../login-register/Register";
 import ToggleLogin from "../../../login-register/ToggleLogin";
 import classes from "./Rewards.module.scss";
 
+//Компонент Link не работает при циклировании и выводе на экран accContent тут и в других местах где в accContent ecть ссылки, поэтому я их убрал
+
 const accContent = [
   {
     title: "How do I sign up for Grease Rewards?",
     content: `<p>
 You can join Grease Rewards at the time of creating your online
-Grease Account (<a href="">Click here</a> to create your online
-account now) or when logged into your existing online account.
+Grease Account or when logged into your existing online account.
 Plus, you can select to 'Join' during checkout, while reviewing
-product details or by visiting
-<a href="">grease.com/g/rewards</a>
+product details 
 </p>
 <p>
 Enrolling by phone or while shopping in-store is just as simple,
@@ -88,7 +88,7 @@ participating to join.
       select limited time promotions
     </li>
     <p>
-      Please see complete <a href="">Terms and Conditions</a> for full
+      Please see complete Terms and Conditions for full
       details.
     </p>
   </ul>`,
@@ -234,7 +234,7 @@ participating to join.
   </ul>
   <p>
     If you believe there’s a mistake, please call customer service at{" "}
-    <a href="">800-223-2500</a> and we’ll be happy to help. We’re here
+    <a href="tel:8002232500">800-223-2500</a> and we’ll be happy to help. We’re here
     Monday – Thursday 9:00am to 7:30pm and Friday 9:00am to 4:00pm.
   </p>`,
   },
@@ -279,7 +279,7 @@ participating to join.
   program?`,
     content: ` <p>
   Please contact our Customer Service department at{" "}
-  <a href="">800-223-2500</a>. We’re here for you Monday – Thursday
+  <a href="tel:8002232500">800-223-2500</a>. We’re here for you Monday – Thursday
   9:00am to 7:30pm and Friday 9:00am to 4:00pm.
 </p>`,
   },
@@ -300,8 +300,7 @@ participating to join.
     title: "How do I opt out of Grease Rewards?",
     content: `<p>
   If you no longer want to be part of the Grease Rewards program
-  you can click the Opt Out button in your <a href="">Profile</a>{" "}
-  page. Please note that leaving the program will terminate all the
+  you can click the Opt Out button in your Profile page. Please note that leaving the program will terminate all the
   Rewards Points you may have earned.
 </p>`,
   },
