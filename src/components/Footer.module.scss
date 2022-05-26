@@ -97,20 +97,30 @@ footer {
           display: flex;
           li {
             list-style-type: none;
-            color: #798794;
-            font-size: 2rem;
-            cursor: pointer;
+            a {
+              color: #798794;
+              font-size: 2rem;
+              cursor: pointer;
+            }
             &:nth-child(1):hover {
-              color: #3b5998;
+              a {
+                color: #3b5998;
+              }
             }
             &:nth-child(2):hover {
-              color: #2caae1;
+              a {
+                color: #2caae1;
+              }
             }
             &:nth-child(3):hover {
-              color: #f00;
+              a {
+                color: #f00;
+              }
             }
             &:nth-child(4):hover {
-              color: #f00075;
+              a {
+                color: #f00075;
+              }
             }
           }
         }

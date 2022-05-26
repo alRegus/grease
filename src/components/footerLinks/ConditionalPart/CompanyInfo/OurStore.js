@@ -23,7 +23,7 @@ export default function OurStore() {
           /* className={classes["our-store-container-directions"]} не работает почему-то */
         >
           <h2>Travel Directions</h2>
-          <p>Adorama is accessible by public transportation.</p>
+          <p>Grease is accessible by public transportation.</p>
           <div>
             <strong>By Bus</strong>
             <p>

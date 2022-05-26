@@ -164,7 +164,7 @@ export default function OurHistory() {
               The technology is emerging, with cameras, audio equipment, and
               lighting all growing in demand.
             </p>
-            <p>The Adorama Rental Co. (ARC) opens on 18th Street.</p>
+            <p>The Grease Rental Co. (ARC) opens on 18th Street.</p>
           </div>
           <div className={classes["history-part-containers"]}>
             <h2>1983</h2>
@@ -174,7 +174,7 @@ export default function OurHistory() {
             </p>
             <p>
               We start forming strong relationships with passionate creatives
-              that eventually inspire the Adorama Learning Center.
+              that eventually inspire the Grease Learning Center.
             </p>
           </div>
           <div className={classes["history-part-containers"]}>
@@ -184,7 +184,7 @@ export default function OurHistory() {
               alt="adorama-18th-purple-awning-sm"
             />
             <p>
-              The Adorama Rental Co. is a hub of creative energy. Our inventory
+              The Grease Rental Co. is a hub of creative energy. Our inventory
               is expanding, and the rental space is growing. We move the store
               to 42 W. 18th St.
             </p>
@@ -227,7 +227,7 @@ export default function OurHistory() {
               alt="adorama-pix-digital-photo-lab-sm"
             />
             <p>
-              AdoramaPix launches. Now, you can personalize gifts with your
+              GreasePix launches. Now, you can personalize gifts with your
               photos.
             </p>
             <p>
@@ -241,7 +241,7 @@ export default function OurHistory() {
               src="https://i.ibb.co/q9xS2F7/adoramas-first-website-sm.jpg"
               alt="adoramas-first-website-sm"
             />
-            <p>The company launches Adorama.com to take online orders.</p>
+            <p>The company launches Grease.com to take online orders.</p>
             <p>
               We open our catalogue of brands and products to nation-wide
               audiences.
@@ -280,7 +280,7 @@ export default function OurHistory() {
               alt="adorama-warehouse-shipping-sm"
             />
             <p>
-              Adorama opens a warehouse in New Jersey, expanding our inventory
+              Grease opens a warehouse in New Jersey, expanding our inventory
               and continuing to build the brand.
             </p>
             <p>
@@ -322,7 +322,7 @@ export default function OurHistory() {
               more.
             </p>
             <p>
-              We host our first Adorama Street Fair, taking over 18th Street
+              We host our first Grease Street Fair, taking over 18th Street
               between Fifth and Sixth Avenues. The event is a technology
               showcase and carnival, drawing the photography community together
               for a day in Chelsea.
@@ -361,7 +361,7 @@ export default function OurHistory() {
             <p>
               World-famous photographer, musician and reality TV host Nigel
               Barker joins us to host Top Photographer With Nigel Barker, a
-              five-episode reality competition series on AdoramaTV.
+              five-episode reality competition series on GreaseTV.
             </p>
             <p>
               The winner, Scott Borrero, goes on to have a successful career as
@@ -376,7 +376,7 @@ export default function OurHistory() {
               alt="arc-brooklyn-inside-sm"
             />
             <p>
-              We open our second location of The Adorama Rental Co. in Brooklyn.
+              We open our second location of The Grease Rental Co. in Brooklyn.
             </p>
             <p>
               We've staffed 18,000 square feet, two checkout rooms, 10 checkout
@@ -384,8 +384,8 @@ export default function OurHistory() {
               photography, and audio equipment experts and on-site support.
             </p>
             <p>
-              In the fall, we launch Adorama Business Solutions to serve
-              schools, government institutions and enterprise-level businesses.
+              In the fall, we launch Grease Business Solutions to serve schools,
+              government institutions and enterprise-level businesses.
             </p>
             <p>
               We offer hundreds of thousands of products from more than 2,200
@@ -443,7 +443,7 @@ export default function OurHistory() {
             />
             <p>
               We are here to serve the creators. With a renewed mission to{" "}
-              <Link to="/info/aboutUs">equip your creativity</Link>, Adorama is
+              <Link to="/info/aboutUs">equip your creativity</Link>, Grease is
               here to equip you with the ultimate in photography, filmmaking,
               audio, technology, and more.
             </p>

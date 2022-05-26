@@ -6,7 +6,7 @@ export default function StorePickup() {
   return (
     <section className={classes["store-pickups"]}>
       <h1>Express Pickup</h1>
-      <h2>Adorama offers Express Pick-up for Online Orders</h2>
+      <h2>Grease offers Express Pick-up for Online Orders</h2>
       <p>
         Buy online and pick-up fast in the store at the Express Pick-up Counter.
         You avoid shipping and scheduled delivery charges – and you may be able
@@ -73,9 +73,8 @@ export default function StorePickup() {
       </p>
       <b>How long will my order be available to pick up?</b>
       <p>
-        - Once you have received your pick up email, Adorama will hold your
-        items at our Express Pickup counter for three (3) days for you to pick
-        up.
+        - Once you have received your pick up email, Grease will hold your items
+        at our Express Pickup counter for three (3) days for you to pick up.
       </p>
     </section>
   );

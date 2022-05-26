@@ -37,7 +37,7 @@ export default function ShippingAndDelivery() {
               <a href="#internationally">Do you ship internationally?</a>
             </li>
             <li>
-              <a href="#counties">What countries does Adorama ship to?</a>
+              <a href="#counties">What countries does Grease ship to?</a>
             </li>
             <li>
               <a href="#receiving">
@@ -108,7 +108,7 @@ export default function ShippingAndDelivery() {
           </div>
           <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
-              Adorama Camera makes every effort to get your order to you as soon
+              Grease Camera makes every effort to get your order to you as soon
               as possible. Regular orders for in-stock items placed on business
               days before 2:00 PM ET (Eastern Time) and Rush orders before 4:00
               PM ET are generally shipped the same day (subject to verification,
@@ -147,7 +147,7 @@ export default function ShippingAndDelivery() {
               All deliveries are to the threshold of your location during
               standard business hours. White glove, inside delivery, evening,
               early morning, or weekend deliveries are sometimes able to be
-              scheduled with the carrier for an additional cost. Adorama cannot
+              scheduled with the carrier for an additional cost. Grease cannot
               guarantee the availability or cover the additional cost of these
               extra services.
             </p>
@@ -188,7 +188,7 @@ export default function ShippingAndDelivery() {
               standard business hours Monday through Friday. White glove, inside
               delivery, evening, early morning, or weekend deliveries are
               sometimes able to be scheduled with the carrier for an additional
-              cost. Adorama cannot guarantee the availability or cost of these
+              cost. Grease cannot guarantee the availability or cost of these
               extra services.
             </p>
           </div>
@@ -247,13 +247,13 @@ export default function ShippingAndDelivery() {
           </div>
           <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
-              Yes, Adorama ships throughout the U.S., Canada and to over 200
+              Yes, Grease ships throughout the U.S., Canada and to over 200
               countries worldwide. International shipments are subject to import
               fees, duties, and taxes (which are levied once a shipment reaches
               the destination country) in addition to the brokerage fees/custom
               clearance charges that may be imposed by the carrier. These
-              charges must be borne by the recipient. Adorama has no control
-              over these charges and cannot predict what they might be
+              charges must be borne by the recipient. Grease has no control over
+              these charges and cannot predict what they might be
             </p>
             <p>
               Due to high international shipping costs, taxes, and duty fees, we
@@ -275,13 +275,13 @@ export default function ShippingAndDelivery() {
           id="counties"
         >
           <div className={classes["shipping-delivery-info-segment-heading"]}>
-            <h2>What countries does Adorama ship to?</h2>
+            <h2>What countries does Grease ship to?</h2>
             <a href="#top">Return to Top</a>
           </div>
           <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
-              Adorama ships throughout the U.S., Canada and to over 200
-              countries worldwide. Please see the listing here.
+              Grease ships throughout the U.S., Canada and to over 200 countries
+              worldwide. Please see the listing here.
             </p>
             <select name="country" id="country">
               <option value="find">Find your county</option>
@@ -384,11 +384,11 @@ export default function ShippingAndDelivery() {
             </p>
             <ul>
               <li>
-                Enter the Adorama Order number as well as the billing zip code
-                or email address associated with the order. OR
+                Enter the Grease Order number as well as the billing zip code or
+                email address associated with the order. OR
               </li>
               <li>
-                If you have an Adorama account, simply log into your account
+                If you have an Grease account, simply log into your account
                 using your e-mail address and password, then click on your order
                 number in your order history. The tracking number will appear
                 under the Status & Tracking column. If you click on the link, it
@@ -424,7 +424,7 @@ export default function ShippingAndDelivery() {
           </div>
           <div className={classes["shipping-delivery-info-segment-body"]}>
             <p>
-              Adorama offers the convenience of in-store pickup at our retail
+              Grease offers the convenience of in-store pickup at our retail
               store located at 42 West 18th Street, New York City, NY 10011.{" "}
               <HashLink to="/info/store">See Map</HashLink> /{" "}
               <HashLink to="/info/store#our-store-directions">
@@ -483,7 +483,7 @@ export default function ShippingAndDelivery() {
               as shipping to Hawaii, Alaska or Puerto Rico are not included in
               this offer.
               <span>
-                This offer is a benefit of Adorama VIP and valid on all
+                This offer is a benefit of Grease VIP and valid on all
                 qualifying VIP customer purchases
               </span>
               , and cannot be combined with additional discounts, closeout
@@ -555,7 +555,7 @@ export default function ShippingAndDelivery() {
               <li>
                 <span>Rules (All Free Shipping Types):</span>
               </li>
-              <li>Qualifying items must be ordered via www.Adorama.com.</li>
+              <li>Qualifying items must be ordered via www.Grease.com.</li>
               <li>Free shipping is for the 48 Contiguous States only.</li>
               <li>
                 Excludes PO Boxes, Alaska, FPO/APO, Hawaii, Puerto Rico and

@@ -6,10 +6,10 @@ import classes from "./EdgeCreditCard.module.scss";
 
 const accContent = [
   {
-    title: "Where can I use my Adorama Edge Credit Card?",
+    title: "Where can I use my Grease Edge Credit Card?",
     content: `<p>
-Your Adorama Edge Credit Card can be used to make purchases online,
-at <a href="">adorama.com</a>.
+Your Grease Edge Credit Card can be used to make purchases online,
+at grease.com.
 </p>`,
   },
   {
@@ -23,23 +23,23 @@ at <a href="">adorama.com</a>.
   </ul>
   <p>
     Order minimum excludes sales tax, shipping fees, and discounts. To
-    receive special financing, simply pay with the Adorama Edge Credit
+    receive special financing, simply pay with the Grease Edge Credit
     Card and select the financing option during checkout.
   </p>`,
   },
   {
     title: "How do I use the 5% OFF† Every Day benefits?",
     content: `<p>
-    Enjoy 5% Off Every Day benefit on orders charged to your Adorama
+    Enjoy 5% Off Every Day benefit on orders charged to your Grease
     Edge Credit Card by selecting the option at checkout. You will be
     prompted to select either special financing (if purchase amount
     qualifies) or the 5% Off every day benefit when you enter your
-    Adorama Edge Credit Card information for every purchase.
+    Grease Edge Credit Card information for every purchase.
   </p>
   <p>
-    If you use an Adorama Edge Credit Card in the same purchase with
+    If you use an Grease Edge Credit Card in the same purchase with
     another form of payment, the 5% OFF discount benefit will apply only
-    to the purchase amount on the Adorama Edge Credit Card.
+    to the purchase amount on the Grease Edge Credit Card.
   </p>
   <p>
     5% Off Every Day benefit does not apply to purchases of Gift Cards,
@@ -47,12 +47,12 @@ at <a href="">adorama.com</a>.
   </p>`,
   },
   {
-    title: "How will I receive my Adorama Edge Credit Card Information?",
+    title: "How will I receive my Grease Edge Credit Card Information?",
     content: `<p>
-    Applying for an Adorama Edge Credit Card is fast and easy. The
+    Applying for an Grease Edge Credit Card is fast and easy. The
     application is subject to approval by Synchrony Bank. If approved,
-    we’ll automatically add your Adorama Edge Credit Card to your
-    account at checkout. Select the Adorama Edge Credit Card under the
+    we’ll automatically add your Grease Edge Credit Card to your
+    account at checkout. Select the Grease Edge Credit Card under the
     payment information to pull up your available balance and select
     between Special Financing (if purchase amount qualifies) or the 5%
     OFF every day benefit.
@@ -65,8 +65,8 @@ at <a href="">adorama.com</a>.
   {
     title: `How can I manage my account?`,
     content: `<p>
-    For Adorama Edge Credit Card accounts, you can pay your bill online
-    or modify your account settings by clicking <a href="">here</a>.
+    For Grease Edge Credit Card accounts, you can pay your bill online
+    or modify your account settings.
   </p>
   <p>
     <span>Pay By Phone:</span>Contact Synchrony Customer Service during
@@ -82,11 +82,10 @@ at <a href="">adorama.com</a>.
   <p>Synchrony Bank</p>
   <p>P.O. Box 960061</p>
   <p>Orlando, FL 32896-0061</p>
-  <strong>Adorama Financing</strong>
+  <strong>Grease Financing</strong>
   <p>
     For Genesis Credit Accounts, issued by First Electronic Bank, Member
-    FDIC, click <a href="">here</a> to manage your account or for more
-    information.
+    FDIC.
   </p>
   <p>
     <span>Pay By Phone:</span> Contact Genesis Customer Service during
@@ -95,11 +94,11 @@ at <a href="">adorama.com</a>.
   <p>Monday - Sunday 9:00 AM - 9:00PM ET</p>`,
   },
   {
-    title: `Can I use the Adorama Edge Credit Card for purchases on the Business
+    title: `Can I use the Grease Edge Credit Card for purchases on the Business
   Solutions Portal, or as a verified Creators GearUp member
   participating in the college student discount program?`,
     content: `<p>
-  Currently, you will not be able to use the Adorama Edge Credit Card
+  Currently, you will not be able to use the Grease Edge Credit Card
   for purchases on the Business Solutions Portal, or as a verified
   Creators GearUp member.
 </p>`,
@@ -117,7 +116,7 @@ export default function EdgeCreditCard() {
     <section className={classes["edge-credit-card"]}>
       <div className={classes["edge-credit-card-heading"]}>
         <div className={classes["edge-credit-card-grid"]}>
-          <h1>Adorama Edge Credit Card</h1>
+          <h1>Grease Edge Credit Card</h1>
           <span>
             Where payment flexibility and everyday rewards work to your
             advantage.
@@ -147,7 +146,7 @@ export default function EdgeCreditCard() {
             <i className="fa-solid fa-gift"></i>
             <h3>5% OFF† Every Day</h3>
             <p>
-              Enjoy 5% OFF† purchases every day with the Adorama Edge Credit
+              Enjoy 5% OFF† purchases every day with the Grease Edge Credit
               Card!
             </p>
           </div>
@@ -196,7 +195,7 @@ export default function EdgeCreditCard() {
               more.
             </strong>
             <p>
-              Only valid on purchases made with the Adorama Edge Credit Card.
+              Only valid on purchases made with the Grease Edge Credit Card.
               Interest will be charged to your account from the purchase date if
               the promotional balance is not paid in full within 6 or 12 Months.
               Minimum monthly payments required.
@@ -208,15 +207,15 @@ export default function EdgeCreditCard() {
 
           <div className={classes["edge-credit-card-benefits-content-part"]}>
             <h2>Every Day Savings</h2>
-            <span>5% OFF† Every Day with your Adorama Edge Credit Card</span>
+            <span>5% OFF† Every Day with your Grease Edge Credit Card</span>
             <strong>
-              Use your Adorama Edge Credit Card, enjoy 5% off every day on your
+              Use your Grease Edge Credit Card, enjoy 5% off every day on your
               purchase.
             </strong>
             <p>
-              Special Financing and 5% OFF Adorama Edge Credit Card benefit
-              can’t be combined. You will be asked to select Special Financing
-              (if purchase amount qualifies) or 5% OFF every day benefit at
+              Special Financing and 5% OFF Grease Edge Credit Card benefit can’t
+              be combined. You will be asked to select Special Financing (if
+              purchase amount qualifies) or 5% OFF every day benefit at
               checkout.
             </p>
           </div>
@@ -226,7 +225,7 @@ export default function EdgeCreditCard() {
         <div className={classes["edge-credit-card-works-container"]}>
           <h2>HOW IT WORKS</h2>
           <p>
-            Adorama Financing offers instant personalized financing at checkout.
+            Grease Financing offers instant personalized financing at checkout.
             We work with multiple lenders to find the best financing solution
             for you. See <a href="#terms-credit">financing details</a> for more
             information.⤉
@@ -237,7 +236,7 @@ export default function EdgeCreditCard() {
             >
               <i className="fa-solid fa-cart-shopping"></i>
               <h3>Add To Cart</h3>
-              <p>Browse Adorama products and add to your cart.</p>
+              <p>Browse Grease products and add to your cart.</p>
             </div>
             <div
               className={classes["edge-credit-card-works-container-spec-part"]}
@@ -245,7 +244,7 @@ export default function EdgeCreditCard() {
               <i className="fa-solid fa-credit-card"></i>
               <h3>Checkout</h3>
               <p>
-                At checkout, select “Apply for Adorama Edge Credit Card” in the
+                At checkout, select “Apply for Grease Edge Credit Card” in the
                 Payment section.
               </p>
             </div>
@@ -270,9 +269,9 @@ export default function EdgeCreditCard() {
         <div className={classes["edge-credit-card-miss-container"]}>
           <h2>Don't Miss Out!</h2>
           <p>
-            Open an Adorama Edge Credit Card and take advantage of the perks
-            that work for you. See if you pre-qualify with no impact to your
-            credit bureau score.
+            Open an Grease Edge Credit Card and take advantage of the perks that
+            work for you. See if you pre-qualify with no impact to your credit
+            bureau score.
           </p>
           <div className={classes["edge-credit-card-miss-container-btns"]}>
             <Link to="/login">Apply Now</Link>
@@ -302,12 +301,12 @@ export default function EdgeCreditCard() {
           ⤉ Financing details: Additional offers may be available that are not
           listed above. Subject to credit approval by each lender.
         </p>
-        <p>Adorama Edge Credit Card, issued by Synchrony Bank.</p>
+        <p>Grease Edge Credit Card, issued by Synchrony Bank.</p>
         <span>*No Interest if Paid in Full Within 6 or 12 Months</span>
         <p>
           6 Months Promotional Financing available on purchases of $199-$799.99.
           12 Months Promotional Financing available on purchases of $800 or
-          more. Only valid on purchases made with the Adorama Edge Credit Card.
+          more. Only valid on purchases made with the Grease Edge Credit Card.
           Interest will be charged to your account from the purchase date if the
           promotional balance is not paid in full within 6 or 12 months. Minimum
           monthly payments required. Qualifying purchase amount must be on one
@@ -331,7 +330,7 @@ export default function EdgeCreditCard() {
           after all other applicable discounts are applied at point of sale.
           Excludes taxes and shipping charges. We reserve the right to
           discontinue or alter the terms of this offer anytime. Offer only valid
-          on purchases made with the Adorama Edge Credit Card, issued by
+          on purchases made with the Grease Edge Credit Card, issued by
           Synchrony Bank.
         </p>
       </div>

@@ -9,7 +9,7 @@ const accordionContent = [
   {
     title: "Free 2-Day Shipping",
     content: `<p>
-  For just $49.99/year your order of qualifying Adorama products
+  For just $49.99/year your order of qualifying Grease products
   will arrive at your door in 2 business days or less. All
   additional shipping options are still available in case you need
   it faster or want to pick it up in our store.
@@ -30,15 +30,15 @@ const accordionContent = [
   VIP360 members have the option to return VIP360 products for up to
   60 days from purchase. Return shipping is also free. For a free
   shipping label please email us at
-  <a href="">VIP360@adorama.com</a> or call us at
-  <a href="">212.741.0052.</a>
+  <a href="mailto:webmaster@example.com">VIP360@grease.com</a> or call us at
+  <a href="tel:2127410052">212.741.0052.</a>
 </p>`,
   },
   {
     title: "Effortless Product Protection",
     content: `<p>
   Use your gear more. Worry less. While you're a VIP360 member, the
-  new products you buy from Adorama come with automatic 1-year
+  new products you buy from Grease come with automatic 1-year
   damage protection. If anything happens, we'll repair or replace at
   no charge. (Some exclusions apply.)
 </p>`,
@@ -48,7 +48,7 @@ const accordionContent = [
     content: `<p>
   A team of customer service representatives is dedicated
   exclusively to VIP360 members. To reach them, email
-  VIP360@adorama.com or call 1-800-811-4001.
+  VIP360@grease.com or call 1-800-811-4001.
 </p>
 <p>Hours of Operation:</p>
 <ul>
@@ -63,10 +63,10 @@ const accordionContent = [
   <ul>
     <li>Exclusive VIP360 member-only contests</li>
     <li>
-      Early-bird access to discounts, sales and Adorama-sponsored
+      Early-bird access to discounts, sales and Grease-sponsored
       events
     </li>
-    <li>Special discounts from select Adorama partners</li>
+    <li>Special discounts from select Grease partners</li>
   </ul>`,
   },
 ];
@@ -94,7 +94,7 @@ export default function Vip() {
             <img src="https://i.ibb.co/BKyR2Xm/VIP360-Logo.png" alt="vip" />
           </h1>
           <p>
-            All the Adorama quality and value you appreciate—with extra perks
+            All the Grease quality and value you appreciate—with extra perks
           </p>
           <b>Just $49.99 a year</b>
           <div>
@@ -125,7 +125,7 @@ export default function Vip() {
           <h4>Free</h4>
           <strong>2-Day Shipping</strong>
           <p>
-            Buy one of the thousands of VIP360 products at Adorama, and it will
+            Buy one of the thousands of VIP360 products at Grease, and it will
             be delivered within 2 business days. Exclusions apply.
           </p>
         </div>
@@ -164,8 +164,8 @@ export default function Vip() {
           <h4>Member-Only</h4>
           <strong>Discounts & Perks</strong>
           <p>
-            Enjoy first dibs on our best deals, Adorama sponsored events,
-            partner discounts, and more.
+            Enjoy first dibs on our best deals, Grease sponsored events, partner
+            discounts, and more.
           </p>
         </div>
       </div>
@@ -204,10 +204,9 @@ export default function Vip() {
         <p>
           Membership to the VIP360 Program is limited to individuals only and is
           limited to one account per individual. Employees, officers, directors,
-          agents and representatives of Adorama, Inc. are eligible for
-          membership but may be excluded from certain promotions. You must be
-          age 18 years or older and a legal resident of the United States to be
-          eligible.
+          agents and representatives of Grease, Inc. are eligible for membership
+          but may be excluded from certain promotions. You must be age 18 years
+          or older and a legal resident of the United States to be eligible.
         </p>
         <p>
           By submitting an application for the VIP or VIP360 Program, you agree
@@ -229,8 +228,8 @@ export default function Vip() {
         <h5>Free 2-Day Guaranteed Delivery Policy</h5>
         <p>
           Most items are eligible for Free 2-Day Guaranteed delivery when
-          ordered through <Link to="/">adorama.com</Link> or by phone:{" "}
-          <a href="tel:855-291-3845">855-291-3845</a>. Look for the VIP360 icons
+          ordered through <Link to="/">grease.com</Link> or by phone:{" "}
+          <a href="tel:8552913845">855-291-3845</a>. Look for the VIP360 icons
           on eligible product pages, and you'll automatically have a notice in
           your shopping cart and at checkout whenever your order is eligible.
           Some exclusions apply. Any item that doesn’t have a message indicating
@@ -252,8 +251,8 @@ export default function Vip() {
           and military APO/FPO/DPO addresses as well as shipping to Hawaii,
           Alaska or Puerto Rico are not included in this offer.
           <span>
-            This offer is a benefit of Adorama VIP360 and valid on all
-            qualifying VIP360 customer purchases,
+            This offer is a benefit of Grease VIP360 and valid on all qualifying
+            VIP360 customer purchases,
           </span>
           and cannot be combined with additional discounts, closeout sales,
           special offers, flash sales, etc.
@@ -277,18 +276,18 @@ export default function Vip() {
         <h5>Dedicated Customer Service</h5>
         <p>
           A team of customer service representatives is dedicated exclusively to
-          VIP360 members. To reach them, email VIP360@adorama.com or call
+          VIP360 members. To reach them, email VIP360@grease.com or call
           1-800-811-4001.
         </p>
-        <h5>Adorama Protect powered by Extend - VIP360 Protection Plan</h5>
+        <h5>Grease Protect powered by Extend - VIP360 Protection Plan</h5>
         <p>
           We want your order to be worry-free. VIP360 provides you with a 1-year
-          Adorama Protect powered by Extend Protection Plan, including
-          accidental damage.
+          Grease Protect powered by Extend Protection Plan, including accidental
+          damage.
         </p>
         <p>
           With this plan, all new and factory-refurbished products* purchased
-          from Adorama during your VIP360 membership term can be repaired or
+          from Grease during your VIP360 membership term can be repaired or
           replaced at no additional cost, and no deductible. *Limitations apply.
           Review the full terms and conditions here.{" "}
           <a href="https://www.extend.com">See the policy here</a>.
@@ -296,8 +295,8 @@ export default function Vip() {
         <h5>60-Day Return Policy</h5>
         <p>
           Return shipping is also free. For a Free Shipping label please email
-          us at <a href="mailto:webmaster@example.com">VIP360@adorama.com</a> or
-          call us <a href="tel:1-800-811-4001">1-800-811-4001</a>.
+          us at <a href="mailto:webmaster@example.com">VIP360@grease.com</a> or
+          call us <a href="tel:18008114001">1-800-811-4001</a>.
         </p>
         <h5>
           If a product is received defective or incorrect, please contact us
@@ -333,7 +332,7 @@ export default function Vip() {
         <p>
           <span>Refund Policy:</span> Please allow 8 business days from when we
           receive your return to process your refund. You will be notified by
-          email once your return is processed. Adorama reserves the right to
+          email once your return is processed. Grease reserves the right to
           refuse return, refund and/or charge a restocking fee for any product
           that doesn't comply with the above mentioned requirements.
         </p>

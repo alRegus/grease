@@ -8,12 +8,12 @@ export default function InternationalOrders() {
       <h1>International Orders</h1>
       <h2>Do you ship internationally?</h2>
       <p>
-        Yes, Adorama ships throughout the U.S., Canada and to over 200 countries
+        Yes, Grease ships throughout the U.S., Canada and to over 200 countries
         worldwide. International shipments are subject to import fees, duties,
         and taxes (which are levied once a shipment reaches the destination
         country) in addition to the brokerage fees/custom clearance charges that
         may be imposed by the carrier. These charges must be borne by the
-        recipient. Adorama has no control over these charges and cannot predict
+        recipient. Grease has no control over these charges and cannot predict
         what they might be
       </p>
       <p>
@@ -35,14 +35,14 @@ export default function InternationalOrders() {
         import fees, duties and taxes, which are levied once a shipment reaches
         their country, in addition to the brokerage fees/custom clearance
         charges which may be imposed by the carrier. These charges must be borne
-        by the recipient. Adorama has no control over these charges and cannot
+        by the recipient. Grease has no control over these charges and cannot
         predict what they might be.
       </p>
       <h2 className={classes["international-shipping-countries"]}>
-        What countries does Adorama ship to?
+        What countries does Grease ship to?
       </h2>
       <p>
-        Adorama ships throughout the U.S., Canada and to over 200 countries
+        Grease ships throughout the U.S., Canada and to over 200 countries
         worldwide. Please see the listing here.
       </p>
       <select name="country" id="country">

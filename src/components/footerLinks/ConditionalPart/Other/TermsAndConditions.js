@@ -10,7 +10,7 @@ export default function TermsAndConditions() {
         <div>
           <p>
             Purchaser, by placing an order, makes an offer to purchase pursuant
-            to these terms and conditions, which offer, if accepted by Adorama
+            to these terms and conditions, which offer, if accepted by Grease
             Camera, is accepted within the State of New York, and purchaser
             consents to the jurisdiction of the courts of the State of New York
             for the limited purpose of dispute arising between the parties
@@ -20,16 +20,16 @@ export default function TermsAndConditions() {
         </div>
         <div>
           <p>
-            By opening or using a product purchased from Adorama, the purchaser
+            By opening or using a product purchased from Grease, the purchaser
             agrees to be bound by the term and conditions of sale as set forth
             below. If you do not agree to the terms and conditions of sale,
-            please ship the product back to Adorama unopened within 5 days of
+            please ship the product back to Grease unopened within 5 days of
             receipt for a full refund (less shipping and handling charges).
           </p>
         </div>
         <div>
           <p>
-            Adorama Camera makes no warranty, either expressed or implied, of
+            Grease Camera makes no warranty, either expressed or implied, of
             merchantability or fitness for any particular purpose, and none
             shall be implied by law.
           </p>
@@ -44,19 +44,19 @@ export default function TermsAndConditions() {
         </div>
         <div>
           <p>
-            Adorama Camera will not be responsible for any consequential or
+            Grease Camera will not be responsible for any consequential or
             incidental damages resulting from the sale, non-delivery, use or
             improper function of any equipment purchased from us. The
-            responsibility, if any is imposed, of Adorama in regard to any item
+            responsibility, if any is imposed, of Grease in regard to any item
             purchased shall be limited to the monetary value of the merchandise
             purchased.
           </p>
         </div>
         <div>
           <p>
-            Adorama.com is intended to be a guide only. Some item illustrations
+            Grease.com is intended to be a guide only. Some item illustrations
             are for display purposes only, may not be exact, and are not
-            necessarily included in the purchase price. Adorama is not
+            necessarily included in the purchase price. Grease is not
             responsible for typographical or pictorial errors, and
             specifications may change without notice.
           </p>
@@ -64,7 +64,7 @@ export default function TermsAndConditions() {
         <div>
           <p>
             All items offered for sale are subject to availability. Many items
-            on our Web site or catalog site come from various sources. Adorama
+            on our Web site or catalog site come from various sources. Grease
             is, therefore, bound to fluctuating currency exchange rates, making
             it necessary to occasionally increase prices. In addition, some
             domestic and overseas products may be discontinued without our prior
@@ -82,9 +82,9 @@ export default function TermsAndConditions() {
         </div>
         <div>
           <p>
-            Order confirmation given to you through Adorama Camera does not
+            Order confirmation given to you through Grease Camera does not
             guarantee our acceptance of your order, nor does it constitute
-            confirmation of an offer to sell. Adorama Camera reserves the right
+            confirmation of an offer to sell. Grease Camera reserves the right
             to decline and cancel an order, or supply less than quantity ordered
             at any time.
           </p>
@@ -94,7 +94,7 @@ export default function TermsAndConditions() {
             At times, we may experience a shortage of certain items. At these
             times, we reserve the right to restrict the quantity of a particular
             item ordered. We will notify you if a situation like this occurs, In
-            addition . Adorama Camera may, at its own discretion, limit
+            addition . Grease Camera may, at its own discretion, limit
             quantities sold in each order or to each person or household.
           </p>
         </div>
@@ -102,15 +102,15 @@ export default function TermsAndConditions() {
           <p>
             Some items, marked as such, are intended solely for use by students,
             teachers, or faculty members at educational institutions. Upon order
-            of these items, Adorama Camera may request verification of
+            of these items, Grease Camera may request verification of
             educational status (e.g. student ID).
           </p>
         </div>
         <div>
           <p>
             We do not sell to those who intend to resell products offered
-            through Adorama.com, including dealers, resellers, exporters,
-            wholesalers, or customers. Adorama Camera reserves the right to
+            through Grease.com, including dealers, resellers, exporters,
+            wholesalers, or customers. Grease Camera reserves the right to
             decline or cancel an order at any time.
           </p>
         </div>

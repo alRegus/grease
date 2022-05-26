@@ -14,7 +14,7 @@ export default function PaymentMethods() {
         <div className={classes["payment-methods-method-body"]}>
           <div>
             <p>
-              Adorama accepts VISA, MasterCard, American Express, Visa Checkout
+              Grease accepts VISA, MasterCard, American Express, Visa Checkout
               and Discover. Your credit card is charged only at the time of the
               actual shipment of item(s). However, there might be a temporary
               hold on the funds until the time of actual shipment. If paying by
@@ -36,17 +36,17 @@ export default function PaymentMethods() {
       </div>
       <div className={classes["payment-methods-method"]}>
         <div className={classes["payment-methods-method-header"]}>
-          <h2>Adorama Credit Card Account</h2>
+          <h2>Grease Credit Card Account</h2>
         </div>
         <div className={classes["payment-methods-method-body"]}>
           <div>
             <p>
-              Adorama Edge Credit Card is a payment option that offers consumer
+              Grease Edge Credit Card is a payment option that offers consumer
               opportunities to gear up, with convenient financing options, and
               everyday rewards. The card pairs offers like special financing on
               qualifying purchases* or an instant 5% off† every day benefit with
               no annual fee** to give customers a choice between two great
-              options when they shop at Adorama.{" "}
+              options when they shop at Grease.{" "}
               <Link to="/nspc/edgeCredit">Learn More.</Link>
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function PaymentMethods() {
         <div className={classes["payment-methods-method-body"]}>
           <div>
             <p>
-              To ensure our customers feel safe when shopping with Adorama, we
+              To ensure our customers feel safe when shopping with Grease, we
               accept the Visa Checkout payment option. Visa Checkout saves time
               and effort. No need to re-enter your card number or shipping
               preferences again. Visa Checkout allows you to pay with
@@ -172,7 +172,7 @@ export default function PaymentMethods() {
         <div className={classes["payment-methods-method-body"]}>
           <div>
             <p>
-              Adorama accepts purchase orders, "P" credit cards as well as other
+              Grease accepts purchase orders, "P" credit cards as well as other
               payments listed above from corporate, GSA, Federal & Local
               Government, and Educational customers.
             </p>

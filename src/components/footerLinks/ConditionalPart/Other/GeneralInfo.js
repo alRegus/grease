@@ -141,11 +141,11 @@ export default function GeneralInfo() {
           <div>
             <p>
               <span>
-                What type of warranty does Adorama offer on "Refurbished" goods?
+                What type of warranty does Grease offer on "Refurbished" goods?
               </span>
             </p>
             <p>
-              All refurbished products sold by Adorama come with a 90-day
+              All refurbished products sold by Grease come with a 90-day
               warranty; the warranty covers anything the manufacturers warranty
               covers for a new unit, including shutter defects.
             </p>
@@ -158,8 +158,8 @@ export default function GeneralInfo() {
               </span>
             </p>
             <p>
-              No, your Adorama invoice is all you need to get warranty service
-              on refurbished products (or just your order number, for Canon
+              No, your Grease invoice is all you need to get warranty service on
+              refurbished products (or just your order number, for Canon
               refurbs).
             </p>
           </div>
@@ -209,8 +209,8 @@ export default function GeneralInfo() {
             <p>
               Because there is no factory-authorized middleman, there is no
               manufacturer's warranty. However, "Grey Market" products purchased
-              from Adorama are warrantied by Adorama Camera and are returned to
-              Adorama Camera for any warranty repair.
+              from Grease are warrantied by Grease Camera and are returned to
+              Grease Camera for any warranty repair.
             </p>
           </div>
           <div>
@@ -228,14 +228,14 @@ export default function GeneralInfo() {
           <div>
             <p>
               <span>
-                What type of warranty does Adorama offer on "Grey Market" goods?
+                What type of warranty does Grease offer on "Grey Market" goods?
               </span>
             </p>
             <p>
-              On "Grey Market" products purchased from Adorama, we offer the
-              same warranty as the U.S. warrantied products carry, for a period
-              of one year. The only difference is that the product would need to
-              be shipped to Adorama for warranty service.
+              On "Grey Market" products purchased from Grease, we offer the same
+              warranty as the U.S. warrantied products carry, for a period of
+              one year. The only difference is that the product would need to be
+              shipped to Grease for warranty service.
             </p>
           </div>
           <div>
@@ -246,8 +246,8 @@ export default function GeneralInfo() {
               </span>
             </p>
             <p>
-              No, your Adorama invoice is all you need to get warranty service
-              on "Grey Market" products.
+              No, your Grease invoice is all you need to get warranty service on
+              "Grey Market" products.
             </p>
           </div>
           <div>
@@ -289,7 +289,7 @@ export default function GeneralInfo() {
         <div className={classes["general-info-info-body"]}>
           <div>
             <p>
-              Rebates are honored by the manufacturer who issues them. Adorama
+              Rebates are honored by the manufacturer who issues them. Grease
               will provide you with the required information and forms to claim
               a rebate. For a list of rebates and to obtain claim forms.
             </p>
@@ -304,7 +304,7 @@ export default function GeneralInfo() {
         <div className={classes["general-info-info-body"]}>
           <div>
             <p>
-              Adorama pays top dollar for used photo and video equipment. We buy
+              Grease pays top dollar for used photo and video equipment. We buy
               all models of cameras, including old half frames and new digital
               format, lenses, and accessories, as well as video and binoculars.
               We will evaluate your equipment and give an honest and fair offer.
@@ -314,7 +314,7 @@ export default function GeneralInfo() {
             <p>
               To learn the value of your equipment, you can call toll free,
               1-800-223-2500, send a fax to 212-675-8715, email{" "}
-              <a href="mailto:webmaster@example.com">used@adorama.com</a>.
+              <a href="mailto:webmaster@example.com">used@grease.com</a>.
             </p>
           </div>
           <div>
@@ -338,7 +338,7 @@ export default function GeneralInfo() {
           <div>
             <p>
               If you accept the offer, we will immediately give you a check. If
-              you prefer, you can use it as credit against any Adorama purchase.
+              you prefer, you can use it as credit against any Grease purchase.
               If you don't accept our offer, we'll return the merchandise to
               you, fully insured at our expense.
             </p>

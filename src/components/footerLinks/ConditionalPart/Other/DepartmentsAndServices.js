@@ -105,7 +105,7 @@ export default function DepartmentsAndServices() {
             <p>Sun: 9:30-5:00, Mon-Thur: 9:00-7:30, Fri: 9:00-4:00</p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com">sales@adorama.com</a>
+              <a href="mailto:webmaster@example.com">sales@grease.com</a>
             </p>
           </div>
           <div>
@@ -117,8 +117,8 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com">edu@adorama.com </a> -{" "}
-              <a href="mailto:webmaster@example.com">govsales@adorama.com</a>
+              <a href="mailto:webmaster@example.com">edu@grease.com </a> -{" "}
+              <a href="mailto:webmaster@example.com">govsales@grease.com</a>
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com">rental@adorama.com</a>
+              <a href="mailto:webmaster@example.com">rental@grease.com</a>
             </p>
           </div>
           <div>
@@ -191,7 +191,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com">photolab@adorama.com</a>
+              <a href="mailto:webmaster@example.com">photolab@grease.com</a>
             </p>
             <p>
               <span>Hours:</span>
@@ -218,7 +218,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com">federal@adorama.com</a>
+              <a href="mailto:webmaster@example.com">federal@grease.com</a>
             </p>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com">edu@adorama.com</a>
+              <a href="mailto:webmaster@example.com">edu@grease.com</a>
             </p>
           </div>
         </div>
@@ -261,7 +261,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com"> govsales@adorama.com</a>
+              <a href="mailto:webmaster@example.com"> govsales@grease.com</a>
             </p>
           </div>
         </div>
@@ -281,7 +281,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com"> le@adorama.com</a>
+              <a href="mailto:webmaster@example.com"> le@grease.com</a>
             </p>
           </div>
         </div>
@@ -304,7 +304,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com"> proservice@adorama.com</a>
+              <a href="mailto:webmaster@example.com"> proservice@grease.com</a>
             </p>
           </div>
         </div>
@@ -336,14 +336,11 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>Customer Services E-mail</span>
-              <a href="mailto:webmaster@example.com">
-                {" "}
-                usedservice@adorama.com
-              </a>
+              <a href="mailto:webmaster@example.com"> usedservice@grease.com</a>
             </p>
             <p>
               <span>Trade-Ins E-mail:</span>
-              <a href="mailto:webmaster@example.com"> used@adorama.com</a>
+              <a href="mailto:webmaster@example.com"> used@grease.com</a>
             </p>
           </div>
         </div>
@@ -369,7 +366,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com"> verify@adorama.com</a>
+              <a href="mailto:webmaster@example.com"> verify@grease.com</a>
             </p>
             <p>
               <span>Hours:</span>Mon-Thur: 9:30-4:30, Fri: 9:30-12:30
@@ -392,7 +389,7 @@ export default function DepartmentsAndServices() {
             </p>
             <p>
               <span>E-mail:</span>
-              <a href="mailto:webmaster@example.com"> info@adorama.com</a>
+              <a href="mailto:webmaster@example.com"> info@grease.com</a>
             </p>
           </div>
         </div>

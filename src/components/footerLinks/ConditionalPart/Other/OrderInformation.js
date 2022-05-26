@@ -59,7 +59,7 @@ export default function OrderInformation() {
             </p>
             <p>
               <span>Email: </span>
-              <a href="mailto:webmaster@example.com">sales@adorama.com</a>
+              <a href="mailto:webmaster@example.com">sales@grease.com</a>
             </p>
           </div>
           <div>
@@ -80,7 +80,7 @@ export default function OrderInformation() {
             </p>
             <p>
               <span>Email</span>
-              <a href="mailto:webmaster@example.com">gsa@adorama.com</a>
+              <a href="mailto:webmaster@example.com">gsa@grease.com</a>
             </p>
           </div>
           <div>
@@ -95,7 +95,7 @@ export default function OrderInformation() {
             </p>
             <p>
               <span>Email:</span>
-              <a href="mailto:webmaster@example.com">govsales@adorama.com</a>
+              <a href="mailto:webmaster@example.com">govsales@grease.com</a>
             </p>
           </div>
           <div>
@@ -110,7 +110,7 @@ export default function OrderInformation() {
             </p>
             <p>
               <span>Email:</span>
-              <a href="mailto:webmaster@example.com">biddept@adorama.com</a>
+              <a href="mailto:webmaster@example.com">biddept@grease.com</a>
             </p>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function OrderInformation() {
               <span>Credit Cards</span>
             </p>
             <p>
-              Adorama accepts VISA, MasterCard, American Express, Visa, Discover
+              Grease accepts VISA, MasterCard, American Express, Visa, Discover
               and PayPal. Your credit card is charged only at the time of the
               actual shipment of item(s). However, there might be a temporary
               hold on the funds until the time of actual shipment. If paying by

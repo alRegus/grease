@@ -11,7 +11,7 @@ const accContent = [
     content: `<p>
     Select products across product categories are eligible for special
     student discount pricing. For items that are not eligible, you will
-    receive the regular low Adorama price.
+    receive the regular low Grease price.
   </p>`,
   },
   {
@@ -25,18 +25,18 @@ const accContent = [
     content: `<p>Your student verification will last for one full calendar year.</p>`,
   },
   {
-    title: ` As a Creators GearUp member, can I participate in the Adorama
-    Loyalty and Adorama Credit Card program(s), including Adorama
-    Rewards, VIP360 membership, and Adorama Edge Credit Card program(s)?`,
+    title: ` As a Creators GearUp member, can I participate in the Grease
+    Loyalty and Grease Credit Card program(s), including Grease
+    Rewards, VIP360 membership, and Grease Edge Credit Card program(s)?`,
     content: ` <p>
     Presently, if you’re a verified Creators GearUp member you will not
-    be able to enroll or use the benefits of the Adorama Loyalty and
-    Credit Card programs, including Adorama Rewards, VIP360, and/or
-    Adorama Edge Credit Card.
+    be able to enroll or use the benefits of the Grease Loyalty and
+    Credit Card programs, including Grease Rewards, VIP360, and/or
+    Grease Edge Credit Card.
   </p>
   <p>
     If you are currently enrolled in any of the above-mentioned
-    programs, we recommend that you create a new adorama.com account for
+    programs, we recommend that you create a new grease.com account for
     your student profile. Please use an email address separate from the
     one attached to your current account.
   </p>`,
@@ -87,7 +87,7 @@ export default function StudentsDiscount() {
             >
               Important information
             </span>{" "}
-            for VIP360, Adorama Edge card, and Rewards members.
+            for VIP360, Grease Edge card, and Rewards members.
           </p>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function StudentsDiscount() {
             <img src="https://i.ibb.co/8Nhn8sP/step-1-blue.png" alt="hit-1" />
             <h4>STEP 1</h4>
             <p>
-              Set up an Adorama user account. If one already exists-continue to
+              Set up an Grease user account. If one already exists-continue to
               log in
             </p>
           </div>
@@ -181,8 +181,8 @@ export default function StudentsDiscount() {
       </div>
       {modal && (
         <Modal
-          header="Important information for VIP360, Adorama Edge card, and Rewards members."
-          TextContent="Presently, you are not able to combine membership in VIP360, Adorama Rewards, and Adorama Edge credit card benefits with membership in Creators GearUP. If you are currently enrolled in any of these programs, we recommend that you sign up for a new adorama.com account for your student profile. Please use an email address separate from the one attached to your current account."
+          header="Important information for VIP360, Grease Edge card, and Rewards members."
+          TextContent="Presently, you are not able to combine membership in VIP360, Grease Rewards, and Grease Edge credit card benefits with membership in Creators GearUP. If you are currently enrolled in any of these programs, we recommend that you sign up for a new grease.com account for your student profile. Please use an email address separate from the one attached to your current account."
           closeHandler={modalHandler}
         />
       )}

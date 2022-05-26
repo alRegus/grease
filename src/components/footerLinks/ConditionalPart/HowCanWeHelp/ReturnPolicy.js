@@ -60,7 +60,7 @@ export default function ReturnPolicy() {
         <p>
           Please allow 3-5 business days from when we receive your return to
           process your refund. You will be notified by email once your return is
-          processed. Adorama reserves the right to refuse return, refund and/or
+          processed. Grease reserves the right to refuse return, refund and/or
           charge a restocking fee for any product that doesn’t comply with the
           above mentioned requirements.
         </p>

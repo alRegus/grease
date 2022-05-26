@@ -12,12 +12,11 @@ export default function Downloadables() {
             <span>Purchasing Downloadable Software</span>
           </p>
           <p>
-            For your convenience, Adorama offers a variety of downloadable
-            software that can be purchased on the Adorama site. To purchase
-            these items, simply add them to the cart and check out as you would
-            any other product. Within a few hours of your purchase, you will
-            receive an email with the download link and activation key (if
-            applicable).
+            For your convenience, Grease offers a variety of downloadable
+            software that can be purchased on the Grease site. To purchase these
+            items, simply add them to the cart and check out as you would any
+            other product. Within a few hours of your purchase, you will receive
+            an email with the download link and activation key (if applicable).
           </p>
           <p>
             Currently downloadable software is only available for orders within
@@ -43,7 +42,7 @@ export default function Downloadables() {
           </p>
           Installing a downloaded software is the same as installing from a CD
           and should be as simple as following the on-screen instructions. If
-          you are unable to install your software, please contact Adorama
+          you are unable to install your software, please contact Grease
           Customer Service and we will be happy to assist you.<p></p>
         </div>
         <div>

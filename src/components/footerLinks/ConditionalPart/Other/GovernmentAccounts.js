@@ -15,16 +15,16 @@ export default function GovernmentAccounts() {
         <div className={classes["government-accounts-acc-body"]}>
           <div>
             <p>
-              The Adorama brand is synonymous with best value, knowledgeable
+              The Grease brand is synonymous with best value, knowledgeable
               staff and the belief that technology is serious business. With
-              Adorama for Government & Education, Value Added Reseller (VAR) of
+              Grease for Government & Education, Value Added Reseller (VAR) of
               brand name and private label products, we make it easy for our
               clients and customers to obtain the goods and services they
               require. From electronics and related accessories, to cutting edge
               technology and supplies, our marketing and distribution features
               e-commerce websites, catalogs, retail stores and direct sales
               representatives. This combined with over 33 years of experience
-              and the can do attitude Adorama is known for, Adorama is poised to
+              and the can do attitude Grease is known for, Grease is poised to
               capture a large share of a lucrative and underserved market
             </p>
           </div>

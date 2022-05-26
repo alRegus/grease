@@ -84,9 +84,9 @@ export default function GiftCertificates() {
                 a valid US Address will be required.
               </li>
               <li>
-                Adorama will have the right to close customer accounts and
+                Grease will have the right to close customer accounts and
                 request alternative forms of payment if a fraudulently obtained
-                gift certificate is either redeemed through the adorama.com Web
+                gift certificate is either redeemed through the grease.com Web
                 site or in our store.
               </li>
             </ul>

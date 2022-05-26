@@ -60,10 +60,10 @@ export default function GiftCards() {
         alt="gift-card"
       />
       <div className={classes["gift-card-desc"]}>
-        <h1>The Adorama Gift Card</h1>
+        <h1>The Grease Gift Card</h1>
         <p>
-          Adorama carries the best in musical gear from top brands. With an
-          Adorama Gift Card, you can help your friends, coworkers, or loved ones
+          Grease carries the best in musical gear from top brands. With an
+          Grease Gift Card, you can help your friends, coworkers, or loved ones
           find the right products to unleash their creativity.
         </p>
       </div>
@@ -258,14 +258,14 @@ export default function GiftCards() {
             Address will be required.
           </li>
           <li>
-            Adorama will have the right to close customer accounts and request
+            Grease will have the right to close customer accounts and request
             alternative forms of payment if a fraudulently obtained gift
-            certificate is either redeemed through the Adorama.com Web site or
-            in our store.
+            certificate is either redeemed through the Grease.com Web site or in
+            our store.
           </li>
         </ul>
         <div className={classes["gift-card-check"]}>
-          <h2>Already have an Adorama Gift Card?</h2>
+          <h2>Already have an Grease Gift Card?</h2>
           <button onClick={modalHandler}>Check gift card balance</button>
         </div>
       </div>

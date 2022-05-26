@@ -69,7 +69,7 @@ export default function BuyingSellingUsed() {
         <div className={classes["buying-selling-used-part-links"]}>
           <ul>
             <li>
-              <a href="#trade-in-used">What is the Adorama Trade-In Program?</a>
+              <a href="#trade-in-used">What is the Grease Trade-In Program?</a>
             </li>
             <li>
               <a href="#get-paid-used">
@@ -79,7 +79,7 @@ export default function BuyingSellingUsed() {
             <li>
               <a href="#happens-used">
                 What happens to my used equipment once I agree to sell it to
-                Adorama?
+                Grease?
               </a>
             </li>
             <li>
@@ -112,7 +112,7 @@ export default function BuyingSellingUsed() {
             </li>
             <li>
               <a href="#good-deal-used">
-                When I buy used equipment from Adorama, how do I know I will be
+                When I buy used equipment from Grease, how do I know I will be
                 getting a good deal? After all, used equipment is available on a
                 lot of other websites.
               </a>
@@ -120,7 +120,7 @@ export default function BuyingSellingUsed() {
             <li>
               <a href="#rating-used">
                 The used product ratings on other sites can be confusing how
-                should I interpret Adorama's ratings?
+                should I interpret Grease's ratings?
               </a>
             </li>
             <li>
@@ -130,7 +130,7 @@ export default function BuyingSellingUsed() {
             </li>
             <li>
               <a href="#gift-card-used">
-                I have an Adorama Gift Card. Can I use it to purchase used
+                I have an Grease Gift Card. Can I use it to purchase used
                 equipment?
               </a>
             </li>
@@ -148,13 +148,13 @@ export default function BuyingSellingUsed() {
             </li>
             <li>
               <a href="#return-used">
-                If I'm not happy with my used equipment purchase, will Adorama
+                If I'm not happy with my used equipment purchase, will Grease
                 let me make a return?
               </a>
             </li>
             <li>
               <a href="#how-return-used">
-                How do I return used equipment to Adorama?
+                How do I return used equipment to Grease?
               </a>
             </li>
           </ul>
@@ -162,13 +162,13 @@ export default function BuyingSellingUsed() {
       </div>
       <div className={classes["buying-selling-used-part"]} id="trade-in-used">
         <div className={classes["buying-selling-used-part-header"]}>
-          <h2>What is the Adorama Trade-In Program?</h2>
+          <h2>What is the Grease Trade-In Program?</h2>
           <a href="#header-buying-selling">Return to Top</a>
         </div>
         <div className={classes["buying-selling-used-part-body"]}>
           <div>
             <p>
-              The Adorama Trade-In Program allows you to sell used equipment in
+              The Grease Trade-In Program allows you to sell used equipment in
               exchange for cash or a store credit. To participate, simply send
               us your used equipment using our free shipping label. Once we
               receive your equipment, we will call you with a purchase offer. If
@@ -189,7 +189,7 @@ export default function BuyingSellingUsed() {
         <div className={classes["buying-selling-used-part-body"]}>
           <div>
             <p>
-              Adorama has been a leader in the photography and imaging industry
+              Grease has been a leader in the photography and imaging industry
               for over 25 years! We have been around this long because we always
               treat our customers with respect and keep our word. When we make
               an offer to purchase your used equipment, we guarantee that you
@@ -202,8 +202,7 @@ export default function BuyingSellingUsed() {
       <div className={classes["buying-selling-used-part"]} id="happens-used">
         <div className={classes["buying-selling-used-part-header"]}>
           <h2>
-            What happens to my used equipment once I agree to sell it to
-            Adorama?
+            What happens to my used equipment once I agree to sell it to Grease?
           </h2>
           <a href="#header-buying-selling">Return to Top</a>
         </div>
@@ -323,7 +322,7 @@ export default function BuyingSellingUsed() {
       <div className={classes["buying-selling-used-part"]} id="good-deal-used">
         <div className={classes["buying-selling-used-part-header"]}>
           <h2>
-            When I buy used equipment from Adorama, how do I know I will be
+            When I buy used equipment from Grease, how do I know I will be
             getting a good deal? After all, used equipment is available on a lot
             of other websites.
           </h2>
@@ -347,14 +346,14 @@ export default function BuyingSellingUsed() {
         <div className={classes["buying-selling-used-part-header"]}>
           <h2>
             The used product ratings on other sites can be confusing how should
-            I interpret Adorama's ratings?
+            I interpret Grease's ratings?
           </h2>
           <a href="#header-buying-selling">Return to Top</a>
         </div>
         <div className={classes["buying-selling-used-part-body"]}>
           <div>
             <p>
-              You can feel confident shopping for used equipment at Adorama
+              You can feel confident shopping for used equipment at Grease
               because we are very conservative with our product ratings. We
               always "rate downward" if the condition of the product is in
               question so you will always receive the quality equipment you
@@ -384,15 +383,14 @@ export default function BuyingSellingUsed() {
       <div className={classes["buying-selling-used-part"]} id="gift-card-used">
         <div className={classes["buying-selling-used-part-header"]}>
           <h2>
-            I have an Adorama Gift Card. Can I use it to purchase used
-            equipment?
+            I have an Grease Gift Card. Can I use it to purchase used equipment?
           </h2>
           <a href="#header-buying-selling">Return to Top</a>
         </div>
         <div className={classes["buying-selling-used-part-body"]}>
           <div>
             <p>
-              Absolutely! You can use your Adorama Gift Card just like cash to
+              Absolutely! You can use your Grease Gift Card just like cash to
               buy any equipment new or used at our New York mega store, over the
               phone, and on our website. So, have fun shopping!
             </p>
@@ -433,9 +431,9 @@ export default function BuyingSellingUsed() {
               Some of our used equipment is still under warranty through the
               manufacturer. When you purchase the equipment, you will be
               notified of any existing warranty and the amount of time remaining
-              on the coverage. In addition, Adorama provides its own warranty
-              for most of our used equipment. The{" "}
-              <Link to="/help/warranties">Adorama Used Warranty</Link> provides
+              on the coverage. In addition, Grease provides its own warranty for
+              most of our used equipment. The{" "}
+              <Link to="/help/warranties">Grease Used Warranty</Link> provides
               full coverage for manufacturing defects.
             </p>
           </div>
@@ -444,32 +442,32 @@ export default function BuyingSellingUsed() {
       <div className={classes["buying-selling-used-part"]} id="return-used">
         <div className={classes["buying-selling-used-part-header"]}>
           <h2>
-            If I'm not happy with my used equipment purchase, will Adorama let
-            me make a return?
+            If I'm not happy with my used equipment purchase, will Grease let me
+            make a return?
           </h2>
           <a href="#header-buying-selling">Return to Top</a>
         </div>
         <div className={classes["buying-selling-used-part-body"]}>
           <div>
             <p>
-              At Adorama, we want you to be completely satisfied with all of
-              your purchases, both new and used! That's why we let you return
-              most used equipment within 30 days of purchase, no questions
-              asked! Plus, we usually don’t charge a restocking fee. Used
-              equipment must be returned in same condition as we shipped it out
-              and must include all accessories in original purchase.
+              At Grease, we want you to be completely satisfied with all of your
+              purchases, both new and used! That's why we let you return most
+              used equipment within 30 days of purchase, no questions asked!
+              Plus, we usually don’t charge a restocking fee. Used equipment
+              must be returned in same condition as we shipped it out and must
+              include all accessories in original purchase.
             </p>
           </div>
         </div>
       </div>
       <div className={classes["buying-selling-used-part"]} id="how-return-used">
         <div className={classes["buying-selling-used-part-header"]}>
-          <h2>How do I return used equipment to Adorama?</h2>
+          <h2>How do I return used equipment to Grease?</h2>
           <a href="#header-buying-selling">Return to Top</a>
         </div>
         <div className={classes["buying-selling-used-part-body"]}>
           <div>
-            <p>To return used equipment to Adorama:</p>
+            <p>To return used equipment to Grease:</p>
           </div>
           <div>
             <ul>

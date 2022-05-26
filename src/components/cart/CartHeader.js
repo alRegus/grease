@@ -19,7 +19,7 @@ export default function CartHeader() {
         </p>
         <p>
           <i class="fa-solid fa-phone"></i> Need Help? Call{" "}
-          <a href="tel:800-811-4002">800-811-4002</a>
+          <a href="tel:8008114002">800-811-4002</a>
         </p>
       </div>
     </section>

@@ -44,15 +44,14 @@ export default function AboutUs() {
         <h2>We See It Your Way</h2>
         <p>
           If you’re going to manifest your creative vision, you need the right
-          equipment. At Adorama, our store has been an icon for New York City’s
+          equipment. At Grease, our store has been an icon for New York City’s
           creatives since 1974.{" "}
           <Link to="/info/history">Read more about our history</Link>.
         </p>
         <p>
-          Shop Adorama for a powerhouse lineup of cameras, lenses,
-          cinematography gear, studio lighting, tripods, pro audio, computers,
-          printers, and every cutting-edge accessory you need to create
-          triumphant work.
+          Shop Grease for a powerhouse lineup of cameras, lenses, cinematography
+          gear, studio lighting, tripods, pro audio, computers, printers, and
+          every cutting-edge accessory you need to create triumphant work.
         </p>
         <button onClick={navigateToProductListHandler}>Shop Now</button>
       </div>
@@ -64,7 +63,7 @@ export default function AboutUs() {
           want you to succeed.
         </p>
         <p>
-          We’ve dedicated ourselves at Adorama to providing you with it all. Our
+          We’ve dedicated ourselves at Grease to providing you with it all. Our
           creative community includes hundreds of pros who share their skills,
           opinions, and favorite gear with you.
         </p>
@@ -76,7 +75,7 @@ export default function AboutUs() {
         <button onClick={navigateTo42Handler}>Learn More At 42 West</button>
       </div>
       <div className={classes["about-promise"]}>
-        <h2>The Adorama Promise</h2>
+        <h2>The Grease Promise</h2>
         <p>
           We’re here for you with the best in video, camera, and audio, plus
           complete customer service, tailored to your every need.
@@ -103,7 +102,7 @@ export default function AboutUs() {
             <i className="fa-solid fa-medal"></i>
             <h4>EARN REWARDS</h4>
             <p>
-              Shopping at Adorama is always rewarding with our point-based{" "}
+              Shopping at Grease is always rewarding with our point-based{" "}
               <Link to="/nspc/rewards">loyalty program</Link>, and even more
               perks with our <Link to="/nspc/vip360">VIP360 membership</Link>.
             </p>
@@ -122,7 +121,7 @@ export default function AboutUs() {
             <p>
               In the unlikely event of an issue with your order or if you have
               questions, we’re here for you. Call us at
-              <a href="tel:800-223-2500">800-223-2500 </a> or{" "}
+              <a href="tel:8002232500">800-223-2500 </a> or{" "}
               <a href="mailto:webmaster@example.com">email </a> us anytime.
             </p>
           </div>
@@ -136,7 +135,7 @@ export default function AboutUs() {
             <span>BUSINESS SOLUTION</span>
           </div>
           <p>
-            Adorama's B2B division provides consultative sales and technical
+            Grease's B2B division provides consultative sales and technical
             services to design, install and support the unique technology needs
             of businesses, educational institutions and government agencies.
           </p>
@@ -150,7 +149,7 @@ export default function AboutUs() {
           </div>
           <p>
             You can rent professional filmmaking equipment and audio gear from
-            the Adorama Rental Co. in Manhattan or Brooklyn. Get what you need
+            the Grease Rental Co. in Manhattan or Brooklyn. Get what you need
             for the duration of your project. Renting is also a great way to
             test out gear before you buy.
           </p>

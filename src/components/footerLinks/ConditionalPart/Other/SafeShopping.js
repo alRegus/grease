@@ -10,7 +10,7 @@ export default function SafeShopping() {
       <div className={classes["safe-shopping-body"]}>
         <div>
           <p>
-            Adorama.com takes great pride in offering a safe and secure online
+            Grease.com takes great pride in offering a safe and secure online
             shopping experience.
           </p>
         </div>
@@ -39,8 +39,8 @@ export default function SafeShopping() {
         </div>
         <div>
           <p>
-            Adorama.com uses Secure Sockets Layer (SSL) technology to provide
-            you with the safest, most secure shopping experience possible. SSL
+            Grease.com uses Secure Sockets Layer (SSL) technology to provide you
+            with the safest, most secure shopping experience possible. SSL
             technology enables encryption (scrambling) of sensitive information
             during your online transactions. All of the forms on our site are
             secured with SSL technology so your personal information stays safe
@@ -74,7 +74,7 @@ export default function SafeShopping() {
             <span>Industry Standard Firewalls</span>
           </p>
           <p>
-            Adorama.com servers are protected by secure firewalls communication
+            Grease.com servers are protected by secure firewalls communication
             management computers specially designed to keep information secure
             and inaccessible by other Internet users. So you're absolutely safe
             while you shop.
@@ -92,7 +92,7 @@ export default function SafeShopping() {
             <span>Privacy Policy</span>
           </p>
           <p>
-            Adorama.com doesn't rent, sell or share your personal information
+            Grease.com doesn't rent, sell or share your personal information
             with anyone. Our Privacy Policy details how your personal
             information is collected and how your personal information may be
             used.

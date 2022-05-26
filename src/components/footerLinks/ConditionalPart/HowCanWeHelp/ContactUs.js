@@ -15,7 +15,7 @@ export default function ContactUs() {
       <div className={classes["contact-us-phone"]}>
         <h2>
           For <span>Sales Assistance</span>, call{" "}
-          <a href="tel:800-223-2500">800-223-2500</a>
+          <a href="tel:8002232500">800-223-2500</a>
         </h2>
         <div className={classes["contact-us-phone-hours"]}>
           <div>
@@ -35,7 +35,7 @@ export default function ContactUs() {
       <div className={classes["contact-us-phone"]}>
         <h2>
           For <span>Customer Service</span>, call{" "}
-          <a href="tel:800-815-0702">800-815-0702</a>
+          <a href="tel:8008150702">800-815-0702</a>
         </h2>
         <div className={classes["contact-us-phone-hours"]}>
           <div>

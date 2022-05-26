@@ -19,7 +19,7 @@ export default function CorporateAccounts() {
                 studios, publishing companies, and more. For Competitive pricing
                 for quotes and bids, please email{" "}
                 <a href="mailto:webmaster@example.com">
-                  proservice@adorama.com.
+                  proservice@grease.com.
                 </a>
               </p>
             </div>
@@ -34,9 +34,7 @@ export default function CorporateAccounts() {
             <div>
               <p>
                 To apply for an open account please email{" "}
-                <a href="mailto:webmaster@example.com">
-                  proservice@adorama.com
-                </a>{" "}
+                <a href="mailto:webmaster@example.com">proservice@grease.com</a>{" "}
                 for an application. Annual purchases must start at $10,000 to be
                 eligible.
               </p>
@@ -56,8 +54,8 @@ export default function CorporateAccounts() {
               organization with multiple locations, and spend more than $10,000
               per year on supplies, your company may qualify for an open net
               terms corporate account. Please email{" "}
-              <a href="mailto:webmaster@example.com">rayg@adorama.com</a> for
-              the open account application.
+              <a href="mailto:webmaster@example.com">rayg@grease.com</a> for the
+              open account application.
             </p>
           </div>
         </div>

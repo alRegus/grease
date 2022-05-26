@@ -6,24 +6,24 @@ import classes from "./PublicPrivacy.module.scss";
 export default function PublicPrivacy() {
   return (
     <section className={classes["public-privacy"]}>
-      <h1>Adorama Public Privacy Policy</h1>
+      <h1>Grease Public Privacy Policy</h1>
       <div className={classes["public-privacy-body"]}>
         <div>
           <p>This privacy policy was last updated on: October 25, 2021</p>
         </div>
         <div>
           <p>
-            This Privacy Policy applies to all Adorama websites (both mobile and
+            This Privacy Policy applies to all Grease websites (both mobile and
             browser based), applications, and services. This includes all
             information gathered from websites, applications, and services owned
-            and operated by Adorama, including information provided to Adorama
-            in the course of exercising your privacy rights or submitting a
-            privacy related request.
+            and operated by Grease, including information provided to Grease in
+            the course of exercising your privacy rights or submitting a privacy
+            related request.
           </p>
         </div>
         <div>
           <p>
-            Prior to using or operating Adorama services, or the submission of a
+            Prior to using or operating Grease services, or the submission of a
             privacy related request, please review the following policy to
             ensure you are informed of your rights, our policies and standards,
             and relevant regulations that govern your privacy operations.
@@ -31,11 +31,11 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            <span>Adorama's Commitment to Data Privacy</span>
+            <span>Grease's Commitment to Data Privacy</span>
           </p>
           <p>
-            At Adorama, the privacy of your data and your privacy rights are a
-            top priority. Adorama takes extreme care with any data it identifies
+            At Grease, the privacy of your data and your privacy rights are a
+            top priority. Grease takes extreme care with any data it identifies
             as “personal data” regardless of where you reside. Any data that
             directly identifies you, such as your name or address, or any data
             that can be reasonably used to identify you, is treated with the
@@ -44,7 +44,7 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            This privacy notice outlines the ways in which Adorama, or its
+            This privacy notice outlines the ways in which Grease, or its
             subsidiaries handle your personal data. This includes instances
             where you interact with our websites, products, physical stores, or
             our personnel in any capacity.
@@ -64,26 +64,25 @@ export default function PublicPrivacy() {
             <span>What is Personal Data?</span>
           </p>
           <p>
-            During the course of our business operations, Adorama collects data
+            During the course of our business operations, Grease collects data
             and/or personal information such as your name, other contact
             information, shipping information, and your billing information.
-            Adorama collects these data types when it is provided to us through
+            Grease collects these data types when it is provided to us through
             the use of our services. This includes interacting with our
             websites, placing an order through various methods, or signing up
-            for our marketing lists. In some instances, Adorama may combine your
+            for our marketing lists. In some instances, Grease may combine your
             provided information with additional information provided to us by
             third-party services and external sources.
           </p>
         </div>
         <div>
           <p>
-            <span>Your Privacy Rights and Choices with Adorama</span>
+            <span>Your Privacy Rights and Choices with Grease</span>
           </p>
           <p>
-            Adorama believes in transparency without our data collection and
+            Grease believes in transparency without our data collection and
             processing operations, consequently, at any time you are entitled to
-            information regarding what data Adorama retains about you,
-            including:
+            information regarding what data Grease retains about you, including:
           </p>
         </div>
         <div>
@@ -95,19 +94,19 @@ export default function PublicPrivacy() {
             </li>
             <li>Purposes for which personal information is collected</li>
             <li>
-              Any third parties that Adorama shares your personal information
+              Any third parties that Grease shares your personal information
               with
             </li>
           </ul>
         </div>
         <div>
           <p>
-            With your Personal Information collected by Adorama, you have the
-            freedom to change or correct your information at any time. Adorama
+            With your Personal Information collected by Grease, you have the
+            freedom to change or correct your information at any time. Grease
             respects your data privacy rights and allows all our users to
             exercise their right to know, access, correct, transfer, restrict
             the processing of, and delete your Personal Information. Please
-            reference the “Contact us about data privacy at Adorama” section of
+            reference the “Contact us about data privacy at Grease” section of
             this policy for contact information to exercise the aforementioned
             rights.
           </p>
@@ -115,7 +114,7 @@ export default function PublicPrivacy() {
         <div>
           <p>
             Additionally, you have the choice to cease communications with
-            Adorama entirely, if desired. At any time, you may request to be
+            Grease entirely, if desired. At any time, you may request to be
             removed from our lists and have your Personal Information scrubbed
             from our systems, you can request to cease all email communications,
             and you may also request that information like geographic location
@@ -129,17 +128,17 @@ export default function PublicPrivacy() {
             <span>Verification of Personal Information Requests</span>
           </p>
           <p>
-            For some personal information requests, Adorama is required to
-            verify your identity before completing your request. In order to
-            verify your identity, Adorama may ask you to provide your full name,
-            other contact information, and your relationship with Adorama. In
-            some instances, Adorama may require additional information to
-            complete your request. Once this information has been received by
-            Adorama, we will verify it against the information currently held by
-            Adorama in relation to the information provided and verify your
-            identity. In the event that your identity cannot be verified,
-            Adorama will contact you for further information, or provide a
-            rationale for denying your request.
+            For some personal information requests, Grease is required to verify
+            your identity before completing your request. In order to verify
+            your identity, Grease may ask you to provide your full name, other
+            contact information, and your relationship with Grease. In some
+            instances, Grease may require additional information to complete
+            your request. Once this information has been received by Grease, we
+            will verify it against the information currently held by Grease in
+            relation to the information provided and verify your identity. In
+            the event that your identity cannot be verified, Grease will contact
+            you for further information, or provide a rationale for denying your
+            request.
           </p>
         </div>
         <div>
@@ -150,16 +149,16 @@ export default function PublicPrivacy() {
             In some instances, you may designate an authorized delegate on your
             behalf to make a data request. An authorized delegate will also be
             subject to verification procedures, which may require additional
-            information for Adorama to ensure that your authorized agent is
+            information for Grease to ensure that your authorized agent is
             legitimate and acting on your behalf.
           </p>
         </div>
         <div>
           <p>
-            <span>Personal Data Adorama Collects About You</span>
+            <span>Personal Data Grease Collects About You</span>
           </p>
           <p>
-            Adorama holds personal privacy as one of its core tenets,
+            Grease holds personal privacy as one of its core tenets,
             consequently, we strive to only collect and retain information that
             is necessary for our business processes, and that there is a present
             need for.
@@ -167,13 +166,13 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            Adorama collects the following types of information during the
-            course of our regular business operations:
+            Grease collects the following types of information during the course
+            of our regular business operations:
           </p>
         </div>
         <div>
           <p>
-            <span>Information provided to Adorama by you, the customer:</span>
+            <span>Information provided to Grease by you, the customer:</span>
           </p>
         </div>
         <div>
@@ -248,46 +247,45 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            <span>Personal Data Adorama Receives Externally</span>
+            <span>Personal Data Grease Receives Externally</span>
           </p>
           <p>
-            Adorama may receive data about you from external sources, like
+            Grease may receive data about you from external sources, like
             individuals, business, third parties, partners, or other lawful
             sources.
           </p>
         </div>
         <div>
           <p>
-            Adorama may collect data from other individuals in instances in
-            which others purchase a gift card or product on your behalf, invite
-            you to participate in a marketing event, or share content from our
-            websites with you. Adorama may also collect data when expressly
-            directed to do so by you. This includes rewards programs,
-            sweepstakes, and instances in which partners or affiliates send us
-            your data. Adorama may also receive information about you from third
-            parties. This includes credit and background checks during
-            purchases, fraud prevention mechanisms and partners, and security
-            services.
+            Grease may collect data from other individuals in instances in which
+            others purchase a gift card or product on your behalf, invite you to
+            participate in a marketing event, or share content from our websites
+            with you. Grease may also collect data when expressly directed to do
+            so by you. This includes rewards programs, sweepstakes, and
+            instances in which partners or affiliates send us your data. Grease
+            may also receive information about you from third parties. This
+            includes credit and background checks during purchases, fraud
+            prevention mechanisms and partners, and security services.
           </p>
         </div>
         <div>
           <p>
-            <span>How Adorama Uses Your Personal Data</span>
+            <span>How Grease Uses Your Personal Data</span>
           </p>
           <p>
-            At Adorama, we use Personal Information collected about you to
+            At Grease, we use Personal Information collected about you to
             provide you services, to improve our services, to analyze our
             business and its processes, to conduct marketing processes, process
             your transactions, and to comply with any applicable legal
-            requirements. Adorama only uses personal data that it has the
-            express legal basis to do so. The following bases are ways in which
-            Adorama uses your data for its business:
+            requirements. Grease only uses personal data that it has the express
+            legal basis to do so. The following bases are ways in which Grease
+            uses your data for its business:
           </p>
         </div>
         <div>
           <ul>
             <li>
-              <span>Provide you services</span> – Adorama collects your data in
+              <span>Provide you services</span> – Grease collects your data in
               order to deliver the best possible products and services. This
               includes but is not limited to; collecting personal data to
               improve our internal processes and business offerings, for data
@@ -295,38 +293,38 @@ export default function PublicPrivacy() {
               and for troubleshooting of our operations and systems.
             </li>
             <li>
-              <span>Communicate with you</span> – Adorama collects your data in
+              <span>Communicate with you</span> – Grease collects your data in
               order to provide necessary communications with you regarding your
-              Adorama account, any transactions, provide you relevant
-              information regarding our services and security, or request
-              feedback about our products or services. Additionally, we may use
-              your personal data to communicate any changes that may occur to
-              our policies, procedures, or terms and conditions.
+              Grease account, any transactions, provide you relevant information
+              regarding our services and security, or request feedback about our
+              products or services. Additionally, we may use your personal data
+              to communicate any changes that may occur to our policies,
+              procedures, or terms and conditions.
             </li>
             <li>
-              <span>Prevent security breaches</span>s – Adorama collects your
+              <span>Prevent security breaches</span>s – Grease collects your
               data in order to mitigate potential security breaches. Your data
-              may be collected and analyzed by Adorama in order to identify any
+              may be collected and analyzed by Grease in order to identify any
               instances in which your Personal Data has been compromised.
             </li>
             <li>
-              <span>Prevent fraudulent activity</span> – Adorama may collect
+              <span>Prevent fraudulent activity</span> – Grease may collect
               information about you to screen transactions in order to mitigate
               fraud, and to protect our users and company from potential
               instances of fraud.
             </li>
             <li>
-              <span>Process transactions</span> – Adorama may collect your
+              <span>Process transactions</span> – Grease may collect your
               information as part of the transaction processes which are
               conducted on within our business. Your personal identifiers,
-              purchase information, and payment data may be collected by Adorama
+              purchase information, and payment data may be collected by Grease
               to ensure that transactions are conducted in a safe, secure, and
               reliable manner.
             </li>
             <li>
-              <span>Comply with legal requirements</span> – Adorama may use your
+              <span>Comply with legal requirements</span> – Grease may use your
               data in the process of complying with any applicable legal
-              obligations and requirements that Adorama is subject to. This
+              obligations and requirements that Grease is subject to. This
               includes but is not limited to; the request of an applicable
               governmental body, to satisfy financial and tax obligations, and
               to maintain compliance with applicable privacy regulation.
@@ -335,54 +333,54 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            <span>How Adorama Shares Your Personal Data</span>
+            <span>How Grease Shares Your Personal Data</span>
             <p>
-              Adorama may provide your Personal Information with partners,
+              Grease may provide your Personal Information with partners,
               service providers, marketing services, or other external parties
-              at your request. Any information Adorama shares with external
+              at your request. Any information Grease shares with external
               parties must be handled in compliance with this Privacy Policy,
-              and with Adorama’s privacy requirements and requests.
+              and with Grease’s privacy requirements and requests.
             </p>
           </p>
         </div>
         <div>
           <ul>
             <li>
-              <span>Partners</span> – Adorama may share your Personal
-              Information in a lawful manner with partner companies that perform
-              functions on our behalf and have agreed to use your personal
-              information expressly for the purposes requested by Adorama.
-              Additionally, Adorama may share your Personal Data in order to
-              send offers or sweepstakes on behalf of partner companies or
-              non-affiliated partners, such as nonprofit organizations.
+              <span>Partners</span> – Grease may share your Personal Information
+              in a lawful manner with partner companies that perform functions
+              on our behalf and have agreed to use your personal information
+              expressly for the purposes requested by Grease. Additionally,
+              Grease may share your Personal Data in order to send offers or
+              sweepstakes on behalf of partner companies or non-affiliated
+              partners, such as nonprofit organizations.
             </li>
             <li>
-              <span>Service Providers</span> – Adorama may share your Personal
+              <span>Service Providers</span> – Grease may share your Personal
               Information with service providers that help us deliver our
               products or services to you. These parties include payment service
               providers, product suppliers, delivery companies, and data
               processing or storage providers.
             </li>
             <li>
-              <span>Marketing Services</span> – Adorama may share your Personal
+              <span>Marketing Services</span> – Grease may share your Personal
               Information with reputable companies in order to provide marketing
-              communications and information that may be useful to you. Adorama
+              communications and information that may be useful to you. Grease
               will never disclose any information other than your first and last
               name and your postal address to external parties for marketing
               purposes.
             </li>
             <li>
-              <span>Other Instances</span> - In the event that Adorama is
+              <span>Other Instances</span> - In the event that Grease is
               involved in a merger, acquisition, bankruptcy, or total or partial
-              sale of assets, Adorama may share your information with the
+              sale of assets, Grease may share your information with the
               relevant third-party organization.
             </li>
           </ul>
         </div>
         <div>
           <p>
-            <span>How Adorama Protects Your Personal Data</span>
-            <p></p>Adorama employs reasonable and appropriate electronic,
+            <span>How Grease Protects Your Personal Data</span>
+            <p></p>Grease employs reasonable and appropriate electronic,
             physical, and operational measures to ensure that your Personal
             Information is secure, and is not subject to unauthorized use,
             disclosure, modification, or loss.
@@ -390,31 +388,31 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            All relevant Adorama systems employ industry-standard encryption and
+            All relevant Grease systems employ industry-standard encryption and
             security standards, and all transactions that flow through our
             systems do so on a PCI compliant payment processor system. If you
             have any additional questions regarding security of Personal
-            Information at Adorama, please{" "}
+            Information at Grease, please{" "}
             <Link to="/help/contactUs">contact us.</Link>
           </p>
         </div>
         <div>
           <p>
-            <span>How Adorama Interacts with Children’s Data</span>
+            <span>How Grease Interacts with Children’s Data</span>
           </p>
           <p>
-            Adorama does not knowingly allow any persons under the age of 16 to
-            register or use its services. At no time does Adorama permit the
+            Grease does not knowingly allow any persons under the age of 16 to
+            register or use its services. At no time does Grease permit the
             collection of information through our systems or websites of
             individuals under the age of 16.
           </p>
         </div>
         <div>
           <p>
-            <span>How Adorama Advertises</span>
+            <span>How Grease Advertises</span>
           </p>
           <p>
-            Adorama may work with external advertising companies in which we
+            Grease may work with external advertising companies in which we
             provide information about your actions on our sites over time. These
             partnerships allow us to deliver a tailored user and advertising
             experience across our websites.
@@ -455,19 +453,19 @@ export default function PublicPrivacy() {
             <span>Cookies, Beacons, and Other Technologies</span>
           </p>
           <p>
-            In the course of Adorama business processes, Adorama’s websites,
+            In the course of Grease business processes, Grease’s websites,
             services, applications, or advertisements may collect your
             information from cookies and beacons. Cookies and beacons help
-            Adorama ensure a secure and safe user experience and provide us with
+            Grease ensure a secure and safe user experience and provide us with
             information regarding what websites or pages you have visited, your
-            behavior on Adorama websites and environments, and help us gauge the
+            behavior on Grease websites and environments, and help us gauge the
             efficacy of our advertising campaigns and search optimization
             processes.
           </p>
         </div>
         <div>
           <p>
-            Adorama uses cookies to allow for persistent experiences on our
+            Grease uses cookies to allow for persistent experiences on our
             websites. For example, we may use cookies to provide tailored
             product suggestions, or to keep your shopping cart persistent as you
             go through different pages on our website.
@@ -475,12 +473,12 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            <span>How Adorama Transfers Your Data</span>
+            <span>How Grease Transfers Your Data</span>
           </p>
           <p>
-            Adorama is a multifaceted organization that connects businesses and
+            Grease is a multifaceted organization that connects businesses and
             people from across the globe, consequently, your personal data may
-            be transferred or accessed by entities around the world. Adorama has
+            be transferred or accessed by entities around the world. Grease has
             a firm commitment to adhere to any applicable laws relating to the
             transfer of data between countries to ensure that your data is
             protected.
@@ -488,35 +486,35 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            <span>Unidentifiable Information at Adorama</span>
+            <span>Unidentifiable Information at Grease</span>
           </p>
           <p>
             If, in the process of requesting data actions related to your
-            Personal Information, Adorama is unable to adequately identify you
-            in relation to your data, we will respond with a notification that
-            your data is not identifiable and that we are not able to provide
+            Personal Information, Grease is unable to adequately identify you in
+            relation to your data, we will respond with a notification that your
+            data is not identifiable and that we are not able to provide
             information from our systems.
           </p>
         </div>
         <div>
           <p>
-            <span>Contact Us About Data Privacy at Adorama</span>
+            <span>Contact Us About Data Privacy at Grease</span>
           </p>
           <p>
-            If you have any questions regarding Adorama’s Privacy Policy,
-            privacy standards and practices, or would like to submit a data
-            request or complaint, contact us at:
+            If you have any questions regarding Grease’s Privacy Policy, privacy
+            standards and practices, or would like to submit a data request or
+            complaint, contact us at:
           </p>
         </div>
         <div>
           <p>Email:</p>
           <p>
-            <a href="mailto:webmaster@example.com">privacy@adorama.com</a>
+            <a href="mailto:webmaster@example.com">privacy@grease.com</a>
           </p>
         </div>
         <div>
           <p>Physical Address:</p>
-          <p>Adorama Inc.</p>
+          <p>Grease Inc.</p>
           <p>Attn: Privacy Compliance Dept.</p>
           <p>42 West 18th Street</p>
           <p>New York, NY 10011</p>
@@ -524,9 +522,9 @@ export default function PublicPrivacy() {
         <div>
           <p>
             Because data privacy and security are of the utmost importance to
-            Adorama, our team will review your inquiry and respond in a manner
+            Grease, our team will review your inquiry and respond in a manner
             that meets your needs, and our legal and contractual requirements.
-            Adorama is committed to responding to all inquiries within 15
+            Grease is committed to responding to all inquiries within 15
             business days, however, in some cases we may require additional time
             to adequately respond to your request. In these instances, we will
             communicate to you about any delay, and request any additional
@@ -535,20 +533,20 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            <span>Updates to Adorama’s Privacy Policy</span>
+            <span>Updates to Grease’s Privacy Policy</span>
           </p>
           <p>
-            If, at any time Adorama decides to revise this Privacy Policy, an
+            If, at any time Grease decides to revise this Privacy Policy, an
             updated version of the policy will be made available online. If the
-            contents of the update to the Privacy Policy are substantial,
-            Adorama may contact you at your provided email address, and will
-            display a notice of the update on our website(s).
+            contents of the update to the Privacy Policy are substantial, Grease
+            may contact you at your provided email address, and will display a
+            notice of the update on our website(s).
           </p>
         </div>
         <div>
           <p>
             Please reference this policy regularly to ensure that you understand
-            the breadth of Adorama’s privacy policy, and to ensure that you
+            the breadth of Grease’s privacy policy, and to ensure that you
             understand any changes made to it.
           </p>
         </div>
@@ -557,8 +555,8 @@ export default function PublicPrivacy() {
             <span>Privacy Regulations</span>
           </p>
           <p>
-            Adorama is constantly vigilant of changes to regulatory standards
-            and industry best practices related to data privacy, and work to
+            Grease is constantly vigilant of changes to regulatory standards and
+            industry best practices related to data privacy, and work to
             continually verify that our policies, procedures, and activities are
             compliant with data privacy regulations around the globe.
           </p>
@@ -566,9 +564,9 @@ export default function PublicPrivacy() {
         <div>
           <p>
             The following list details some of the major privacy regulations
-            recognized by Adorama. It is important to note that the following
+            recognized by Grease. It is important to note that the following
             list in not exhaustive or complete list, but is a summary of some of
-            the primary regulations recognized by Adorama:
+            the primary regulations recognized by Grease:
           </p>
         </div>
         <div>
@@ -636,9 +634,9 @@ export default function PublicPrivacy() {
         </div>
         <div>
           <p>
-            Adorama reserves the right to modify this privacy policy at any
-            time. We will promptly reflect any such modifications on this
-            privacy policy.
+            Grease reserves the right to modify this privacy policy at any time.
+            We will promptly reflect any such modifications on this privacy
+            policy.
           </p>
         </div>
       </div>

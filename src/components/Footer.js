@@ -115,16 +115,40 @@ export default function Footer() {
             >
               <ul>
                 <li>
-                  <i className="fab fa-facebook-square"></i>
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-facebook-square"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-twitter"></i>
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-youtube"></i>
+                  <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-youtube"></i>
+                  </a>
                 </li>
                 <li>
-                  <i className="fab fa-instagram-square"></i>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-instagram-square"></i>
+                  </a>
                 </li>
               </ul>
             </div>

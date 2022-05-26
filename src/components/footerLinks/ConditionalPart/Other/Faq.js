@@ -14,7 +14,7 @@ export default function Faq() {
         <div className={classes["faq-part-body-links"]}>
           <ul>
             <li>
-              <HashLink to="/help/ordering">What Is Adorama?</HashLink>
+              <HashLink to="/help/ordering">What Is Grease?</HashLink>
             </li>
             <li>
               <HashLink to="/help/ordering#place-order">

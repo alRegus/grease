@@ -92,7 +92,7 @@ export default function CartSummary() {
         <div>
           <h3>We Value Your Privacy</h3>
           <p>
-            Adorama will not sell or distribute your personal information under
+            Grease will not sell or distribute your personal information under
             any circumstances.
           </p>
           <p>

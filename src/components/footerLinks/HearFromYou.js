@@ -54,9 +54,9 @@ export default function HearFromYou() {
           <li>
             <img
               src="https://www.adorama.com/col/payment_methods/adorama_credit.png"
-              alt="Adorama Edge Credit Card"
+              alt="Grease Edge Credit Card"
             />
-            <span>Adorama Edge Credit Card</span>
+            <span>Grease Edge Credit Card</span>
           </li>
           <li>
             <img
