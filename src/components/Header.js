@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useHttp from "../hooks/useHttp";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -43,7 +43,10 @@ function Header() {
   };
 
   const storedCategoryRoute = localStorage.getItem("categoryRoute");
-  dispatch({ type: "GET_CATEGORY_ROUTE", payload: storedCategoryRoute });
+
+  useEffect(() => {
+    dispatch({ type: "GET_CATEGORY_ROUTE", payload: storedCategoryRoute });
+  }, [dispatch, storedCategoryRoute]);
 
   const displayInstrumentsCategories = instrumentCategories.map((category) => (
     <div

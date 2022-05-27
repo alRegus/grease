@@ -98,10 +98,18 @@
     transform: translateX(-50vw);
     transition: all 0.3s ease-in;
     overflow: scroll;
+    h2 {
+      margin-left: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      color: #222;
+      font-weight: 400;
+    }
     &-close {
       display: flex;
       justify-content: space-between;
       background-color: #003265;
+
       span {
         margin: 0;
         padding: 10px 15px;
@@ -111,6 +119,7 @@
     }
     &-types {
       margin: 20px;
+      margin-top: 15px;
       li {
         list-style-type: none;
         margin-top: 10px;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import useHttp from "../hooks/useHttp";
 import classes from "./HamburgerMenu.module.scss";
@@ -13,6 +13,7 @@ function HamburgerMenu() {
   const brands = useHttp(`${process.env.REACT_APP_API}/brands.json`);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [slidingMenu, setSlidingMenu] = useState(false);
   const [slidingSecondMenu, setSlidingSecondMenu] = useState(false);
@@ -61,7 +62,13 @@ function HamburgerMenu() {
       dispatch({ type: "OVERFLOW_TOGGLE", payload: { overflow: "hidden" } });
     }
   };
-
+  const categoryHandler = (e) => {
+    setSlidingMenu(false);
+    setSlidingSecondMenu(false);
+    const category = e.target.textContent.toLowerCase();
+    localStorage.setItem("categoryRoute", category);
+    navigate("/category");
+  };
   const typeHandler2 = (e) => {
     const typeValue = e.target.textContent;
     dispatch({
@@ -187,9 +194,20 @@ function HamburgerMenu() {
         </div>
 
         {sliderContent === "types" && (
-          <ul className={classes["hamburger-secondary-sliding-types"]}>
-            {displayTypes}
-          </ul>
+          <>
+            {displayTypes[0].key.includes("guitars") && (
+              <h2 onClick={categoryHandler}>Guitars</h2>
+            )}
+            {displayTypes[0].key.includes("drums") && (
+              <h2 onClick={categoryHandler}>Drums</h2>
+            )}
+            {displayTypes[0].key.includes("pianos") && (
+              <h2 onClick={categoryHandler}>Pianos</h2>
+            )}
+            <ul className={classes["hamburger-secondary-sliding-types"]}>
+              {displayTypes}
+            </ul>
+          </>
         )}
         {sliderContent === "brands" && (
           <ul className={classes["hamburger-secondary-sliding-brands"]}>

@@ -106,6 +106,7 @@ section {
       &-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
         max-width: 600px;
       }
     }
@@ -150,6 +151,15 @@ section {
 
 @media (max-width: 430px) {
   section {
+    .categories {
+      a {
+        div {
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
     .brands {
       div {
         a {
@@ -173,6 +183,10 @@ section {
             width: 100px;
           }
         }
+      }
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }
