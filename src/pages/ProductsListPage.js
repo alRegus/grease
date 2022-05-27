@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import classes from "./ProductsListPage.module.scss";
@@ -14,7 +14,7 @@ export default function ProductsListPage() {
   const dispatch = useDispatch();
   const windowWidth = useWidth();
 
-  let filteredParamValues = [];
+  let filteredParamValues = useMemo(() => [], []);
   for (const [key, value] of Object.entries(filterParams)) {
     if (value) {
       filteredParamValues.push(value);
