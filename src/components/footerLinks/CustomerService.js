@@ -1,11 +1,19 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 
 import useWidth from "../../hooks/useWidth";
 import classes from "./CustomerService.module.scss";
 
 export default function CustomerService() {
   const width = useWidth();
+  const param = useParams();
+
+  useEffect(() => {
+    setAccordion1(false);
+    setAccordion2(false);
+    setAccordion3(false);
+    setAccordion4(false);
+  }, [param.type]);
 
   const [accordion1, setAccordion1] = useState(false);
   const [accordion2, setAccordion2] = useState(false);

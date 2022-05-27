@@ -159,9 +159,10 @@ export default function Footer() {
         <div className="copyright-inner">
           <p>
             Copyright Grease Camera, Inc. All rights reserved. |{" "}
-            <span>Privacy Policy</span> | <span>Terms of Use</span> | 42 West
-            18th Street New York, NY 10011 (<span>Directions</span>) |
-            800.223.2500
+            <Link to="/help/privacy">Privacy Policy</Link> |{" "}
+            <Link to="/help/termsAndConditions">Terms of Use</Link> | 42 West
+            18th Street New York, NY 10011 (
+            <Link to="/info/store">Directions</Link>) | 800.223.2500
           </p>
         </div>
       </section>
