@@ -63,8 +63,7 @@ function HamburgerMenu() {
     }
   };
   const categoryHandler = (e) => {
-    setSlidingMenu(false);
-    setSlidingSecondMenu(false);
+    closeAllSlidersHandler();
     const category = e.target.textContent.toLowerCase();
     localStorage.setItem("categoryRoute", category);
     navigate("/category");
