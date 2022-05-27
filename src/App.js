@@ -1,6 +1,6 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import ScrollToTop from "./ScrollToTop";
 import Spinner from "./components/spinner/Spinner";
@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Help from "./components/help/Help";
 import Footer from "./components/Footer";
+import useWidth from "./hooks/useWidth";
 
 const FrontPage = React.lazy(() => import("./pages/FrontPage"));
 const CategoryPage = React.lazy(() => import("./pages/CategoryPage"));
@@ -21,6 +22,15 @@ const CartPage = React.lazy(() => import("./pages/CartPage"));
 function App() {
   const overflow = useSelector((state) => state.overflow.overflow.overflow);
   document.body.style.overflow = overflow;
+
+  const dispatch = useDispatch();
+  const width = useWidth();
+
+  useEffect(() => {
+    if (width > 801) {
+      dispatch({ type: "OVERFLOW_TOGGLE", payload: { overflow: "scroll" } });
+    }
+  }, [dispatch, width]);
 
   return (
     <>
