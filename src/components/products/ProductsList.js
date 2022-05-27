@@ -78,6 +78,11 @@ export default function ProductsList() {
   return (
     <section className={(classes["products-list"], classes[`${gridView}`])}>
       {displayProductsList}
+      {displayProductsList.length === 0 && (
+        <p style={{ textAlign: "center", marginTop: "20px" }}>
+          No Matches Found.
+        </p>
+      )}
     </section>
   );
 }
