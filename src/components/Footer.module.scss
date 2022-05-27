@@ -163,11 +163,24 @@ footer {
     }
     &-shopping-help {
       justify-self: center;
+      padding-left: 12px;
     }
     &-company-info {
       justify-self: center;
       padding-right: 57px;
-      padding-left: 0px;
+      padding-left: 12px;
+    }
+    &-feedback {
+      &-newsletter {
+        form {
+          max-width: 100%;
+          input {
+            width: 100%;
+            font-size: 1rem;
+            padding: 5px 0 5px 10px;
+          }
+        }
+      }
     }
   }
 }

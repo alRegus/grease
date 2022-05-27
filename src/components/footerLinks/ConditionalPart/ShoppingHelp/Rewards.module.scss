@@ -384,6 +384,11 @@
 
 @media (max-width: 801px) {
   .rewards {
+    &-heading {
+      p {
+        width: 90%;
+      }
+    }
     &-gearup {
       &-cards {
         grid-template-columns: repeat(1, 1fr);

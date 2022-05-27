@@ -223,6 +223,25 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .about {
+    &-way {
+      width: 90%;
+    }
+    &-promise {
+      width: 90%;
+    }
+    &-eye {
+      h2 {
+        width: 90%;
+      }
+      p {
+        width: 90%;
+      }
+    }
+  }
+}
+
 @media (max-width: 1145px) {
   .about {
     &-brand {

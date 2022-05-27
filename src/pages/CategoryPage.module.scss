@@ -63,6 +63,20 @@ section {
   }
 }
 
+@media (max-width: 1400px) {
+  section {
+    .categories {
+      width: 90%;
+    }
+    .brands {
+      width: 90%;
+    }
+    .description {
+      width: 90%;
+    }
+  }
+}
+
 @media (max-width: 1320px) {
   section {
     .brands {
